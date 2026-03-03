@@ -1,0 +1,79 @@
+name: Daily Pulse Update
+
+on:
+  schedule:
+    # Every day at 6:00 UTC (8:00 CET / Barcelona time)
+    - cron: '0 6 * * *'
+  workflow_dispatch:  # Manual trigger button in GitHub UI
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  generate-pulse:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Collect Slack data
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+        run: python collect.py
+
+      - name: Generate slides + HTML + PPTX
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python generate.py
+
+      - name: Commit updated files
+        run: |
+          git config user.name "Pulse Bot"
+          git config user.email "pulse-bot@appodeal.com"
+
+          DATE=$(date +%Y-%m-%d)
+
+          git add output/ data/slides.json data/archive/ || true
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "📰 Pulse update $DATE"
+            git push
+          fi
+
+  # Deploy to GitHub Pages
+  deploy:
+    needs: generate-pulse
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main  # Get latest commit with generated files
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'output'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

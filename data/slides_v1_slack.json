@@ -1,0 +1,173 @@
+[
+  {
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Burak Mavis",
+    "date": "March 1",
+    "message": "Another year of greatness begins! Your energy and dedication inspire everyone around you. Here's to unforgettable moments ahead.",
+    "teamNote": "With love, Your Appodeal Team 💜"
+  },
+  {
+    "type": "newjoin",
+    "emoji": "🚀",
+    "accent": "#1667EF",
+    "gradient": "linear-gradient(135deg, #1667EF 0%, #70A1F5 100%)",
+    "title": "Welcome to the Team!",
+    "name": "Armaan Pandher",
+    "role": "AI & Automation Analyst",
+    "team": "IT Team",
+    "quote": "University of Miami grad in AI & Data Science. Former competitive swim team captain — that discipline shapes how I work today. Outside of work, I'm into art and music."
+  },
+  {
+    "type": "newjoin",
+    "emoji": "🎮",
+    "accent": "#12DF58",
+    "gradient": "linear-gradient(135deg, #12DF58 0%, #71F49D 100%)",
+    "title": "Welcome to the Team!",
+    "name": "Andreu Margarit",
+    "role": "Mobile Gaming QA",
+    "team": "Gaming Team",
+    "quote": "I'm from Capellades, about an hour from Barcelona. I enjoy the gym, football, volleyball, piano, and card games. Excited to join the team!"
+  },
+  {
+    "type": "clap",
+    "emoji": "🔥",
+    "accent": "#EC4899",
+    "gradient": "linear-gradient(135deg, #EC4899 0%, #F9A8D4 100%)",
+    "title": "50× Claps — Record!",
+    "count": "50×👏",
+    "from": "Gleb Krahotkin",
+    "to": ["Mariia Moskvina"],
+    "reason": "For organizing BCN Data Nights at Talent Garden — bringing first-time speakers to stage and making the whole event flawless.",
+    "values": ["Relentless pursuit of EXCELLENCE", "OWNERSHIP and ACCOUNTABILITY"]
+  },
+  {
+    "type": "clap",
+    "emoji": "🌟",
+    "accent": "#F59E0B",
+    "gradient": "linear-gradient(135deg, #F59E0B 0%, #FBBF24 100%)",
+    "title": "Conference Heroes!",
+    "count": "10×👏",
+    "from": "Alexandr Zhitlukhin",
+    "to": ["Mariia Moskvina", "Gleb Krahotkin", "Maksym Fedorov", "Evgenia"],
+    "reason": "Huge kudos for stepping out of your comfort zone to host and speak at the conference. Your courage truly inspires the whole team!",
+    "values": ["Relentless pursuit of EXCELLENCE", "Passionate CURIOSITY"]
+  },
+  {
+    "type": "clap",
+    "emoji": "👏",
+    "accent": "#6366F1",
+    "gradient": "linear-gradient(135deg, #6366F1 0%, #818CF8 100%)",
+    "title": "Top Clap of the Week",
+    "count": "25×👏",
+    "from": "Michelle Walter",
+    "to": ["Jasmine Nunez"],
+    "reason": "Thanks for all the effort on the audit prep and continuing to be a team player!",
+    "values": ["We work TOGETHER to SERVE OTHERS", "OWNERSHIP and ACCOUNTABILITY"]
+  },
+  {
+    "type": "clap",
+    "emoji": "💪",
+    "accent": "#D946EF",
+    "gradient": "linear-gradient(135deg, #D946EF 0%, #E879F9 100%)",
+    "title": "Team Excellence",
+    "count": "25×👏",
+    "from": "Lidia G.",
+    "to": ["Diana Mytchyk", "Emma"],
+    "reason": "Thank you for your consistent effort and professionalism. Your dedication and teamwork make a real difference!",
+    "values": ["We work TOGETHER to SERVE OTHERS", "LEAN STARTUP Mentality"]
+  },
+  {
+    "type": "milestone",
+    "emoji": "🏆",
+    "accent": "#F97316",
+    "gradient": "linear-gradient(135deg, #F97316 0%, #FB923C 100%)",
+    "title": "Clappy Winners — January",
+    "headline": "10 Stars Who Raised the Bar",
+    "description": "Tomiris · Lidia G. · Maksym Fedorov · Ana Abuseridze · Sergio-Yersi · Antonio Clavelli · Baptiste · Emma · Sem Sinchenko · Alessandro — each with an incredible impact story.",
+    "stat": "10",
+    "statLabel": "CLAPPY WINNERS"
+  },
+  {
+    "type": "event",
+    "emoji": "🎤",
+    "accent": "#5D2CAC",
+    "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
+    "title": "First Time on Stage!",
+    "eventName": "BCN Data Nights — AI Conference @ Talent Garden",
+    "date": "Barcelona · This month",
+    "description": "Gleb, Evgenia & Maksym delivered complex AI topics to a live audience for the FIRST TIME. Emma managed logistics. Mariia made it happen.",
+    "organizer": "Mariia Moskvina"
+  },
+  {
+    "type": "event",
+    "emoji": "🌱",
+    "accent": "#22C55E",
+    "gradient": "linear-gradient(135deg, #22C55E 0%, #4ADE80 100%)",
+    "title": "Connect Groups",
+    "eventName": "Leader Enablement Session — Join Us!",
+    "date": "Tuesday, March 10 · 16:00–18:00 CET",
+    "description": "Employee-led communities on Circle — from books to leadership. This session covers Explore vs Execute mode, seasonality, and inclusion. New Gym group forming! DM Kasia to join.",
+    "organizer": "Katarzyna Raniszewska"
+  },
+  {
+    "type": "officelife",
+    "emoji": "🏢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "Barcelona Office Week",
+    "headline": "Another amazing week together!",
+    "quote": "It was great to see everyone in person — it's always a special time when we get to connect face to face.",
+    "author": "Mariia Moskvina",
+    "reactions": "💜 18",
+    "channel": "#general-chat"
+  },
+  {
+    "type": "reading",
+    "emoji": "📚",
+    "accent": "#5D2CAC",
+    "gradient": "linear-gradient(135deg, #5D2CAC 0%, #A885E0 100%)",
+    "title": "What We're Reading",
+    "articles": [
+      {
+        "title": "The Vibe Coding Casino",
+        "sharedBy": "Baptiste Poirier",
+        "desc": "A thought-provoking parallel between vibe coding and casinos. Dopamine-fueled coding — what could go wrong?",
+        "reactions": "👍 4"
+      },
+      {
+        "title": "Building Products That Agents Want",
+        "sharedBy": "Alexandr Zhitlukhin",
+        "desc": "Essential viewing: how to build products in the AI agent era.",
+        "reactions": "👀 6"
+      }
+    ],
+    "channel": "#to_read"
+  },
+  {
+    "type": "birthday",
+    "emoji": "🎈",
+    "accent": "#EC4899",
+    "gradient": "linear-gradient(135deg, #EC4899 0%, #F9A8D4 100%)",
+    "title": "Recent Birthdays",
+    "name": "Daniyal Ahmad, Dmitry Feshchenko, Roman Rinchinov & Hanna Minko",
+    "date": "Feb 23–27",
+    "message": "Hope you all had wonderful celebrations! The team sends love and best wishes for the year ahead.",
+    "teamNote": "Your Appodeal Family 🧡"
+  },
+  {
+    "type": "celebration",
+    "emoji": "🎉",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFDD99 100%)",
+    "title": "Friday Celebrations",
+    "headline": "Wins & Growth Moments",
+    "prompt1": "🌱 What made you proud this week — at work, at home, or in life?",
+    "prompt2": "💡 We celebrate failures because acknowledging them creates space for improvement.",
+    "coreValue": "This is how we live Relentless Pursuit of Excellence. Share your wins and lessons every Friday in #general.",
+    "channel": "#general"
+  }
+]

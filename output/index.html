@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Appodeal PULSE</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap');
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    body{background:#08080c;font-family:'Outfit',sans-serif;color:#e2e2ea;overflow:hidden;cursor:none}
+    @keyframes float{0%,100%{transform:translateY(0) translateX(0)}33%{transform:translateY(-18px) translateX(12px)}66%{transform:translateY(-8px) translateX(-6px)}}
+    @keyframes confettiBounce{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-14px) rotate(12deg)}}
+    @keyframes slideUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:0.3}}
+    #root{width:100vw;height:100vh;display:none}
+    #gate{width:100vw;height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden}
+    #gate .glow{position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(ellipse,rgba(99,102,241,0.08) 0%,transparent 60%);top:50%;left:50%;transform:translate(-50%,-50%)}
+    #gate .logo{display:flex;align-items:center;gap:10px;margin-bottom:40px}
+    #gate .logo span:first-child{font-weight:800;font-size:16px;letter-spacing:3px;color:#fff}
+    #gate .logo span:nth-child(2){color:rgba(255,255,255,0.12);font-size:20px}
+    #gate .logo span:last-child{font-weight:500;font-size:14px;letter-spacing:5px;color:rgba(255,255,255,0.3)}
+    #gate input{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:14px 20px;width:280px;color:#fff;font-family:'Outfit',sans-serif;font-size:15px;text-align:center;outline:none;transition:border-color 0.3s}
+    #gate input:focus{border-color:rgba(99,102,241,0.5)}
+    #gate input::placeholder{color:rgba(255,255,255,0.2)}
+    #gate .btn{margin-top:16px;background:linear-gradient(135deg,#6366F1 0%,#818CF8 100%);border:none;border-radius:10px;padding:12px 36px;color:#fff;font-family:'Outfit',sans-serif;font-size:14px;font-weight:600;letter-spacing:1px;cursor:pointer;transition:opacity 0.3s}
+    #gate .btn:hover{opacity:0.85}
+    #gate .err{color:#EF4444;font-size:12px;margin-top:12px;height:16px;opacity:0;transition:opacity 0.3s}
+    #gate .err.show{opacity:1}
+    .hidden{display:none!important}
+  </style>
+</head>
+<body>
+  <div id="gate">
+    <div class="glow"></div>
+    <div class="logo">
+      <span>APPODEAL</span><span>·</span><span>PULSE</span>
+    </div>
+    <input type="password" id="pw" placeholder="Enter password" autofocus />
+    <button class="btn" onclick="checkPw()">ACCESS</button>
+    <div class="err" id="err">Incorrect password</div>
+  </div>
+  <script>
+    function checkPw(){
+      if(document.getElementById('pw').value==='Pulse!App0deal#2026'){
+        document.getElementById('gate').classList.add('hidden');
+        document.getElementById('root').style.display='block';
+        sessionStorage.setItem('pulse_auth','1');
+      } else {
+        document.getElementById('err').classList.add('show');
+        document.getElementById('pw').value='';
+        setTimeout(()=>document.getElementById('err').classList.remove('show'),2000);
+      }
+    }
+    document.addEventListener('DOMContentLoaded',()=>{
+      if(sessionStorage.getItem('pulse_auth')==='1'){
+        document.getElementById('gate').classList.add('hidden');
+        document.getElementById('root').style.display='block';
+      }
+      document.getElementById('pw').addEventListener('keydown',e=>{if(e.key==='Enter')checkPw()});
+    });
+  </script>
+  <div id="root"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+
+  <script>
+    // ══════════════════════════════════════════════════════════
+    // SLIDE DATA — This section is replaced by automation daily
+    // ══════════════════════════════════════════════════════════
+    const SLIDES = [
+  {
+    "type": "milestone",
+    "emoji": "🔥",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #66FFE3 100%)",
+    "title": "Appodeal in Numbers",
+    "headline": "Where We Stand Right Now",
+    "description": "~$100M gross profit. $20M EBITDA. Gaming turned profitable. 40% YoY growth projected for 2026. And we're just getting started.",
+    "stat": "40%",
+    "statLabel": "PROJECTED YoY GROWTH"
+  },
+  {
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Burak Mavis",
+    "date": "March 1",
+    "message": "Another year of greatness begins! Your energy and dedication inspire everyone around you. Here's to unforgettable moments ahead.",
+    "teamNote": "With love, Your Appodeal Team 💜"
+  },
+  {
+    "type": "newjoin",
+    "emoji": "🚀",
+    "accent": "#1667EF",
+    "gradient": "linear-gradient(135deg, #1667EF 0%, #70A1F5 100%)",
+    "title": "Welcome to the Team!",
+    "name": "Armaan Pandher",
+    "role": "AI & Automation Analyst",
+    "team": "IT Team",
+    "quote": "University of Miami grad in AI & Data Science. Former competitive swim team captain — that discipline shapes how I work today. Outside of work, I'm into art and music. Miami's creativity inspires everything I build."
+  },
+  {
+    "type": "newjoin",
+    "emoji": "🎮",
+    "accent": "#12DF58",
+    "gradient": "linear-gradient(135deg, #12DF58 0%, #71F49D 100%)",
+    "title": "Welcome to the Team!",
+    "name": "Andreu Margarit",
+    "role": "Mobile Gaming QA",
+    "team": "Gaming Team",
+    "quote": "I'm from Capellades, about an hour from Barcelona. I enjoy the gym, football, volleyball, piano, and card games. My goal? To develop professionally while having a great time!"
+  },
+  {
+    "type": "win",
+    "emoji": "📈",
+    "accent": "#12DF58",
+    "gradient": "linear-gradient(135deg, #12DF58 0%, #71F49D 100%)",
+    "title": "Revenue Machine",
+    "who": "Dima M.",
+    "stat": "+$3.2k",
+    "statUnit": "/day fee uplift",
+    "headline": "Floor Optimization Model Rollout",
+    "description": "Pushed stakeholders to roll out and tune the new model. Started from $800–1k/day, now showing $3.2k/day fee uplift and $14.2k/day spend uplift.",
+    "takeaway": "This push is worth $2k+/day and shows how important A-Players are"
+  },
+  {
+    "type": "clap",
+    "emoji": "🔥",
+    "accent": "#EC4899",
+    "gradient": "linear-gradient(135deg, #EC4899 0%, #F9A8D4 100%)",
+    "title": "50× Claps — Record!",
+    "count": "50×👏",
+    "from": "Gleb Krahotkin",
+    "to": [
+      "Mariia Moskvina"
+    ],
+    "reason": "For organizing BCN Data Nights at Talent Garden — bringing first-time speakers to stage and making the whole event flawless. This was YOUR vision and YOUR execution.",
+    "values": [
+      "Relentless pursuit of EXCELLENCE",
+      "OWNERSHIP and ACCOUNTABILITY"
+    ]
+  },
+  {
+    "type": "event",
+    "emoji": "🎤",
+    "accent": "#5D2CAC",
+    "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
+    "title": "First Time on Stage!",
+    "eventName": "BCN Data Nights — AI Conference @ Talent Garden",
+    "date": "Barcelona · This month",
+    "description": "Gleb, Evgenia & Maksym delivered complex AI topics to a live audience for the FIRST TIME ever. Emma managed the entire operation. Mariia made it happen. The courage to step out of your comfort zone — that's how we grow.",
+    "organizer": "Mariia Moskvina"
+  },
+  {
+    "type": "milestone",
+    "emoji": "🤖",
+    "accent": "#6366F1",
+    "gradient": "linear-gradient(135deg, #6366F1 0%, #818CF8 100%)",
+    "title": "AI Vision",
+    "headline": "Every Employee = 5–10 AI Agents",
+    "description": "Within 3–6 months, every team member will manage their own AI agents. OKR Auditor already checks 1,000+ individual OKRs daily. Daria Bot saves $4k/week analyzing app reviews. This is our future.",
+    "stat": "1,000+",
+    "statLabel": "OKRs AUDITED DAILY BY AI"
+  },
+  {
+    "type": "win",
+    "emoji": "🎯",
+    "accent": "#E84039",
+    "gradient": "linear-gradient(135deg, #E84039 0%, #EF7A76 100%)",
+    "title": "Game Metrics 🔥",
+    "who": "Gaming Teams",
+    "stat": "61%",
+    "statUnit": "retention",
+    "headline": "Infinite Minesweeper Crushes It",
+    "description": "Minesweeper hit 61% retention (Apple benchmark: 88% ERA — we're at 151-160%). Solitaire v540 boosted D7 by 21.67%. Crossword ROAS exceeded 200%.",
+    "takeaway": "Our games are not just fun — they're retention machines"
+  },
+  {
+    "type": "clap",
+    "emoji": "🌟",
+    "accent": "#F59E0B",
+    "gradient": "linear-gradient(135deg, #F59E0B 0%, #FBBF24 100%)",
+    "title": "Conference Heroes!",
+    "count": "10×👏",
+    "from": "Alexandr Zhitlukhin",
+    "to": [
+      "Mariia Moskvina",
+      "Gleb Krahotkin",
+      "Maksym Fedorov",
+      "Evgenia"
+    ],
+    "reason": "Huge kudos for stepping out of your comfort zone to host and speak at the conference. Your courage truly inspires the whole team!",
+    "values": [
+      "Relentless pursuit of EXCELLENCE",
+      "Passionate CURIOSITY"
+    ]
+  },
+  {
+    "type": "milestone",
+    "emoji": "🏆",
+    "accent": "#F97316",
+    "gradient": "linear-gradient(135deg, #F97316 0%, #FB923C 100%)",
+    "title": "Clappy Winners — January",
+    "headline": "10 Stars Who Raised the Bar",
+    "description": "Tomiris · Lidia G. · Maksym Fedorov · Ana Abuseridze · Sergio-Yersi · Antonio Clavelli · Baptiste · Emma · Sem Sinchenko · Alessandro — each with an incredible impact story.",
+    "stat": "10",
+    "statLabel": "CLAPPY WINNERS"
+  },
+  {
+    "type": "clap",
+    "emoji": "👏",
+    "accent": "#D946EF",
+    "gradient": "linear-gradient(135deg, #D946EF 0%, #E879F9 100%)",
+    "title": "Top Claps This Week",
+    "count": "25×👏",
+    "from": "Multiple teammates",
+    "to": [
+      "Jasmine Nunez",
+      "Diana Mytchyk",
+      "Emma",
+      "Maria Kyslianka",
+      "Anna Hrytsel"
+    ],
+    "reason": "Audit prep, consistent professionalism, relocation support, release 3.6.0 — recognition flows when people show up for each other!",
+    "values": [
+      "We work TOGETHER to SERVE OTHERS",
+      "OWNERSHIP and ACCOUNTABILITY"
+    ]
+  },
+  {
+    "type": "win",
+    "emoji": "💰",
+    "accent": "#14B8A6",
+    "gradient": "linear-gradient(135deg, #14B8A6 0%, #5EEAD4 100%)",
+    "title": "Cost Savings Win",
+    "who": "Dima M.",
+    "stat": "$1.5k",
+    "statUnit": "/day saved",
+    "headline": "FinOps & Data Governance",
+    "description": "Built new FinOps tooling and started Data Governance Alpha. Deleted unused data with near-zero impact on ML teams. Scaling up to $2.5k/day savings.",
+    "takeaway": "Saving money is making money"
+  },
+  {
+    "type": "officelife",
+    "emoji": "🧘",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "Daily Yoga @ 13:10",
+    "headline": "From office corner to global practice",
+    "quote": "Anna Kolyada started daily yoga sessions at 13:10–13:30. After Sergey Orlov suggested it, she added online streaming for remote teammates and the Polish office. One person's initiative became everyone's daily ritual.",
+    "author": "Anna Kolyada",
+    "reactions": "🧘 Every day, 13:10 CET",
+    "channel": "#general-chat"
+  },
+  {
+    "type": "milestone",
+    "emoji": "🏅",
+    "accent": "#0EA5E9",
+    "gradient": "linear-gradient(135deg, #0EA5E9 0%, #38BDF8 100%)",
+    "title": "AI Advent Challenge",
+    "headline": "20 Days. 6 Heroes. Real AI Skills.",
+    "description": "Denis Glavatskikh launched a 20-day AI engineering marathon — from first agents to MCP, RAG, and a final 'God Agent' project. Only 6 made it to the finish: Viacheslav, Gleb, Cagatay, Alexandr, ArtKip & Aleksey.",
+    "stat": "6",
+    "statLabel": "FINISHERS OUT OF ALL"
+  },
+  {
+    "type": "win",
+    "emoji": "🎨",
+    "accent": "#5D2CAC",
+    "gradient": "linear-gradient(135deg, #5D2CAC 0%, #A885E0 100%)",
+    "title": "Creative Impact",
+    "who": "Product Workshop Team",
+    "stat": "5+",
+    "statUnit": "teams aligned",
+    "headline": "Product Workshop + Artem's Manga!",
+    "description": "Baptiste, Michele, Tomiris, Tanya, Viktor, Pavel D. & Artem came together for a product workshop. Artem surprised everyone with a manga-style visualization that stole the show!",
+    "takeaway": "When creativity meets product thinking, magic happens"
+  },
+  {
+    "type": "event",
+    "emoji": "🌱",
+    "accent": "#22C55E",
+    "gradient": "linear-gradient(135deg, #22C55E 0%, #4ADE80 100%)",
+    "title": "Connect Groups",
+    "eventName": "Leader Enablement Session — Join Us!",
+    "date": "Tuesday, March 10 · 16:00–18:00 CET",
+    "description": "Employee-led communities on Circle — from books to leadership. This session covers Explore vs Execute mode, seasonality, and inclusion. New Gym group forming in Barcelona! React or DM Kasia to join.",
+    "organizer": "Katarzyna Raniszewska"
+  },
+  {
+    "type": "reading",
+    "emoji": "📚",
+    "accent": "#5D2CAC",
+    "gradient": "linear-gradient(135deg, #5D2CAC 0%, #A885E0 100%)",
+    "title": "What We're Reading",
+    "articles": [
+      {
+        "title": "The Vibe Coding Casino",
+        "sharedBy": "Baptiste Poirier",
+        "desc": "A thought-provoking parallel between vibe coding and casinos. Dopamine-fueled coding — what could go wrong?",
+        "reactions": "👍 4"
+      },
+      {
+        "title": "Building Products That Agents Want",
+        "sharedBy": "Alexandr Zhitlukhin",
+        "desc": "Essential viewing: how to build products in the AI agent era.",
+        "reactions": "👀 6"
+      },
+      {
+        "title": "4 Disciplines of Execution",
+        "sharedBy": "Book Club · 140+ participants",
+        "desc": "Protect focus time from the 'whirlwind'. Max 3 key initiatives per quarter. Cap meetings at 10-12h/week.",
+        "reactions": "📖 140+ readers"
+      }
+    ],
+    "channel": "#to_read · #passionate-curiosity"
+  },
+  {
+    "type": "officelife",
+    "emoji": "⚡",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFDD99 100%)",
+    "title": "Build. Ship. Improve.",
+    "headline": "The new Appodeal mindset",
+    "quote": "No more passive suggestions. Everyone — including non-engineers — learns Cursor + Opus 4.6 and ships pull requests. From requirements mentality to pull request mentality.",
+    "author": "Pavel Golubev, CEO",
+    "reactions": "🚀 Company-wide",
+    "channel": "#general"
+  },
+  {
+    "type": "birthday",
+    "emoji": "🎈",
+    "accent": "#EC4899",
+    "gradient": "linear-gradient(135deg, #EC4899 0%, #F9A8D4 100%)",
+    "title": "Recent Birthdays",
+    "name": "Daniyal Ahmad, Dmitry Feshchenko, Roman Rinchinov & Hanna Minko",
+    "date": "Feb 23–27",
+    "message": "Hope you all had wonderful celebrations! The team sends love and best wishes for the year ahead.",
+    "teamNote": "Your Appodeal Family 🧡"
+  },
+  {
+    "type": "win",
+    "emoji": "🛡️",
+    "accent": "#1667EF",
+    "gradient": "linear-gradient(135deg, #1667EF 0%, #70A1F5 100%)",
+    "title": "Fraud Destroyed",
+    "who": "Security Team",
+    "stat": "22%→4%",
+    "statUnit": "fraud rate",
+    "headline": "From Crisis to Control",
+    "description": "The team slashed fraud from 22% to under 4% with dynamic SDK signatures and advanced detection. A massive win for platform integrity.",
+    "takeaway": "Protecting the ecosystem protects everyone"
+  },
+  {
+    "type": "win",
+    "emoji": "🤝",
+    "accent": "#0EA5E9",
+    "gradient": "linear-gradient(135deg, #0EA5E9 0%, #38BDF8 100%)",
+    "title": "Sales Pipeline on Fire",
+    "who": "Sales Team",
+    "stat": "$390k",
+    "statUnit": "net revenue",
+    "headline": "8 Deals Closed in One Week",
+    "description": "The sales machine keeps delivering. 8 deals closed with $390k net revenue in a single week. On track to exceed the $13.3M target.",
+    "takeaway": "Momentum builds on momentum"
+  },
+  {
+    "type": "celebration",
+    "emoji": "🎉",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFDD99 100%)",
+    "title": "Friday Celebrations",
+    "headline": "Wins & Growth Moments",
+    "prompt1": "🌱 What made you proud this week — at work, at home, or in life?",
+    "prompt2": "💡 We celebrate failures because acknowledging them creates space for improvement.",
+    "coreValue": "This is how we live Relentless Pursuit of Excellence. Share your wins and lessons every Friday in #general.",
+    "channel": "#general"
+  }
+];
+    // ══════════════════════════════════════════════════════════
+
+    const{useState,useEffect,useCallback,useRef,createElement:h}=React;
+    const particles=Array.from({length:45},(_,i)=>({id:i,x:Math.random()*100,y:Math.random()*100,size:Math.random()*3.5+1,dur:Math.random()*25+15,delay:Math.random()*-25,op:Math.random()*0.25+0.08}));
+    const timeStr=()=>new Date().toLocaleTimeString("en-US",{hour:"2-digit",minute:"2-digit"});
+    const dateStr=new Date().toLocaleDateString("en-US",{weekday:"long",year:"numeric",month:"long",day:"numeric"});
+
+    function Badge({text,accent,emoji}){return h("div",{style:{display:"inline-block",padding:"5px 14px",borderRadius:20,fontSize:10,fontWeight:800,letterSpacing:2.5,marginBottom:14,background:accent+"1A",color:accent}},emoji+" "+text)}
+    function SlideTitle({text,color}){return h("h2",{style:{fontFamily:"'Playfair Display',serif",fontSize:32,fontWeight:600,margin:"0 0 20px",lineHeight:1.15,color}},text)}
+    function ConfettiRow(){return h("div",{style:{display:"flex",justifyContent:"center",gap:14}},["🎈","🎊","🎁","✨","🎈"].map((e,i)=>h("span",{key:i,style:{fontSize:22,display:"inline-block",animation:`confettiBounce 1.5s ease-in-out ${i*0.3}s infinite`}},e)))}
+
+    function BirthdaySlide({d}){return h("div",{style:st.inner},h(Badge,{text:"CELEBRATION",accent:d.accent,emoji:d.emoji}),h(SlideTitle,{text:d.title,color:d.accent}),h("div",{style:st.heroName},d.name),h("div",{style:st.sub},d.date),h("p",{style:st.body},d.message),h("div",{style:{...st.note,color:d.accent}},d.teamNote),h(ConfettiRow))}
+
+    function WinSlide({d}){return h("div",{style:st.inner},h(Badge,{text:"FRIDAY WIN",accent:d.accent,emoji:d.emoji}),h(SlideTitle,{text:d.title,color:d.accent}),h("div",{style:{marginBottom:6}},h("div",{style:{fontSize:44,fontWeight:900,lineHeight:1,color:d.accent}},d.stat),h("div",{style:{fontSize:13,color:"rgba(255,255,255,0.35)",letterSpacing:1}},d.statUnit)),h("div",{style:st.sub},"by ",h("strong",{style:{color:"#fff"}},d.who)),h("div",{style:st.card},h("h3",{style:{fontSize:17,fontWeight:700,margin:"0 0 8px",color:"#fff"}},d.headline),h("p",{style:{fontSize:13,lineHeight:1.7,color:"rgba(255,255,255,0.45)",margin:"0 0 12px",fontWeight:300}},d.description),d.takeaway?h("div",{style:{borderLeft:`3px solid ${d.accent}`,paddingLeft:14,fontSize:12,lineHeight:1.6,color:"rgba(255,255,255,0.5)",fontStyle:"italic",fontWeight:300}},'💬 "'+d.takeaway+'"'):null))}
+
+    function ClapSlide({d}){return h("div",{style:st.inner},h(Badge,{text:"CLAPS",accent:d.accent,emoji:d.emoji}),h(SlideTitle,{text:d.title,color:d.accent}),h("div",{style:{fontSize:28,fontWeight:900,marginBottom:4,color:d.accent}},d.count),h("div",{style:st.sub},"from ",h("strong",{style:{color:"#ccc"}},d.from)),h("div",{style:st.chipRow},(d.to||[]).map((n,i)=>h("span",{key:i,style:{...st.chip,borderColor:d.accent+"40"}},n))),h("blockquote",{style:{...st.quote,borderLeftColor:d.accent}},'"'+d.reason+'"'),h("div",{style:st.chipRow},(d.values||[]).map((v,i)=>h("span",{key:i,style:{...st.vChip,background:d.accent+"18",color:d.accent}},v))))}
+
+    function NewJoinSlide({d}){const ini=(d.name||"").split(" ").map(n=>n[0]).join("");return h("div",{style:st.inner},h(Badge,{text:"NEW TEAMMATE",accent:d.accent,emoji:d.emoji}),h(SlideTitle,{text:d.title,color:d.accent}),h("div",{style:{display:"flex",justifyContent:"center",marginBottom:14}},h("div",{style:{width:68,height:68,borderRadius:"50%",display:"flex",alignItems:"center",justifyContent:"center",fontSize:24,fontWeight:700,color:"#fff",background:d.gradient||d.accent}},ini)),h("div",{style:st.heroName},d.name),h("div",{style:{fontSize:13,fontWeight:600,marginBottom:18,color:d.accent}},(d.role||"")+" · "+(d.team||"")),d.quote?h("blockquote",{style:{...st.quote,borderLeftColor:d.accent}},'"'+d.quote+'"'):null,h("div",{style:{fontSize:16,fontWeight:500,color:"rgba(255,255,255,0.4)"}},"👋 Welcome aboard! 🎉"))}
+
+    function EventSlide({d}){return h("div",{style:st.inner},h(Badge,{text:"EVENT",accent:d.accent,emoji:d.emoji}),h(SlideTitle,{text:d.title,color:d.accent}),h("div",{style:st.card},h("h3",{style:{fontSize:17,fontWeight:700,margin:"0 0 6px",color:"#fff"}},d.eventName),h("div",{style:{fontSize:13,fontWeight:600,marginBottom:14,color:d.accent}},d.date),h("p",{style:{fontSize:13,lineHeight:1.7,color:"rgba(255,255,255,0.45)",margin:"0 0 12px",fontWeight:300}},d.description),d.organizer?h("div",{style:{fontSize:12,color:"rgba(255,255,255,0.28)"}},"Organized by ",h("strong",null,d.organizer)):null))}
+
+    function MilestoneSlide({d}){return h("div",{style:st.inner},h(Badge,{text:"MILESTONE",accent:d.accent,emoji:d.emoji}),h(SlideTitle,{text:d.title,color:d.accent}),h("div",{style:{marginBottom:16}},h("div",{style:{fontSize:46,fontWeight:900,lineHeight:1,marginBottom:4,color:d.accent}},d.stat),h("div",{style:{fontSize:11,color:"rgba(255,255,255,0.3)",letterSpacing:1.5,textTransform:"uppercase",fontWeight:500}},d.statLabel)),h("h3",{style:{fontSize:17,fontWeight:600,margin:"0 0 10px",color:"#fff"}},d.headline),h("p",{style:st.body},d.description))}
+
+    function ReadingSlide({d}){return h("div",{style:st.inner},h(Badge,{text:"RECOMMENDED",accent:d.accent,emoji:d.emoji}),h(SlideTitle,{text:d.title,color:d.accent}),h("div",{style:{display:"flex",flexDirection:"column",gap:12,maxWidth:500,margin:"0 auto 14px"}},(d.articles||[]).map((a,i)=>h("div",{key:i,style:{display:"flex",gap:12,textAlign:"left",background:"rgba(255,255,255,0.03)",borderRadius:12,padding:"14px 16px",border:"1px solid rgba(255,255,255,0.05)"}},h("div",{style:{fontSize:26,fontWeight:800,lineHeight:1,minWidth:34,color:d.accent+"30"}},"0"+(i+1)),h("div",{style:{flex:1}},h("div",{style:{fontSize:14,fontWeight:700,color:"#fff",marginBottom:4}},a.title),h("div",{style:{fontSize:12,lineHeight:1.6,color:"rgba(255,255,255,0.4)",fontWeight:300,marginBottom:4}},a.desc),h("div",{style:{fontSize:11,color:"rgba(255,255,255,0.22)"}},"Shared by "+a.sharedBy+(a.reactions?" · "+a.reactions:"")))))),d.channel?h("div",{style:st.chTag},d.channel):null)}
+
+    function OfficeLifeSlide({d}){return h("div",{style:st.inner},h(Badge,{text:"OFFICE LIFE",accent:d.accent,emoji:d.emoji}),h(SlideTitle,{text:d.title,color:d.accent}),h("h3",{style:{fontSize:17,fontWeight:600,margin:"0 0 10px",color:"#fff"}},d.headline),d.quote?h("blockquote",{style:{...st.quote,borderLeftColor:d.accent}},'"'+d.quote+'"'):null,h("div",{style:st.sub},"— "+(d.author||"")),d.reactions?h("div",{style:{fontSize:14,fontWeight:600,marginBottom:12,letterSpacing:1,color:d.accent}},d.reactions):null,d.channel?h("div",{style:st.chTag},d.channel):null)}
+
+    function CelebrationSlide({d}){return h("div",{style:st.inner},h(Badge,{text:"WEEKLY RITUAL",accent:d.accent,emoji:d.emoji}),h(SlideTitle,{text:d.title,color:d.accent}),h("h3",{style:{fontSize:17,fontWeight:600,margin:"0 0 10px",color:"#fff"}},d.headline),h("div",{style:{display:"flex",flexDirection:"column",gap:10,maxWidth:500,margin:"0 auto 16px"}},[d.prompt1,d.prompt2].filter(Boolean).map((p,i)=>h("div",{key:i,style:{background:"rgba(255,255,255,0.03)",borderRadius:10,padding:"12px 16px",fontSize:13,lineHeight:1.6,color:"rgba(255,255,255,0.5)",textAlign:"left",border:"1px solid rgba(255,255,255,0.05)"}},p))),d.coreValue?h("p",{style:{...st.body,fontStyle:"italic",maxWidth:500}},d.coreValue):null,d.channel?h("div",{style:st.chTag},d.channel):null)}
+
+    function GenericSlide({d}){return h("div",{style:st.inner},h(Badge,{text:(d.type||"INFO").toUpperCase(),accent:d.accent||"#888",emoji:d.emoji||"📌"}),h(SlideTitle,{text:d.title||"Update",color:d.accent||"#888"}),d.headline?h("h3",{style:{fontSize:17,fontWeight:600,color:"#fff"}},d.headline):null,d.description?h("p",{style:st.body},d.description):null)}
+
+    const RENDERERS={birthday:BirthdaySlide,win:WinSlide,clap:ClapSlide,newjoin:NewJoinSlide,event:EventSlide,milestone:MilestoneSlide,reading:ReadingSlide,officelife:OfficeLifeSlide,celebration:CelebrationSlide,funquote:GenericSlide};
+
+    function App(){
+      const[cur,setCur]=useState(0);
+      const[paused,setPaused]=useState(false);
+      const[clock,setClock]=useState(timeStr());
+      const[prog,setProg]=useState(0);
+      const[anim,setAnim]=useState(0);
+      const DUR=9000;
+      const go=useCallback(i=>{setCur(i);setAnim(a=>a+1)},[]);
+      const curRef=useRef(cur);curRef.current=cur;
+      const next=useCallback(()=>go((curRef.current+1)%SLIDES.length),[go]);
+      const prev=useCallback(()=>go((curRef.current-1+SLIDES.length)%SLIDES.length),[go]);
+
+      useEffect(()=>{if(paused)return;setProg(0);const t0=Date.now();const pi=setInterval(()=>setProg(Math.min(((Date.now()-t0)/DUR)*100,100)),60);const ti=setTimeout(next,DUR);return()=>{clearTimeout(ti);clearInterval(pi)}},[cur,paused,next]);
+      useEffect(()=>{const t=setInterval(()=>setClock(timeStr()),10000);return()=>clearInterval(t)},[]);
+      useEffect(()=>{const handler=e=>{if(e.key==="ArrowRight")next();if(e.key==="ArrowLeft")prev();if(e.key===" "){e.preventDefault();setPaused(p=>!p)}};window.addEventListener("keydown",handler);return()=>window.removeEventListener("keydown",handler)},[next,prev]);
+
+      if(!SLIDES||SLIDES.length===0)return h("div",{style:{display:"flex",alignItems:"center",justifyContent:"center",height:"100vh",color:"#666",fontSize:18}},"No slides available.");
+      const sl=SLIDES[cur]||SLIDES[0];const accent=sl.accent||"#888";const gradient=sl.gradient||accent;const R=(RENDERERS[sl.type]||GenericSlide);
+
+      return h("div",{style:{position:"relative",width:"100%",height:"100vh",background:"#08080c",fontFamily:"'Outfit',sans-serif",color:"#e2e2ea",overflow:"hidden",display:"flex",flexDirection:"column"}},
+        h("div",{style:{position:"absolute",inset:0,pointerEvents:"none",zIndex:0}},particles.map(p=>h("div",{key:p.id,style:{position:"absolute",left:p.x+"%",top:p.y+"%",width:p.size,height:p.size,borderRadius:"50%",background:accent,opacity:p.op,animation:`float ${p.dur}s ease-in-out ${p.delay}s infinite`,transition:"background 1.2s,opacity 1.2s"}}))),
+        h("div",{style:{position:"absolute",width:800,height:800,top:"50%",left:"50%",transform:"translate(-50%,-50%)",borderRadius:"50%",pointerEvents:"none",zIndex:0,background:`radial-gradient(ellipse,${accent}10 0%,transparent 60%)`,transition:"background 1.2s"}}),
+        h("div",{style:{position:"absolute",top:0,left:0,right:0,height:3,zIndex:5,background:gradient,transition:"background 0.8s"}}),
+        h("header",{style:{position:"relative",zIndex:2,display:"flex",justifyContent:"space-between",alignItems:"center",padding:"18px 28px"}},
+          h("div",{style:{display:"flex",alignItems:"center",gap:10}},h("div",{style:{width:8,height:8,borderRadius:"50%",background:accent,transition:"background 0.8s"}}),h("span",{style:{fontWeight:800,fontSize:14,letterSpacing:3,color:"#fff"}},"APPODEAL"),h("span",{style:{color:"rgba(255,255,255,0.12)",fontSize:18}},"·"),h("span",{style:{fontWeight:500,fontSize:13,letterSpacing:5,color:"rgba(255,255,255,0.3)"}},"PULSE")),
+          h("div",{style:{display:"flex",alignItems:"center",gap:14}},h("span",{style:{width:6,height:6,borderRadius:"50%",background:"#22c55e",animation:"blink 2s ease-in-out infinite"}}),h("span",{style:{fontSize:10,fontWeight:700,letterSpacing:2,color:"#22c55e"}},"LIVE"),h("span",{style:{fontWeight:600,fontSize:16,color:"#fff",fontVariantNumeric:"tabular-nums"}},clock),h("span",{style:{fontSize:12,color:"rgba(255,255,255,0.3)"}},dateStr))
+        ),
+        h("main",{key:anim,style:{flex:1,position:"relative",zIndex:1,display:"flex",alignItems:"center",justifyContent:"center",padding:"0 32px",animation:"slideUp 0.5s cubic-bezier(0.16,1,0.3,1)"}},h(R,{d:sl})),
+        h("footer",{style:{position:"relative",zIndex:2,display:"flex",justifyContent:"space-between",alignItems:"center",padding:"12px 28px 16px"}},
+          h("div",{style:{display:"flex",gap:4,alignItems:"center",flexWrap:"wrap",maxWidth:"45%"}},SLIDES.map((_,i)=>h("button",{key:i,onClick:()=>go(i),style:{height:7,borderRadius:4,border:"none",cursor:"pointer",padding:0,flexShrink:0,transition:"all 0.35s cubic-bezier(0.16,1,0.3,1)",background:i===cur?accent:"rgba(255,255,255,0.1)",width:i===cur?30:7,opacity:i===cur?1:0.5}}))),
+          h("div",{style:{display:"flex",gap:6}},["‹",paused?"▶":"❚❚","›"].map((label,i)=>h("button",{key:i,onClick:[prev,()=>setPaused(p=>!p),next][i],style:{background:"rgba(255,255,255,0.06)",border:"1px solid rgba(255,255,255,0.07)",color:"rgba(255,255,255,0.55)",width:34,height:34,borderRadius:"50%",cursor:"pointer",fontSize:14,display:"flex",alignItems:"center",justifyContent:"center"}},label))),
+          h("div",{style:{fontSize:12,color:"rgba(255,255,255,0.18)",fontVariantNumeric:"tabular-nums"}},(cur+1)+" / "+SLIDES.length)
+        ),
+        h("div",{style:{position:"absolute",bottom:0,left:0,right:0,height:2,background:"rgba(255,255,255,0.04)",zIndex:5}},h("div",{style:{height:"100%",width:prog+"%",background:gradient,transition:"width 0.08s linear,background 0.8s",borderRadius:"0 1px 1px 0"}}))
+      );
+    }
+
+    const st={
+      inner:{maxWidth:660,width:"100%",textAlign:"center"},
+      heroName:{fontSize:24,fontWeight:700,color:"#fff",marginBottom:4},
+      sub:{fontSize:13,color:"rgba(255,255,255,0.35)",marginBottom:18},
+      body:{fontSize:14,lineHeight:1.75,color:"rgba(255,255,255,0.48)",maxWidth:500,margin:"0 auto 16px",fontWeight:300},
+      note:{fontSize:14,fontWeight:600,marginBottom:18},
+      card:{background:"rgba(255,255,255,0.03)",borderRadius:14,padding:"20px 24px",maxWidth:520,margin:"0 auto",textAlign:"left",border:"1px solid rgba(255,255,255,0.06)"},
+      chipRow:{display:"flex",flexWrap:"wrap",justifyContent:"center",gap:6,marginBottom:16},
+      chip:{padding:"5px 12px",borderRadius:18,fontSize:12,fontWeight:500,border:"1px solid",background:"rgba(255,255,255,0.03)",color:"#ddd"},
+      vChip:{padding:"4px 10px",borderRadius:6,fontSize:10,fontWeight:700,letterSpacing:0.3},
+      quote:{borderLeft:"3px solid",paddingLeft:16,margin:"0 auto 16px",maxWidth:480,textAlign:"left",fontSize:13,lineHeight:1.75,color:"rgba(255,255,255,0.48)",fontStyle:"italic",fontWeight:300},
+      chTag:{display:"inline-block",marginTop:8,fontSize:11,color:"rgba(255,255,255,0.18)",letterSpacing:0.5},
+    };
+
+    ReactDOM.render(h(App),document.getElementById("root"));
+  </script>
+</body>
+</html>
