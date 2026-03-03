@@ -44,6 +44,18 @@ def fetch_channel_messages(client, channel_id, channel_name, hours=24):
             if msg.get("subtype") in ("channel_join", "channel_leave", "bot_message"):
                 continue
 
+            # Filter out sensitive content (terminations, demotions, etc.)
+            text_lower = (msg.get("text") or "").lower()
+            BLOCKED_KEYWORDS = [
+                "fired", "terminated", "termination", "laid off", "layoff",
+                "let go", "last day", "leaving the company", "no longer with",
+                "demoted", "demotion", "stepping down", "role change",
+                "уволен", "увольнение", "сокращ", "понижен", "понижение",
+                "последний день", "покидает компанию",
+            ]
+            if any(kw in text_lower for kw in BLOCKED_KEYWORDS):
+                continue
+
             # Resolve user name
             user_name = resolve_user(client, msg.get("user", ""))
 

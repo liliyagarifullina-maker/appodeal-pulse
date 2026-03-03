@@ -127,7 +127,14 @@ CRITICAL RULES:
 - For "reading", pick the 2-3 most interesting articles
 - Order slides for maximum engagement: start exciting, mix types, end with a call-to-action
 - Aim for 8-20 slides depending on available content (fewer is fine on quiet days)
-- Return ONLY the JSON array, no markdown, no explanation"""
+- Return ONLY the JSON array, no markdown, no explanation
+
+CONTENT FILTER — NEVER include:
+- Terminations, layoffs, firings, people leaving the company
+- Demotions or role downgrades
+- Negative HR actions or disciplinary matters
+- Any sensitive personnel changes
+- Only show POSITIVE content: birthdays, wins, recognition, events, new joiners"""
 
 DEEP_ANALYSIS_ADDENDUM = """
 ADDITIONAL CONTEXT — COMPANY METRICS & STRATEGY (from leadership meetings):
