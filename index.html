@@ -114,7 +114,7 @@
       const single=toList.length===1;
       return h("div",{style:st.inner},h(Badge,{text:"CLAPS",accent:pal.c1,emoji:d.emoji}),h(SlideTitle,{text:d.title,color:pal.c2}),
         // ── Recipients FIRST (hero if single, chips if multiple) ──
-        single?h("div",{style:{marginBottom:18}},h(Avatar,{name:toList[0].name,src:toList[0].avatar,size:120,accent:pal.c1}),h("div",{style:{fontSize:32,fontWeight:700,color:"#f0f0f5",marginTop:14}},toList[0].name)):h("div",{style:{display:"flex",flexWrap:"wrap",justifyContent:"center",gap:14,marginBottom:20}},toList.map((t,i)=>h("div",{key:i,style:{display:"flex",alignItems:"center",gap:8,background:"rgba(255,255,255,0.06)",borderRadius:30,padding:"6px 16px 6px 6px",border:`1.5px solid ${pal.c1}25`}},h(Avatar,{name:t.name,src:t.avatar,size:44,accent:pal.c1}),h("span",{style:{fontSize:18,fontWeight:500,color:"#f0f0f5"}},t.name)))),
+        single?h("div",{style:{display:"flex",flexDirection:"column",alignItems:"center",marginBottom:18}},h(Avatar,{name:toList[0].name,src:toList[0].avatar,size:120,accent:pal.c1}),h("div",{style:{fontSize:32,fontWeight:700,color:"#f0f0f5",marginTop:14}},toList[0].name)):h("div",{style:{display:"flex",flexWrap:"wrap",justifyContent:"center",gap:14,marginBottom:20}},toList.map((t,i)=>h("div",{key:i,style:{display:"flex",alignItems:"center",gap:8,background:"rgba(255,255,255,0.06)",borderRadius:30,padding:"6px 16px 6px 6px",border:`1.5px solid ${pal.c1}25`}},h(Avatar,{name:t.name,src:t.avatar,size:44,accent:pal.c1}),h("span",{style:{fontSize:18,fontWeight:500,color:"#f0f0f5"}},t.name)))),
         // ── Quote ──
         h("blockquote",{style:{...st.quote,borderLeftColor:pal.c1}},'"'+d.reason+'"'),
         // ── Values ──
