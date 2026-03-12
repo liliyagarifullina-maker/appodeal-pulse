@@ -20,9 +20,6 @@ SLACK_CHANNELS = {
     "birthdays":      "C87RRF63S",
     "to_read":        "C4XGGGLMV",
     "claps":          "C084KUM8W79",
-    "ai-challenge":   "C085YJT5LDH",
-    "connect-groups": "C07TLHYRBCK",
-    "vector-gaming":  "C07N5AJ8VFA",
 }
 
 # ── Content settings ────────────────────────────────────────────
