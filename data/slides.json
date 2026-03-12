@@ -1,72 +1,60 @@
 [
   {
     "type": "birthday",
-    "emoji": "🎉",
+    "emoji": "🎂",
     "accent": "#FF6B9D",
-    "gradient": "linear-gradient(135deg, #FF6B9D 0%, #FF8E8E 100%)",
-    "title": "Birthday Celebrations!",
+    "gradient": "linear-gradient(135deg, #FF6B9D 0%, #FFB5D1 100%)",
+    "title": "Birthday Stars",
     "name": "Alexandr Sikorsky",
-    "date": "March 12, 2026",
+    "date": "March 12th",
     "message": "Thanks guys, all of you, for the warm wishes! 💕",
-    "teamNote": "Our team showered Alexandr with birthday love and warm wishes!",
+    "teamNote": "Our amazing team member is celebrating today!",
     "avatar": "https://avatars.slack-edge.com/2020-09-07/1348241323011_1173d242099cc519c370_192.jpg"
   },
   {
     "type": "win",
     "emoji": "🚀",
-    "accent": "#4CAF50",
-    "gradient": "linear-gradient(135deg, #4CAF50 0%, #81C784 100%)",
+    "accent": "#4A90E2",
+    "gradient": "linear-gradient(135deg, #4A90E2 0%, #7BB3F0 100%)",
     "title": "DevOps Innovation",
-    "who": "Gleb Krahotkin & DevOps Team",
+    "who": "Gleb Krahotkin",
     "stat": "36",
     "statUnit": "rocket reactions",
-    "headline": "Coolify Deployment Platform Launched",
-    "description": "One-click application deployment service now live for all teams",
-    "takeaway": "Making development faster and more accessible for everyone",
+    "headline": "Coolify Launch Success",
+    "description": "Introduced Coolify - a service that allows you to deploy your applications in just a few clicks, complete with comprehensive documentation.",
+    "takeaway": "Making deployment accessible to everyone with one-click simplicity",
     "avatar": "https://avatars.slack-edge.com/2022-10-23/4275527051089_402b8b44f748e977a230_192.png"
   },
   {
     "type": "event",
-    "emoji": "🧠",
-    "accent": "#2196F3",
-    "gradient": "linear-gradient(135deg, #2196F3 0%, #64B5F6 100%)",
-    "title": "Learning & Development",
-    "eventName": "11th Lunch & Learn Session",
-    "date": "Recent session",
-    "description": "Timofey Levanov presented on fraud traffic detection - fascinating insights!",
-    "organizer": "Katarzyna Raniszewska",
-    "organizerAvatar": "https://avatars.slack-edge.com/2025-01-08/8266302480660_a86f929f8d1061603dda_192.jpg"
+    "emoji": "📚",
+    "accent": "#9B59B6",
+    "gradient": "linear-gradient(135deg, #9B59B6 0%, #BB7FD1 100%)",
+    "title": "Learning Initiative",
+    "eventName": "The 4 Disciplines of Execution Book Club",
+    "date": "Starting Now",
+    "description": "Anna is leading a reading club focused on Wildly Important Goals (WIGs), Leading and Lagging Metrics, Scorecards, and Follow-through execution discipline.",
+    "organizer": "Anna & Pavel Golubev",
+    "organizerAvatar": "https://avatars.slack-edge.com/2023-05-16/5295724727056_51af1c43120e4a5e14e7_192.jpg"
   },
   {
-    "type": "reading",
-    "emoji": "📚",
-    "accent": "#9C27B0",
-    "gradient": "linear-gradient(135deg, #9C27B0 0%, #BA68C8 100%)",
-    "title": "Book Club Launch",
-    "articles": [
-      {
-        "title": "The 4 Disciplines of Execution",
-        "sharedBy": "Pavel Golubev",
-        "desc": "Focus on WIGs, Leading/Lagging Metrics, Scorecards & Follow-through",
-        "reactions": "🧠 ×7",
-        "sharedByAvatar": "https://avatars.slack-edge.com/2025-04-05/8704641101238_a56cdf39fffbbb80ce10_192.jpg"
-      },
-      {
-        "title": "The Speaking Coach: Stop Saying This Word",
-        "sharedBy": "Maria Plendukova",
-        "desc": "Communication insights - clickbait title but genuinely great content",
-        "reactions": "❤️ ×2",
-        "sharedByAvatar": "https://avatars.slack-edge.com/2025-06-09/9024600191330_9f138404da7499277e0f_192.png"
-      }
-    ],
+    "type": "celebration",
+    "emoji": "🎓",
+    "accent": "#E67E22",
+    "gradient": "linear-gradient(135deg, #E67E22 0%, #F39C12 100%)",
+    "title": "Knowledge Sharing",
+    "headline": "11th Lunch & Learn Complete!",
+    "prompt1": "Big thank you to Timofey Levanov for his presentation on fraud traffic detection",
+    "prompt2": "Recording and materials now available for the whole team",
+    "coreValue": "Continuous learning and knowledge sharing",
     "channel": "#general"
   },
   {
     "type": "clap",
     "emoji": "👏",
-    "accent": "#FF9800",
-    "gradient": "linear-gradient(135deg, #FF9800 0%, #FFB74D 100%)",
-    "title": "Recognition Round-Up",
+    "accent": "#27AE60",
+    "gradient": "linear-gradient(135deg, #27AE60 0%, #52C788 100%)",
+    "title": "Team Recognition",
     "count": "50",
     "from": "pavel.savinskiy",
     "to": [
@@ -75,19 +63,19 @@
         "avatar": ""
       }
     ],
-    "reason": "Outstanding design work and creativity",
+    "reason": "Outstanding design work that made a real impact",
     "values": [
-      "SERVE OTHERS",
-      "WORK TOGETHER"
+      "Excellence",
+      "Creativity"
     ],
     "fromAvatar": "https://avatars.slack-edge.com/2025-07-18/9218603955989_1a09cbabd96969f879f2_192.jpg"
   },
   {
     "type": "clap",
-    "emoji": "🌟",
-    "accent": "#E91E63",
-    "gradient": "linear-gradient(135deg, #E91E63 0%, #F06292 100%)",
-    "title": "Team Excellence",
+    "emoji": "🙌",
+    "accent": "#27AE60",
+    "gradient": "linear-gradient(135deg, #27AE60 0%, #52C788 100%)",
+    "title": "Technical Excellence",
     "count": "50",
     "from": "Sem Sinchenko",
     "to": [
@@ -98,15 +86,36 @@
     ],
     "reason": "Exceptional technical contribution and problem-solving",
     "values": [
-      "EXTREME OWNERSHIP",
-      "SERVE OTHERS"
+      "Technical Excellence",
+      "Innovation"
     ]
   },
   {
     "type": "clap",
-    "emoji": "⚡",
-    "accent": "#3F51B5",
-    "gradient": "linear-gradient(135deg, #3F51B5 0%, #7986CB 100%)",
+    "emoji": "🎯",
+    "accent": "#27AE60",
+    "gradient": "linear-gradient(135deg, #27AE60 0%, #52C788 100%)",
+    "title": "Leadership Impact",
+    "count": "40",
+    "from": "Anastasia Sokolova",
+    "to": [
+      {
+        "name": "Sasha Sakovich",
+        "avatar": "https://avatars.slack-edge.com/2025-09-08/9478235498902_fa74aee9301ad16fa3e5_192.png"
+      }
+    ],
+    "reason": "Strong leadership and team guidance",
+    "values": [
+      "Leadership",
+      "Mentorship"
+    ],
+    "fromAvatar": "https://avatars.slack-edge.com/2020-08-25/1327535570580_e1ee5e4dc78cc73d35df_192.jpg"
+  },
+  {
+    "type": "clap",
+    "emoji": "🔧",
+    "accent": "#27AE60",
+    "gradient": "linear-gradient(135deg, #27AE60 0%, #52C788 100%)",
     "title": "DevOps Recognition",
     "count": "30",
     "from": "Gleb Krahotkin",
@@ -116,161 +125,144 @@
         "avatar": "https://avatars.slack-edge.com/2024-04-16/6967559547717_915406465ca0f9caf468_192.jpg"
       }
     ],
-    "reason": "Infrastructure improvements and system reliability",
+    "reason": "Excellent infrastructure and deployment solutions",
     "values": [
-      "BUILD BETTER",
-      "WORK TOGETHER"
+      "Technical Excellence",
+      "Reliability"
     ],
     "fromAvatar": "https://avatars.slack-edge.com/2022-10-23/4275527051089_402b8b44f748e977a230_192.png"
   },
   {
     "type": "clap",
-    "emoji": "🎯",
-    "accent": "#607D8B",
-    "gradient": "linear-gradient(135deg, #607D8B 0%, #90A4AE 100%)",
-    "title": "Multi-Team Collaboration",
-    "count": "40",
-    "from": "Anastasia Sokolova",
+    "emoji": "💪",
+    "accent": "#27AE60",
+    "gradient": "linear-gradient(135deg, #27AE60 0%, #52C788 100%)",
+    "title": "Quality Focus",
+    "count": "25",
+    "from": "Dima",
     "to": [
       {
-        "name": "Sasha Sakovich",
-        "avatar": "https://avatars.slack-edge.com/2025-09-08/9478235498902_fa74aee9301ad16fa3e5_192.png"
+        "name": "Irina Koval",
+        "avatar": "https://avatars.slack-edge.com/2025-12-26/10220020602720_d5ca457b218ef9906a62_192.png"
       }
     ],
-    "reason": "Cross-functional project leadership and execution",
+    "reason": "Exceptional attention to detail and quality assurance",
     "values": [
-      "WORK TOGETHER",
-      "EXTREME OWNERSHIP"
+      "Quality",
+      "Excellence"
     ],
-    "fromAvatar": "https://avatars.slack-edge.com/2020-08-25/1327535570580_e1ee5e4dc78cc73d35df_192.jpg"
+    "fromAvatar": "https://avatars.slack-edge.com/2026-01-05/10224534359843_0a48694ad3fdd4030145_192.jpg"
   },
   {
     "type": "clap",
-    "emoji": "🚀",
-    "accent": "#4CAF50",
-    "gradient": "linear-gradient(135deg, #4CAF50 0%, #81C784 100%)",
-    "title": "Team Synergy",
-    "count": "8",
-    "from": "Alexandr Zhitlukhin",
+    "emoji": "🎨",
+    "accent": "#27AE60",
+    "gradient": "linear-gradient(135deg, #27AE60 0%, #52C788 100%)",
+    "title": "Creative Team",
+    "count": "25",
+    "from": "Roman Rinchinov",
     "to": [
       {
-        "name": "ArtKip",
-        "avatar": ""
-      },
-      {
-        "name": "Taha",
-        "avatar": "https://avatars.slack-edge.com/2024-11-04/7989166759937_c27475f576912fe2e93b_192.jpg"
-      },
-      {
-        "name": "Agustin",
-        "avatar": "https://avatars.slack-edge.com/2022-03-17/3254993864418_5d3bf56a1ed83cbdf547_192.jpg"
-      },
-      {
-        "name": "Francesco",
-        "avatar": "https://avatars.slack-edge.com/2024-07-17/7447815804449_7300ba54875fe1037eef_192.png"
-      },
-      {
-        "name": "Alessandro",
-        "avatar": "https://avatars.slack-edge.com/2025-05-27/8949585055142_657f010a8966df2120e1_192.jpg"
-      },
-      {
-        "name": "Anna Timoshenko",
-        "avatar": "https://avatars.slack-edge.com/2024-12-04/8135484697425_8446077f62523d59d828_192.jpg"
+        "name": "Vasyl Plesiuk",
+        "avatar": "https://avatars.slack-edge.com/2023-03-21/4981596592133_83c77bf2295931f06af4_192.jpg"
       }
     ],
-    "reason": "Amazing cross-team collaboration on key initiatives",
+    "reason": "Outstanding creative solutions and collaboration",
     "values": [
-      "WORK TOGETHER",
-      "SERVE OTHERS"
+      "Creativity",
+      "Teamwork"
     ],
-    "fromAvatar": "https://avatars.slack-edge.com/2018-08-17/417618953248_7a439d21998e34f3395e_192.png"
+    "fromAvatar": "https://avatars.slack-edge.com/2024-09-02/7656627917494_e2fac98ab5a2d31e0ef8_192.png"
   },
   {
     "type": "milestone",
     "emoji": "📈",
-    "accent": "#FF5722",
-    "gradient": "linear-gradient(135deg, #FF5722 0%, #FF8A65 100%)",
+    "accent": "#8E44AD",
+    "gradient": "linear-gradient(135deg, #8E44AD 0%, #A569BD 100%)",
     "title": "Company Growth",
-    "headline": "40% YoY Growth Trajectory",
-    "description": "Building toward our ambitious $50B vision with strong fundamentals",
-    "stat": "$100M",
-    "statLabel": "Gross Profit"
-  },
-  {
-    "type": "win",
-    "emoji": "🤖",
-    "accent": "#9C27B0",
-    "gradient": "linear-gradient(135deg, #9C27B0 0%, #BA68C8 100%)",
-    "title": "AI Revolution",
-    "who": "Engineering Teams",
-    "stat": "1,000+",
-    "statUnit": "OKRs checked daily",
-    "headline": "AI-Powered OKR Auditor Live",
-    "description": "Every employee will manage 5-10 AI agents within 3-6 months",
-    "takeaway": "Automation is transforming how we work and scale"
+    "headline": "40% Year-over-Year Growth",
+    "description": "Appodeal continues its impressive trajectory with $100M gross profit and $20M EBITDA, positioning us for our ambitious $50B vision.",
+    "stat": "40%",
+    "statLabel": "YoY Growth"
   },
   {
     "type": "win",
     "emoji": "🎮",
-    "accent": "#4CAF50",
-    "gradient": "linear-gradient(135deg, #4CAF50 0%, #81C784 100%)",
+    "accent": "#E74C3C",
+    "gradient": "linear-gradient(135deg, #E74C3C 0%, #EC7063 100%)",
     "title": "Gaming Milestone",
-    "who": "Gaming Division",
+    "who": "Gaming Team",
     "stat": "61%",
     "statUnit": "retention rate",
-    "headline": "Infinite Minesweeper Exceeds Benchmarks",
-    "description": "Apple ERA benchmark: 151-160%, we're crushing expectations",
-    "takeaway": "Gaming division officially profitable in 2025!"
+    "headline": "Infinite Minesweeper Success",
+    "description": "Achieved 61% retention rate, placing us in Apple's benchmark ERA 151-160% category for exceptional performance.",
+    "takeaway": "Gaming division turned profitable in 2025!"
   },
   {
     "type": "win",
     "emoji": "🛡️",
-    "accent": "#2196F3",
-    "gradient": "linear-gradient(135deg, #2196F3 0%, #64B5F6 100%)",
-    "title": "Security Achievement",
-    "who": "Anti-Fraud Team",
+    "accent": "#17A2B8",
+    "gradient": "linear-gradient(135deg, #17A2B8 0%, #5DADE2 100%)",
+    "title": "Security Victory",
+    "who": "Security Team",
     "stat": "4%",
     "statUnit": "fraud rate",
-    "headline": "Fraud Reduced from 22% to Under 4%",
-    "description": "Dynamic SDK signatures proving highly effective",
-    "takeaway": "Protecting our ecosystem and partners"
+    "headline": "Fraud Prevention Success",
+    "description": "Reduced fraud from 22% to under 4% using dynamic SDK signatures and advanced detection algorithms.",
+    "takeaway": "Our platform is now significantly more secure"
   },
   {
     "type": "win",
-    "emoji": "💰",
-    "accent": "#FF9800",
-    "gradient": "linear-gradient(135deg, #FF9800 0%, #FFB74D 100%)",
-    "title": "Sales Excellence",
-    "who": "Sales Team",
-    "stat": "$390K",
-    "statUnit": "net revenue",
-    "headline": "8 Deals Closed in One Week",
-    "description": "Outstanding performance driving company growth",
-    "takeaway": "Momentum building across all verticals"
+    "emoji": "🤖",
+    "accent": "#6C5CE7",
+    "gradient": "linear-gradient(135deg, #6C5CE7 0%, #A29BFE 100%)",
+    "title": "AI Transformation",
+    "who": "AI Team",
+    "stat": "1,000+",
+    "statUnit": "OKRs daily",
+    "headline": "OKR Auditor AI Success",
+    "description": "Our AI auditor now checks over 1,000 individual OKRs daily, ensuring alignment and progress tracking.",
+    "takeaway": "Every employee will manage 5-10 AI agents within 3-6 months"
+  },
+  {
+    "type": "reading",
+    "emoji": "📖",
+    "accent": "#D63031",
+    "gradient": "linear-gradient(135deg, #D63031 0%, #E17055 100%)",
+    "title": "Recommended Reading",
+    "articles": [
+      {
+        "title": "The Speaking Coach: Stop Saying This Word",
+        "sharedBy": "Maria Plendukova",
+        "desc": "Great insights on communication skills - highly recommended listening despite the clickbait title",
+        "reactions": 2,
+        "sharedByAvatar": "https://avatars.slack-edge.com/2025-06-09/9024600191330_9f138404da7499277e0f_192.png"
+      }
+    ],
+    "channel": "#general-chat"
   },
   {
     "type": "officelife",
-    "emoji": "🧘",
-    "accent": "#8BC34A",
-    "gradient": "linear-gradient(135deg, #8BC34A 0%, #AED581 100%)",
-    "title": "Office Wellness",
-    "headline": "Daily Yoga Sessions",
-    "quote": "Namaste! Join us every day at 13:10 CET",
-    "author": "Anna Kolyada",
-    "reactions": "🧘 ×15",
-    "channel": "Office Culture",
-    "avatar": "https://avatars.slack-edge.com/2023-05-16/5295724727056_51af1c43120e4a5e14e7_192.jpg"
+    "emoji": "💫",
+    "accent": "#FD79A8",
+    "gradient": "linear-gradient(135deg, #FD79A8 0%, #FDCB6E 100%)",
+    "title": "Gratitude Moment",
+    "headline": "Heartfelt Thanks",
+    "quote": "Thanks guys, all of you, for the warm wishes! 💕",
+    "author": "Alexandr Sikorsky",
+    "reactions": "Multiple hearts",
+    "channel": "#birthdays",
+    "avatar": "https://avatars.slack-edge.com/2020-09-07/1348241323011_1173d242099cc519c370_192.jpg"
   },
   {
-    "type": "celebration",
-    "emoji": "🏆",
-    "accent": "#FF6B35",
-    "gradient": "linear-gradient(135deg, #FF6B35 0%, #FF8E53 100%)",
-    "title": "Weekly Pulse Check",
-    "headline": "Build. Ship. Improve.",
-    "prompt1": "What did you ship this week?",
-    "prompt2": "How will you improve next week?",
-    "coreValue": "From requirements to pull requests mentality",
-    "channel": "Company Culture"
+    "type": "milestone",
+    "emoji": "💰",
+    "accent": "#00B894",
+    "gradient": "linear-gradient(135deg, #00B894 0%, #55A3FF 100%)",
+    "title": "Sales Excellence",
+    "headline": "Weekly Sales Victory",
+    "description": "Sales team closed 8 deals generating $390k net revenue in a single week, demonstrating our strong market position.",
+    "stat": "$390k",
+    "statLabel": "Weekly Revenue"
   }
 ]
