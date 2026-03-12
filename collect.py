@@ -56,8 +56,10 @@ def fetch_channel_messages(client, channel_id, channel_name, hours=24):
             if any(kw in text_lower for kw in BLOCKED_KEYWORDS):
                 continue
 
-            # Resolve user name
-            user_name = resolve_user(client, msg.get("user", ""))
+            # Resolve user name and avatar
+            user_info = resolve_user(client, msg.get("user", ""))
+            user_name = user_info["name"]
+            user_avatar = user_info["avatar"]
 
             # Extract reactions
             reactions = []
@@ -91,6 +93,7 @@ def fetch_channel_messages(client, channel_id, channel_name, hours=24):
                 "channel": channel_name,
                 "channel_id": channel_id,
                 "user": user_name,
+                "user_avatar": user_avatar,
                 "user_id": msg.get("user", ""),
                 "text": msg.get("text", ""),
                 "ts": msg.get("ts", ""),
@@ -112,23 +115,30 @@ def fetch_channel_messages(client, channel_id, channel_name, hours=24):
 
 # ── User resolution cache ───────────────────────────────────────
 
-_user_cache = {}
+_user_cache = {}  # user_id -> {"name": str, "avatar": str}
 
 def resolve_user(client, user_id):
-    """Resolve Slack user ID to display name."""
+    """Resolve Slack user ID to display name and profile picture."""
     if not user_id:
-        return "Unknown"
+        return {"name": "Unknown", "avatar": ""}
     if user_id in _user_cache:
         return _user_cache[user_id]
     try:
         info = client.users_info(user=user_id)
         profile = info["user"]["profile"]
         name = profile.get("real_name") or profile.get("display_name") or user_id
-        _user_cache[user_id] = name
-        return name
+        # Get highest-res profile picture available
+        avatar = (
+            profile.get("image_192")
+            or profile.get("image_72")
+            or profile.get("image_48")
+            or ""
+        )
+        _user_cache[user_id] = {"name": name, "avatar": avatar}
+        return _user_cache[user_id]
     except SlackApiError:
-        _user_cache[user_id] = user_id
-        return user_id
+        _user_cache[user_id] = {"name": user_id, "avatar": ""}
+        return _user_cache[user_id]
 
 
 # ── Main collection pipeline ────────────────────────────────────
@@ -153,6 +163,13 @@ def collect_all():
         }
         print(f"    → {len(messages)} messages")
         time.sleep(0.5)  # Rate limit courtesy
+
+    # Build name → avatar lookup from cache
+    all_content["user_avatars"] = {
+        v["name"]: v["avatar"]
+        for v in _user_cache.values()
+        if v.get("avatar")
+    }
 
     return all_content
 

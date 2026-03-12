@@ -88,6 +88,19 @@ def summarize_channels(content):
     return "\n".join(parts)
 
 
+def build_avatar_lookup(content):
+    """Build name → avatar URL mapping from collected data."""
+    avatars = content.get("user_avatars", {})
+    # Also scan messages for any avatars not in the top-level dict
+    for ch_data in content.get("channels", {}).values():
+        for msg in ch_data.get("messages", []):
+            name = msg.get("user", "")
+            avatar = msg.get("user_avatar", "")
+            if name and avatar and name not in avatars:
+                avatars[name] = avatar
+    return avatars
+
+
 # ── AI Curation via Claude ──────────────────────────────────────
 
 SYSTEM_PROMPT = """You are the content curator for "Appodeal PULSE" — a daily company wall newspaper / digital signage displayed on office TVs.
@@ -95,7 +108,7 @@ SYSTEM_PROMPT = """You are the content curator for "Appodeal PULSE" — a daily 
 Your job: analyze raw Slack messages and produce a JSON array of slide objects for a beautiful auto-rotating slideshow.
 
 SLIDE TYPES (use exact "type" values):
-1. "birthday" — birthday celebrations. ONLY if there are actual birthdays today.
+1. "birthday" — birthday celebrations. ONLY if someone has a birthday TODAY or YESTERDAY. Skip completely otherwise — no "recent birthdays" or past dates.
 2. "win" — achievements, wins, metrics improvements
 3. "clap" — peer recognition / kudos from #claps channel
 4. "newjoin" — new team members joining
@@ -116,8 +129,14 @@ reading: emoji, accent, gradient, title, articles (array of {title, sharedBy, de
 officelife: emoji, accent, gradient, title, headline, quote, author, reactions, channel
 celebration: emoji, accent, gradient, title, headline, prompt1, prompt2, coreValue, channel
 
+AVATAR SUPPORT — IMPORTANT:
+- A user_avatars dictionary mapping names to Slack profile picture URLs will be provided
+- For slides that feature specific people (birthday, newjoin, clap, win, officelife), add an "avatar" field with their profile picture URL
+- Use EXACT names as keys to look up avatars from the provided dictionary
+- If no avatar URL is available for a person, omit the "avatar" field
+
 CRITICAL RULES:
-- SKIP birthday slides entirely if no one has a birthday today
+- SKIP birthday slides entirely if no one has a birthday TODAY or YESTERDAY. Never show birthdays from last week or earlier
 - SKIP any slide type that has no fresh content — NEVER invent fake content
 - Write in English, concise and punchy — displayed on big screens
 - Use varied emojis for different slides
@@ -168,7 +187,7 @@ def is_deep_analysis_day():
     return datetime.now().weekday() in config.DEEP_ANALYSIS_DAYS
 
 
-def curate_with_ai(channel_summary):
+def curate_with_ai(channel_summary, avatar_lookup=None):
     """Use Claude to curate content and generate SLIDES JSON."""
     api_key = config.ANTHROPIC_API_KEY
     if not api_key:
@@ -182,12 +201,24 @@ def curate_with_ai(channel_summary):
     day_name = today_dt.strftime("%A")
     deep = is_deep_analysis_day()
 
+    # Build avatar section for AI prompt
+    avatar_section = ""
+    if avatar_lookup:
+        avatar_lines = json.dumps(avatar_lookup, ensure_ascii=False, indent=2)
+        avatar_section = f"""
+
+USER AVATARS (name → Slack profile picture URL):
+{avatar_lines}
+
+Use these URLs as the "avatar" field in slides that feature specific people.
+"""
+
     user_prompt = f"""Today is {today} ({day_name}).
 
 Here are the raw Slack messages from the last {config.LOOKBACK_HOURS} hours across our channels:
 
 {channel_summary}
-"""
+{avatar_section}"""
 
     if deep:
         user_prompt += f"\n{DEEP_ANALYSIS_ADDENDUM}\n"
@@ -232,6 +263,41 @@ def apply_accents(slides):
             slide["accent"] = defaults["accent"]
         if "gradient" not in slide:
             slide["gradient"] = defaults["gradient"]
+
+    return slides
+
+
+def inject_avatars(slides, avatar_lookup):
+    """Post-process slides to inject avatar URLs where AI may have missed them."""
+    if not avatar_lookup:
+        return slides
+
+    for slide in slides:
+        stype = slide.get("type", "")
+
+        # For slides with a single person
+        if stype in ("birthday", "newjoin") and not slide.get("avatar"):
+            name = slide.get("name", "")
+            if name in avatar_lookup:
+                slide["avatar"] = avatar_lookup[name]
+
+        # For win slides
+        if stype == "win" and not slide.get("avatar"):
+            who = slide.get("who", "")
+            if who in avatar_lookup:
+                slide["avatar"] = avatar_lookup[who]
+
+        # For officelife slides
+        if stype == "officelife" and not slide.get("avatar"):
+            author = slide.get("author", "")
+            if author in avatar_lookup:
+                slide["avatar"] = avatar_lookup[author]
+
+        # For clap slides — from person
+        if stype == "clap" and not slide.get("fromAvatar"):
+            from_name = slide.get("from", "")
+            if from_name in avatar_lookup:
+                slide["fromAvatar"] = avatar_lookup[from_name]
 
     return slides
 
@@ -358,11 +424,14 @@ if __name__ == "__main__":
 
     content = load_content()
     channel_summary = summarize_channels(content)
+    avatar_lookup = build_avatar_lookup(content)
+    print(f"  Found {len(avatar_lookup)} user avatars")
 
     if config.ANTHROPIC_API_KEY:
         try:
-            slides = curate_with_ai(channel_summary)
+            slides = curate_with_ai(channel_summary, avatar_lookup)
             slides = apply_accents(slides)
+            slides = inject_avatars(slides, avatar_lookup)
             print(f"  AI generated {len(slides)} slides")
         except Exception as e:
             print(f"  AI curation failed: {e}")

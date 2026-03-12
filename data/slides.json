@@ -2,273 +2,273 @@
   {
     "type": "birthday",
     "emoji": "🎂",
-    "accent": "#FF6B6B",
-    "gradient": "linear-gradient(135deg, #FF6B6B, #FF8E53)",
+    "accent": "#FF6B9D",
+    "gradient": "linear-gradient(135deg, #FF6B9D, #FFB3BA)",
     "title": "Birthday Celebration",
     "name": "Alexandr Sikorsky",
-    "date": "March 12",
-    "message": "Thanks guys, all of you, for the warm wishes! ❤️",
-    "teamNote": "Let's celebrate another year of awesome!"
+    "date": "March 11, 2026",
+    "message": "Thank you for being such an awesome part of our team! Time to pause, grab some cake, and celebrate YOU!",
+    "teamNote": "Making work brighter with ideas, humor, and dedication",
+    "avatar": "https://avatars.slack-edge.com/2020-09-07/1348241323011_1173d242099cc519c370_192.jpg"
   },
   {
     "type": "win",
     "emoji": "🚀",
-    "accent": "#4ECDC4",
-    "gradient": "linear-gradient(135deg, #4ECDC4, #44A08D)",
+    "accent": "#4CAF50",
+    "gradient": "linear-gradient(135deg, #4CAF50, #8BC34A)",
     "title": "DevOps Innovation",
     "who": "Gleb Krahotkin & DevOps Team",
     "stat": "98",
     "statUnit": "reactions",
-    "headline": "Coolify Platform Launched",
-    "description": "Deploy applications in just a few clicks with our new internal service",
-    "takeaway": "Making deployment faster and easier for everyone"
+    "headline": "Coolify Platform Launch Success!",
+    "description": "New deployment service allows applications to be deployed in just a few clicks",
+    "takeaway": "Making development faster and more accessible for everyone",
+    "avatar": "https://avatars.slack-edge.com/2022-10-23/4275527051089_402b8b44f748e977a230_192.png"
   },
   {
     "type": "clap",
     "emoji": "👏",
-    "accent": "#9B59B6",
-    "gradient": "linear-gradient(135deg, #9B59B6, #8E44AD)",
-    "title": "Design Excellence",
+    "accent": "#FFB74D",
+    "gradient": "linear-gradient(135deg, #FFB74D, #FFCC80)",
+    "title": "Outstanding Recognition",
     "count": 50,
-    "from": "Pavel Savinskiy",
+    "from": "pavel.savinskiy",
     "to": [
-      "Sergey Designer"
+      "sergeydesigner"
     ],
-    "reason": "Outstanding design work",
+    "reason": "Exceptional design work and creativity",
     "values": [
-      "CREATIVITY",
-      "EXCELLENCE"
+      "EXCELLENCE",
+      "CREATIVITY"
     ]
   },
   {
+    "type": "event",
+    "emoji": "🎓",
+    "accent": "#9C27B0",
+    "gradient": "linear-gradient(135deg, #9C27B0, #BA68C8)",
+    "title": "Learning & Growth",
+    "eventName": "11th Lunch & Learn Session",
+    "date": "Recently completed",
+    "description": "Fraud Traffic Detection presentation by Timofey Levanov with recording available",
+    "organizer": "Katarzyna Raniszewska",
+    "avatar": "https://avatars.slack-edge.com/2025-01-08/8266302480660_a86f929f8d1061603dda_192.jpg"
+  },
+  {
     "type": "clap",
-    "emoji": "🎯",
-    "accent": "#E74C3C",
-    "gradient": "linear-gradient(135deg, #E74C3C, #C0392B)",
-    "title": "Technical Leadership",
+    "emoji": "🌟",
+    "accent": "#FF7043",
+    "gradient": "linear-gradient(135deg, #FF7043, #FFAB91)",
+    "title": "Team Excellence",
     "count": 50,
     "from": "Sem Sinchenko",
     "to": [
       "Ildar Fatykhov"
     ],
-    "reason": "Exceptional technical contribution",
+    "reason": "Outstanding technical contributions and leadership",
     "values": [
-      "INNOVATION",
-      "EXCELLENCE"
+      "TECHNICAL EXCELLENCE",
+      "LEADERSHIP"
     ]
   },
   {
-    "type": "clap",
-    "emoji": "⚡",
-    "accent": "#F39C12",
-    "gradient": "linear-gradient(135deg, #F39C12, #E67E22)",
-    "title": "Infrastructure Hero",
-    "count": 30,
-    "from": "Gleb Krahotkin",
-    "to": [
-      "Hierman Pelekh"
+    "type": "reading",
+    "emoji": "📚",
+    "accent": "#2196F3",
+    "gradient": "linear-gradient(135deg, #2196F3, #64B5F6)",
+    "title": "Knowledge Sharing",
+    "articles": [
+      {
+        "title": "The Speaking Coach: Stop Using This Word",
+        "sharedBy": "Maria Plendukova",
+        "desc": "Communication tips that make you sound more confident and credible",
+        "reactions": 2
+      }
     ],
-    "reason": "Outstanding infrastructure work",
-    "values": [
-      "RELIABILITY",
-      "EXCELLENCE"
-    ]
+    "channel": "#general-chat"
+  },
+  {
+    "type": "milestone",
+    "emoji": "💰",
+    "accent": "#4CAF50",
+    "gradient": "linear-gradient(135deg, #4CAF50, #66BB6A)",
+    "title": "Financial Milestone",
+    "headline": "Impressive Growth Trajectory",
+    "description": "Company reaching new heights with strong fundamentals and sustainable growth",
+    "stat": "40%",
+    "statLabel": "YoY Growth Projected"
   },
   {
     "type": "clap",
     "emoji": "🤝",
-    "accent": "#27AE60",
-    "gradient": "linear-gradient(135deg, #27AE60, #2ECC71)",
+    "accent": "#FF9800",
+    "gradient": "linear-gradient(135deg, #FF9800, #FFB74D)",
     "title": "Team Collaboration",
     "count": 40,
     "from": "Anastasia Sokolova",
     "to": [
       "Sasha Sakovich"
     ],
-    "reason": "Amazing teamwork and support",
+    "reason": "Exceptional teamwork and collaboration",
     "values": [
-      "TOGETHER",
-      "SUPPORT"
+      "TEAMWORK",
+      "COLLABORATION"
     ]
-  },
-  {
-    "type": "event",
-    "emoji": "🎓",
-    "accent": "#3498DB",
-    "gradient": "linear-gradient(135deg, #3498DB, #2980B9)",
-    "title": "Learning Success",
-    "eventName": "11th Lunch & Learn",
-    "date": "Recently completed",
-    "description": "Timofey Levanov presented on fraud traffic detection",
-    "organizer": "Katarzyna Raniszewska"
-  },
-  {
-    "type": "reading",
-    "emoji": "📚",
-    "accent": "#8E44AD",
-    "gradient": "linear-gradient(135deg, #8E44AD, #9B59B6)",
-    "title": "Knowledge Sharing",
-    "articles": [
-      {
-        "title": "The 4 Disciplines of Execution",
-        "sharedBy": "Pavel Golubev",
-        "desc": "Reading club focusing on WIGs, metrics, scorecards, and execution discipline",
-        "reactions": "7 brain reactions"
-      },
-      {
-        "title": "The Speaking Coach: Communication Excellence",
-        "sharedBy": "Maria Plendukova",
-        "desc": "Stop saying words that make you sound weak",
-        "reactions": "2 heart reactions"
-      }
-    ],
-    "channel": "#general"
-  },
-  {
-    "type": "officelife",
-    "emoji": "💡",
-    "accent": "#E67E22",
-    "gradient": "linear-gradient(135deg, #E67E22, #F39C12)",
-    "title": "Leadership Insight",
-    "headline": "Core Values in Action",
-    "quote": "Turn our Core Values, Leadership Principles, and Standards into real operating constraints — guardrails for decisions, not slogans",
-    "author": "Pavel Golubev",
-    "reactions": "4 reactions",
-    "channel": "#general"
-  },
-  {
-    "type": "milestone",
-    "emoji": "💰",
-    "accent": "#27AE60",
-    "gradient": "linear-gradient(135deg, #27AE60, #2ECC71)",
-    "title": "Financial Milestone",
-    "headline": "Strong Growth Trajectory",
-    "description": "Company achieving impressive financial performance",
-    "stat": "$100M",
-    "statLabel": "Gross Profit"
   },
   {
     "type": "win",
     "emoji": "🎯",
-    "accent": "#E74C3C",
-    "gradient": "linear-gradient(135deg, #E74C3C, #C0392B)",
-    "title": "Growth Achievement",
-    "who": "Appodeal Team",
-    "stat": "40",
-    "statUnit": "% YoY growth",
-    "headline": "Exceeding Growth Targets",
-    "description": "Projected annual growth demonstrates strong market position",
-    "takeaway": "Building momentum toward our vision"
-  },
-  {
-    "type": "milestone",
-    "emoji": "🤖",
-    "accent": "#9B59B6",
-    "gradient": "linear-gradient(135deg, #9B59B6, #8E44AD)",
-    "title": "AI Innovation",
-    "headline": "AI-First Future",
-    "description": "Every employee will manage 5-10 AI agents within 3-6 months",
-    "stat": "1,000+",
-    "statLabel": "OKRs checked daily by AI"
-  },
-  {
-    "type": "win",
-    "emoji": "🛡️",
-    "accent": "#3498DB",
-    "gradient": "linear-gradient(135deg, #3498DB, #2980B9)",
-    "title": "Security Excellence",
-    "who": "Security Team",
-    "stat": "4",
-    "statUnit": "% fraud rate",
-    "headline": "Fraud Detection Success",
-    "description": "Reduced fraud from 22% to under 4% with dynamic SDK signatures",
-    "takeaway": "Protecting our ecosystem and partners"
-  },
-  {
-    "type": "win",
-    "emoji": "🎮",
-    "accent": "#F39C12",
-    "gradient": "linear-gradient(135deg, #F39C12, #E67E22)",
+    "accent": "#E91E63",
+    "gradient": "linear-gradient(135deg, #E91E63, #F48FB1)",
     "title": "Gaming Success",
     "who": "Gaming Team",
     "stat": "61",
     "statUnit": "% retention",
-    "headline": "Infinite Minesweeper Milestone",
-    "description": "Apple benchmark ERA: 151-160% - we're in the top tier!",
-    "takeaway": "Gaming division turned profitable in 2025"
+    "headline": "Infinite Minesweeper Hits Target!",
+    "description": "Achieving 61% retention rate within Apple benchmark ERA of 151-160%",
+    "takeaway": "Gaming division showing strong performance metrics"
+  },
+  {
+    "type": "officelife",
+    "emoji": "📖",
+    "accent": "#673AB7",
+    "gradient": "linear-gradient(135deg, #673AB7, #9575CD)",
+    "title": "Company Culture",
+    "headline": "Reading Club Growing Strong",
+    "quote": "The 4 Disciplines of Execution focus: WIGs, Leading/Lagging Metrics, Scorecards, Follow-through",
+    "author": "Pavel Golubev",
+    "reactions": 7,
+    "channel": "#general",
+    "avatar": "https://avatars.slack-edge.com/2025-04-05/8704641101238_a56cdf39fffbbb80ce10_192.jpg"
+  },
+  {
+    "type": "clap",
+    "emoji": "🛡️",
+    "accent": "#795548",
+    "gradient": "linear-gradient(135deg, #795548, #A1887F)",
+    "title": "Security Excellence",
+    "count": 30,
+    "from": "Gleb Krahotkin",
+    "to": [
+      "Hierman Pelekh"
+    ],
+    "reason": "Outstanding security implementations and infrastructure work",
+    "values": [
+      "SECURITY",
+      "RELIABILITY"
+    ],
+    "fromAvatar": "https://avatars.slack-edge.com/2022-10-23/4275527051089_402b8b44f748e977a230_192.png"
+  },
+  {
+    "type": "milestone",
+    "emoji": "🤖",
+    "accent": "#607D8B",
+    "gradient": "linear-gradient(135deg, #607D8B, #90A4AE)",
+    "title": "AI Revolution",
+    "headline": "Every Employee + 5-10 AI Agents",
+    "description": "Transforming how we work with AI integration across all departments",
+    "stat": "3-6",
+    "statLabel": "months timeline"
   },
   {
     "type": "win",
     "emoji": "💎",
-    "accent": "#E74C3C",
-    "gradient": "linear-gradient(135deg, #E74C3C, #C0392B)",
-    "title": "Solitaire Victory",
-    "who": "Game Development Team",
+    "accent": "#9C27B0",
+    "gradient": "linear-gradient(135deg, #9C27B0, #BA68C8)",
+    "title": "Product Success",
+    "who": "Solitaire Team",
     "stat": "21.67",
-    "statUnit": "% increase",
-    "headline": "Solitaire v540 Success",
+    "statUnit": "% improvement",
+    "headline": "Solitaire v540 Retention Boost!",
     "description": "Significant improvement in D7 retention rates",
-    "takeaway": "Data-driven optimization delivering results"
+    "takeaway": "Product optimization delivering measurable results"
   },
   {
-    "type": "win",
-    "emoji": "📈",
-    "accent": "#27AE60",
-    "gradient": "linear-gradient(135deg, #27AE60, #2ECC71)",
-    "title": "Marketing Excellence",
-    "who": "Marketing Team",
-    "stat": "200",
-    "statUnit": "% ROAS",
-    "headline": "Crossword Campaign Success",
-    "description": "Return on Ad Spend exceeded 200% benchmark",
-    "takeaway": "Precision targeting and optimization paying off"
-  },
-  {
-    "type": "win",
-    "emoji": "💸",
-    "accent": "#9B59B6",
-    "gradient": "linear-gradient(135deg, #9B59B6, #8E44AD)",
-    "title": "AI Efficiency",
-    "who": "Daria AI Bot",
-    "stat": "$4,000",
-    "statUnit": "weekly savings",
-    "headline": "Smart App Review Analysis",
-    "description": "AI automation delivering measurable cost savings",
-    "takeaway": "AI working smarter, not harder for us"
-  },
-  {
-    "type": "celebration",
-    "emoji": "🏆",
-    "accent": "#F39C12",
-    "gradient": "linear-gradient(135deg, #F39C12, #E67E22)",
-    "title": "AI Challenge Victory",
-    "headline": "20-Day AI Marathon Complete",
-    "prompt1": "6 heroes completed ALL challenges",
-    "prompt2": "Who will join the next challenge?",
-    "coreValue": "CONTINUOUS LEARNING",
-    "channel": "Company-wide"
-  },
-  {
-    "type": "officelife",
-    "emoji": "🧘‍♀️",
-    "accent": "#27AE60",
-    "gradient": "linear-gradient(135deg, #27AE60, #2ECC71)",
-    "title": "Wellness Culture",
-    "headline": "Daily Yoga with Anna",
-    "quote": "Every day at 13:10 CET - office + online streaming",
-    "author": "Anna Kolyada",
-    "reactions": "Wellness initiative",
-    "channel": "Office Life"
+    "type": "clap",
+    "emoji": "⭐",
+    "accent": "#FFC107",
+    "gradient": "linear-gradient(135deg, #FFC107, #FFD54F)",
+    "title": "Multi-Team Recognition",
+    "count": 25,
+    "from": "Dima",
+    "to": [
+      "Irina Koval"
+    ],
+    "reason": "Exceptional cross-functional collaboration and results delivery",
+    "values": [
+      "COLLABORATION",
+      "RESULTS"
+    ]
   },
   {
     "type": "milestone",
-    "emoji": "🌟",
-    "accent": "#8E44AD",
-    "gradient": "linear-gradient(135deg, #8E44AD, #9B59B6)",
-    "title": "Vision 2030",
-    "headline": "Building the Future",
-    "description": "On track toward $50B company with 1,500 employees and 100 studios",
-    "stat": "Build. Ship. Improve.",
-    "statLabel": "CEO Mandate"
+    "emoji": "🛡️",
+    "accent": "#F44336",
+    "gradient": "linear-gradient(135deg, #F44336, #EF5350)",
+    "title": "Security Achievement",
+    "headline": "Fraud Prevention Success",
+    "description": "Dynamic SDK signatures dramatically reducing fraudulent traffic",
+    "stat": "22% → 4%",
+    "statLabel": "fraud reduction"
+  },
+  {
+    "type": "celebration",
+    "emoji": "🎉",
+    "accent": "#FF5722",
+    "gradient": "linear-gradient(135deg, #FF5722, #FF8A65)",
+    "title": "Daily Celebration",
+    "headline": "Team Birthday Joy!",
+    "prompt1": "Who brings the most positive energy to your team?",
+    "prompt2": "What's your favorite way to celebrate wins together?",
+    "coreValue": "We CELEBRATE achievements and support each other",
+    "channel": "#birthdays"
+  },
+  {
+    "type": "win",
+    "emoji": "💰",
+    "accent": "#4CAF50",
+    "gradient": "linear-gradient(135deg, #4CAF50, #66BB6A)",
+    "title": "Sales Victory",
+    "who": "Sales Team",
+    "stat": "8",
+    "statUnit": "deals closed",
+    "headline": "Outstanding Week Performance!",
+    "description": "$390k net revenue in a single week",
+    "takeaway": "Sales momentum building strong pipeline"
+  },
+  {
+    "type": "officelife",
+    "emoji": "🏗️",
+    "accent": "#795548",
+    "gradient": "linear-gradient(135deg, #795548, #8D6E63)",
+    "title": "Leadership Vision",
+    "headline": "Build. Ship. Improve.",
+    "quote": "Shift from requirements to pull request mentality",
+    "author": "CEO Mandate",
+    "reactions": 1,
+    "channel": "#general"
+  },
+  {
+    "type": "milestone",
+    "emoji": "🎮",
+    "accent": "#E91E63",
+    "gradient": "linear-gradient(135deg, #E91E63, #EC407A)",
+    "title": "Gaming Milestone",
+    "headline": "Gaming Division Profitability",
+    "description": "Gaming operations turned profitable in 2025, showing sustainable growth",
+    "stat": "200%+",
+    "statLabel": "ROAS exceeded"
+  },
+  {
+    "type": "celebration",
+    "emoji": "🚀",
+    "accent": "#2196F3",
+    "gradient": "linear-gradient(135deg, #2196F3, #42A5F5)",
+    "title": "Keep Building",
+    "headline": "What will you ship today?",
+    "prompt1": "What's the next feature you're excited to build?",
+    "prompt2": "How can we improve our user experience?",
+    "coreValue": "We BUILD solutions that SERVE OTHERS",
+    "channel": "#general"
   }
 ]
