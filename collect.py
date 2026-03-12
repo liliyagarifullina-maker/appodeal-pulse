@@ -141,6 +141,75 @@ def resolve_user(client, user_id):
         return _user_cache[user_id]
 
 
+# ── Fetch all workspace users ──────────────────────────────────
+
+def fetch_all_users(client):
+    """Fetch ALL workspace users and their avatars via users.list API.
+    Returns dict: name → avatar_url (for all ~300 employees).
+    """
+    all_avatars = {}
+    cursor = None
+    page = 0
+
+    while True:
+        try:
+            kwargs = {"limit": 200}
+            if cursor:
+                kwargs["cursor"] = cursor
+
+            result = client.users_list(**kwargs)
+            members = result.get("members", [])
+            page += 1
+
+            for user in members:
+                # Skip bots, deleted users, and Slackbot
+                if user.get("is_bot") or user.get("deleted") or user.get("id") == "USLACKBOT":
+                    continue
+
+                profile = user.get("profile", {})
+                name = (
+                    profile.get("real_name")
+                    or profile.get("display_name")
+                    or user.get("name", "")
+                )
+                if not name:
+                    continue
+
+                # Get best available avatar (prefer larger)
+                avatar = (
+                    profile.get("image_192")
+                    or profile.get("image_72")
+                    or profile.get("image_48")
+                    or ""
+                )
+                if avatar and "gravatar" not in avatar:
+                    all_avatars[name] = avatar
+
+                    # Also store by first name for fuzzy matching
+                    first_name = name.split()[0] if name else ""
+                    if first_name and first_name not in all_avatars:
+                        all_avatars[first_name] = avatar
+
+                    # Also store by Slack username (handle)
+                    username = user.get("name", "")
+                    if username:
+                        all_avatars[username] = avatar
+
+            # Pagination
+            next_cursor = result.get("response_metadata", {}).get("next_cursor", "")
+            if not next_cursor:
+                break
+            cursor = next_cursor
+            time.sleep(0.3)  # Rate limit
+
+        except SlackApiError as e:
+            print(f"  Warning: users.list failed: {e.response['error']}")
+            break
+
+    print(f"  Loaded {len(all_avatars)} user avatars from workspace (page {page})")
+    return all_avatars
+
+
 # ── Main collection pipeline ────────────────────────────────────
 
 def collect_all():
@@ -150,6 +219,10 @@ def collect_all():
         "lookback_hours": config.LOOKBACK_HOURS,
         "channels": {},
     }
+
+    # First: load ALL workspace users for avatar lookup
+    print("  Loading all workspace users...")
+    all_avatars = fetch_all_users(client)
 
     for name, channel_id in config.SLACK_CHANNELS.items():
         print(f"  Collecting #{name} ({channel_id})...")
@@ -164,12 +237,12 @@ def collect_all():
         print(f"    → {len(messages)} messages")
         time.sleep(0.5)  # Rate limit courtesy
 
-    # Build name → avatar lookup from cache
-    all_content["user_avatars"] = {
-        v["name"]: v["avatar"]
-        for v in _user_cache.values()
-        if v.get("avatar")
-    }
+    # Merge: workspace-wide avatars + message-level avatars
+    all_content["user_avatars"] = all_avatars
+    # Also add any from message cache (in case users.list missed someone)
+    for v in _user_cache.values():
+        if v.get("avatar") and v["name"] not in all_content["user_avatars"]:
+            all_content["user_avatars"][v["name"]] = v["avatar"]
 
     return all_content
 

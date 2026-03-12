@@ -267,37 +267,90 @@ def apply_accents(slides):
     return slides
 
 
+def _find_avatar(name, avatar_lookup):
+    """Find avatar URL for a person name with fuzzy matching."""
+    if not name or not avatar_lookup:
+        return ""
+    # Exact match
+    if name in avatar_lookup:
+        return avatar_lookup[name]
+    # Case-insensitive match
+    name_lower = name.lower()
+    for k, v in avatar_lookup.items():
+        if k.lower() == name_lower:
+            return v
+    # First name match (e.g., "Dima" matches "Dima Chernov")
+    first = name.split()[0] if name else ""
+    if first and first in avatar_lookup:
+        return avatar_lookup[first]
+    # Partial: avatar key starts with name or name starts with avatar key
+    for k, v in avatar_lookup.items():
+        if k.startswith(name) or name.startswith(k):
+            return v
+    return ""
+
+
 def inject_avatars(slides, avatar_lookup):
-    """Post-process slides to inject avatar URLs where AI may have missed them."""
+    """Post-process slides to inject avatar URLs for ALL people mentioned."""
     if not avatar_lookup:
         return slides
 
     for slide in slides:
         stype = slide.get("type", "")
 
-        # For slides with a single person
+        # Birthday & NewJoin — main person
         if stype in ("birthday", "newjoin") and not slide.get("avatar"):
-            name = slide.get("name", "")
-            if name in avatar_lookup:
-                slide["avatar"] = avatar_lookup[name]
+            avatar = _find_avatar(slide.get("name", ""), avatar_lookup)
+            if avatar:
+                slide["avatar"] = avatar
 
-        # For win slides
+        # Win — who did it
         if stype == "win" and not slide.get("avatar"):
-            who = slide.get("who", "")
-            if who in avatar_lookup:
-                slide["avatar"] = avatar_lookup[who]
+            avatar = _find_avatar(slide.get("who", ""), avatar_lookup)
+            if avatar:
+                slide["avatar"] = avatar
 
-        # For officelife slides
+        # OfficeLife — author
         if stype == "officelife" and not slide.get("avatar"):
-            author = slide.get("author", "")
-            if author in avatar_lookup:
-                slide["avatar"] = avatar_lookup[author]
+            avatar = _find_avatar(slide.get("author", ""), avatar_lookup)
+            if avatar:
+                slide["avatar"] = avatar
 
-        # For clap slides — from person
+        # Clap — from person
         if stype == "clap" and not slide.get("fromAvatar"):
-            from_name = slide.get("from", "")
-            if from_name in avatar_lookup:
-                slide["fromAvatar"] = avatar_lookup[from_name]
+            avatar = _find_avatar(slide.get("from", ""), avatar_lookup)
+            if avatar:
+                slide["fromAvatar"] = avatar
+
+        # Clap — to people (add avatars to each recipient)
+        if stype == "clap" and slide.get("to"):
+            to_with_avatars = []
+            for person in slide["to"]:
+                if isinstance(person, str):
+                    avatar = _find_avatar(person, avatar_lookup)
+                    to_with_avatars.append({
+                        "name": person,
+                        "avatar": avatar,
+                    })
+                elif isinstance(person, dict):
+                    if not person.get("avatar"):
+                        person["avatar"] = _find_avatar(person.get("name", ""), avatar_lookup)
+                    to_with_avatars.append(person)
+            slide["to"] = to_with_avatars
+
+        # Event — organizer
+        if stype == "event" and not slide.get("organizerAvatar"):
+            avatar = _find_avatar(slide.get("organizer", ""), avatar_lookup)
+            if avatar:
+                slide["organizerAvatar"] = avatar
+
+        # Reading — article sharers
+        if stype == "reading" and slide.get("articles"):
+            for article in slide["articles"]:
+                if not article.get("sharedByAvatar"):
+                    avatar = _find_avatar(article.get("sharedBy", ""), avatar_lookup)
+                    if avatar:
+                        article["sharedByAvatar"] = avatar
 
     return slides
 

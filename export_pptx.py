@@ -238,7 +238,9 @@ def render_clap(slide, d):
     # To
     to_list = d.get("to", [])
     if to_list:
-        to_str = "to: " + ", ".join(to_list)
+        # Handle both string and dict formats
+        names = [t.get("name", str(t)) if isinstance(t, dict) else str(t) for t in to_list]
+        to_str = "to: " + ", ".join(names)
         add_text_box(
             slide, Inches(1.2), Inches(3.4), Inches(10.9), Inches(0.4),
             to_str, font_size=14, color=WHITE, bold=True
