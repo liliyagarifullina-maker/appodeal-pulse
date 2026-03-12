@@ -114,9 +114,10 @@ SLIDE TYPES (use exact "type" values):
 4. "newjoin" — new team members joining
 5. "event" — upcoming events / conferences
 6. "milestone" — company milestones, big numbers
-7. "reading" — interesting articles/links shared
+7. "reading" — interesting articles/links shared ONLY from #to_read channel
 8. "officelife" — fun office moments, quotes, culture
 9. "celebration" — weekly celebrations / rituals
+10. "event" — also use for Book Club announcements, corporate initiatives from #general (NOT "reading"!)
 
 REQUIRED FIELDS per type:
 birthday: emoji, accent, gradient, title, name, date, message, teamNote
@@ -143,7 +144,8 @@ CRITICAL RULES:
 - Warm, positive, engaging tone
 - For "win" slides, extract specific metrics/numbers when available
 - For "clap" slides, extract company values mentioned (e.g., "We work TOGETHER to SERVE OTHERS")
-- For "reading", pick the 2-3 most interesting articles
+- For "reading", pick the 2-3 most interesting articles — ONLY from #to_read channel
+- NEVER mix different things into one "reading" slide. Book Club = "event" type. Article suggestions from #to_read = "reading" type. These are SEPARATE slides
 - Order slides for maximum engagement: start exciting, mix types, end with a call-to-action
 - Aim for 15-20 slides. Be creative — split big topics into multiple slides, add more claps, more wins
 - If a channel has multiple interesting messages, create separate slides for each
