@@ -15,20 +15,24 @@ ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 # ── Slack channels to monitor ───────────────────────────────────
 
 SLACK_CHANNELS = {
-    "general":      "C039760M5",
-    "general-chat": "C010UQ0QP5K",
-    "birthdays":    "C87RRF63S",
-    "to_read":      "C4XGGGLMV",
-    "claps":        "C084KUM8W79",
+    "general":        "C039760M5",
+    "general-chat":   "C010UQ0QP5K",
+    "birthdays":      "C87RRF63S",
+    "to_read":        "C4XGGGLMV",
+    "claps":          "C084KUM8W79",
+    "ai-challenge":   "C085YJT5LDH",
+    "connect-groups": "C07TLHYRBCK",
+    "vector-gaming":  "C07N5AJ8VFA",
 }
 
 # ── Content settings ────────────────────────────────────────────
 
-LOOKBACK_HOURS = 48
+LOOKBACK_HOURS = 72          # 3 days — captures more content
 MAX_SLIDES = 25
+MIN_SLIDES = 15              # AI should aim for at least this many
 
-# Days when Fireflies deep insights are included (0=Mon, 4=Fri)
-DEEP_ANALYSIS_DAYS = [0, 2, 4]  # Monday, Wednesday, Friday
+# Fireflies deep insights included every day for richer content
+DEEP_ANALYSIS_DAYS = [0, 1, 2, 3, 4, 5, 6]  # Every day
 
 # ── Paths ───────────────────────────────────────────────────────
 

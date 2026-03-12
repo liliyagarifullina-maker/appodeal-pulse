@@ -126,7 +126,9 @@ CRITICAL RULES:
 - For "clap" slides, extract company values mentioned (e.g., "We work TOGETHER to SERVE OTHERS")
 - For "reading", pick the 2-3 most interesting articles
 - Order slides for maximum engagement: start exciting, mix types, end with a call-to-action
-- Aim for 8-20 slides depending on available content (fewer is fine on quiet days)
+- Aim for 15-20 slides. Be creative — split big topics into multiple slides, add more claps, more wins
+- If a channel has multiple interesting messages, create separate slides for each
+- Create at least one "officelife" or "celebration" slide to keep it warm and human
 - Return ONLY the JSON array, no markdown, no explanation
 
 CONTENT FILTER — NEVER include:
