@@ -7,7 +7,7 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap');
     *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-    body{background:#f4f4f8;font-family:'Outfit',sans-serif;color:#1a1a2e;overflow:hidden;cursor:none}
+    body{background:#08080c;font-family:'Outfit',sans-serif;color:#f0f0f5;overflow:hidden;cursor:none}
     @keyframes float{0%,100%{transform:translateY(0) translateX(0)}33%{transform:translateY(-20px) translateX(14px)}66%{transform:translateY(-10px) translateX(-8px)}}
     @keyframes confettiBounce{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-14px) rotate(12deg)}}
     @keyframes slideUp{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:translateY(0)}}
@@ -72,393 +72,260 @@
     // ══════════════════════════════════════════════════════════
     const SLIDES = [
   {
-    "type": "win",
-    "emoji": "🚀",
-    "accent": "#FF6B35",
-    "gradient": [
-      "#FF6B35",
-      "#F7931E"
-    ],
-    "title": "DevOps Magic Unleashed",
-    "who": "Gleb Krahotkin",
-    "avatar": "https://avatars.slack-edge.com/2022-10-23/4275527051089_402b8b44f748e977a230_192.png",
-    "stat": "36",
-    "statUnit": "rocket reactions",
-    "headline": "Coolify Deployment Platform Goes Live",
-    "description": "Our DevOps team just dropped a game-changer! Deploy applications in just a few clicks with the new Coolify platform.",
-    "takeaway": "Innovation meets simplicity — building the future, one click at a time"
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Denis Glavatskikh",
+    "date": "March 11",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "With love, Your Appodeal Team 💜"
   },
   {
     "type": "birthday",
     "emoji": "🎂",
-    "accent": "#FF69B4",
-    "gradient": [
-      "#FF69B4",
-      "#FFB6C1"
-    ],
-    "title": "Birthday Celebrations!",
-    "name": "Alexandr Sikorsky",
-    "avatar": "https://avatars.slack-edge.com/2020-09-07/1348241323011_1173d242099cc519c370_192.jpg",
-    "date": "March 12th",
-    "message": "Thanks guys, all of you, for the warm wishes! 💕",
-    "teamNote": "The whole team showered our birthday star with love and wishes!"
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Liliya Garifullina",
+    "date": "March 11",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "With love, Your Appodeal Team 💜"
   },
   {
-    "type": "event",
-    "emoji": "🔥",
-    "accent": "#E74C3C",
-    "gradient": [
-      "#E74C3C",
-      "#C0392B"
-    ],
-    "title": "Lunch & Learn Success",
-    "eventName": "11th Lunch & Learn Session",
-    "date": "This week",
-    "description": "Timofey Levanov delivered an amazing presentation on fraud traffic detection. Recording available on Fireflies!",
-    "organizer": "Katarzyna Raniszewska",
-    "avatar": "https://avatars.slack-edge.com/2025-01-08/8266302480660_a86f929f8d1061603dda_192.jpg",
-    "organizerAvatar": "https://avatars.slack-edge.com/2025-01-08/8266302480660_a86f929f8d1061603dda_192.jpg"
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Roman de las Heras",
+    "date": "March 11",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "With love, Your Appodeal Team 💜"
   },
   {
-    "type": "clap",
-    "emoji": "👏",
-    "accent": "#9B59B6",
-    "gradient": [
-      "#9B59B6",
-      "#8E44AD"
-    ],
-    "title": "Design Excellence",
-    "count": 50,
-    "from": "Pavel Savinskiy",
-    "to": [
-      {
-        "name": "sergeydesigner",
-        "avatar": ""
-      }
-    ],
-    "reason": "Outstanding design work that impressed the whole team",
-    "values": [
-      "CRAFT",
-      "EXCELLENCE"
-    ],
-    "fromAvatar": "https://avatars.slack-edge.com/2025-07-18/9218603955989_1a09cbabd96969f879f2_192.jpg"
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Olga Petriakova",
+    "date": "March 11",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "With love, Your Appodeal Team 💜"
   },
   {
-    "type": "clap",
-    "emoji": "🧠",
-    "accent": "#3498DB",
-    "gradient": [
-      "#3498DB",
-      "#2980B9"
-    ],
-    "title": "Technical Brilliance",
-    "count": 50,
-    "from": "Sem Sinchenko",
-    "to": [
-      {
-        "name": "Ildar Fatykhov",
-        "avatar": "https://avatars.slack-edge.com/2025-06-23/9082579889846_b3f900970c3c6bba8162_192.jpg"
-      }
-    ],
-    "avatar": "https://avatars.slack-edge.com/2025-06-23/9082579889846_b3f900970c3c6bba8162_192.jpg",
-    "reason": "Exceptional technical contribution that moved us forward",
-    "values": [
-      "INNOVATION",
-      "EXCELLENCE"
-    ]
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Olga Petriakova",
+    "date": "March 11",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "With love, Your Appodeal Team 💜"
   },
   {
-    "type": "clap",
-    "emoji": "💪",
-    "accent": "#E67E22",
-    "gradient": [
-      "#E67E22",
-      "#D35400"
-    ],
-    "title": "Team Collaboration Win",
-    "count": 8,
-    "from": "Alexandr Zhitlukhin",
-    "avatar": "https://avatars.slack-edge.com/2018-08-17/417618953248_7a439d21998e34f3395e_192.png",
-    "to": [
-      {
-        "name": "ArtKip",
-        "avatar": ""
-      },
-      {
-        "name": "Taha",
-        "avatar": "https://avatars.slack-edge.com/2024-11-04/7989166759937_c27475f576912fe2e93b_192.jpg"
-      },
-      {
-        "name": "Agustin",
-        "avatar": "https://avatars.slack-edge.com/2022-03-17/3254993864418_5d3bf56a1ed83cbdf547_192.jpg"
-      },
-      {
-        "name": "Francesco",
-        "avatar": "https://avatars.slack-edge.com/2024-07-17/7447815804449_7300ba54875fe1037eef_192.png"
-      },
-      {
-        "name": "Alessandro",
-        "avatar": "https://avatars.slack-edge.com/2025-05-27/8949585055142_657f010a8966df2120e1_192.jpg"
-      },
-      {
-        "name": "Anna Timoshenko",
-        "avatar": "https://avatars.slack-edge.com/2024-12-04/8135484697425_8446077f62523d59d828_192.jpg"
-      }
-    ],
-    "reason": "Amazing teamwork and collaboration across multiple areas",
-    "values": [
-      "TOGETHER",
-      "SERVE OTHERS"
-    ],
-    "fromAvatar": "https://avatars.slack-edge.com/2018-08-17/417618953248_7a439d21998e34f3395e_192.png"
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Alexandra Molchan",
+    "date": "March 11",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "With love, Your Appodeal Team 💜"
   },
   {
-    "type": "clap",
-    "emoji": "🎯",
-    "accent": "#27AE60",
-    "gradient": [
-      "#27AE60",
-      "#229954"
-    ],
-    "title": "Outstanding Performance",
-    "count": 40,
-    "from": "Anastasia Sokolova",
-    "avatar": "https://avatars.slack-edge.com/2025-09-08/9478235498902_fa74aee9301ad16fa3e5_192.png",
-    "to": [
-      {
-        "name": "Sasha Sakovich",
-        "avatar": "https://avatars.slack-edge.com/2025-09-08/9478235498902_fa74aee9301ad16fa3e5_192.png"
-      }
-    ],
-    "reason": "Exceptional work that deserved recognition",
-    "values": [
-      "EXCELLENCE",
-      "DELIVER"
-    ],
-    "fromAvatar": "https://avatars.slack-edge.com/2020-08-25/1327535570580_e1ee5e4dc78cc73d35df_192.jpg"
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Sergei Bashkirtsev",
+    "date": "March 11",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "With love, Your Appodeal Team 💜"
   },
   {
-    "type": "clap",
-    "emoji": "🌟",
-    "accent": "#F39C12",
-    "gradient": [
-      "#F39C12",
-      "#E67E22"
-    ],
-    "title": "DevOps Hero",
-    "count": 30,
-    "from": "Gleb Krahotkin",
-    "avatar": "https://avatars.slack-edge.com/2024-04-16/6967559547717_915406465ca0f9caf468_192.jpg",
-    "to": [
-      {
-        "name": "Hierman Pelekh",
-        "avatar": "https://avatars.slack-edge.com/2024-04-16/6967559547717_915406465ca0f9caf468_192.jpg"
-      }
-    ],
-    "reason": "Outstanding technical contribution to our infrastructure",
-    "values": [
-      "INNOVATION",
-      "SERVE OTHERS"
-    ],
-    "fromAvatar": "https://avatars.slack-edge.com/2022-10-23/4275527051089_402b8b44f748e977a230_192.png"
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Roman Shakhanov",
+    "date": "March 11",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "With love, Your Appodeal Team 💜"
   },
   {
-    "type": "reading",
-    "emoji": "📚",
-    "accent": "#9B59B6",
-    "gradient": [
-      "#9B59B6",
-      "#8E44AD"
-    ],
-    "title": "Knowledge Sharing",
-    "articles": [
-      {
-        "title": "The Speaking Coach: Stop Saying This Word!",
-        "sharedBy": "Maria Plendukova",
-        "avatar": "https://avatars.slack-edge.com/2025-06-09/9024600191330_9f138404da7499277e0f_192.png",
-        "desc": "Genuinely great content on communication skills",
-        "reactions": "💛",
-        "sharedByAvatar": "https://avatars.slack-edge.com/2025-06-09/9024600191330_9f138404da7499277e0f_192.png"
-      }
-    ],
-    "channel": "#general-chat"
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Vladimir Khrolovich",
+    "date": "March 11",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "With love, Your Appodeal Team 💜"
+  },
+  {
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Dmitry Feshchenko",
+    "date": "March 11",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "With love, Your Appodeal Team 💜"
+  },
+  {
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Giulia Galvani",
+    "date": "March 11",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "With love, Your Appodeal Team 💜"
+  },
+  {
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Katarzyna Raniszewska",
+    "date": "March 11",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "With love, Your Appodeal Team 💜"
+  },
+  {
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Radu Stoia",
+    "date": "March 11",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "With love, Your Appodeal Team 💜"
+  },
+  {
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Eduard Malkhasyan",
+    "date": "March 11",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "With love, Your Appodeal Team 💜"
+  },
+  {
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Daryna Rudavka",
+    "date": "March 11",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "With love, Your Appodeal Team 💜"
+  },
+  {
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Yanina Lozben",
+    "date": "March 11",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "With love, Your Appodeal Team 💜"
+  },
+  {
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Irina Koval",
+    "date": "March 11",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "With love, Your Appodeal Team 💜"
+  },
+  {
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Francesco Cerigioni",
+    "date": "March 11",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "With love, Your Appodeal Team 💜"
+  },
+  {
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Iryna Peretiatko",
+    "date": "March 11",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "With love, Your Appodeal Team 💜"
+  },
+  {
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Iryna Peretiatko",
+    "date": "March 11",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "With love, Your Appodeal Team 💜"
   },
   {
     "type": "officelife",
-    "emoji": "📖",
-    "accent": "#27AE60",
-    "gradient": [
-      "#27AE60",
-      "#229954"
-    ],
-    "title": "Book Club Launch",
-    "headline": "The 4 Disciplines of Execution",
-    "quote": "This book focuses on Wildly Important Goals, Leading and Lagging Metrics, Scorecards, and Follow-through discipline",
-    "author": "Pavel Golubev",
-    "avatar": "https://avatars.slack-edge.com/2025-04-05/8704641101238_a56cdf39fffbbb80ce10_192.jpg",
-    "reactions": "🧠×7",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": ":wave: Hello everyone <!channel>!\n\nI’d like to share a cool thing our DevOps tea...",
+    "quote": ":wave: Hello everyone <!channel>!\n\nI’d like to share a cool thing our DevOps team has set up for all of us.\nIntroducing *<https://coolify.appodeal.com|Coolify>* - a service that allows you to deploy your applications in just a few clicks.\n:memo: I’ve written a short guide on how to use it <https://a",
+    "author": "Gleb Krahotkin",
+    "reactions": "",
     "channel": "#general"
   },
   {
-    "type": "clap",
-    "emoji": "👥",
-    "accent": "#E74C3C",
-    "gradient": [
-      "#E74C3C",
-      "#C0392B"
-    ],
-    "title": "Marketing Team Power",
-    "count": 8,
-    "from": "Maria Plendukova",
-    "avatar": "https://avatars.slack-edge.com/2025-06-09/9024600191330_9f138404da7499277e0f_192.png",
-    "to": [
-      {
-        "name": "evgeny.garlukovich",
-        "avatar": "https://avatars.slack-edge.com/2020-09-09/1348958014885_5c895a02d8704e3f7708_192.jpg"
-      },
-      {
-        "name": "Berta",
-        "avatar": "https://avatars.slack-edge.com/2025-05-26/8951224057077_c94c4573053e807cccc6_192.png"
-      },
-      {
-        "name": "Hanna Minko",
-        "avatar": "https://avatars.slack-edge.com/2023-10-24/6084916238099_550e7e2c756244b9f09b_192.jpg"
-      },
-      {
-        "name": "Mikita Sinkevich",
-        "avatar": "https://avatars.slack-edge.com/2025-01-09/8269234543603_ae8a7ba447fa6e60928a_192.jpg"
-      },
-      {
-        "name": "Tatiana Rokhlova",
-        "avatar": "https://avatars.slack-edge.com/2023-03-21/4971651615799_a2e8bb35fe033cc58f4b_192.jpg"
-      },
-      {
-        "name": "tomiris",
-        "avatar": "https://avatars.slack-edge.com/2025-09-01/9440052809106_3cd0136285e3f524d251_192.png"
-      }
-    ],
-    "reason": "Incredible teamwork and mutual support across the marketing team",
-    "values": [
-      "TOGETHER",
-      "SUPPORT"
-    ],
-    "fromAvatar": "https://avatars.slack-edge.com/2025-06-09/9024600191330_9f138404da7499277e0f_192.png"
-  },
-  {
-    "type": "clap",
-    "emoji": "💎",
-    "accent": "#1ABC9C",
-    "gradient": [
-      "#1ABC9C",
-      "#16A085"
-    ],
-    "title": "Quality Excellence",
-    "count": 25,
-    "from": "Roman Rinchinov",
-    "to": [
-      {
-        "name": "Vasyl Plesiuk",
-        "avatar": "https://avatars.slack-edge.com/2023-03-21/4981596592133_83c77bf2295931f06af4_192.jpg"
-      }
-    ],
-    "avatar": "https://avatars.slack-edge.com/2023-03-21/4981596592133_83c77bf2295931f06af4_192.jpg",
-    "reason": "Exceptional quality and attention to detail",
-    "values": [
-      "CRAFT",
-      "EXCELLENCE"
-    ],
-    "fromAvatar": "https://avatars.slack-edge.com/2024-09-02/7656627917494_e2fac98ab5a2d31e0ef8_192.png"
-  },
-  {
-    "type": "milestone",
-    "emoji": "🎯",
-    "accent": "#E67E22",
-    "gradient": [
-      "#E67E22",
-      "#D35400"
-    ],
-    "title": "Company Growth Milestone",
-    "headline": "$100M Gross Profit Achieved",
-    "description": "We've reached an incredible milestone with $100M in gross profit and $20M EBITDA, projecting 40% YoY growth",
-    "stat": "40%",
-    "statLabel": "YoY Growth"
-  },
-  {
-    "type": "win",
-    "emoji": "🤖",
-    "accent": "#9B59B6",
-    "gradient": [
-      "#9B59B6",
-      "#8E44AD"
-    ],
-    "title": "AI Revolution in Progress",
-    "who": "Appodeal Team",
-    "stat": "1,000+",
-    "statUnit": "OKRs checked daily",
-    "headline": "AI Auditor Goes Full Scale",
-    "description": "Our AI OKR Auditor is now checking over 1,000 individual OKRs daily, revolutionizing how we track progress",
-    "takeaway": "The future is here — AI-powered performance management at scale",
-    "avatar": "https://avatars.slack-edge.com/2025-01-03/8256382114881_33693785f3efe4102d89_192.png"
-  },
-  {
-    "type": "milestone",
-    "emoji": "💰",
-    "accent": "#27AE60",
-    "gradient": [
-      "#27AE60",
-      "#229954"
-    ],
-    "title": "Gaming Division Success",
-    "headline": "Gaming Turns Profitable in 2025",
-    "description": "Our gaming division has officially become profitable with impressive retention rates across all titles",
-    "stat": "61%",
-    "statLabel": "Infinite Minesweeper Retention"
-  },
-  {
-    "type": "win",
-    "emoji": "🛡️",
-    "accent": "#E74C3C",
-    "gradient": [
-      "#E74C3C",
-      "#C0392B"
-    ],
-    "title": "Fraud Protection Victory",
-    "who": "Security Team",
-    "stat": "4%",
-    "statUnit": "fraud rate",
-    "headline": "Massive Fraud Reduction Achieved",
-    "description": "Dynamic SDK signatures helped us slash fraud from 22% to under 4% — a game-changing security improvement",
-    "takeaway": "Innovation in security delivers real business impact"
-  },
-  {
-    "type": "celebration",
-    "emoji": "📈",
-    "accent": "#3498DB",
-    "gradient": [
-      "#3498DB",
-      "#2980B9"
-    ],
-    "title": "Weekly Sales Victory",
-    "headline": "8 Deals Closed This Week",
-    "prompt1": "What's your biggest win this week?",
-    "prompt2": "How can we support each other's success?",
-    "coreValue": "DELIVER RESULTS",
-    "channel": "Sales Team"
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "Hi <!here>! :woman-raising-hand: Thank you for joining our *11th Lunch & Learn s...",
+    "quote": "Hi <!here>! :woman-raising-hand: Thank you for joining our *11th Lunch & Learn session!* :fire:\nA big thank-you to <@U23FJLW5S> for a very interesting presentation :heart:\nBelow you can find:\n• :movie_camera: <https://app.fireflies.ai/view/Lunch-and-Learn-How-we-detect-fraud-traffic-by-Timofey-Levan",
+    "author": "Katarzyna Raniszewska",
+    "reactions": "",
+    "channel": "#general"
   },
   {
     "type": "officelife",
-    "emoji": "📝",
-    "accent": "#F39C12",
-    "gradient": [
-      "#F39C12",
-      "#E67E22"
-    ],
-    "title": "Leadership Philosophy",
-    "headline": "Build. Ship. Improve.",
-    "quote": "We're shifting from requirements to pull request mentality — focus on action and continuous improvement",
-    "author": "CEO Mandate",
-    "reactions": "🚀",
-    "channel": "Company Culture"
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "<!channel> Team,\nAnna is <https://appodeal.slack.com/archives/C08RDS0MU2F/p17730...",
+    "quote": "<!channel> Team,\nAnna is <https://appodeal.slack.com/archives/C08RDS0MU2F/p1773043372580949|starting> a reading club around the book _The 4 Disciplines of Execution_, and I encourage everyone to join.\n\nThe book focuses on four core concepts:\n• *Wildly Important Goals (WIGs)*\n• *Leading and Lagging M",
+    "author": "Pavel Golubev",
+    "reactions": "",
+    "channel": "#general"
   }
 ];
     // ══════════════════════════════════════════════════════════
@@ -490,36 +357,36 @@
     // ── Shared UI components ──
     function Badge({text,accent,emoji}){return h("div",{style:{display:"inline-block",padding:"8px 22px",borderRadius:24,fontSize:14,fontWeight:800,letterSpacing:3,marginBottom:18,background:accent+"15",color:accent,border:`1.5px solid ${accent}35`,backdropFilter:"blur(8px)"}},emoji+" "+text)}
 
-    function SlideTitle({text,color}){return h("h2",{style:{fontFamily:"'Playfair Display',serif",fontSize:52,fontWeight:600,margin:"0 0 24px",lineHeight:1.1,color:color||"#1a1a2e"}},text)}
+    function SlideTitle({text,color}){return h("h2",{style:{fontFamily:"'Playfair Display',serif",fontSize:52,fontWeight:600,margin:"0 0 24px",lineHeight:1.1,color:color||"#f0f0f5"}},text)}
 
     function ConfettiRow(){return h("div",{style:{display:"flex",justifyContent:"center",gap:20,marginTop:12}},["🎈","🎊","🎁","✨","🎈"].map((e,i)=>h("span",{key:i,style:{fontSize:36,display:"inline-block",animation:`confettiBounce 1.5s ease-in-out ${i*0.3}s infinite`}},e)))}
 
     // ── Slide renderers ──
     function BirthdaySlide({d,pal}){return h("div",{style:st.inner},h(Badge,{text:"CELEBRATION",accent:pal.c1,emoji:d.emoji}),h(SlideTitle,{text:d.title,color:pal.c2}),h(Avatar,{name:d.name,src:d.avatar,size:140,accent:pal.c1}),h("div",{style:{...st.heroName,marginTop:16}},d.name),h("div",{style:st.sub},d.date),h("p",{style:st.body},d.message),h("div",{style:{...st.note,color:pal.c2}},d.teamNote),h(ConfettiRow))}
 
-    function WinSlide({d,pal}){return h("div",{style:st.inner},h(Badge,{text:"WIN",accent:pal.c1,emoji:d.emoji}),h(SlideTitle,{text:d.title,color:pal.c2}),h("div",{style:{marginBottom:10}},h("div",{style:{fontSize:72,fontWeight:900,lineHeight:1,background:pal.grad,WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent"}},d.stat),h("div",{style:{fontSize:18,color:"#8a8aa0",letterSpacing:1,marginTop:4}},d.statUnit)),h("div",{style:{display:"flex",alignItems:"center",justifyContent:"center",gap:12,marginBottom:22}},d.avatar?h(Avatar,{name:d.who,src:d.avatar,size:80,accent:pal.c1}):null,h("span",{style:{fontSize:20,color:"#8a8aa0"}},"by ",h("strong",{style:{color:"#1a1a2e"}},d.who))),h("div",{style:st.card},h("h3",{style:{fontSize:26,fontWeight:700,margin:"0 0 10px",color:"#1a1a2e"}},d.headline),h("p",{style:{fontSize:20,lineHeight:1.7,color:"#6b6b85",margin:"0 0 14px",fontWeight:300}},d.description),d.takeaway?h("div",{style:{borderLeft:`4px solid ${pal.c1}`,paddingLeft:18,fontSize:18,lineHeight:1.6,color:"#7a7a95",fontStyle:"italic",fontWeight:300}},d.takeaway):null))}
+    function WinSlide({d,pal}){return h("div",{style:st.inner},h(Badge,{text:"WIN",accent:pal.c1,emoji:d.emoji}),h(SlideTitle,{text:d.title,color:pal.c2}),h("div",{style:{marginBottom:10}},h("div",{style:{fontSize:72,fontWeight:900,lineHeight:1,background:pal.grad,WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent"}},d.stat),h("div",{style:{fontSize:18,color:"rgba(255,255,255,0.4)",letterSpacing:1,marginTop:4}},d.statUnit)),h("div",{style:{display:"flex",alignItems:"center",justifyContent:"center",gap:12,marginBottom:22}},d.avatar?h(Avatar,{name:d.who,src:d.avatar,size:80,accent:pal.c1}):null,h("span",{style:{fontSize:20,color:"rgba(255,255,255,0.4)"}},"by ",h("strong",{style:{color:"#f0f0f5"}},d.who))),h("div",{style:st.card},h("h3",{style:{fontSize:26,fontWeight:700,margin:"0 0 10px",color:"#f0f0f5"}},d.headline),h("p",{style:{fontSize:20,lineHeight:1.7,color:"rgba(255,255,255,0.55)",margin:"0 0 14px",fontWeight:300}},d.description),d.takeaway?h("div",{style:{borderLeft:`4px solid ${pal.c1}`,paddingLeft:18,fontSize:18,lineHeight:1.6,color:"rgba(255,255,255,0.4)",fontStyle:"italic",fontWeight:300}},d.takeaway):null))}
 
     function ClapSlide({d,pal}){
       const toList=(d.to||[]).map(t=>typeof t==="string"?{name:t,avatar:""}:t);
       return h("div",{style:st.inner},h(Badge,{text:"CLAPS",accent:pal.c1,emoji:d.emoji}),h(SlideTitle,{text:d.title,color:pal.c2}),
-        h("div",{style:{display:"flex",alignItems:"center",justifyContent:"center",gap:14,marginBottom:22}},d.fromAvatar?h(Avatar,{name:d.from,src:d.fromAvatar,size:80,accent:pal.c1}):null,h("span",{style:{fontSize:20,color:"#8a8aa0"}},"from ",h("strong",{style:{color:"#1a1a2e"}},d.from))),
-        h("div",{style:{display:"flex",flexWrap:"wrap",justifyContent:"center",gap:14,marginBottom:20}},toList.map((t,i)=>h("div",{key:i,style:{display:"flex",alignItems:"center",gap:8,background:"rgba(255,255,255,0.8)",borderRadius:30,padding:"6px 16px 6px 6px",border:`1.5px solid ${pal.c1}25`,boxShadow:"0 2px 12px rgba(0,0,0,0.04)"}},h(Avatar,{name:t.name,src:t.avatar,size:44,accent:pal.c1}),h("span",{style:{fontSize:18,fontWeight:500,color:"#1a1a2e"}},t.name)))),
+        h("div",{style:{display:"flex",alignItems:"center",justifyContent:"center",gap:14,marginBottom:22}},d.fromAvatar?h(Avatar,{name:d.from,src:d.fromAvatar,size:80,accent:pal.c1}):null,h("span",{style:{fontSize:20,color:"rgba(255,255,255,0.4)"}},"from ",h("strong",{style:{color:"#f0f0f5"}},d.from))),
+        h("div",{style:{display:"flex",flexWrap:"wrap",justifyContent:"center",gap:14,marginBottom:20}},toList.map((t,i)=>h("div",{key:i,style:{display:"flex",alignItems:"center",gap:8,background:"rgba(255,255,255,0.06)",borderRadius:30,padding:"6px 16px 6px 6px",border:`1.5px solid ${pal.c1}25`}},h(Avatar,{name:t.name,src:t.avatar,size:44,accent:pal.c1}),h("span",{style:{fontSize:18,fontWeight:500,color:"#f0f0f5"}},t.name)))),
         h("blockquote",{style:{...st.quote,borderLeftColor:pal.c1}},'"'+d.reason+'"'),
         h("div",{style:st.chipRow},(d.values||[]).map((v,i)=>h("span",{key:i,style:{...st.vChip,background:pal.c1+"15",color:pal.c1}},v))))}
 
-    function NewJoinSlide({d,pal}){return h("div",{style:st.inner},h(Badge,{text:"NEW TEAMMATE",accent:pal.c1,emoji:d.emoji}),h(SlideTitle,{text:d.title,color:pal.c2}),h("div",{style:{display:"flex",justifyContent:"center",marginBottom:18}},h(Avatar,{name:d.name,src:d.avatar,size:140,accent:pal.c1})),h("div",{style:st.heroName},d.name),h("div",{style:{fontSize:20,fontWeight:600,marginBottom:22,color:pal.c1}},(d.role||"")+" · "+(d.team||"")),d.quote?h("blockquote",{style:{...st.quote,borderLeftColor:pal.c1}},'"'+d.quote+'"'):null,h("div",{style:{fontSize:24,fontWeight:500,color:"#8a8aa0"}},"Welcome aboard! 🎉"))}
+    function NewJoinSlide({d,pal}){return h("div",{style:st.inner},h(Badge,{text:"NEW TEAMMATE",accent:pal.c1,emoji:d.emoji}),h(SlideTitle,{text:d.title,color:pal.c2}),h("div",{style:{display:"flex",justifyContent:"center",marginBottom:18}},h(Avatar,{name:d.name,src:d.avatar,size:140,accent:pal.c1})),h("div",{style:st.heroName},d.name),h("div",{style:{fontSize:20,fontWeight:600,marginBottom:22,color:pal.c1}},(d.role||"")+" · "+(d.team||"")),d.quote?h("blockquote",{style:{...st.quote,borderLeftColor:pal.c1}},'"'+d.quote+'"'):null,h("div",{style:{fontSize:24,fontWeight:500,color:"rgba(255,255,255,0.4)"}},"Welcome aboard! 🎉"))}
 
-    function EventSlide({d,pal}){return h("div",{style:st.inner},h(Badge,{text:"EVENT",accent:pal.c1,emoji:d.emoji}),h(SlideTitle,{text:d.title,color:pal.c2}),h("div",{style:st.card},h("h3",{style:{fontSize:28,fontWeight:700,margin:"0 0 8px",color:"#1a1a2e"}},d.eventName),h("div",{style:{fontSize:20,fontWeight:600,marginBottom:18,color:pal.c1}},d.date),h("p",{style:{fontSize:20,lineHeight:1.7,color:"#6b6b85",margin:"0 0 14px",fontWeight:300}},d.description),d.organizer?h("div",{style:{display:"flex",alignItems:"center",gap:10,marginTop:12}},d.organizerAvatar?h(Avatar,{name:d.organizer,src:d.organizerAvatar,size:44,accent:pal.c1}):null,h("span",{style:{fontSize:18,color:"#9a9ab0"}},"Organized by ",h("strong",{style:{color:"#1a1a2e"}},d.organizer))):null))}
+    function EventSlide({d,pal}){return h("div",{style:st.inner},h(Badge,{text:"EVENT",accent:pal.c1,emoji:d.emoji}),h(SlideTitle,{text:d.title,color:pal.c2}),h("div",{style:st.card},h("h3",{style:{fontSize:28,fontWeight:700,margin:"0 0 8px",color:"#f0f0f5"}},d.eventName),h("div",{style:{fontSize:20,fontWeight:600,marginBottom:18,color:pal.c1}},d.date),h("p",{style:{fontSize:20,lineHeight:1.7,color:"rgba(255,255,255,0.55)",margin:"0 0 14px",fontWeight:300}},d.description),d.organizer?h("div",{style:{display:"flex",alignItems:"center",gap:10,marginTop:12}},d.organizerAvatar?h(Avatar,{name:d.organizer,src:d.organizerAvatar,size:44,accent:pal.c1}):null,h("span",{style:{fontSize:18,color:"rgba(255,255,255,0.35)"}},"Organized by ",h("strong",{style:{color:"#f0f0f5"}},d.organizer))):null))}
 
-    function MilestoneSlide({d,pal}){return h("div",{style:st.inner},h(Badge,{text:"MILESTONE",accent:pal.c1,emoji:d.emoji}),h(SlideTitle,{text:d.title,color:pal.c2}),h("div",{style:{marginBottom:20}},h("div",{style:{fontSize:80,fontWeight:900,lineHeight:1,marginBottom:6,background:pal.grad,WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent"}},d.stat),h("div",{style:{fontSize:16,color:"#9a9ab0",letterSpacing:2,textTransform:"uppercase",fontWeight:500}},d.statLabel)),h("h3",{style:{fontSize:28,fontWeight:600,margin:"0 0 12px",color:"#1a1a2e"}},d.headline),h("p",{style:st.body},d.description))}
+    function MilestoneSlide({d,pal}){return h("div",{style:st.inner},h(Badge,{text:"MILESTONE",accent:pal.c1,emoji:d.emoji}),h(SlideTitle,{text:d.title,color:pal.c2}),h("div",{style:{marginBottom:20}},h("div",{style:{fontSize:80,fontWeight:900,lineHeight:1,marginBottom:6,background:pal.grad,WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent"}},d.stat),h("div",{style:{fontSize:16,color:"rgba(255,255,255,0.3)",letterSpacing:2,textTransform:"uppercase",fontWeight:500}},d.statLabel)),h("h3",{style:{fontSize:28,fontWeight:600,margin:"0 0 12px",color:"#f0f0f5"}},d.headline),h("p",{style:st.body},d.description))}
 
-    function ReadingSlide({d,pal}){return h("div",{style:st.inner},h(Badge,{text:"RECOMMENDED",accent:pal.c1,emoji:d.emoji}),h(SlideTitle,{text:d.title,color:pal.c2}),h("div",{style:{display:"flex",flexDirection:"column",gap:16,maxWidth:720,margin:"0 auto 18px"}},(d.articles||[]).map((a,i)=>h("div",{key:i,style:{display:"flex",gap:16,textAlign:"left",background:"rgba(255,255,255,0.7)",borderRadius:16,padding:"18px 22px",border:"1px solid rgba(0,0,0,0.04)",boxShadow:"0 2px 16px rgba(0,0,0,0.03)",backdropFilter:"blur(10px)"}},h("div",{style:{fontSize:36,fontWeight:800,lineHeight:1,minWidth:48,background:pal.grad,WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent"}},"0"+(i+1)),h("div",{style:{flex:1}},h("div",{style:{fontSize:22,fontWeight:700,color:"#1a1a2e",marginBottom:6}},a.title),h("div",{style:{fontSize:18,lineHeight:1.6,color:"#6b6b85",fontWeight:300,marginBottom:6}},a.desc),h("div",{style:{display:"flex",alignItems:"center",gap:8,fontSize:16,color:"#9a9ab0"}},a.sharedByAvatar?h(Avatar,{name:a.sharedBy,src:a.sharedByAvatar,size:28,accent:pal.c1}):null,"Shared by "+a.sharedBy+(a.reactions?" · "+a.reactions:"")))))),d.channel?h("div",{style:st.chTag},d.channel):null)}
+    function ReadingSlide({d,pal}){return h("div",{style:st.inner},h(Badge,{text:"RECOMMENDED",accent:pal.c1,emoji:d.emoji}),h(SlideTitle,{text:d.title,color:pal.c2}),h("div",{style:{display:"flex",flexDirection:"column",gap:16,maxWidth:720,margin:"0 auto 18px"}},(d.articles||[]).map((a,i)=>h("div",{key:i,style:{display:"flex",gap:16,textAlign:"left",background:"rgba(255,255,255,0.04)",borderRadius:16,padding:"18px 22px",border:"1px solid rgba(255,255,255,0.06)",boxShadow:"0 2px 16px rgba(0,0,0,0.2)",backdropFilter:"blur(10px)"}},h("div",{style:{fontSize:36,fontWeight:800,lineHeight:1,minWidth:48,background:pal.grad,WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent"}},"0"+(i+1)),h("div",{style:{flex:1}},h("div",{style:{fontSize:22,fontWeight:700,color:"#f0f0f5",marginBottom:6}},a.title),h("div",{style:{fontSize:18,lineHeight:1.6,color:"rgba(255,255,255,0.55)",fontWeight:300,marginBottom:6}},a.desc),h("div",{style:{display:"flex",alignItems:"center",gap:8,fontSize:16,color:"rgba(255,255,255,0.3)"}},a.sharedByAvatar?h(Avatar,{name:a.sharedBy,src:a.sharedByAvatar,size:28,accent:pal.c1}):null,"Shared by "+a.sharedBy+(a.reactions?" · "+a.reactions:"")))))),d.channel?h("div",{style:st.chTag},d.channel):null)}
 
-    function OfficeLifeSlide({d,pal}){return h("div",{style:st.inner},h(Badge,{text:"OFFICE LIFE",accent:pal.c1,emoji:d.emoji}),h(SlideTitle,{text:d.title,color:pal.c2}),h("h3",{style:{fontSize:28,fontWeight:600,margin:"0 0 14px",color:"#1a1a2e"}},d.headline),d.quote?h("blockquote",{style:{...st.quote,borderLeftColor:pal.c1}},'"'+d.quote+'"'):null,h("div",{style:{display:"flex",alignItems:"center",justifyContent:"center",gap:12,marginBottom:22}},d.avatar?h(Avatar,{name:d.author,src:d.avatar,size:80,accent:pal.c1}):null,h("span",{style:{fontSize:20,color:"#8a8aa0"}},"— "+(d.author||""))),d.reactions?h("div",{style:{fontSize:22,fontWeight:600,marginBottom:14,letterSpacing:1,color:pal.c1}},d.reactions):null,d.channel?h("div",{style:st.chTag},d.channel):null)}
+    function OfficeLifeSlide({d,pal}){return h("div",{style:st.inner},h(Badge,{text:"OFFICE LIFE",accent:pal.c1,emoji:d.emoji}),h(SlideTitle,{text:d.title,color:pal.c2}),h("h3",{style:{fontSize:28,fontWeight:600,margin:"0 0 14px",color:"#f0f0f5"}},d.headline),d.quote?h("blockquote",{style:{...st.quote,borderLeftColor:pal.c1}},'"'+d.quote+'"'):null,h("div",{style:{display:"flex",alignItems:"center",justifyContent:"center",gap:12,marginBottom:22}},d.avatar?h(Avatar,{name:d.author,src:d.avatar,size:80,accent:pal.c1}):null,h("span",{style:{fontSize:20,color:"rgba(255,255,255,0.4)"}},"— "+(d.author||""))),d.reactions?h("div",{style:{fontSize:22,fontWeight:600,marginBottom:14,letterSpacing:1,color:pal.c1}},d.reactions):null,d.channel?h("div",{style:st.chTag},d.channel):null)}
 
-    function CelebrationSlide({d,pal}){return h("div",{style:st.inner},h(Badge,{text:"WEEKLY RITUAL",accent:pal.c1,emoji:d.emoji}),h(SlideTitle,{text:d.title,color:pal.c2}),h("h3",{style:{fontSize:28,fontWeight:600,margin:"0 0 14px",color:"#1a1a2e"}},d.headline),h("div",{style:{display:"flex",flexDirection:"column",gap:14,maxWidth:700,margin:"0 auto 20px"}},[d.prompt1,d.prompt2].filter(Boolean).map((p,i)=>h("div",{key:i,style:{background:"rgba(255,255,255,0.7)",borderRadius:14,padding:"16px 22px",fontSize:20,lineHeight:1.6,color:"#5a5a75",textAlign:"left",border:"1px solid rgba(0,0,0,0.04)",boxShadow:"0 2px 12px rgba(0,0,0,0.03)"}},p))),d.coreValue?h("p",{style:{...st.body,fontStyle:"italic",maxWidth:650}},d.coreValue):null,d.channel?h("div",{style:st.chTag},d.channel):null)}
+    function CelebrationSlide({d,pal}){return h("div",{style:st.inner},h(Badge,{text:"WEEKLY RITUAL",accent:pal.c1,emoji:d.emoji}),h(SlideTitle,{text:d.title,color:pal.c2}),h("h3",{style:{fontSize:28,fontWeight:600,margin:"0 0 14px",color:"#f0f0f5"}},d.headline),h("div",{style:{display:"flex",flexDirection:"column",gap:14,maxWidth:700,margin:"0 auto 20px"}},[d.prompt1,d.prompt2].filter(Boolean).map((p,i)=>h("div",{key:i,style:{background:"rgba(255,255,255,0.04)",borderRadius:14,padding:"16px 22px",fontSize:20,lineHeight:1.6,color:"rgba(255,255,255,0.55)",textAlign:"left",border:"1px solid rgba(255,255,255,0.06)",boxShadow:"0 2px 12px rgba(0,0,0,0.2)"}},p))),d.coreValue?h("p",{style:{...st.body,fontStyle:"italic",maxWidth:650}},d.coreValue):null,d.channel?h("div",{style:st.chTag},d.channel):null)}
 
-    function GenericSlide({d,pal}){return h("div",{style:st.inner},h(Badge,{text:(d.type||"INFO").toUpperCase(),accent:pal.c1,emoji:d.emoji||"📌"}),h(SlideTitle,{text:d.title||"Update",color:pal.c2}),d.headline?h("h3",{style:{fontSize:28,fontWeight:600,color:"#1a1a2e"}},d.headline):null,d.description?h("p",{style:st.body},d.description):null)}
+    function GenericSlide({d,pal}){return h("div",{style:st.inner},h(Badge,{text:(d.type||"INFO").toUpperCase(),accent:pal.c1,emoji:d.emoji||"📌"}),h(SlideTitle,{text:d.title||"Update",color:pal.c2}),d.headline?h("h3",{style:{fontSize:28,fontWeight:600,color:"#f0f0f5"}},d.headline):null,d.description?h("p",{style:st.body},d.description):null)}
 
     const RENDERERS={birthday:BirthdaySlide,win:WinSlide,clap:ClapSlide,newjoin:NewJoinSlide,event:EventSlide,milestone:MilestoneSlide,reading:ReadingSlide,officelife:OfficeLifeSlide,celebration:CelebrationSlide,funquote:GenericSlide};
 
@@ -539,17 +406,17 @@
       useEffect(()=>{const t=setInterval(()=>setClock(timeStr()),10000);return()=>clearInterval(t)},[]);
       useEffect(()=>{const handler=e=>{if(e.key==="ArrowRight")next();if(e.key==="ArrowLeft")prev();if(e.key===" "){e.preventDefault();setPaused(p=>!p)}};window.addEventListener("keydown",handler);return()=>window.removeEventListener("keydown",handler)},[next,prev]);
 
-      if(!SLIDES||SLIDES.length===0)return h("div",{style:{display:"flex",alignItems:"center",justifyContent:"center",height:"100vh",color:"#999",fontSize:24,background:"#f4f4f8"}},"No slides available.");
+      if(!SLIDES||SLIDES.length===0)return h("div",{style:{display:"flex",alignItems:"center",justifyContent:"center",height:"100vh",color:"#999",fontSize:24,background:"#08080c"}},"No slides available.");
       const sl=SLIDES[cur]||SLIDES[0];
       const pal=holo(cur);
       const R=(RENDERERS[sl.type]||GenericSlide);
 
-      return h("div",{style:{position:"relative",width:"100%",height:"100vh",background:"#f4f4f8",fontFamily:"'Outfit',sans-serif",color:"#1a1a2e",overflow:"hidden",display:"flex",flexDirection:"column"}},
+      return h("div",{style:{position:"relative",width:"100%",height:"100vh",background:"#08080c",fontFamily:"'Outfit',sans-serif",color:"#f0f0f5",overflow:"hidden",display:"flex",flexDirection:"column"}},
         // ── Holographic gradient blobs (animated, per-slide color) ──
-        h("div",{key:"blob1-"+cur,style:{position:"absolute",top:"-15%",right:"-8%",width:"55%",height:"65%",borderRadius:"50%",pointerEvents:"none",zIndex:0,background:`radial-gradient(ellipse at 40% 40%, ${pal.c1}30 0%, ${pal.c2}15 40%, transparent 70%)`,filter:"blur(60px)",animation:"blobMove1 20s ease-in-out infinite",transition:"background 1.5s ease"}}),
-        h("div",{key:"blob2-"+cur,style:{position:"absolute",bottom:"-18%",left:"-8%",width:"50%",height:"60%",borderRadius:"50%",pointerEvents:"none",zIndex:0,background:`radial-gradient(ellipse at 60% 60%, ${pal.c2}25 0%, ${pal.c1}10 40%, transparent 70%)`,filter:"blur(60px)",animation:"blobMove2 25s ease-in-out infinite",transition:"background 1.5s ease"}}),
+        h("div",{key:"blob1-"+cur,style:{position:"absolute",top:"-15%",right:"-8%",width:"55%",height:"65%",borderRadius:"50%",pointerEvents:"none",zIndex:0,background:`radial-gradient(ellipse at 40% 40%, ${pal.c1}22 0%, ${pal.c2}12 40%, transparent 70%)`,filter:"blur(60px)",animation:"blobMove1 20s ease-in-out infinite",transition:"background 1.5s ease"}}),
+        h("div",{key:"blob2-"+cur,style:{position:"absolute",bottom:"-18%",left:"-8%",width:"50%",height:"60%",borderRadius:"50%",pointerEvents:"none",zIndex:0,background:`radial-gradient(ellipse at 60% 60%, ${pal.c2}18 0%, ${pal.c1}0a 40%, transparent 70%)`,filter:"blur(60px)",animation:"blobMove2 25s ease-in-out infinite",transition:"background 1.5s ease"}}),
         // Small accent blob top-left
-        h("div",{style:{position:"absolute",top:"10%",left:"5%",width:"20%",height:"25%",borderRadius:"50%",pointerEvents:"none",zIndex:0,background:`radial-gradient(ellipse, ${pal.c1}12 0%, transparent 60%)`,filter:"blur(40px)",transition:"background 1.5s"}}),
+        h("div",{style:{position:"absolute",top:"10%",left:"5%",width:"20%",height:"25%",borderRadius:"50%",pointerEvents:"none",zIndex:0,background:`radial-gradient(ellipse, ${pal.c1}0c 0%, transparent 60%)`,filter:"blur(40px)",transition:"background 1.5s"}}),
 
         // ── Top holographic accent bar ──
         h("div",{style:{position:"absolute",top:0,left:0,right:0,height:4,zIndex:5,background:`linear-gradient(90deg,${pal.c1},${pal.c2},${pal.c1})`,backgroundSize:"200% 100%",animation:"holoShift 3s ease infinite"}}),
@@ -558,14 +425,14 @@
         h("header",{style:{position:"relative",zIndex:2,display:"flex",justifyContent:"space-between",alignItems:"center",padding:"22px 36px"}},
           h("div",{style:{display:"flex",alignItems:"center",gap:12}},
             h("div",{style:{width:10,height:10,borderRadius:"50%",background:pal.c1,transition:"background 0.8s",boxShadow:`0 0 12px ${pal.c1}50`}}),
-            h("span",{style:{fontWeight:800,fontSize:18,letterSpacing:3,color:"#1a1a2e"}},"APPODEAL"),
-            h("span",{style:{color:"rgba(0,0,0,0.1)",fontSize:22}},"·"),
-            h("span",{style:{fontWeight:500,fontSize:16,letterSpacing:5,color:"#9a9ab0"}},"PULSE")),
+            h("span",{style:{fontWeight:800,fontSize:18,letterSpacing:3,color:"#fff"}},"APPODEAL"),
+            h("span",{style:{color:"rgba(255,255,255,0.12)",fontSize:22}},"·"),
+            h("span",{style:{fontWeight:500,fontSize:16,letterSpacing:5,color:"rgba(255,255,255,0.3)"}},"PULSE")),
           h("div",{style:{display:"flex",alignItems:"center",gap:16}},
             h("span",{style:{width:8,height:8,borderRadius:"50%",background:"#22c55e",animation:"blink 2s ease-in-out infinite"}}),
             h("span",{style:{fontSize:13,fontWeight:700,letterSpacing:2,color:"#22c55e"}},"LIVE"),
-            h("span",{style:{fontWeight:600,fontSize:20,color:"#1a1a2e",fontVariantNumeric:"tabular-nums"}},clock),
-            h("span",{style:{fontSize:16,color:"#9a9ab0"}},dateStr))
+            h("span",{style:{fontWeight:600,fontSize:20,color:"#fff",fontVariantNumeric:"tabular-nums"}},clock),
+            h("span",{style:{fontSize:16,color:"rgba(255,255,255,0.3)"}},dateStr))
         ),
 
         // ── Main content ──
@@ -575,29 +442,29 @@
         h("footer",{style:{position:"relative",zIndex:2,display:"flex",justifyContent:"space-between",alignItems:"center",padding:"14px 36px 20px"}},
           h("div",{style:{display:"flex",gap:5,alignItems:"center",flexWrap:"wrap",maxWidth:"45%"}},SLIDES.map((_,i)=>{
             const dotPal=holo(i);
-            return h("button",{key:i,onClick:()=>go(i),style:{height:8,borderRadius:4,border:"none",cursor:"pointer",padding:0,flexShrink:0,transition:"all 0.35s cubic-bezier(0.16,1,0.3,1)",background:i===cur?dotPal.grad:"rgba(0,0,0,0.08)",width:i===cur?36:8,opacity:i===cur?1:0.5,boxShadow:i===cur?`0 0 10px ${dotPal.c1}40`:"none"}})
+            return h("button",{key:i,onClick:()=>go(i),style:{height:8,borderRadius:4,border:"none",cursor:"pointer",padding:0,flexShrink:0,transition:"all 0.35s cubic-bezier(0.16,1,0.3,1)",background:i===cur?dotPal.grad:"rgba(255,255,255,0.1)",width:i===cur?36:8,opacity:i===cur?1:0.5,boxShadow:i===cur?`0 0 10px ${dotPal.c1}40`:"none"}})
           })),
-          h("div",{style:{display:"flex",gap:8}},["‹",paused?"▶":"❚❚","›"].map((label,i)=>h("button",{key:i,onClick:[prev,()=>setPaused(p=>!p),next][i],style:{background:"rgba(255,255,255,0.7)",border:"1px solid rgba(0,0,0,0.06)",color:"#5a5a75",width:40,height:40,borderRadius:"50%",cursor:"pointer",fontSize:18,display:"flex",alignItems:"center",justifyContent:"center",boxShadow:"0 2px 8px rgba(0,0,0,0.04)"}},label))),
-          h("div",{style:{fontSize:16,color:"#9a9ab0",fontVariantNumeric:"tabular-nums"}},(cur+1)+" / "+SLIDES.length)
+          h("div",{style:{display:"flex",gap:8}},["‹",paused?"▶":"❚❚","›"].map((label,i)=>h("button",{key:i,onClick:[prev,()=>setPaused(p=>!p),next][i],style:{background:"rgba(255,255,255,0.06)",border:"1px solid rgba(255,255,255,0.08)",color:"rgba(255,255,255,0.5)",width:40,height:40,borderRadius:"50%",cursor:"pointer",fontSize:18,display:"flex",alignItems:"center",justifyContent:"center"}},label))),
+          h("div",{style:{fontSize:16,color:"rgba(255,255,255,0.3)",fontVariantNumeric:"tabular-nums"}},(cur+1)+" / "+SLIDES.length)
         ),
 
         // ── Progress bar ──
-        h("div",{style:{position:"absolute",bottom:0,left:0,right:0,height:3,background:"rgba(0,0,0,0.04)",zIndex:5}},h("div",{style:{height:"100%",width:prog+"%",background:pal.grad,transition:"width 0.08s linear",borderRadius:"0 2px 2px 0"}}))
+        h("div",{style:{position:"absolute",bottom:0,left:0,right:0,height:3,background:"rgba(255,255,255,0.06)",zIndex:5}},h("div",{style:{height:"100%",width:prog+"%",background:pal.grad,transition:"width 0.08s linear",borderRadius:"0 2px 2px 0"}}))
       );
     }
 
     const st={
       inner:{maxWidth:800,width:"100%",textAlign:"center"},
-      heroName:{fontSize:38,fontWeight:700,color:"#1a1a2e",marginBottom:6},
-      sub:{fontSize:20,color:"#8a8aa0",marginBottom:22},
-      body:{fontSize:22,lineHeight:1.7,color:"#6b6b85",maxWidth:700,margin:"0 auto 20px",fontWeight:300},
+      heroName:{fontSize:38,fontWeight:700,color:"#f0f0f5",marginBottom:6},
+      sub:{fontSize:20,color:"rgba(255,255,255,0.4)",marginBottom:22},
+      body:{fontSize:22,lineHeight:1.7,color:"rgba(255,255,255,0.55)",maxWidth:700,margin:"0 auto 20px",fontWeight:300},
       note:{fontSize:22,fontWeight:600,marginBottom:22},
-      card:{background:"rgba(255,255,255,0.75)",borderRadius:18,padding:"24px 30px",maxWidth:700,margin:"0 auto",textAlign:"left",border:"1px solid rgba(0,0,0,0.04)",boxShadow:"0 4px 24px rgba(0,0,0,0.04)",backdropFilter:"blur(12px)"},
+      card:{background:"rgba(255,255,255,0.04)",borderRadius:18,padding:"24px 30px",maxWidth:700,margin:"0 auto",textAlign:"left",border:"1px solid rgba(255,255,255,0.06)",boxShadow:"0 4px 24px rgba(0,0,0,0.3)",backdropFilter:"blur(12px)"},
       chipRow:{display:"flex",flexWrap:"wrap",justifyContent:"center",gap:8,marginBottom:20},
-      chip:{padding:"8px 18px",borderRadius:22,fontSize:18,fontWeight:500,border:"1px solid",background:"rgba(255,255,255,0.6)",color:"#1a1a2e"},
+      chip:{padding:"8px 18px",borderRadius:22,fontSize:18,fontWeight:500,border:"1px solid",background:"rgba(255,255,255,0.06)",color:"#f0f0f5"},
       vChip:{padding:"6px 14px",borderRadius:8,fontSize:14,fontWeight:700,letterSpacing:0.5},
-      quote:{borderLeft:"4px solid",paddingLeft:22,margin:"0 auto 20px",maxWidth:650,textAlign:"left",fontSize:22,lineHeight:1.7,color:"#6b6b85",fontStyle:"italic",fontWeight:300},
-      chTag:{display:"inline-block",marginTop:10,fontSize:16,color:"#9a9ab0",letterSpacing:0.5},
+      quote:{borderLeft:"4px solid",paddingLeft:22,margin:"0 auto 20px",maxWidth:650,textAlign:"left",fontSize:22,lineHeight:1.7,color:"rgba(255,255,255,0.55)",fontStyle:"italic",fontWeight:300},
+      chTag:{display:"inline-block",marginTop:10,fontSize:16,color:"rgba(255,255,255,0.3)",letterSpacing:0.5},
     };
 
     ReactDOM.render(h(App),document.getElementById("root"));
