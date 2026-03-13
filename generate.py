@@ -194,8 +194,16 @@ def build_fireflies_section(content):
     parts = ["""
 RECENT MEETING INSIGHTS (from Fireflies transcripts):
 Create 2-4 slides from these meeting highlights. Use "milestone", "win", or "event" type.
-Pick the most interesting takeaways, decisions, and action items that the whole company would find inspiring.
-Do NOT create slides for private 1:1 meetings or HR interviews — only team/company-wide meetings.
+
+FIREFLIES CONTENT RULES — STRICTLY FOLLOW:
+1. NEVER quote anyone directly from meetings — always paraphrase and summarize
+2. NEVER include profanity, harsh language, aggressive tone, or emotional outbursts — even if present in the source. Strip all that out completely
+3. BE REAL, NOT SUGARCOATED — you CAN name problems as problems, challenges as challenges. Don't pretend everything is perfect. But ALWAYS add a constructive angle: "here's the challenge AND here's what we're doing about it" or "this is an opportunity to grow"
+4. TONE: honest reality check delivered in a kind, respectful way. Like a smart friend who tells you the truth but believes in you
+5. Focus on: strategic decisions, wins, challenges being tackled, new initiatives, team achievements, product milestones, goals, learnings from setbacks
+6. SKIP meetings about: HR topics, performance reviews, individual feedback, salary discussions, disciplinary matters, personal conflicts
+7. Do NOT attribute specific opinions, criticism, or controversial statements to named individuals
+8. Every slide should leave people informed AND motivated — not anxious or discouraged
 """]
 
     for m in meetings:

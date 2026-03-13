@@ -268,10 +268,24 @@ def fetch_fireflies_meetings(hours=72):
         transcripts = data.get("data", {}).get("transcripts", [])
         meetings = []
 
+        # Title patterns to skip (1:1s, phone calls, interviews)
+        SKIP_TITLE_PATTERNS = [
+            " / ",          # "Pavel / Liliya" — 1:1 format
+            "1:1", "1-1", "one on one", "one-on-one",
+            "phone call", "call with",
+            "interview", "screening", "candidate",
+            "performance review", "pip", "disciplinary",
+        ]
+
         for t in transcripts:
             summary = t.get("summary") or {}
             # Skip silent/empty meetings
             if not summary.get("overview") and not summary.get("shorthand_bullet"):
+                continue
+
+            # Skip 1:1s, phone calls, interviews by title
+            title_lower = (t.get("title") or "").lower()
+            if any(pat.lower() in title_lower for pat in SKIP_TITLE_PATTERNS):
                 continue
 
             meetings.append({
