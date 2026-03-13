@@ -2,347 +2,125 @@
   {
     "type": "birthday",
     "emoji": "🎂",
-    "accent": "#FF6B6B",
-    "gradient": [
-      "#FF6B6B",
-      "#4ECDC4"
-    ],
-    "title": "Birthday Celebration",
-    "name": "Alexandr Sikorsky",
-    "date": "March 10th",
-    "message": "Wishing you an amazing year ahead filled with growth, success, and happiness! 🎉",
-    "teamNote": "Thanks for all the warm birthday wishes from the team!",
-    "avatar": "https://avatars.slack-edge.com/2020-09-07/1348241323011_1173d242099cc519c370_192.jpg"
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Francesco Cerigioni",
+    "date": "March 13",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "With love, Your Appodeal Team 💜"
   },
   {
     "type": "birthday",
-    "emoji": "🎉",
-    "accent": "#45B7D1",
-    "gradient": [
-      "#45B7D1",
-      "#96CEB4"
-    ],
-    "title": "Birthday Celebration",
-    "name": "Yurii Ivanovskyi",
-    "date": "March 10th",
-    "message": "Hope you had the most wonderful birthday celebration! Here's to another year of amazing achievements! 🥳",
-    "teamNote": "The whole team joined in celebrating with heartfelt wishes!",
-    "avatar": "https://avatars.slack-edge.com/2018-08-02/409729301283_953c3fa3a40d75449b9d_192.jpg"
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Giulia Galvani",
+    "date": "March 13",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "With love, Your Appodeal Team 💜"
   },
   {
-    "type": "win",
-    "emoji": "🚀",
-    "accent": "#FF9500",
-    "gradient": [
-      "#FF9500",
-      "#FF5722"
-    ],
-    "title": "DevOps Innovation",
-    "who": "Gleb Krahotkin",
-    "stat": "26+",
-    "statUnit": "reactions",
-    "headline": "Coolify Deployment Platform Launch",
-    "description": "Introduced Coolify service for one-click app deployment with comprehensive documentation",
-    "takeaway": "Empowering teams with streamlined deployment workflows",
-    "avatar": "https://avatars.slack-edge.com/2022-10-23/4275527051089_402b8b44f748e977a230_192.png"
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Yanina Lozben",
+    "date": "March 13",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "With love, Your Appodeal Team 💜"
   },
   {
-    "type": "event",
-    "emoji": "🧠",
-    "accent": "#9C27B0",
-    "gradient": [
-      "#9C27B0",
-      "#E91E63"
-    ],
-    "title": "Book Club Launch",
-    "eventName": "The 4 Disciplines of Execution Reading Club",
-    "date": "Starting Now",
-    "description": "Focusing on Wildly Important Goals, Leading/Lagging Metrics, Scorecards, and Execution Discipline",
-    "organizer": "Anna & Pavel Golubev",
-    "organizerAvatar": "https://avatars.slack-edge.com/2023-05-16/5295724727056_51af1c43120e4a5e14e7_192.jpg"
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Daryna Rudavka",
+    "date": "March 13",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "With love, Your Appodeal Team 💜"
   },
   {
-    "type": "win",
-    "emoji": "🎯",
-    "accent": "#4CAF50",
-    "gradient": [
-      "#4CAF50",
-      "#8BC34A"
-    ],
-    "title": "Lunch & Learn Success",
-    "who": "Katarzyna & Timofey",
-    "stat": "11th",
-    "statUnit": "session",
-    "headline": "Fraud Detection Presentation",
-    "description": "Timofey delivered an insightful presentation on traffic fraud detection with recording available",
-    "takeaway": "Knowledge sharing continues to strengthen our technical expertise",
-    "avatar": "https://avatars.slack-edge.com/2025-01-08/8266302480660_a86f929f8d1061603dda_192.jpg"
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Vladimir Khrolovich",
+    "date": "March 13",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "With love, Your Appodeal Team 💜"
   },
   {
-    "type": "clap",
-    "emoji": "👏",
-    "accent": "#FF5722",
-    "gradient": [
-      "#FF5722",
-      "#FF9800"
-    ],
-    "title": "Team Recognition",
-    "count": 50,
-    "from": "Pavel Savinskiy",
-    "to": [
-      {
-        "name": "sergeydesigner",
-        "avatar": ""
-      }
-    ],
-    "reason": "Outstanding design work and dedication",
-    "values": [
-      "EXTREME TEAMWORK"
-    ],
-    "fromAvatar": "https://avatars.slack-edge.com/2025-07-18/9218603955989_1a09cbabd96969f879f2_192.jpg"
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Denis Glavatskikh",
+    "date": "March 13",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "With love, Your Appodeal Team 💜"
   },
   {
-    "type": "clap",
-    "emoji": "⭐",
-    "accent": "#2196F3",
-    "gradient": [
-      "#2196F3",
-      "#03DAC6"
-    ],
-    "title": "Excellence Recognized",
-    "count": 50,
-    "from": "Sem Sinchenko",
-    "to": [
-      {
-        "name": "Ildar Fatykhov",
-        "avatar": "https://avatars.slack-edge.com/2025-06-23/9082579889846_b3f900970c3c6bba8162_192.jpg"
-      }
-    ],
-    "reason": "Exceptional performance and technical excellence",
-    "values": [
-      "BRAIN",
-      "EXCELLENCE"
-    ]
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Irina Koval",
+    "date": "March 13",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "With love, Your Appodeal Team 💜"
   },
   {
-    "type": "clap",
-    "emoji": "🚀",
-    "accent": "#9C27B0",
-    "gradient": [
-      "#9C27B0",
-      "#E91E63"
-    ],
-    "title": "Team Collaboration",
-    "count": 40,
-    "from": "Anastasia Sokolova",
-    "to": [
-      {
-        "name": "Sasha Sakovich",
-        "avatar": "https://avatars.slack-edge.com/2025-09-08/9478235498902_fa74aee9301ad16fa3e5_192.png"
-      }
-    ],
-    "reason": "Amazing teamwork and project delivery",
-    "values": [
-      "TEAMWORK",
-      "EXCELLENCE"
-    ],
-    "fromAvatar": "https://avatars.slack-edge.com/2020-08-25/1327535570580_e1ee5e4dc78cc73d35df_192.jpg"
-  },
-  {
-    "type": "clap",
-    "emoji": "🔥",
-    "accent": "#FF6B6B",
-    "gradient": [
-      "#FF6B6B",
-      "#4ECDC4"
-    ],
-    "title": "DevOps Excellence",
-    "count": 30,
-    "from": "Gleb Krahotkin",
-    "to": [
-      {
-        "name": "Hierman Pelekh",
-        "avatar": "https://avatars.slack-edge.com/2024-04-16/6967559547717_915406465ca0f9caf468_192.jpg"
-      }
-    ],
-    "reason": "Outstanding technical contribution and innovation",
-    "values": [
-      "TECHNICAL EXCELLENCE"
-    ],
-    "fromAvatar": "https://avatars.slack-edge.com/2022-10-23/4275527051089_402b8b44f748e977a230_192.png"
-  },
-  {
-    "type": "clap",
-    "emoji": "💪",
-    "accent": "#4CAF50",
-    "gradient": [
-      "#4CAF50",
-      "#8BC34A"
-    ],
-    "title": "Cross-Team Support",
-    "count": 25,
-    "from": "Roman Rinchinov",
-    "to": [
-      {
-        "name": "Vasyl Plesiuk",
-        "avatar": "https://avatars.slack-edge.com/2023-03-21/4981596592133_83c77bf2295931f06af4_192.jpg"
-      }
-    ],
-    "reason": "Exceptional support and collaboration across teams",
-    "values": [
-      "SERVE OTHERS",
-      "TEAMWORK"
-    ],
-    "fromAvatar": "https://avatars.slack-edge.com/2024-09-02/7656627917494_e2fac98ab5a2d31e0ef8_192.png"
-  },
-  {
-    "type": "clap",
-    "emoji": "🎯",
-    "accent": "#FF9500",
-    "gradient": [
-      "#FF9500",
-      "#FF5722"
-    ],
-    "title": "Quality Focus",
-    "count": 25,
-    "from": "Dima",
-    "to": [
-      {
-        "name": "Irina Koval",
-        "avatar": "https://avatars.slack-edge.com/2025-12-26/10220020602720_d5ca457b218ef9906a62_192.png"
-      }
-    ],
-    "reason": "Exceptional attention to quality and detail",
-    "values": [
-      "EXCELLENCE",
-      "DEDICATION"
-    ],
-    "fromAvatar": "https://avatars.slack-edge.com/2026-01-05/10224534359843_0a48694ad3fdd4030145_192.jpg"
-  },
-  {
-    "type": "milestone",
-    "emoji": "📈",
-    "accent": "#4CAF50",
-    "gradient": [
-      "#4CAF50",
-      "#8BC34A"
-    ],
-    "title": "Growth Trajectory",
-    "headline": "40% Year-over-Year Growth",
-    "description": "Company continues strong growth momentum toward ambitious targets",
-    "stat": "40%",
-    "statLabel": "YoY Growth Projected"
-  },
-  {
-    "type": "win",
-    "emoji": "🎮",
-    "accent": "#9C27B0",
-    "gradient": [
-      "#9C27B0",
-      "#E91E63"
-    ],
-    "title": "Gaming Milestone",
-    "who": "Gaming Division",
-    "stat": "61%",
-    "statUnit": "retention",
-    "headline": "Infinite Minesweeper Success",
-    "description": "Achieved 61% retention rate, outperforming Apple benchmarks (ERA: 151-160%)",
-    "takeaway": "Gaming division reaches profitability in 2025"
-  },
-  {
-    "type": "win",
-    "emoji": "🛡️",
-    "accent": "#FF5722",
-    "gradient": [
-      "#FF5722",
-      "#FF9800"
-    ],
-    "title": "Security Achievement",
-    "who": "Fraud Detection Team",
-    "stat": "4%",
-    "statUnit": "fraud rate",
-    "headline": "Fraud Dramatically Reduced",
-    "description": "Dynamic SDK signatures reduced fraud from 22% to under 4%",
-    "takeaway": "Protecting revenue through advanced security measures"
-  },
-  {
-    "type": "milestone",
-    "emoji": "🤖",
-    "accent": "#2196F3",
-    "gradient": [
-      "#2196F3",
-      "#03DAC6"
-    ],
-    "title": "AI Revolution",
-    "headline": "AI-Powered Future",
-    "description": "Every employee will manage 5-10 AI agents within 3-6 months",
-    "stat": "1000+",
-    "statLabel": "OKRs checked daily by AI"
-  },
-  {
-    "type": "win",
-    "emoji": "💰",
-    "accent": "#4CAF50",
-    "gradient": [
-      "#4CAF50",
-      "#8BC34A"
-    ],
-    "title": "Sales Excellence",
-    "who": "Sales Team",
-    "stat": "$390K",
-    "statUnit": "net revenue",
-    "headline": "Outstanding Sales Week",
-    "description": "8 deals closed generating $390k net revenue in one week",
-    "takeaway": "Momentum building toward ambitious revenue targets"
-  },
-  {
-    "type": "reading",
-    "emoji": "📚",
-    "accent": "#FF6B6B",
-    "gradient": [
-      "#FF6B6B",
-      "#4ECDC4"
-    ],
-    "title": "Recommended Reading",
-    "articles": [
-      {
-        "title": "The Speaking Coach: Communication Excellence",
-        "sharedBy": "Maria Plendukova",
-        "desc": "Insights on improving communication skills and avoiding weak language patterns",
-        "reactions": 2,
-        "sharedByAvatar": "https://avatars.slack-edge.com/2025-06-09/9024600191330_9f138404da7499277e0f_192.png"
-      }
-    ],
-    "channel": "general-chat"
-  },
-  {
-    "type": "celebration",
-    "emoji": "🧘",
-    "accent": "#9C27B0",
-    "gradient": [
-      "#9C27B0",
-      "#E91E63"
-    ],
-    "title": "Daily Wellness",
-    "headline": "Daily Yoga Sessions",
-    "prompt1": "Join Anna Kolyada for daily yoga",
-    "prompt2": "13:10 CET - office & online streaming",
-    "coreValue": "WORK-LIFE BALANCE",
-    "channel": "wellness"
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Denis Glavatskikh",
+    "date": "March 13",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "With love, Your Appodeal Team 💜"
   },
   {
     "type": "officelife",
-    "emoji": "💡",
-    "accent": "#FF9500",
-    "gradient": [
-      "#FF9500",
-      "#FF5722"
-    ],
-    "title": "Leadership Vision",
-    "headline": "Build. Ship. Improve.",
-    "quote": "Shift from requirements to pull request mentality - focus on execution and continuous improvement",
-    "author": "CEO Mandate",
-    "reactions": "🚀",
-    "channel": "leadership"
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": ":wave: Hello everyone <!channel>!\n\nI’d like to share a cool thing our DevOps tea...",
+    "quote": ":wave: Hello everyone <!channel>!\n\nI’d like to share a cool thing our DevOps team has set up for all of us.\nIntroducing *<https://coolify.appodeal.com|Coolify>* - a service that allows you to deploy your applications in just a few clicks.\n:memo: I’ve written a short guide on how to use it <https://a",
+    "author": "Gleb Krahotkin",
+    "reactions": "",
+    "channel": "#general"
+  },
+  {
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "Hi <!here>! :woman-raising-hand: Thank you for joining our *11th Lunch & Learn s...",
+    "quote": "Hi <!here>! :woman-raising-hand: Thank you for joining our *11th Lunch & Learn session!* :fire:\nA big thank-you to <@U23FJLW5S> for a very interesting presentation :heart:\nBelow you can find:\n• :movie_camera: <https://app.fireflies.ai/view/Lunch-and-Learn-How-we-detect-fraud-traffic-by-Timofey-Levan",
+    "author": "Katarzyna Raniszewska",
+    "reactions": "",
+    "channel": "#general"
+  },
+  {
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "*Hi <!here>! Our Connect Groups Spring Season is open!* :seedling::celebrate:\nCo...",
+    "quote": "*Hi <!here>! Our Connect Groups Spring Season is open!* :seedling::celebrate:\nConnect Groups at Appodeal run in *seasons*, and we’re now officially entering the *Spring Season (March–May)!* :blossom::tulip::seedling:\nIf you’re new: Connect Groups are *<https://appodeal.circle.so/c/welcome/|employee-",
+    "author": "Katarzyna Raniszewska",
+    "reactions": "",
+    "channel": "#general"
   }
 ]
