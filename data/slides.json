@@ -1,14 +1,74 @@
 [
   {
-    "type": "celebration",
-    "emoji": "🐵",
-    "accent": "#1667EF",
-    "gradient": "linear-gradient(135deg, #1667EF 0%, #70A1F5 100%)",
-    "title": "Please Stand By",
-    "headline": "Monkey with a grenade? No. Monkey with AI? Yes.",
-    "prompt1": "🔒 Pulse is evolving to keep things safe",
-    "prompt2": "🚀 Back soon with fresh slides!",
-    "coreValue": "",
-    "channel": ""
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Artem Orlov",
+    "date": "March 13",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "With love, Your Appodeal Team 💜",
+    "avatar": "https://avatars.slack-edge.com/2025-05-10/8862797768359_25b15d996edac655c214_192.jpg"
+  },
+  {
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "Hello everyone ! I’d like to share a cool thing our DevOps team has set up for a...",
+    "quote": "Hello everyone ! I’d like to share a cool thing our DevOps team has set up for all of us. Introducing Coolify - a service that allows you to deploy your applications in just a few clicks. I’ve written a short guide on how to use it here. > Unfortunately, AI doesn’t always generate secure application",
+    "author": "Gleb Krahotkin",
+    "reactions": "",
+    "channel": "#general"
+  },
+  {
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "Hi everyone I recorded a short video showing how I built a fully automated AI-po...",
+    "quote": "Hi everyone I recorded a short video showing how I built a fully automated AI-powered system — from idea to production — using only AI tools and zero coding experience. Slack data → AI curation → auto-deploying a live dashboard on office TVs. All running on autopilot. If I can do it, you can too P.S",
+    "author": "Liliya Garifullina",
+    "reactions": "",
+    "channel": "#general"
+  },
+  {
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "Team, We’re making great progress in building products, and it’s especially exci...",
+    "quote": "Team, We’re making great progress in building products, and it’s especially exciting to see how quickly non-engineering teams have created so many useful tools. This is a strong sign that we’re learning fast and moving in the right direction. At the same time, it’s important that we follow proper en",
+    "author": "Alexandr Zhitlukhin",
+    "reactions": "",
+    "channel": "#general"
+  },
+  {
+    "type": "officelife",
+    "emoji": "👏",
+    "accent": "#5D2CAC",
+    "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
+    "title": "From #claps",
+    "headline": "Antonio Clavelli Sergio-Yersi Villegas Wojo aleksandr.chigaleichik received 5× f...",
+    "quote": "Antonio Clavelli Sergio-Yersi Villegas Wojo aleksandr.chigaleichik received 5× from ArtKip",
+    "author": "Clappy",
+    "reactions": "",
+    "channel": "#claps"
+  },
+  {
+    "type": "officelife",
+    "emoji": "👏",
+    "accent": "#5D2CAC",
+    "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
+    "title": "From #claps",
+    "headline": "Gleb Krahotkin received 50× from Mykhailo Kukharskyi",
+    "quote": "Gleb Krahotkin received 50× from Mykhailo Kukharskyi",
+    "author": "Clappy",
+    "reactions": "",
+    "channel": "#claps"
   }
 ]
