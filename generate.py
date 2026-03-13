@@ -112,7 +112,7 @@ SYSTEM_PROMPT = """You are the content curator for "Appodeal PULSE" — a daily 
 Your job: analyze raw Slack messages and produce a JSON array of slide objects for a beautiful auto-rotating slideshow.
 
 SLIDE TYPES (use exact "type" values):
-1. "birthday" — birthday celebrations. ONLY if someone has a birthday TODAY or YESTERDAY. Skip completely otherwise — no "recent birthdays" or past dates.
+1. "birthday" — birthday celebrations. Use #birthdays-notifications as the PRIMARY source (structured: Name, Location, Department, Division). ONLY if someone has a birthday TODAY or YESTERDAY. Skip completely otherwise — no "recent birthdays" or past dates. Include their department and location in the teamNote field.
 2. "win" — achievements, wins, metrics improvements
 3. "clap" — peer recognition / kudos from #claps channel
 4. "newjoin" — new team members joining
@@ -484,43 +484,95 @@ def generate_fallback_slides(content):
     today = datetime.now().strftime("%B %d")
     user_id_map = _build_user_id_map(content)
 
-    # Check birthdays channel — extract actual birthday people, deduplicate
-    # Only include messages from the last 36 hours (today + yesterday)
-    birthday_msgs = content["channels"].get("birthdays", {}).get("messages", [])
+    # Parse birthdays from #birthdays-notifications (structured bot messages)
+    # Format: "🎁 Today's birthday celebrants (N):\nName: X\nLocation: Y\nDepartment: Z\nDivision: W"
+    # Only include messages from the last 36 hours
+    bday_notif_msgs = content["channels"].get("birthdays-notifications", {}).get("messages", [])
     cutoff_ts = (datetime.now(timezone.utc) - timedelta(hours=36)).timestamp()
-    birthday_names = {}  # name → avatar_url (deduplicated)
-    for msg in birthday_msgs:
+    avatars_lookup = content.get("user_avatars", {})
+
+    for msg in bday_notif_msgs:
         msg_ts = float(msg.get("ts", "0"))
         if msg_ts < cutoff_ts:
             continue
         text = msg.get("text", "")
-        if "birthday" not in text.lower() and "happy" not in text.lower():
-            continue
-        # Extract mentioned user IDs — these are the birthday people
-        mentioned_ids = re.findall(r'<@([UW][A-Z0-9]+)>', text)
-        for uid in mentioned_ids:
-            info = user_id_map.get(uid, {})
-            name = info.get("name", "") if isinstance(info, dict) else info
-            if name and name not in birthday_names:
-                avatar = info.get("avatar", "") if isinstance(info, dict) else ""
-                if not avatar:
-                    avatar = content.get("user_avatars", {}).get(name, "")
-                birthday_names[name] = avatar
+        if "celebrants (0)" in text:
+            continue  # No birthdays today
 
-    for name, avatar in birthday_names.items():
-        slide = {
-            "type": "birthday",
-            "emoji": "🎂",
-            **ACCENT_COLORS["birthday"],
-            "title": "Happy Birthday!",
-            "name": name,
-            "date": today,
-            "message": "Wishing you an amazing day filled with joy and celebration!",
-            "teamNote": "With love, Your Appodeal Team 💜",
-        }
-        if avatar:
-            slide["avatar"] = avatar
-        slides.append(slide)
+        # Extract all "Name: ..." entries from the message
+        names = re.findall(r'Name:\s*(.+)', text)
+        locations = re.findall(r'Location:\s*(.+)', text)
+        departments = re.findall(r'Department:\s*(.+)', text)
+
+        # Get the date from the message timestamp
+        msg_date = datetime.fromtimestamp(msg_ts, tz=timezone.utc)
+        date_str = msg_date.strftime("%B %d")
+
+        for i, name in enumerate(names):
+            name = name.strip()
+            location = locations[i].strip() if i < len(locations) else ""
+            department = departments[i].strip() if i < len(departments) else ""
+
+            avatar = avatars_lookup.get(name, "")
+            # Try first name match
+            if not avatar:
+                first = name.split()[0]
+                avatar = avatars_lookup.get(first, "")
+
+            team_note = ""
+            if department and location:
+                team_note = f"{department} · {location}"
+            elif department:
+                team_note = department
+
+            slide = {
+                "type": "birthday",
+                "emoji": "🎂",
+                **ACCENT_COLORS["birthday"],
+                "title": "Happy Birthday!",
+                "name": name,
+                "date": date_str,
+                "message": "Wishing you an amazing day filled with joy and celebration!",
+                "teamNote": team_note or "With love, Your Appodeal Team 💜",
+            }
+            if avatar:
+                slide["avatar"] = avatar
+            slides.append(slide)
+
+    # Fallback: if no birthdays-notifications data, try #birthdays channel
+    if not slides:
+        birthday_msgs = content["channels"].get("birthdays", {}).get("messages", [])
+        birthday_names = {}
+        for msg in birthday_msgs:
+            msg_ts = float(msg.get("ts", "0"))
+            if msg_ts < cutoff_ts:
+                continue
+            text = msg.get("text", "")
+            if "birthday" not in text.lower() and "happy" not in text.lower():
+                continue
+            mentioned_ids = re.findall(r'<@([UW][A-Z0-9]+)>', text)
+            for uid in mentioned_ids:
+                info = user_id_map.get(uid, {})
+                name = info.get("name", "") if isinstance(info, dict) else info
+                if name and name not in birthday_names:
+                    avatar = info.get("avatar", "") if isinstance(info, dict) else ""
+                    if not avatar:
+                        avatar = avatars_lookup.get(name, "")
+                    birthday_names[name] = avatar
+        for name, avatar in birthday_names.items():
+            slide = {
+                "type": "birthday",
+                "emoji": "🎂",
+                **ACCENT_COLORS["birthday"],
+                "title": "Happy Birthday!",
+                "name": name,
+                "date": today,
+                "message": "Wishing you an amazing day filled with joy and celebration!",
+                "teamNote": "With love, Your Appodeal Team 💜",
+            }
+            if avatar:
+                slide["avatar"] = avatar
+            slides.append(slide)
 
     # Check general for news — clean Slack markup
     general_msgs = content["channels"].get("general", {}).get("messages", [])

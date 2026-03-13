@@ -19,6 +19,7 @@ SLACK_CHANNELS = {
     "general":        "C039760M5",
     "general-chat":   "C010UQ0QP5K",
     "birthdays":      "C87RRF63S",
+    "birthdays-notifications": "C07U88PQ4KE",
     "to_read":        "C4XGGGLMV",
     "claps":          "C084KUM8W79",
 }

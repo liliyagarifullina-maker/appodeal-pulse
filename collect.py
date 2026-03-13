@@ -41,8 +41,13 @@ def fetch_channel_messages(client, channel_id, channel_name, hours=24):
             oldest=oldest,
             limit=100,
         )
+        # Allow bot messages in birthdays-notifications (structured birthday data)
+        allow_bots = channel_name == "birthdays-notifications"
         for msg in result.get("messages", []):
-            if msg.get("subtype") in ("channel_join", "channel_leave", "bot_message"):
+            subtype = msg.get("subtype", "")
+            if subtype in ("channel_join", "channel_leave"):
+                continue
+            if subtype == "bot_message" and not allow_bots:
                 continue
 
             # Filter out sensitive content (terminations, demotions, etc.)
