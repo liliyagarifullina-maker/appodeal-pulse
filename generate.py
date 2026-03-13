@@ -16,7 +16,10 @@ import anthropic
 
 import config
 from export_pptx import export_pptx
-from export_google_slides import upload_to_google_slides
+try:
+    from export_google_slides import upload_to_google_slides
+except ImportError:
+    upload_to_google_slides = None
 
 # ── Accent colors from BidMachine palette ───────────────────────
 
