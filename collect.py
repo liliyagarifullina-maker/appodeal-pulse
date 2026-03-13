@@ -196,6 +196,11 @@ def fetch_all_users(client):
                     if username:
                         all_avatars[username] = avatar
 
+                    # Store by user ID for resolving <@USERID> mentions
+                    user_id = user.get("id", "")
+                    if user_id:
+                        all_avatars[f"__id__{user_id}"] = {"name": name, "avatar": avatar}
+
             # Pagination
             next_cursor = result.get("response_metadata", {}).get("next_cursor", "")
             if not next_cursor:

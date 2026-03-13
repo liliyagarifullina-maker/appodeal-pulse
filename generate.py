@@ -437,57 +437,119 @@ def generate_html(slides):
 
 # ── Fallback: generate without AI ───────────────────────────────
 
+def _clean_slack_markup(text):
+    """Strip Slack markup to plain readable text."""
+    if not text:
+        return ""
+    # <@U123> mentions → remove (we don't know the name in this context)
+    text = re.sub(r'<@[UW][A-Z0-9]+>', '', text)
+    # <!channel>, <!here>, <!everyone> → remove
+    text = re.sub(r'<!(?:channel|here|everyone)>', '', text)
+    # <https://url|label> → label
+    text = re.sub(r'<(https?://[^|>]+)\|([^>]+)>', r'\2', text)
+    # <https://url> → url
+    text = re.sub(r'<(https?://[^>]+)>', r'\1', text)
+    # :emoji_name: → remove
+    text = re.sub(r':[a-z0-9_+-]+:', '', text)
+    # *bold* → bold
+    text = re.sub(r'\*([^*]+)\*', r'\1', text)
+    # _italic_ → italic
+    text = re.sub(r'_([^_]+)_', r'\1', text)
+    # Clean up extra whitespace
+    text = re.sub(r'\s+', ' ', text).strip()
+    return text
+
+
+def _build_user_id_map(content):
+    """Build user_id → {name, avatar} mapping from content data."""
+    id_map = {}
+    # First: use __id__ entries from user_avatars (collected from users.list)
+    for key, val in content.get("user_avatars", {}).items():
+        if key.startswith("__id__") and isinstance(val, dict):
+            uid = key.replace("__id__", "")
+            id_map[uid] = val
+    # Also scan messages for any IDs not in the workspace lookup
+    for ch_data in content.get("channels", {}).values():
+        for msg in ch_data.get("messages", []):
+            uid = msg.get("user_id", "")
+            name = msg.get("user", "")
+            if uid and name and uid not in id_map:
+                id_map[uid] = {"name": name, "avatar": msg.get("user_avatar", "")}
+    return id_map
+
+
 def generate_fallback_slides(content):
     """Generate basic slides without AI if API is unavailable."""
     slides = []
     today = datetime.now().strftime("%B %d")
+    user_id_map = _build_user_id_map(content)
 
-    # Check birthdays channel
+    # Check birthdays channel — extract actual birthday people, deduplicate
     birthday_msgs = content["channels"].get("birthdays", {}).get("messages", [])
+    birthday_names = {}  # name → avatar_url (deduplicated)
     for msg in birthday_msgs:
         text = msg.get("text", "")
-        if "birthday" in text.lower() or "happy" in text.lower():
-            # Try to extract name
-            name = msg.get("user", "Team Member")
-            slides.append({
-                "type": "birthday",
-                "emoji": "🎂",
-                **ACCENT_COLORS["birthday"],
-                "title": "Happy Birthday!",
-                "name": name,
-                "date": today,
-                "message": "Wishing you an amazing day filled with joy and celebration!",
-                "teamNote": "With love, Your Appodeal Team 💜",
-            })
+        if "birthday" not in text.lower() and "happy" not in text.lower():
+            continue
+        # Extract mentioned user IDs — these are the birthday people
+        mentioned_ids = re.findall(r'<@([UW][A-Z0-9]+)>', text)
+        for uid in mentioned_ids:
+            info = user_id_map.get(uid, {})
+            name = info.get("name", "") if isinstance(info, dict) else info
+            if name and name not in birthday_names:
+                avatar = info.get("avatar", "") if isinstance(info, dict) else ""
+                if not avatar:
+                    avatar = content.get("user_avatars", {}).get(name, "")
+                birthday_names[name] = avatar
 
-    # Check general for news
+    for name, avatar in birthday_names.items():
+        slide = {
+            "type": "birthday",
+            "emoji": "🎂",
+            **ACCENT_COLORS["birthday"],
+            "title": "Happy Birthday!",
+            "name": name,
+            "date": today,
+            "message": "Wishing you an amazing day filled with joy and celebration!",
+            "teamNote": "With love, Your Appodeal Team 💜",
+        }
+        if avatar:
+            slide["avatar"] = avatar
+        slides.append(slide)
+
+    # Check general for news — clean Slack markup
     general_msgs = content["channels"].get("general", {}).get("messages", [])
     for msg in sorted(general_msgs, key=lambda m: m.get("reaction_count", 0), reverse=True)[:3]:
         text = msg.get("text", "")
-        if len(text) > 20:
-            slides.append({
-                "type": "officelife",
-                "emoji": "📢",
-                **ACCENT_COLORS["officelife"],
-                "title": "From #general",
-                "headline": text[:80] + ("..." if len(text) > 80 else ""),
-                "quote": text[:300],
-                "author": msg.get("user", ""),
-                "reactions": "",
-                "channel": "#general",
-            })
+        if len(text) < 20:
+            continue
+        clean = _clean_slack_markup(text)
+        if len(clean) < 15:
+            continue
+        slides.append({
+            "type": "officelife",
+            "emoji": "📢",
+            **ACCENT_COLORS["officelife"],
+            "title": "From #general",
+            "headline": clean[:80] + ("..." if len(clean) > 80 else ""),
+            "quote": clean[:300],
+            "author": msg.get("user", ""),
+            "reactions": "",
+            "channel": "#general",
+        })
 
     # Check pets
     pet_msgs = content["channels"].get("appodeal_pets", {}).get("messages", [])
     for msg in pet_msgs[:1]:
         if msg.get("images") or msg.get("text"):
+            clean = _clean_slack_markup(msg.get("text", ""))
             slides.append({
                 "type": "officelife",
                 "emoji": "🐾",
                 **ACCENT_COLORS["pet"],
                 "title": "Pet of the Day",
                 "headline": "Our furry friends!",
-                "quote": msg.get("text", "Look at this cutie!")[:200],
+                "quote": clean[:200] if clean else "Look at this cutie!",
                 "author": msg.get("user", ""),
                 "reactions": "",
                 "channel": "#appodeal_pets",
@@ -499,10 +561,11 @@ def generate_fallback_slides(content):
     for msg in reading_msgs[:3]:
         if msg.get("links"):
             link = msg["links"][0]
+            desc = _clean_slack_markup(link.get("text", msg.get("text", "")))
             articles.append({
                 "title": link.get("title", "Interesting Read"),
                 "sharedBy": msg.get("user", ""),
-                "desc": link.get("text", msg.get("text", ""))[:150],
+                "desc": desc[:150],
                 "reactions": "",
             })
     if articles:
@@ -514,6 +577,24 @@ def generate_fallback_slides(content):
             "articles": articles,
             "channel": "#to_read",
         })
+
+    # Check claps channel
+    clap_msgs = content["channels"].get("claps", {}).get("messages", [])
+    for msg in clap_msgs[:2]:
+        text = msg.get("text", "")
+        clean = _clean_slack_markup(text)
+        if len(clean) > 15:
+            slides.append({
+                "type": "officelife",
+                "emoji": "👏",
+                **ACCENT_COLORS.get("clap", ACCENT_COLORS["celebration"]),
+                "title": "From #claps",
+                "headline": clean[:80] + ("..." if len(clean) > 80 else ""),
+                "quote": clean[:300],
+                "author": msg.get("user", ""),
+                "reactions": "",
+                "channel": "#claps",
+            })
 
     return slides if slides else [{
         "type": "celebration",
