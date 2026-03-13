@@ -12,6 +12,7 @@ import sys
 import time
 from datetime import datetime, timedelta, timezone
 
+import requests
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
 
@@ -210,6 +211,91 @@ def fetch_all_users(client):
     return all_avatars
 
 
+# ── Fireflies meeting collection ───────────────────────────────
+
+FIREFLIES_GRAPHQL_URL = "https://api.fireflies.ai/graphql"
+
+FIREFLIES_QUERY = """
+query RecentTranscripts($fromDate: DateTime, $limit: Int) {
+  transcripts(fromDate: $fromDate, limit: $limit) {
+    id
+    title
+    dateString: date
+    duration
+    organizer_email
+    participants
+    summary {
+      shorthand_bullet
+      overview
+      action_items
+      keywords
+    }
+  }
+}
+"""
+
+
+def fetch_fireflies_meetings(hours=72):
+    """Fetch recent meeting summaries from Fireflies API.
+
+    Returns list of meeting dicts with title, summary, action items, etc.
+    """
+    api_key = config.FIREFLIES_API_KEY
+    if not api_key:
+        print("  [Fireflies] Skipped — no FIREFLIES_API_KEY set")
+        return []
+
+    from_date = (datetime.now(timezone.utc) - timedelta(hours=hours)).isoformat()
+
+    headers = {
+        "Authorization": f"Bearer {api_key}",
+        "Content-Type": "application/json",
+    }
+
+    payload = {
+        "query": FIREFLIES_QUERY,
+        "variables": {
+            "fromDate": from_date,
+            "limit": 30,
+        },
+    }
+
+    try:
+        resp = requests.post(FIREFLIES_GRAPHQL_URL, json=payload, headers=headers, timeout=30)
+        resp.raise_for_status()
+        data = resp.json()
+
+        transcripts = data.get("data", {}).get("transcripts", [])
+        meetings = []
+
+        for t in transcripts:
+            summary = t.get("summary") or {}
+            # Skip silent/empty meetings
+            if not summary.get("overview") and not summary.get("shorthand_bullet"):
+                continue
+
+            meetings.append({
+                "id": t.get("id", ""),
+                "title": t.get("title", ""),
+                "date": t.get("dateString", ""),
+                "duration_min": round((t.get("duration") or 0) / 60, 1),
+                "organizer": t.get("organizer_email", ""),
+                "participants": t.get("participants", []),
+                "participant_count": len(t.get("participants", [])),
+                "overview": summary.get("overview", ""),
+                "bullets": summary.get("shorthand_bullet", ""),
+                "action_items": summary.get("action_items", ""),
+                "keywords": summary.get("keywords", []),
+            })
+
+        print(f"  [Fireflies] Fetched {len(meetings)} meetings (from {len(transcripts)} transcripts)")
+        return meetings
+
+    except Exception as e:
+        print(f"  [Fireflies] Error fetching meetings: {e}")
+        return []
+
+
 # ── Main collection pipeline ────────────────────────────────────
 
 def collect_all():
@@ -236,6 +322,10 @@ def collect_all():
         }
         print(f"    → {len(messages)} messages")
         time.sleep(0.5)  # Rate limit courtesy
+
+    # Collect Fireflies meeting data
+    print("  Collecting Fireflies meetings...")
+    all_content["fireflies_meetings"] = fetch_fireflies_meetings(config.LOOKBACK_HOURS)
 
     # Merge: workspace-wide avatars + message-level avatars
     all_content["user_avatars"] = all_avatars

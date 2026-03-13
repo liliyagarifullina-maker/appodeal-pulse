@@ -16,6 +16,7 @@ import anthropic
 
 import config
 from export_pptx import export_pptx
+from export_google_slides import upload_to_google_slides
 
 # ── Accent colors from BidMachine palette ───────────────────────
 
@@ -159,7 +160,7 @@ CONTENT FILTER — NEVER include:
 - Any sensitive personnel changes
 - Only show POSITIVE content: birthdays, wins, recognition, events, new joiners"""
 
-DEEP_ANALYSIS_ADDENDUM = """
+DEEP_ANALYSIS_ADDENDUM_STATIC = """
 ADDITIONAL CONTEXT — COMPANY METRICS & STRATEGY (from leadership meetings):
 Include 2-4 extra slides based on this strategic context. Use "milestone" or "win" type.
 Pick the most impressive/inspiring facts:
@@ -184,12 +185,52 @@ Pick the most impressive/inspiring facts:
 DO NOT repeat these facts if they already appeared in Slack content above. Only add NEW slides."""
 
 
+def build_fireflies_section(content):
+    """Build dynamic meeting insights section from Fireflies data."""
+    meetings = content.get("fireflies_meetings", [])
+    if not meetings:
+        return ""
+
+    parts = ["""
+RECENT MEETING INSIGHTS (from Fireflies transcripts):
+Create 2-4 slides from these meeting highlights. Use "milestone", "win", or "event" type.
+Pick the most interesting takeaways, decisions, and action items that the whole company would find inspiring.
+Do NOT create slides for private 1:1 meetings or HR interviews — only team/company-wide meetings.
+"""]
+
+    for m in meetings:
+        title = m.get("title", "")
+        date = m.get("date", "")[:10]
+        participants = m.get("participant_count", 0)
+        duration = m.get("duration_min", 0)
+        overview = m.get("overview", "")
+        bullets = m.get("bullets", "")
+        keywords = ", ".join(m.get("keywords", [])[:8])
+
+        # Skip very short meetings or 1:1s
+        if participants < 3 or duration < 10:
+            continue
+
+        parts.append(f"\n--- Meeting: {title} ({date}, {participants} participants, {duration:.0f} min) ---")
+        if overview:
+            parts.append(f"Summary: {overview[:500]}")
+        if bullets:
+            parts.append(f"Key points: {bullets[:500]}")
+        if keywords:
+            parts.append(f"Keywords: {keywords}")
+
+    if len(parts) <= 1:
+        return ""
+
+    return "\n".join(parts)
+
+
 def is_deep_analysis_day():
     """Check if today is a deep analysis day (Mon/Wed/Fri)."""
     return datetime.now().weekday() in config.DEEP_ANALYSIS_DAYS
 
 
-def curate_with_ai(channel_summary, avatar_lookup=None):
+def curate_with_ai(channel_summary, avatar_lookup=None, content=None):
     """Use Claude to curate content and generate SLIDES JSON."""
     api_key = config.ANTHROPIC_API_KEY
     if not api_key:
@@ -222,11 +263,17 @@ Here are the raw Slack messages from the last {config.LOOKBACK_HOURS} hours acro
 {channel_summary}
 {avatar_section}"""
 
+    # Add Fireflies meeting insights (dynamic)
+    fireflies_section = build_fireflies_section(content) if content else ""
+    if fireflies_section:
+        user_prompt += f"\n{fireflies_section}\n"
+        print(f"  Including Fireflies meeting insights")
+
     if deep:
-        user_prompt += f"\n{DEEP_ANALYSIS_ADDENDUM}\n"
-        print(f"  Deep analysis day ({day_name}) — including Fireflies insights")
+        user_prompt += f"\n{DEEP_ANALYSIS_ADDENDUM_STATIC}\n"
+        print(f"  Deep analysis day ({day_name}) — including static strategy context")
     else:
-        print(f"  Regular day ({day_name}) — Slack content only")
+        print(f"  Regular day ({day_name})")
 
     user_prompt += "\nGenerate the SLIDES JSON array for today's Appodeal PULSE. Return ONLY valid JSON array."
 
@@ -484,7 +531,7 @@ if __name__ == "__main__":
 
     if config.ANTHROPIC_API_KEY:
         try:
-            slides = curate_with_ai(channel_summary, avatar_lookup)
+            slides = curate_with_ai(channel_summary, avatar_lookup, content)
             slides = apply_accents(slides)
             slides = inject_avatars(slides, avatar_lookup)
             print(f"  AI generated {len(slides)} slides")
@@ -506,10 +553,18 @@ if __name__ == "__main__":
     output = generate_html(slides)
 
     # Export to PPTX archive
+    pptx_path = None
     try:
         pptx_path = export_pptx(slides)
         print(f"  Archived presentation → {pptx_path}")
     except Exception as e:
         print(f"  PPTX export failed: {e}")
+
+    # Upload to Google Slides (if credentials configured)
+    if pptx_path:
+        try:
+            upload_to_google_slides(pptx_path)
+        except Exception as e:
+            print(f"  [Google Slides] Upload failed: {e}")
 
     print(f"\n  Done! Open {output} in a browser.")

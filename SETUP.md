@@ -97,6 +97,41 @@ gh repo create appodeal-pulse --private --push --source .
 google-chrome --kiosk https://appodeal-pulse.onrender.com
 ```
 
+## Шаг 9: Настроить Google Slides экспорт (опционально)
+
+Каждый день PPTX автоматически загружается на Google Drive и конвертируется в Google Slides.
+
+### 9.1 Создать Google Cloud проект
+1. Перейди на https://console.cloud.google.com
+2. Создай новый проект (напр. `appodeal-pulse`)
+3. В поиске набери **Google Drive API** → **Enable**
+
+### 9.2 Создать Service Account
+1. IAM & Admin → **Service Accounts** → **Create Service Account**
+2. Имя: `pulse-bot`, Role: не нужна
+3. Нажми на созданный аккаунт → **Keys** → **Add Key** → **Create new key** → **JSON**
+4. Скачается файл `appodeal-pulse-xxxxx.json` — это credentials
+
+### 9.3 Настроить Google Drive папку
+1. Создай папку в Google Drive (напр. `Pulse Archive`)
+2. Открой папку → скопируй **Folder ID** из URL: `https://drive.google.com/drive/folders/FOLDER_ID_HERE`
+3. Нажми **Share** на папке → добавь email Service Account (из JSON файла, поле `client_email`) → дай права **Editor**
+
+### 9.4 Добавить secrets в GitHub
+1. Перейди в Settings → Secrets → Actions в репо
+2. Добавь:
+   - `GOOGLE_SERVICE_ACCOUNT_JSON` — вставь **полное содержимое** JSON файла
+   - `GOOGLE_DRIVE_FOLDER_ID` — ID папки из шага 9.3
+
+### 9.5 Для локального запуска
+```bash
+# Добавь в .env:
+GOOGLE_SERVICE_ACCOUNT_JSON='{"type":"service_account",...}'
+GOOGLE_DRIVE_FOLDER_ID=your_folder_id_here
+```
+
+После настройки каждый день в папке будет появляться новая Google Slides презентация `Pulse YYYY-MM-DD`.
+
 ## API Endpoints
 
 - `GET /` — Слайдшоу (основная страница)

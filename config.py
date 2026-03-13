@@ -11,6 +11,7 @@ import os
 
 SLACK_BOT_TOKEN = os.environ.get("SLACK_BOT_TOKEN", "")
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
+FIREFLIES_API_KEY = os.environ.get("FIREFLIES_API_KEY", "")
 
 # ── Slack channels to monitor ───────────────────────────────────
 
