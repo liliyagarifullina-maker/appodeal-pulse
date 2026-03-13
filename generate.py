@@ -10,6 +10,7 @@ import json
 import os
 import re
 import sys
+import traceback
 from datetime import datetime, timezone, timedelta
 
 import anthropic
@@ -94,7 +95,9 @@ def summarize_channels(content):
 
 def build_avatar_lookup(content):
     """Build name → avatar URL mapping from collected data."""
-    avatars = content.get("user_avatars", {})
+    raw = content.get("user_avatars", {})
+    # Filter out __id__ entries (contain dicts, not strings) — keep only name→url pairs
+    avatars = {k: v for k, v in raw.items() if not k.startswith("__id__") and isinstance(v, str)}
     # Also scan messages for any avatars not in the top-level dict
     for ch_data in content.get("channels", {}).values():
         for msg in ch_data.get("messages", []):
@@ -112,14 +115,14 @@ SYSTEM_PROMPT = """You are the content curator for "Appodeal PULSE" — a daily 
 Your job: analyze raw Slack messages and produce a JSON array of slide objects for a beautiful auto-rotating slideshow.
 
 SLIDE TYPES (use exact "type" values):
-1. "birthday" — birthday celebrations. Use #birthdays-notifications as the PRIMARY source (structured: Name, Location, Department, Division). ONLY if someone has a birthday TODAY or YESTERDAY. Skip completely otherwise — no "recent birthdays" or past dates. Include their department and location in the teamNote field.
+1. "birthday" — birthday celebrations. Use #birthdays-notifications as the PRIMARY source (structured: Name, Location, Department, Division). ONLY if someone has a birthday TODAY or YESTERDAY. Skip completely otherwise — no "recent birthdays" or past dates. Always include the actual birthday DATE in the "date" field. Include their department and location in the teamNote field. Also check #birthdays for warm congratulatory messages and birthday person's responses — if the birthday person replied with a thank-you or heartfelt message, include a snippet of it in the "message" field to make the slide more personal and warm.
 2. "win" — achievements, wins, metrics improvements
 3. "clap" — peer recognition / kudos from #claps channel
 4. "newjoin" — new team members joining
 5. "event" — upcoming events / conferences
 6. "milestone" — company milestones, big numbers
 7. "reading" — interesting articles/links shared ONLY from #to_read channel
-8. "officelife" — fun office moments, quotes, culture
+8. "officelife" — fun office moments, quotes, culture. DO NOT just quote messages — write a brief engaging summary or intro that explains WHY this is interesting, then include the key insight or quote
 9. "celebration" — weekly celebrations / rituals
 10. "event" — also use for Book Club announcements, corporate initiatives from #general (NOT "reading"!)
 
@@ -141,9 +144,11 @@ AVATAR SUPPORT — IMPORTANT:
 - If no avatar URL is available for a person, omit the "avatar" field
 
 CRITICAL RULES:
+- TARGET: Aim for AT LEAST 15 slides. Be creative and thorough — split big topics into multiple slides, create separate slides for each interesting message, add more claps, more wins, more officelife moments
 - SKIP birthday slides entirely if no one has a birthday TODAY or YESTERDAY. Never show birthdays from last week or earlier
 - SKIP any slide type that has no fresh content — NEVER invent fake content
 - Write in English, concise and punchy — displayed on big screens
+- DO NOT just paste raw Slack messages as quotes. Instead, write engaging summaries and intros that explain the context and why it matters. Add editorial flair — you are a curator, not a copy machine
 - Use varied emojis for different slides
 - Warm, positive, engaging tone
 - For "win" slides, extract specific metrics/numbers when available
@@ -151,7 +156,6 @@ CRITICAL RULES:
 - For "reading", pick the 2-3 most interesting articles — ONLY from #to_read channel
 - NEVER mix different things into one "reading" slide. Book Club = "event" type. Article suggestions from #to_read = "reading" type. These are SEPARATE slides
 - Order slides for maximum engagement: start exciting, mix types, end with a call-to-action
-- Aim for 15-20 slides. Be creative — split big topics into multiple slides, add more claps, more wins
 - If a channel has multiple interesting messages, create separate slides for each
 - Create at least one "officelife" or "celebration" slide to keep it warm and human
 - Return ONLY the JSON array, no markdown, no explanation
@@ -211,12 +215,22 @@ FIREFLIES CONTENT RULES — STRICTLY FOLLOW:
 
     for m in meetings:
         title = m.get("title", "")
-        date = m.get("date", "")[:10]
+        # date can be int (Unix timestamp) or string — safely convert
+        date_raw = m.get("date", "")
+        if isinstance(date_raw, (int, float)):
+            try:
+                ts = date_raw / 1000 if date_raw > 1e12 else date_raw
+                date = datetime.fromtimestamp(ts, tz=timezone.utc).strftime("%Y-%m-%d")
+            except (ValueError, OSError):
+                date = str(date_raw)
+        else:
+            date = str(date_raw)[:10] if date_raw else ""
         participants = m.get("participant_count", 0)
         duration = m.get("duration_min", 0)
         overview = m.get("overview", "")
         bullets = m.get("bullets", "")
-        keywords = ", ".join(m.get("keywords", [])[:8])
+        kw_list = m.get("keywords") or []
+        keywords = ", ".join(kw_list[:8]) if isinstance(kw_list, list) else str(kw_list)
 
         # Skip very short meetings or 1:1s
         if participants < 3 or duration < 10:
@@ -269,7 +283,8 @@ Use these URLs as the "avatar" field in slides that feature specific people.
 
     user_prompt = f"""Today is {today} ({day_name}).
 
-Here are the raw Slack messages from the last {config.LOOKBACK_HOURS} hours across our channels:
+Here are the raw Slack messages from the last {config.LOOKBACK_HOURS} hours across our channels.
+PRIORITY: Focus on the freshest content first (last 24 hours). If there isn't enough for 15 slides, expand to 48 hours, then 72 hours. Always prefer newer content over older.
 
 {channel_summary}
 {avatar_section}"""
@@ -686,6 +701,7 @@ if __name__ == "__main__":
             print(f"  AI generated {len(slides)} slides")
         except Exception as e:
             print(f"  AI curation failed: {e}")
+            traceback.print_exc()
             print("  Falling back to basic generation...")
             slides = generate_fallback_slides(content)
     else:

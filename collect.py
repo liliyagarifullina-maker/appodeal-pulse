@@ -298,18 +298,31 @@ def fetch_fireflies_meetings(hours=72):
             if any(pat.lower() in title_lower for pat in SKIP_TITLE_PATTERNS):
                 continue
 
+            # date can be int (Unix timestamp ms) or string — always convert to string
+            date_raw = t.get("dateString", "")
+            if isinstance(date_raw, (int, float)):
+                try:
+                    ts = date_raw / 1000 if date_raw > 1e12 else date_raw
+                    date_str = datetime.fromtimestamp(ts, tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+                except (ValueError, OSError):
+                    date_str = str(date_raw)
+            else:
+                date_str = str(date_raw) if date_raw else ""
+
+            participants_list = t.get("participants") or []
+
             meetings.append({
                 "id": t.get("id", ""),
                 "title": t.get("title", ""),
-                "date": t.get("dateString", ""),
+                "date": date_str,
                 "duration_min": round((t.get("duration") or 0) / 60, 1),
                 "organizer": t.get("organizer_email", ""),
-                "participants": t.get("participants", []),
-                "participant_count": len(t.get("participants", [])),
-                "overview": summary.get("overview", ""),
-                "bullets": summary.get("shorthand_bullet", ""),
-                "action_items": summary.get("action_items", ""),
-                "keywords": summary.get("keywords", []),
+                "participants": participants_list,
+                "participant_count": len(participants_list),
+                "overview": summary.get("overview") or "",
+                "bullets": summary.get("shorthand_bullet") or "",
+                "action_items": summary.get("action_items") or "",
+                "keywords": summary.get("keywords") or [],
             })
 
         print(f"  [Fireflies] Fetched {len(meetings)} meetings (from {len(transcripts)} transcripts)")
