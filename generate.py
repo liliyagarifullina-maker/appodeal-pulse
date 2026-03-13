@@ -10,7 +10,7 @@ import json
 import os
 import re
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
 import anthropic
 
@@ -485,9 +485,14 @@ def generate_fallback_slides(content):
     user_id_map = _build_user_id_map(content)
 
     # Check birthdays channel — extract actual birthday people, deduplicate
+    # Only include messages from the last 36 hours (today + yesterday)
     birthday_msgs = content["channels"].get("birthdays", {}).get("messages", [])
+    cutoff_ts = (datetime.now(timezone.utc) - timedelta(hours=36)).timestamp()
     birthday_names = {}  # name → avatar_url (deduplicated)
     for msg in birthday_msgs:
+        msg_ts = float(msg.get("ts", "0"))
+        if msg_ts < cutoff_ts:
+            continue
         text = msg.get("text", "")
         if "birthday" not in text.lower() and "happy" not in text.lower():
             continue
