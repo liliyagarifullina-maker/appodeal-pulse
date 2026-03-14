@@ -128,6 +128,20 @@ def summarize_channels(content):
             parts.append(
                 f"- {date_prefix}[{m['user']}] {text}{reactions_str}{links_str}{images_str}"
             )
+
+            # Include thread replies so AI sees full discussion context
+            thread_replies = m.get("thread_replies", [])
+            if thread_replies:
+                parts.append(f"  THREAD REPLIES ({len(thread_replies)}):")
+                for reply in thread_replies[:10]:
+                    reply_text = reply.get("text", "")[:300]
+                    reply_text = _resolve_mentions(reply_text, user_id_map)
+                    reply_author = reply.get("user", "")
+                    # Skip excluded authors in threads too
+                    if reply_author.lower().strip() in EXCLUDED_AUTHORS:
+                        continue
+                    parts.append(f"    → [{reply_author}] {reply_text}")
+
     return "\n".join(parts)
 
 
@@ -192,7 +206,12 @@ CRITICAL RULES:
 - SKIP any slide type that has no fresh content — NEVER invent fake content
 - Write in English, concise and punchy — displayed on big screens
 - DO NOT just paste raw Slack messages as quotes. Instead, write engaging summaries and intros that explain the context and why it matters. Add editorial flair — you are a curator, not a copy machine
-- CAPTURE THE MAIN POINT of each message, not just the positive opening. If someone starts with praise but the core message is a call to action, a policy change, or a requirement — the slide MUST reflect that core message. Do not cherry-pick only the feel-good part. Example: if a leader says "Great progress! BUT we must use Coolify for all deployments" — the slide should be about the Coolify requirement, not "Innovation Mindset"
+- CAPTURE THE FULL MESSAGE, NOT JUST THE POSITIVE OPENING. This is critical:
+  * If a message has multiple themes (praise + call to action, announcement + requirement), create SEPARATE slides for each theme
+  * If someone starts with praise but the core message is a policy change, requirement, or call to action — you MUST create a slide about that core message. Do NOT cherry-pick only the feel-good part
+  * THREAD REPLIES are part of the story! If replies discuss security concerns, action items, or important follow-ups — include those as separate slides
+  * Example: "Great progress in building tools! But we must follow security practices and use managed deployments" → create TWO slides: one about the tools innovation, one about the security/deployment requirement
+  * BAD: creating only an "Innovation Mindset" slide from a message whose main point is about security practices
 - Use varied emojis for different slides
 - Warm, positive, engaging tone — but HONEST. Reflect the real message, not a sugar-coated version
 - For "win" slides, extract specific metrics/numbers when available

@@ -111,12 +111,47 @@ def fetch_channel_messages(client, channel_id, channel_name, hours=24):
                 "images": images,
                 "links": links,
                 "thread_reply_count": msg.get("reply_count", 0),
+                "thread_replies": [],  # populated below for messages with replies
             })
+
+        # Fetch thread replies for messages with 2+ replies (important discussions)
+        for msg_data in messages:
+            reply_count = msg_data.get("thread_reply_count", 0)
+            if reply_count >= 2:
+                thread_replies = _fetch_thread_replies(
+                    client, channel_id, msg_data["ts"]
+                )
+                msg_data["thread_replies"] = thread_replies
 
     except SlackApiError as e:
         print(f"  Warning: Could not fetch #{channel_name}: {e.response['error']}")
 
     return messages
+
+
+def _fetch_thread_replies(client, channel_id, thread_ts):
+    """Fetch reply messages in a thread (excluding the parent)."""
+    replies = []
+    try:
+        result = client.conversations_replies(
+            channel=channel_id,
+            ts=thread_ts,
+            limit=20,
+        )
+        for msg in result.get("messages", [])[1:]:  # skip parent (index 0)
+            user_info = resolve_user(client, msg.get("user", ""))
+            text = msg.get("text", "")
+            if text:
+                replies.append({
+                    "user": user_info["name"],
+                    "text": text[:500],
+                    "ts": msg.get("ts", ""),
+                })
+        if replies:
+            time.sleep(0.3)  # Rate limit
+    except SlackApiError:
+        pass
+    return replies
 
 
 # ── User resolution cache ───────────────────────────────────────
