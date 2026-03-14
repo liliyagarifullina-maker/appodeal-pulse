@@ -66,6 +66,9 @@ def load_content():
 
 # ── Prepare channel summaries for AI prompt ─────────────────────
 
+EXCLUDED_AUTHORS = {"liliya garifullina", "liliya"}
+
+
 def summarize_channels(content):
     """Create a compact text summary of all channel messages for the AI."""
     parts = []
@@ -75,6 +78,10 @@ def summarize_channels(content):
             continue
         parts.append(f"\n### #{ch_name} ({len(msgs)} messages)")
         for m in msgs[:30]:  # Limit to avoid token overflow
+            # Skip messages from excluded people (pre-filter before AI sees them)
+            author = (m.get("user") or "").lower().strip()
+            if author in EXCLUDED_AUTHORS:
+                continue
             reactions_str = ""
             if m.get("reactions"):
                 reactions_str = " | Reactions: " + ", ".join(
@@ -326,6 +333,37 @@ PRIORITY: Focus on the freshest content first (last 24 hours). If there isn't en
 
 
 # ── Apply accent colors ─────────────────────────────────────────
+
+def filter_excluded_people(slides):
+    """Programmatically remove slides featuring excluded people.
+
+    This is a hard filter — AI prompt rules alone are unreliable.
+    """
+    EXCLUDED_NAMES = ["liliya garifullina", "liliya", "лилия гарифуллина", "лилия"]
+
+    def _mentions_excluded(slide):
+        """Check if a slide prominently features an excluded person."""
+        # Fields that indicate the slide is ABOUT this person
+        feature_fields = ["name", "who", "author"]
+        for field in feature_fields:
+            val = slide.get(field, "")
+            if isinstance(val, str) and val.lower().strip() in EXCLUDED_NAMES:
+                return True
+
+        # Check "from" field for claps — but claps FROM excluded person are OK to filter,
+        # claps TO excluded person are fine to keep (exception)
+        from_val = slide.get("from", "")
+        if isinstance(from_val, str) and from_val.lower().strip() in EXCLUDED_NAMES:
+            return True
+
+        return False
+
+    filtered = [s for s in slides if not _mentions_excluded(s)]
+    removed = len(slides) - len(filtered)
+    if removed:
+        print(f"  Filtered out {removed} slide(s) featuring excluded people")
+    return filtered
+
 
 def apply_accents(slides):
     """Ensure all slides have accent colors from our palette."""
@@ -705,6 +743,7 @@ if __name__ == "__main__":
             slides = curate_with_ai(channel_summary, avatar_lookup, content)
             slides = apply_accents(slides)
             slides = inject_avatars(slides, avatar_lookup)
+            slides = filter_excluded_people(slides)
             print(f"  AI generated {len(slides)} slides")
         except Exception as e:
             print(f"  AI curation failed: {e}")
