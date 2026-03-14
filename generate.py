@@ -166,6 +166,7 @@ CONTENT FILTER — NEVER include:
 - Demotions or role downgrades
 - Negative HR actions or disciplinary matters
 - Any sensitive personnel changes
+- Messages by or about "Liliya Garifullina" / "Liliya" — she manages this dashboard and should not appear on slides to avoid conflict of interest. Exception: if she receives a clap from someone else, that's fine
 - Only show POSITIVE content: birthdays, wins, recognition, events, new joiners"""
 
 DEEP_ANALYSIS_ADDENDUM_STATIC = """
