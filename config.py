@@ -27,6 +27,7 @@ SLACK_CHANNELS = {
 # ── Content settings ────────────────────────────────────────────
 
 LOOKBACK_HOURS = 72          # 3 days — captures more content
+LOOKBACK_HOURS_MONDAY = 80   # Monday: capture from Saturday morning
 MAX_SLIDES = 25
 MIN_SLIDES = 15              # AI should aim for at least this many
 

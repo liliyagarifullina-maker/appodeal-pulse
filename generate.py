@@ -69,8 +69,22 @@ def load_content():
 EXCLUDED_AUTHORS = {"liliya garifullina", "liliya"}
 
 
+def _resolve_mentions(text, user_id_map):
+    """Replace <@USERID> mentions with actual names so AI can read them."""
+    import re
+    def _replace(match):
+        uid = match.group(1)
+        info = user_id_map.get(uid, {})
+        name = info.get("name", "") if isinstance(info, dict) else ""
+        return f"@{name}" if name else match.group(0)
+    return re.sub(r'<@([UW][A-Z0-9]+)>', _replace, text)
+
+
 def summarize_channels(content):
     """Create a compact text summary of all channel messages for the AI."""
+    user_id_map = _build_user_id_map(content)
+    office_tz = timezone(timedelta(hours=config.OFFICE_TZ_OFFSET))
+
     parts = []
     for ch_name, ch_data in content["channels"].items():
         msgs = ch_data.get("messages", [])
@@ -95,12 +109,14 @@ def summarize_channels(content):
             images_str = f" | {len(m['images'])} image(s)" if m.get("images") else ""
             text = m["text"][:500] if m.get("text") else "(no text)"
 
-            # For birthday-notifications: inject actual date from message timestamp
-            # The bot says "Today's birthday" but "today" = the day the msg was posted
+            # Resolve <@USERID> mentions to real names (critical for birthdays!)
+            text = _resolve_mentions(text, user_id_map)
+
+            # For birthday channels: inject actual date from message timestamp
+            # Ira posts "Dear @Name" on the birthday (or next workday for weekends)
             date_prefix = ""
-            if ch_name == "birthdays-notifications" and m.get("ts"):
+            if ch_name in ("birthdays", "birthdays-notifications") and m.get("ts"):
                 try:
-                    office_tz = timezone(timedelta(hours=config.OFFICE_TZ_OFFSET))
                     msg_date = datetime.fromtimestamp(float(m["ts"]), tz=office_tz)
                     date_prefix = f"[POSTED {msg_date.strftime('%B %d, %Y')}] "
                     # Replace "Today's" with the actual date so AI doesn't guess
@@ -137,7 +153,12 @@ SYSTEM_PROMPT = """You are the content curator for "Appodeal PULSE" — a daily 
 Your job: analyze raw Slack messages and produce a JSON array of slide objects for a beautiful auto-rotating slideshow.
 
 SLIDE TYPES (use exact "type" values):
-1. "birthday" — birthday celebrations. Use #birthdays-notifications as the PRIMARY source (structured: Name, Location, Department, Division). ONLY if someone has a birthday TODAY or YESTERDAY. Skip completely otherwise — no "recent birthdays" or past dates. The messages will have a [POSTED date] prefix and "Birthday on <date>" — use THAT exact date for the "date" field. NEVER invent or guess the date. Include their department and location in the teamNote field. Also check #birthdays for warm congratulatory messages and birthday person's responses — if the birthday person replied with a thank-you or heartfelt message, include a snippet of it in the "message" field to make the slide more personal and warm.
+1. "birthday" — birthday celebrations. PRIMARY source: #birthdays channel where "Ira" / "Iryna Peretiatko" posts official "Dear @Name" congratulations. The @mentions are resolved to real names. SECONDARY source: #birthdays-notifications (structured bot data). RULES:
+   - ONLY create birthday slides for people whose congratulation was POSTED TODAY or YESTERDAY (check the [POSTED date] prefix). Never show older birthdays
+   - For the "date" field: just write "Happy Birthday!" — do NOT include a specific date (weekend birthdays get posted on Monday, so dates are unreliable)
+   - NEVER invent names. Only use names that appear as @Name in the messages
+   - Include their department/location in teamNote if available from #birthdays-notifications
+   - Check if the birthday person replied in #birthdays — if they wrote a thank-you, include it in "message"
 2. "win" — achievements, wins, metrics improvements
 3. "clap" — peer recognition / kudos from #claps channel
 4. "newjoin" — new team members joining
@@ -178,6 +199,7 @@ CRITICAL RULES:
 - For "clap" slides, extract company values mentioned (e.g., "We work TOGETHER to SERVE OTHERS")
 - For "reading", pick the 2-3 most interesting articles — ONLY from #to_read channel
 - NEVER mix different things into one "reading" slide. Book Club = "event" type. Article suggestions from #to_read = "reading" type. These are SEPARATE slides
+- COLOR GUIDANCE: Choose accent colors that match the theme. Spring events = green (#22C55E/#16A34A). Fire/hot topics = red/orange. Tech/DevOps = blue/purple. Growth/money = green. Celebration = gold/yellow. Use varied colors across slides — avoid repeating the same color
 - Order slides for maximum engagement: start exciting, mix types, end with a call-to-action
 - If a channel has multiple interesting messages, create separate slides for each
 - Create at least one "officelife" or "celebration" slide to keep it warm and human

@@ -335,11 +335,22 @@ def fetch_fireflies_meetings(hours=72):
 
 # ── Main collection pipeline ────────────────────────────────────
 
+def _get_lookback_hours():
+    """Return lookback hours — extended on Monday to capture the weekend."""
+    weekday = datetime.now(timezone.utc).weekday()  # 0=Monday
+    if weekday == 0:  # Monday
+        hours = config.LOOKBACK_HOURS_MONDAY
+        print(f"  Monday detected — using extended lookback: {hours}h")
+        return hours
+    return config.LOOKBACK_HOURS
+
+
 def collect_all():
     client = get_slack_client()
+    lookback = _get_lookback_hours()
     all_content = {
         "collected_at": datetime.now(timezone.utc).isoformat(),
-        "lookback_hours": config.LOOKBACK_HOURS,
+        "lookback_hours": lookback,
         "channels": {},
     }
 
@@ -350,7 +361,7 @@ def collect_all():
     for name, channel_id in config.SLACK_CHANNELS.items():
         print(f"  Collecting #{name} ({channel_id})...")
         messages = fetch_channel_messages(
-            client, channel_id, name, config.LOOKBACK_HOURS
+            client, channel_id, name, lookback
         )
         all_content["channels"][name] = {
             "channel_id": channel_id,
@@ -362,7 +373,7 @@ def collect_all():
 
     # Collect Fireflies meeting data
     print("  Collecting Fireflies meetings...")
-    all_content["fireflies_meetings"] = fetch_fireflies_meetings(config.LOOKBACK_HOURS)
+    all_content["fireflies_meetings"] = fetch_fireflies_meetings(lookback)
 
     # Merge: workspace-wide avatars + message-level avatars
     all_content["user_avatars"] = all_avatars

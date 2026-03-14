@@ -2,8 +2,9 @@ name: Daily Pulse Update
 
 on:
   schedule:
-    # Every day at 6:00 UTC (8:00 CET / Barcelona time)
-    - cron: '0 6 * * *'
+    # Weekdays only at 6:00 UTC (8:00 CET / Barcelona time)
+    # No updates on weekends — Friday's slides stay until Monday
+    - cron: '0 6 * * 1-5'
   workflow_dispatch:  # Manual trigger button in GitHub UI
 
 permissions:
