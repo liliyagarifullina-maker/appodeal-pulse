@@ -33,6 +33,9 @@ MIN_SLIDES = 15              # AI should aim for at least this many
 # Fireflies deep insights included every day for richer content
 DEEP_ANALYSIS_DAYS = [0, 1, 2, 3, 4, 5, 6]  # Every day
 
+# ── Timezone (office is CET/CEST) ─────────────────────────────
+OFFICE_TZ_OFFSET = int(os.environ.get("OFFICE_TZ_OFFSET", "1"))  # UTC+1 CET, UTC+2 CEST
+
 # ── Paths ───────────────────────────────────────────────────────
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))

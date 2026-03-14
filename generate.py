@@ -149,8 +149,9 @@ CRITICAL RULES:
 - SKIP any slide type that has no fresh content — NEVER invent fake content
 - Write in English, concise and punchy — displayed on big screens
 - DO NOT just paste raw Slack messages as quotes. Instead, write engaging summaries and intros that explain the context and why it matters. Add editorial flair — you are a curator, not a copy machine
+- CAPTURE THE MAIN POINT of each message, not just the positive opening. If someone starts with praise but the core message is a call to action, a policy change, or a requirement — the slide MUST reflect that core message. Do not cherry-pick only the feel-good part. Example: if a leader says "Great progress! BUT we must use Coolify for all deployments" — the slide should be about the Coolify requirement, not "Innovation Mindset"
 - Use varied emojis for different slides
-- Warm, positive, engaging tone
+- Warm, positive, engaging tone — but HONEST. Reflect the real message, not a sugar-coated version
 - For "win" slides, extract specific metrics/numbers when available
 - For "clap" slides, extract company values mentioned (e.g., "We work TOGETHER to SERVE OTHERS")
 - For "reading", pick the 2-3 most interesting articles — ONLY from #to_read channel
@@ -264,7 +265,9 @@ def curate_with_ai(channel_summary, avatar_lookup=None, content=None):
 
     client = anthropic.Anthropic(api_key=api_key)
 
-    today_dt = datetime.now()
+    # Use office timezone (CET/CEST) so "today" matches the office wall clock
+    office_tz = timezone(timedelta(hours=config.OFFICE_TZ_OFFSET))
+    today_dt = datetime.now(office_tz)
     today = today_dt.strftime("%A, %B %d, %Y")
     day_name = today_dt.strftime("%A")
     deep = is_deep_analysis_day()
