@@ -94,8 +94,23 @@ def summarize_channels(content):
                 )
             images_str = f" | {len(m['images'])} image(s)" if m.get("images") else ""
             text = m["text"][:500] if m.get("text") else "(no text)"
+
+            # For birthday-notifications: inject actual date from message timestamp
+            # The bot says "Today's birthday" but "today" = the day the msg was posted
+            date_prefix = ""
+            if ch_name == "birthdays-notifications" and m.get("ts"):
+                try:
+                    office_tz = timezone(timedelta(hours=config.OFFICE_TZ_OFFSET))
+                    msg_date = datetime.fromtimestamp(float(m["ts"]), tz=office_tz)
+                    date_prefix = f"[POSTED {msg_date.strftime('%B %d, %Y')}] "
+                    # Replace "Today's" with the actual date so AI doesn't guess
+                    text = text.replace("Today's birthday", f"Birthday on {msg_date.strftime('%B %d')}")
+                    text = text.replace("today's birthday", f"Birthday on {msg_date.strftime('%B %d')}")
+                except (ValueError, OSError):
+                    pass
+
             parts.append(
-                f"- [{m['user']}] {text}{reactions_str}{links_str}{images_str}"
+                f"- {date_prefix}[{m['user']}] {text}{reactions_str}{links_str}{images_str}"
             )
     return "\n".join(parts)
 
@@ -122,7 +137,7 @@ SYSTEM_PROMPT = """You are the content curator for "Appodeal PULSE" — a daily 
 Your job: analyze raw Slack messages and produce a JSON array of slide objects for a beautiful auto-rotating slideshow.
 
 SLIDE TYPES (use exact "type" values):
-1. "birthday" — birthday celebrations. Use #birthdays-notifications as the PRIMARY source (structured: Name, Location, Department, Division). ONLY if someone has a birthday TODAY or YESTERDAY. Skip completely otherwise — no "recent birthdays" or past dates. Always include the actual birthday DATE in the "date" field. Include their department and location in the teamNote field. Also check #birthdays for warm congratulatory messages and birthday person's responses — if the birthday person replied with a thank-you or heartfelt message, include a snippet of it in the "message" field to make the slide more personal and warm.
+1. "birthday" — birthday celebrations. Use #birthdays-notifications as the PRIMARY source (structured: Name, Location, Department, Division). ONLY if someone has a birthday TODAY or YESTERDAY. Skip completely otherwise — no "recent birthdays" or past dates. The messages will have a [POSTED date] prefix and "Birthday on <date>" — use THAT exact date for the "date" field. NEVER invent or guess the date. Include their department and location in the teamNote field. Also check #birthdays for warm congratulatory messages and birthday person's responses — if the birthday person replied with a thank-you or heartfelt message, include a snippet of it in the "message" field to make the slide more personal and warm.
 2. "win" — achievements, wins, metrics improvements
 3. "clap" — peer recognition / kudos from #claps channel
 4. "newjoin" — new team members joining
