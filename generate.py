@@ -344,7 +344,7 @@ def apply_accents(slides):
 
 def _find_avatar(name, avatar_lookup):
     """Find avatar URL for a person name with fuzzy matching."""
-    if not name or not avatar_lookup:
+    if not name or not avatar_lookup or not isinstance(name, str):
         return ""
     # Exact match
     if name in avatar_lookup:
@@ -391,9 +391,12 @@ def inject_avatars(slides, avatar_lookup):
             if avatar:
                 slide["avatar"] = avatar
 
-        # Clap — from person
+        # Clap — from person (AI may return "from" as list or string)
         if stype == "clap" and not slide.get("fromAvatar"):
-            avatar = _find_avatar(slide.get("from", ""), avatar_lookup)
+            from_val = slide.get("from", "")
+            if isinstance(from_val, list):
+                from_val = from_val[0] if from_val else ""
+            avatar = _find_avatar(from_val, avatar_lookup)
             if avatar:
                 slide["fromAvatar"] = avatar
 
