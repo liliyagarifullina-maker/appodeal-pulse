@@ -1,371 +1,330 @@
 [
   {
     "type": "birthday",
-    "emoji": "🎉",
-    "accent": "#FF6B6B",
-    "gradient": [
-      "#FF6B6B",
-      "#FF8E53"
-    ],
+    "emoji": "🎂",
+    "accent": "#F59E0B",
+    "gradient": "#FEF3C7",
     "title": "Birthday Celebration",
     "name": "Artem Orlov",
     "date": "Happy Birthday!",
-    "message": "Thanks, everyone for all the warm wishes and kind words!",
-    "teamNote": "Engineering Team",
+    "message": "Thank you for all your explanations and bringing so much value to our team! The whole company is celebrating you today.",
+    "teamNote": "Tech Team",
     "avatar": "https://avatars.slack-edge.com/2025-05-10/8862797768359_25b15d996edac655c214_192.jpg"
   },
   {
-    "type": "birthday",
-    "emoji": "🎂",
-    "accent": "#4ECDC4",
-    "gradient": [
-      "#4ECDC4",
-      "#44A08D"
-    ],
-    "title": "Birthday Celebration",
-    "name": "Kirill Khramkov",
-    "date": "Happy Birthday!",
-    "message": "Thanks, everyone",
-    "teamNote": "Development Team",
-    "avatar": "https://avatars.slack-edge.com/2024-11-25/8076232361957_d1e2d28ef56af107ae37_192.jpg"
-  },
-  {
-    "type": "event",
-    "emoji": "🌱",
-    "accent": "#22C55E",
-    "gradient": [
-      "#22C55E",
-      "#16A34A"
-    ],
-    "title": "Spring Season Launch",
-    "eventName": "Connect Groups Spring Season",
-    "date": "March–May 2026",
-    "description": "Employee-led communities on Circle are now open for the Spring Season! Join groups around shared interests, learning, sports, books, leadership, games, and meaningful conversations.",
-    "organizer": "Katarzyna Raniszewska",
-    "organizerAvatar": "https://avatars.slack-edge.com/2025-01-08/8266302480660_a86f929f8d1061603dda_192.jpg"
+    "type": "officelife",
+    "emoji": "💔",
+    "accent": "#EF4444",
+    "gradient": "#FEE2E2",
+    "title": "Supporting Our Team",
+    "headline": "Family First",
+    "quote": "Pavel needs time off for a family emergency. The team is showing incredible support with hearts and prayers.",
+    "author": "Team Response",
+    "reactions": 39,
+    "channel": "#general",
+    "avatar": "https://avatars.slack-edge.com/2025-04-05/8704641101238_a56cdf39fffbbb80ce10_192.jpg"
   },
   {
     "type": "win",
     "emoji": "🚀",
-    "accent": "#3B82F6",
-    "gradient": [
-      "#3B82F6",
-      "#1D4ED8"
-    ],
-    "title": "Infrastructure Innovation",
-    "who": "DevOps Team",
-    "stat": "1-Click",
-    "statUnit": "Deployment",
-    "headline": "Coolify Platform Launch",
-    "description": "Our DevOps team has launched Coolify - a powerful service that allows you to deploy applications in just a few clicks. Complete with security guidelines and documentation.",
-    "takeaway": "Democratizing deployment for all teams"
+    "accent": "#10B981",
+    "gradient": "#D1FAE5",
+    "title": "Innovation Momentum",
+    "who": "Non-Engineering Teams",
+    "stat": "Rapid",
+    "statUnit": "Tool Development",
+    "headline": "Building at Lightning Speed",
+    "description": "Non-engineering teams are creating useful tools faster than ever, showing incredible learning velocity and innovation mindset.",
+    "takeaway": "We're moving in the right direction with cross-team innovation",
+    "avatar": "https://avatars.slack-edge.com/2018-08-17/417618953248_7a439d21998e34f3395e_192.png"
   },
   {
-    "type": "officelife",
-    "emoji": "💡",
-    "accent": "#8B5CF6",
-    "gradient": [
-      "#8B5CF6",
-      "#7C3AED"
-    ],
-    "title": "Innovation Mindset",
-    "headline": "Non-Engineering Teams Building Tools",
-    "quote": "We're making great progress in building products, and it's especially exciting to see how quickly non-engineering teams have created so many useful tools. This is a strong sign that we're learning fast and moving in the right direction.",
-    "author": "Alexandr Zhitlukhin",
-    "reactions": "🔥 ×16, 👏 ×11, 🫡 ×7",
-    "channel": "#general",
-    "avatar": "https://avatars.slack-edge.com/2018-08-17/417618953248_7a439d21998e34f3395e_192.png"
+    "type": "win",
+    "emoji": "🔒",
+    "accent": "#7C3AED",
+    "gradient": "#EDE9FE",
+    "title": "Security Excellence",
+    "who": "Engineering Team",
+    "stat": "Enhanced",
+    "statUnit": "Security Practices",
+    "headline": "Scaling with Security in Mind",
+    "description": "As we grow rapidly, the focus on proper engineering and security practices ensures our foundation remains strong.",
+    "takeaway": "Growth without compromising on security standards"
   },
   {
     "type": "clap",
     "emoji": "👏",
     "accent": "#F59E0B",
-    "gradient": [
-      "#F59E0B",
-      "#D97706"
-    ],
-    "title": "DevOps Excellence",
-    "count": 50,
-    "from": "Mykhailo Kukharskyi",
+    "gradient": "#FEF3C7",
+    "title": "Team Recognition",
+    "count": 100,
+    "from": "Mykhailo Kukharskyi & Artem Pchelintsev & Mikita Dzianisevich",
     "to": [
       {
         "name": "Gleb Krahotkin",
         "avatar": "https://avatars.slack-edge.com/2022-10-23/4275527051089_402b8b44f748e977a230_192.png"
       }
     ],
-    "reason": "Outstanding infrastructure work and platform development",
+    "reason": "Outstanding performance that earned massive recognition from multiple team leads",
     "values": [
-      "Innovation",
-      "Technical Excellence"
+      "Excellence",
+      "Impact"
     ],
+    "avatar": "https://avatars.slack-edge.com/2022-10-23/4275527051089_402b8b44f748e977a230_192.png",
     "fromAvatar": "https://avatars.slack-edge.com/2024-11-11/8011022242867_79f53ab6a281be79a4a1_192.jpg"
   },
   {
     "type": "clap",
-    "emoji": "👏",
-    "accent": "#EF4444",
-    "gradient": [
-      "#EF4444",
-      "#DC2626"
-    ],
-    "title": "Team Collaboration",
+    "emoji": "🌟",
+    "accent": "#06B6D4",
+    "gradient": "#CFFAFE",
+    "title": "Leadership Recognition",
     "count": 50,
-    "from": "Viktor Trykolenko",
+    "from": "Viktor Trykolenko & Michelle Walter & Michael Lotfy",
     "to": [
       {
         "name": "Iurii Kotov",
         "avatar": "https://avatars.slack-edge.com/2025-04-14/8746901360933_05e1e4136950da2b1372_192.jpg"
-      }
-    ],
-    "reason": "Exceptional teamwork and project delivery",
-    "values": [
-      "Collaboration",
-      "Excellence"
-    ],
-    "fromAvatar": "https://avatars.slack-edge.com/2025-05-05/8850103512900_8291b42c2edd3d1d52ed_192.jpg"
-  },
-  {
-    "type": "clap",
-    "emoji": "👏",
-    "accent": "#10B981",
-    "gradient": [
-      "#10B981",
-      "#059669"
-    ],
-    "title": "Leadership Recognition",
-    "count": 50,
-    "from": "Jasmine Nunez",
-    "to": [
+      },
       {
         "name": "Michelle Walter",
         "avatar": "https://avatars.slack-edge.com/2025-04-14/8775697194432_759b1d1b4b567f3dc5cd_192.jpg"
+      },
+      {
+        "name": "Isahakyan",
+        "avatar": ""
       }
     ],
-    "reason": "Outstanding leadership and team management",
+    "reason": "Exceptional leadership and contribution across multiple projects",
     "values": [
       "Leadership",
-      "Team Success"
+      "Excellence"
     ],
-    "fromAvatar": "https://avatars.slack-edge.com/2024-01-24/6511166291271_bb53e661ba2b3f504558_192.jpg"
+    "fromAvatar": "https://avatars.slack-edge.com/2023-10-09/6010669482610_db3a7c1079aec2e4ac9d_192.jpg"
   },
   {
     "type": "clap",
-    "emoji": "👏",
-    "accent": "#F97316",
-    "gradient": [
-      "#F97316",
-      "#EA580C"
-    ],
-    "title": "Engineering Excellence",
+    "emoji": "🏆",
+    "accent": "#84CC16",
+    "gradient": "#ECFDF5",
+    "title": "Cross-Team Collaboration",
     "count": 50,
-    "from": "Michael Lotfy",
+    "from": "Alexandr Babich & Sasha",
     "to": [
       {
-        "name": "Issa Isahakyan",
-        "avatar": "https://avatars.slack-edge.com/2026-03-13/10711668032993_689b31f41fd270a0b43e_192.png"
-      }
-    ],
-    "reason": "Exceptional technical contributions and innovation",
-    "values": [
-      "Technical Excellence",
-      "Innovation"
-    ],
-    "fromAvatar": "https://avatars.slack-edge.com/2025-07-04/9152832499860_d68d0c9db1bb7a2bdcff_192.jpg"
-  },
-  {
-    "type": "clap",
-    "emoji": "👏",
-    "accent": "#8B5CF6",
-    "gradient": [
-      "#8B5CF6",
-      "#7C3AED"
-    ],
-    "title": "Development Impact",
-    "count": 50,
-    "from": "Valentino Agazzi Mandozzi",
-    "to": [
-      {
-        "name": "Eren Sakarya",
-        "avatar": "https://avatars.slack-edge.com/2024-10-14/7875184161458_1b44d1d97c865d29e73d_192.jpg"
-      }
-    ],
-    "reason": "Outstanding development work and code quality",
-    "values": [
-      "Quality",
-      "Impact"
-    ],
-    "fromAvatar": "https://avatars.slack-edge.com/2026-01-14/10294449319362_660dc3a963f9cf8df119_192.jpg"
-  },
-  {
-    "type": "clap",
-    "emoji": "👏",
-    "accent": "#06B6D4",
-    "gradient": [
-      "#06B6D4",
-      "#0891B2"
-    ],
-    "title": "Team Support",
-    "count": 50,
-    "from": "Alexandr Babich",
-    "to": [
+        "name": "Alexandr Babich",
+        "avatar": "https://avatars.slack-edge.com/2020-06-02/1171190579745_83ff679a8154314d6cfd_192.jpg"
+      },
       {
         "name": "Sasha",
         "avatar": "https://avatars.slack-edge.com/2020-04-24/1069111203303_83d054d415ba67ecc95b_192.jpg"
+      },
+      {
+        "name": "Anna Timoshenko",
+        "avatar": "https://avatars.slack-edge.com/2024-12-04/8135484697425_8446077f62523d59d828_192.jpg"
       }
     ],
-    "reason": "Exceptional support and collaboration across teams",
+    "reason": "Excellent teamwork and mutual recognition showing strong collaborative culture",
     "values": [
-      "Support",
-      "Teamwork"
+      "Collaboration",
+      "Support"
     ],
-    "fromAvatar": "https://avatars.slack-edge.com/2020-06-02/1171190579745_83ff679a8154314d6cfd_192.jpg"
+    "fromAvatar": "https://avatars.slack-edge.com/2018-08-17/417618953248_7a439d21998e34f3395e_192.png"
   },
   {
     "type": "clap",
-    "emoji": "👏",
-    "accent": "#EC4899",
-    "gradient": [
-      "#EC4899",
-      "#DB2777"
-    ],
-    "title": "Cross-Team Excellence",
+    "emoji": "💪",
+    "accent": "#8B5CF6",
+    "gradient": "#F3E8FF",
+    "title": "Technical Excellence",
     "count": 25,
-    "from": "Sergey Orlov",
+    "from": "Sergey Orlov & Iurii Kotov",
     "to": [
       {
         "name": "Roman de las Heras",
         "avatar": "https://avatars.slack-edge.com/2024-06-06/7232931228978_da5bbde9e093a1538480_192.png"
-      }
-    ],
-    "reason": "Outstanding cross-functional collaboration and results",
-    "values": [
-      "Collaboration",
-      "Results"
-    ],
-    "fromAvatar": "https://avatars.slack-edge.com/2025-12-15/10124195873458_c5bdae497d8fd3658139_192.png"
-  },
-  {
-    "type": "clap",
-    "emoji": "👏",
-    "accent": "#84CC16",
-    "gradient": [
-      "#84CC16",
-      "#65A30D"
-    ],
-    "title": "Quality Engineering",
-    "count": 25,
-    "from": "Iurii Kotov",
-    "to": [
+      },
       {
         "name": "Ana Abuseridze",
         "avatar": "https://avatars.slack-edge.com/2024-06-24/7320166706578_e30820e383923807cfa7_192.jpg"
-      }
-    ],
-    "reason": "Exceptional attention to quality and technical excellence",
-    "values": [
-      "Quality",
-      "Excellence"
-    ],
-    "fromAvatar": "https://avatars.slack-edge.com/2025-04-14/8746901360933_05e1e4136950da2b1372_192.jpg"
-  },
-  {
-    "type": "clap",
-    "emoji": "👏",
-    "accent": "#F59E0B",
-    "gradient": [
-      "#F59E0B",
-      "#D97706"
-    ],
-    "title": "Development Excellence",
-    "count": 25,
-    "from": "Iurii Kotov",
-    "to": [
+      },
       {
         "name": "Dima M.",
         "avatar": "https://avatars.slack-edge.com/2026-01-05/10224534359843_0a48694ad3fdd4030145_192.jpg"
       }
     ],
-    "reason": "Outstanding development skills and problem-solving",
+    "reason": "Outstanding technical contributions and problem-solving skills",
     "values": [
-      "Problem Solving",
+      "Innovation",
       "Excellence"
     ],
-    "fromAvatar": "https://avatars.slack-edge.com/2025-04-14/8746901360933_05e1e4136950da2b1372_192.jpg"
+    "fromAvatar": "https://avatars.slack-edge.com/2026-01-12/10289859935137_a775b24ebf78e538a78c_192.png"
+  },
+  {
+    "type": "clap",
+    "emoji": "🔥",
+    "accent": "#EF4444",
+    "gradient": "#FEE2E2",
+    "title": "Product Development",
+    "count": 22,
+    "from": "Maxim Sinyaev & Agustin & Sergio-Yersi Villegas",
+    "to": [
+      {
+        "name": "Agustin",
+        "avatar": "https://avatars.slack-edge.com/2022-03-17/3254993864418_5d3bf56a1ed83cbdf547_192.jpg"
+      },
+      {
+        "name": "Sem Sinchenko",
+        "avatar": ""
+      },
+      {
+        "name": "Emil Sharafiev",
+        "avatar": "https://avatars.slack-edge.com/2025-09-12/9511379520308_672b529a2c89ae495dc2_192.png"
+      },
+      {
+        "name": "Alessandro",
+        "avatar": "https://avatars.slack-edge.com/2025-05-27/8949585055142_657f010a8966df2120e1_192.jpg"
+      },
+      {
+        "name": "Antonio Clavelli",
+        "avatar": "https://avatars.slack-edge.com/2024-11-08/8015670194033_a7373a2d79c00a88c82d_192.jpg"
+      },
+      {
+        "name": "Wojo",
+        "avatar": ""
+      }
+    ],
+    "reason": "Driving product innovation and development forward with incredible energy",
+    "values": [
+      "Innovation",
+      "Drive"
+    ],
+    "fromAvatar": "https://avatars.slack-edge.com/2022-03-25/3294032817187_658ea6b24bdc55b1d01f_192.jpg"
+  },
+  {
+    "type": "clap",
+    "emoji": "⚡",
+    "accent": "#F59E0B",
+    "gradient": "#FEF3C7",
+    "title": "DevOps Excellence",
+    "count": 19,
+    "from": "Dzmitry Baran & anton.nikifarau & Isahakyan",
+    "to": [
+      {
+        "name": "Aleh Mentuz",
+        "avatar": "https://avatars.slack-edge.com/2024-08-04/7509587516727_66a362d26c121fb5f98c_192.jpg"
+      },
+      {
+        "name": "Ivan Litvinau",
+        "avatar": "https://avatars.slack-edge.com/2019-10-28/799974219523_9a3d787e5b1c5402e66f_192.jpg"
+      },
+      {
+        "name": "Anna Hrytsel",
+        "avatar": "https://avatars.slack-edge.com/2023-05-16/5295724727056_51af1c43120e4a5e14e7_192.jpg"
+      },
+      {
+        "name": "Mikita Dzianisevich",
+        "avatar": "https://avatars.slack-edge.com/2025-05-19/8921108121172_2374ef4d94f7646d211b_192.jpg"
+      },
+      {
+        "name": "stas.k",
+        "avatar": "https://avatars.slack-edge.com/2018-08-21/420557434373_d872bb5c9131dc064929_192.jpg"
+      },
+      {
+        "name": "Petr Chebanov",
+        "avatar": "https://avatars.slack-edge.com/2025-07-15/9197360772725_352406cea3aef05162e8_192.jpg"
+      },
+      {
+        "name": "Cagatay Akcam",
+        "avatar": "https://avatars.slack-edge.com/2025-08-07/9341281020288_1fb125bbdd33798673a6_192.png"
+      },
+      {
+        "name": "Viktar Plesko",
+        "avatar": "https://avatars.slack-edge.com/2025-01-02/8225921300119_9f0f08bedcda8e5ce25c_192.jpg"
+      },
+      {
+        "name": "Vladislav Nikolaev",
+        "avatar": "https://avatars.slack-edge.com/2026-01-12/10280223760420_409bb0c15b00d4959a35_192.jpg"
+      }
+    ],
+    "reason": "Maintaining infrastructure excellence and supporting team productivity",
+    "values": [
+      "Reliability",
+      "Support"
+    ],
+    "fromAvatar": "https://avatars.slack-edge.com/2024-01-25/6523990483078_cccf106f62b73787c439_192.jpg"
   },
   {
     "type": "milestone",
     "emoji": "💰",
-    "accent": "#22C55E",
-    "gradient": [
-      "#22C55E",
-      "#16A34A"
-    ],
-    "title": "Financial Milestone",
-    "headline": "Strong Growth Trajectory",
-    "description": "Company achieved ~$100M gross profit with $20M EBITDA, maintaining 40% year-over-year growth projection.",
-    "stat": "40%",
-    "statLabel": "YoY Growth"
+    "accent": "#10B981",
+    "gradient": "#D1FAE5",
+    "title": "Financial Excellence",
+    "headline": "Exceptional Growth Trajectory",
+    "description": "Company achieving $100M gross profit with $20M EBITDA, projecting 40% year-over-year growth",
+    "stat": "$100M",
+    "statLabel": "Gross Profit"
+  },
+  {
+    "type": "milestone",
+    "emoji": "🎯",
+    "accent": "#7C3AED",
+    "gradient": "#EDE9FE",
+    "title": "Vision 2030",
+    "headline": "Building Toward Greatness",
+    "description": "Strategic roadmap targeting $50B company valuation with 1,500 employees across 100 studios",
+    "stat": "$50B",
+    "statLabel": "Target Valuation"
+  },
+  {
+    "type": "win",
+    "emoji": "🤖",
+    "accent": "#06B6D4",
+    "gradient": "#CFFAFE",
+    "title": "AI Revolution",
+    "who": "Every Employee",
+    "stat": "5-10",
+    "statUnit": "AI Agents per Person",
+    "headline": "The Future is Now",
+    "description": "Within 3-6 months, every team member will manage 5-10 AI agents, revolutionizing how we work and scale.",
+    "takeaway": "AI isn't replacing us—it's amplifying our capabilities"
   },
   {
     "type": "win",
     "emoji": "🎮",
-    "accent": "#8B5CF6",
-    "gradient": [
-      "#8B5CF6",
-      "#7C3AED"
-    ],
-    "title": "Gaming Success",
+    "accent": "#F59E0B",
+    "gradient": "#FEF3C7",
+    "title": "Gaming Profitability",
     "who": "Gaming Division",
     "stat": "61%",
-    "statUnit": "Retention",
-    "headline": "Infinite Minesweeper Achievement",
-    "description": "Infinite Minesweeper reached 61% retention rate, significantly outperforming Apple's benchmark ERA of 151-160%.",
-    "takeaway": "Gaming division turned profitable in 2025"
+    "statUnit": "Retention Rate",
+    "headline": "Gaming Turned Profitable in 2025",
+    "description": "Infinite Minesweeper achieving 61% retention, with Solitaire v540 boosting D7 retention by +21.67%",
+    "takeaway": "Strategic pivot to gaming is paying off massively"
   },
   {
     "type": "win",
-    "emoji": "🔒",
+    "emoji": "🛡️",
     "accent": "#EF4444",
-    "gradient": [
-      "#EF4444",
-      "#DC2626"
-    ],
-    "title": "Security Excellence",
+    "gradient": "#FEE2E2",
+    "title": "Fraud Prevention Victory",
     "who": "Security Team",
-    "stat": "4%",
-    "statUnit": "Fraud Rate",
-    "headline": "Massive Fraud Reduction",
-    "description": "Fraud reduced from 22% to under 4% with dynamic SDK signatures implementation.",
-    "takeaway": "18 percentage point improvement in fraud prevention"
+    "stat": "82%",
+    "statUnit": "Fraud Reduction",
+    "headline": "From 22% to Under 4% Fraud",
+    "description": "Dynamic SDK signatures slashed fraud rates dramatically, protecting revenue and user experience",
+    "takeaway": "Innovation in security drives business results"
   },
   {
-    "type": "milestone",
-    "emoji": "🤖",
-    "accent": "#3B82F6",
-    "gradient": [
-      "#3B82F6",
-      "#1D4ED8"
-    ],
-    "title": "AI Revolution",
-    "headline": "AI Agent Future",
-    "description": "Every employee will manage 5-10 AI agents within the next 3-6 months, transforming how we work and scale.",
-    "stat": "10x",
-    "statLabel": "Productivity Multiplier"
-  },
-  {
-    "type": "win",
-    "emoji": "💼",
-    "accent": "#059669",
-    "gradient": [
-      "#059669",
-      "#047857"
-    ],
-    "title": "Sales Achievement",
-    "who": "Sales Team",
-    "stat": "$390k",
-    "statUnit": "Net Revenue",
-    "headline": "Weekly Sales Record",
-    "description": "Sales team closed 8 deals generating $390k net revenue in a single week.",
-    "takeaway": "Strong momentum in Q1 2026"
+    "type": "celebration",
+    "emoji": "📚",
+    "accent": "#8B5CF6",
+    "gradient": "#F3E8FF",
+    "title": "Book Club Thriving",
+    "headline": "Passionate Curiosity Lives Here",
+    "prompt1": "Join 140+ colleagues in our Book Club",
+    "prompt2": "Building minds and connections together",
+    "coreValue": "Continuous Learning",
+    "channel": "#book-club"
   }
 ]
