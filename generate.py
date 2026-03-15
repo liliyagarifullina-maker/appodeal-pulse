@@ -201,7 +201,7 @@ AVATAR SUPPORT — IMPORTANT:
 - If no avatar URL is available for a person, omit the "avatar" field
 
 CRITICAL RULES:
-- TARGET: Aim for AT LEAST 15 slides. Be creative and thorough — split big topics into multiple slides, create separate slides for each interesting message, add more claps, more wins, more officelife moments
+- TARGET: Aim for AT LEAST 25 slides. Be creative and thorough — split big topics into multiple slides, create separate slides for each interesting message, add more claps, more wins, more officelife moments
 - SKIP birthday slides entirely if no one has a birthday TODAY or YESTERDAY. Never show birthdays from last week or earlier
 - SKIP any slide type that has no fresh content — NEVER invent fake content
 - Write in English, concise and punchy — displayed on big screens
@@ -374,7 +374,7 @@ PRIORITY: Focus on the freshest content first (last 24 hours). If there isn't en
     print("  Calling Claude API for content curation...")
     response = client.messages.create(
         model="claude-sonnet-4-20250514",
-        max_tokens=4096,
+        max_tokens=8192,
         system=SYSTEM_PROMPT,
         messages=[{"role": "user", "content": user_prompt}],
     )
