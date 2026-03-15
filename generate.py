@@ -265,7 +265,8 @@ def build_fireflies_section(content):
 
     parts = ["""
 RECENT MEETING INSIGHTS (from Fireflies transcripts):
-Create 2-4 slides from these meeting highlights. Use "milestone", "win", or "event" type.
+YOU MUST create 2-4 slides from these meeting highlights. This is MANDATORY — do NOT skip this section.
+Use "milestone", "win", or "event" type. These meetings contain real company decisions and progress — they are MORE valuable than static facts.
 
 FIREFLIES CONTENT RULES — STRICTLY FOLLOW:
 1. NEVER quote anyone directly from meetings — always paraphrase and summarize
