@@ -1,0 +1,74 @@
+[
+  {
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Alexandr Sikorsky",
+    "date": "March 13",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "With love, Your Appodeal Team 💜",
+    "avatar": "https://avatars.slack-edge.com/2020-09-07/1348241323011_1173d242099cc519c370_192.jpg"
+  },
+  {
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "Hello everyone ! I’d like to share a cool thing our DevOps team has set up for a...",
+    "quote": "Hello everyone ! I’d like to share a cool thing our DevOps team has set up for all of us. Introducing Coolify - a service that allows you to deploy your applications in just a few clicks. I’ve written a short guide on how to use it here. > Unfortunately, AI doesn’t always generate secure application",
+    "author": "Gleb Krahotkin",
+    "reactions": "",
+    "channel": "#general"
+  },
+  {
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "Hi ! Thank you for joining our 11th Lunch & Learn session! A big thank-you to fo...",
+    "quote": "Hi ! Thank you for joining our 11th Lunch & Learn session! A big thank-you to for a very interesting presentation Below you can find: • the recording from the session • the presentation Please remember that you can always find all Lunch & Learn recordings on Circle → Resources → Lunch & Learn, so fe",
+    "author": "Katarzyna Raniszewska",
+    "reactions": "",
+    "channel": "#general"
+  },
+  {
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "Team, Anna is starting a reading club around the book The 4 Disciplines of Execu...",
+    "quote": "Team, Anna is starting a reading club around the book The 4 Disciplines of Execution, and I encourage everyone to join. The book focuses on four core concepts: • Wildly Important Goals (WIGs) • Leading and Lagging Metrics • Scorecards • Follow-through (execution discipline) This isn’t a brand-new fr",
+    "author": "Pavel Golubev",
+    "reactions": "",
+    "channel": "#general"
+  },
+  {
+    "type": "officelife",
+    "emoji": "👏",
+    "accent": "#5D2CAC",
+    "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
+    "title": "From #claps",
+    "headline": "Mikita Dzianisevich received 20× from Veronika Yastrebova",
+    "quote": "Mikita Dzianisevich received 20× from Veronika Yastrebova",
+    "author": "Clappy",
+    "reactions": "",
+    "channel": "#claps"
+  },
+  {
+    "type": "officelife",
+    "emoji": "👏",
+    "accent": "#5D2CAC",
+    "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
+    "title": "From #claps",
+    "headline": "Francesco Veronika Yastrebova Mikita Dzianisevich Miguel Perez Vladimir Samoylov...",
+    "quote": "Francesco Veronika Yastrebova Mikita Dzianisevich Miguel Perez Vladimir Samoylov anton.nikifarau received 4× from Dima",
+    "author": "Clappy",
+    "reactions": "",
+    "channel": "#claps"
+  }
+]
