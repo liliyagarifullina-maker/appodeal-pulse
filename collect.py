@@ -310,7 +310,13 @@ def fetch_fireflies_meetings(hours=72):
         resp.raise_for_status()
         data = resp.json()
 
-        transcripts = data.get("data", {}).get("transcripts", [])
+        # Check for API errors
+        if "errors" in data:
+            print(f"  [Fireflies] API returned errors: {data['errors']}")
+            return []
+
+        transcripts = data.get("data", {}).get("transcripts") or []
+        print(f"  [Fireflies] Raw transcripts from API: {len(transcripts)}")
         meetings = []
 
         # Title patterns to skip (1:1s, phone calls, interviews)
@@ -322,15 +328,31 @@ def fetch_fireflies_meetings(hours=72):
             "performance review", "pip", "disciplinary",
         ]
 
+        skipped_reasons = {"no_summary": 0, "title_filter": 0, "too_small": 0}
+
         for t in transcripts:
+            title = t.get("title", "")
             summary = t.get("summary") or {}
+            participants_list = t.get("participants") or []
+            duration_min = round((t.get("duration") or 0) / 60, 1)
+
             # Skip silent/empty meetings
             if not summary.get("overview") and not summary.get("shorthand_bullet"):
+                skipped_reasons["no_summary"] += 1
+                print(f"  [Fireflies]   Skipped (no summary): {title}")
                 continue
 
             # Skip 1:1s, phone calls, interviews by title
             title_lower = (t.get("title") or "").lower()
             if any(pat.lower() in title_lower for pat in SKIP_TITLE_PATTERNS):
+                skipped_reasons["title_filter"] += 1
+                print(f"  [Fireflies]   Skipped (title filter): {title}")
+                continue
+
+            # Skip too small meetings (1:1s, short calls)
+            if len(participants_list) < 3 or duration_min < 10:
+                skipped_reasons["too_small"] += 1
+                print(f"  [Fireflies]   Skipped (too small: {len(participants_list)} ppl, {duration_min}min): {title}")
                 continue
 
             # date can be int (Unix timestamp ms) or string — always convert to string
@@ -344,13 +366,12 @@ def fetch_fireflies_meetings(hours=72):
             else:
                 date_str = str(date_raw) if date_raw else ""
 
-            participants_list = t.get("participants") or []
-
+            print(f"  [Fireflies]   ✓ Keeping: {title} ({len(participants_list)} ppl, {duration_min}min)")
             meetings.append({
                 "id": t.get("id", ""),
-                "title": t.get("title", ""),
+                "title": title,
                 "date": date_str,
-                "duration_min": round((t.get("duration") or 0) / 60, 1),
+                "duration_min": duration_min,
                 "organizer": t.get("organizer_email", ""),
                 "participants": participants_list,
                 "participant_count": len(participants_list),
@@ -361,6 +382,7 @@ def fetch_fireflies_meetings(hours=72):
             })
 
         print(f"  [Fireflies] Fetched {len(meetings)} meetings (from {len(transcripts)} transcripts)")
+        print(f"  [Fireflies] Skipped: {skipped_reasons}")
         return meetings
 
     except Exception as e:
