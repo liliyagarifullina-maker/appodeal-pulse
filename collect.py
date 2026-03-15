@@ -319,9 +319,8 @@ def fetch_fireflies_meetings(hours=72):
         print(f"  [Fireflies] Raw transcripts from API: {len(transcripts)}")
         meetings = []
 
-        # Title patterns to skip (1:1s, phone calls, interviews)
-        SKIP_TITLE_PATTERNS = [
-            " / ",          # "Pavel / Liliya" — 1:1 format
+        # Title patterns to ALWAYS skip (regardless of size)
+        SKIP_TITLE_ALWAYS = [
             "1:1", "1-1", "one on one", "one-on-one",
             "phone call", "call with",
             "interview", "screening", "candidate",
@@ -334,7 +333,8 @@ def fetch_fireflies_meetings(hours=72):
             title = t.get("title", "")
             summary = t.get("summary") or {}
             participants_list = t.get("participants") or []
-            duration_min = round((t.get("duration") or 0) / 60, 1)
+            # Fireflies API returns duration in minutes (NOT seconds)
+            duration_min = round(t.get("duration") or 0, 1)
 
             # Skip silent/empty meetings
             if not summary.get("overview") and not summary.get("shorthand_bullet"):
@@ -342,11 +342,18 @@ def fetch_fireflies_meetings(hours=72):
                 print(f"  [Fireflies]   Skipped (no summary): {title}")
                 continue
 
-            # Skip 1:1s, phone calls, interviews by title
-            title_lower = (t.get("title") or "").lower()
-            if any(pat.lower() in title_lower for pat in SKIP_TITLE_PATTERNS):
+            # Skip by title patterns (always)
+            title_lower = title.lower()
+            if any(pat.lower() in title_lower for pat in SKIP_TITLE_ALWAYS):
                 skipped_reasons["title_filter"] += 1
                 print(f"  [Fireflies]   Skipped (title filter): {title}")
+                continue
+
+            # " / " in title = likely 1:1 ("Pavel / Liliya"), but only if ≤ 3 participants
+            # Meetings like "People / Standards / Environment" with many participants are NOT 1:1s
+            if " / " in title and len(participants_list) <= 3:
+                skipped_reasons["title_filter"] += 1
+                print(f"  [Fireflies]   Skipped (1:1 by title): {title}")
                 continue
 
             # Skip too small meetings (1:1s, short calls)
