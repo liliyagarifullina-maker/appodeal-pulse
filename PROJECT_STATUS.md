@@ -1,29 +1,34 @@
 # Appodeal Pulse — Project Status
 
-## Last Updated: 2026-03-12
+## Last Updated: 2026-03-13
 
-## What Was Done
-- **Slack profile pictures**: collect.py now fetches user avatar URLs (image_192) from Slack API
-- **Avatar integration**: generate.py passes avatar lookup to Claude AI and injects avatars into slides post-processing
-- **Holographic design**: index.html rewritten with Appodeal-style holographic gradients, animated glow effects
-- **~2x larger fonts**: All text scaled up for TV readability (titles 52px, body 22px, stats 72-80px)
-- **Avatar component**: React Avatar component shows Slack profile pics or colored initials fallback
-- **Avatars in slides**: Birthday, Win, Clap, NewJoin, OfficeLife slides display user photos
-- **Birthday rule**: Only shows birthday slides if someone has birthday TODAY or YESTERDAY
-- **Content filter**: Blocks termination/layoff/demotion messages in both collect.py and AI prompt
-- **PPTX fix**: Fixed TypeError when slide data contains non-string values
-- **Deployed**: GitHub Actions workflow running, GitHub Pages live
+## What Was Done (latest session — 2026-03-13)
+- **Programmatic Liliya exclusion**: Added `EXCLUDED_AUTHORS` pre-filter + `filter_excluded_people()` post-filter (AI prompt alone was unreliable)
+- **@mention resolution**: `_resolve_mentions()` converts `<@USERID>` to `@RealName` before AI processes messages
+- **Birthday fixes**: Both Artem Orlov and Kirill Khramkov now appear correctly
+- **Birthday dates removed**: Using "Happy Birthday!" instead of specific dates (unreliable due to weekend shifts)
+- **Weekday-only schedule**: Cron changed to `0 6 * * 1-5` — no weekend updates, Friday slides stay until Monday
+- **Monday extended lookback**: 80h instead of 72h to capture Saturday content
+- **Color guidance**: Added thematic color rules in prompt (spring=green, tech=blue, etc.)
+
+## Previous work
+- Slack profile pictures + avatar integration in slides
+- Holographic design with Appodeal-style gradients
+- Large fonts for TV readability
+- Content filter (blocks sensitive topics)
+- PPTX archive daily
+- GitHub Actions + GitHub Pages deployment
 
 ## What's Next
-- Confluence integration (parked, user asked about it)
-- Real-time Fireflies API (currently hardcoded strategic data)
-- Add more Slack channels if user wants
+- Google Slides export (plan ready, waiting for GCP access)
+- Confluence integration (parked)
+- Slack image downloading for slides (private URLs need auth)
 - TV kiosk mode optimization
 
 ## Technical Notes
-- 23 user avatars collected from current Slack workspace
 - AI generates 15-20 slides per run with Claude Sonnet
 - PPTX archive saved to data/archive/ daily
-- Workflow runs daily at 6:00 UTC (8:00 CET)
+- Workflow runs weekdays at 6:00 UTC (8:00 CET)
+- Monday lookback: 80h, other days: 72h
 - GitHub Pages URL: https://liliyagarifullina-maker.github.io/appodeal-pulse/
 - Password: Pulse!App0deal#2026
