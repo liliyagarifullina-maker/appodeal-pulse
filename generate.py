@@ -168,10 +168,12 @@ Your job: analyze raw Slack messages and produce a JSON array of slide objects f
 
 SLIDE TYPES (use exact "type" values):
 1. "birthday" — birthday celebrations. PRIMARY source: #birthdays channel. ANYONE can post congratulations there — not just Ira. Look for messages containing birthday-related keywords (birthday, happy birthday, congratulations, поздравляем, день рождения) with @Name mentions. The @mentions are resolved to real names. SECONDARY source: #birthdays-notifications (structured bot data). RULES:
+   - Create a SEPARATE birthday slide for EACH person. NEVER combine multiple people into one slide
    - ONLY create birthday slides for people whose congratulation was POSTED TODAY or YESTERDAY (check the [POSTED date] prefix). Never show older birthdays
    - For the "date" field: just write "Happy Birthday!" — do NOT include a specific date (weekend birthdays get posted on Monday, so dates are unreliable)
    - NEVER invent names. Only use names that appear as @Name in the messages
-   - Include their department/location in teamNote if available from #birthdays-notifications
+   - For "teamNote": ONLY use department/role info if it appears in the data (e.g., from #birthdays-notifications). If no role info is available, write a simple warm note like "Wishing you a wonderful day!" — do NOT invent or guess job titles, roles, or descriptions
+   - NEVER describe what a person does unless that information is explicitly in the data. No guessing
    - Check if the birthday person replied in #birthdays — if they wrote a thank-you, include it in "message"
 2. "win" — achievements, wins, metrics improvements
 3. "clap" — peer recognition / kudos from #claps channel
