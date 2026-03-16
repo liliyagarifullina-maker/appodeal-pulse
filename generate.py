@@ -425,6 +425,98 @@ def filter_excluded_people(slides):
     return filtered
 
 
+def validate_and_fix_slides(slides):
+    """Hard programmatic validators — AI prompt rules are unreliable.
+
+    This function catches and fixes all known AI misbehaviors:
+    1. Combined birthday slides → split into individual slides
+    2. Invented job descriptions in birthdays → replace with safe default
+    3. Generic filler slides (engagement questions, discussion prompts) → remove
+    4. Duplicate slides → remove
+    """
+    fixed = []
+    removed_count = 0
+
+    for slide in slides:
+        stype = slide.get("type", "")
+
+        # ── 1. Split combined birthday slides ──
+        if stype == "birthday":
+            name = slide.get("name", "")
+            # Detect combined names: "Anna, Mikhail & Armaan" or "A, B, C"
+            if "," in name or " & " in name or " and " in name.lower():
+                # Split into individual names
+                raw_names = re.split(r'\s*[,&]\s*|\s+and\s+', name, flags=re.IGNORECASE)
+                raw_names = [n.strip() for n in raw_names if n.strip()]
+                print(f"  [Validator] Splitting combined birthday: '{name}' → {raw_names}")
+                for individual_name in raw_names:
+                    new_slide = slide.copy()
+                    new_slide["name"] = individual_name
+                    # Reset invented descriptions
+                    new_slide["teamNote"] = "Wishing you a wonderful day! 🎉"
+                    new_slide["message"] = "Happy Birthday from the whole team!"
+                    new_slide.pop("avatar", None)  # avatar was for first person only
+                    fixed.append(new_slide)
+                continue  # skip original combined slide
+            else:
+                # Single person birthday — still clean up invented descriptions
+                team_note = slide.get("teamNote", "")
+                INVENTED_PHRASES = [
+                    "leads our", "brings technical", "adds fresh",
+                    "yoga", "brings energy", "known for",
+                    "our resident", "the team's",
+                ]
+                if any(phrase in team_note.lower() for phrase in INVENTED_PHRASES):
+                    print(f"  [Validator] Removing invented teamNote for {name}")
+                    slide["teamNote"] = "Wishing you a wonderful day! 🎉"
+
+        # ── 2. Remove generic filler slides ──
+        if stype == "celebration":
+            # Check for generic engagement questions
+            prompt1 = slide.get("prompt1", "").lower()
+            prompt2 = slide.get("prompt2", "").lower()
+            headline = slide.get("headline", "").lower()
+            FILLER_PHRASES = [
+                "what's your favorite", "how do you",
+                "what are you", "share your",
+                "what inspires", "how can we",
+                "what would you", "what's one thing",
+            ]
+            if any(phrase in prompt1 or phrase in prompt2 for phrase in FILLER_PHRASES):
+                print(f"  [Validator] Removing filler celebration: '{slide.get('headline', '')}'")
+                removed_count += 1
+                continue  # skip this slide
+
+        # ── 3. Remove slides with "performance review" topic ──
+        if stype in ("officelife", "milestone", "event"):
+            headline = (slide.get("headline", "") + " " + slide.get("description", "")).lower()
+            if "performance review" in headline or "performance evaluation" in headline:
+                print(f"  [Validator] Removing performance review slide: '{slide.get('title', '')}'")
+                removed_count += 1
+                continue
+
+        fixed.append(slide)
+
+    # ── 4. Deduplicate by title + type ──
+    seen = set()
+    deduped = []
+    for slide in fixed:
+        key = (slide.get("type", ""), slide.get("title", ""), slide.get("name", ""))
+        if key in seen:
+            print(f"  [Validator] Removing duplicate: {key}")
+            removed_count += 1
+            continue
+        seen.add(key)
+        deduped.append(slide)
+
+    if removed_count:
+        print(f"  [Validator] Removed {removed_count} bad slide(s)")
+    if len(deduped) != len(slides):
+        print(f"  [Validator] {len(slides)} → {len(deduped)} slides after validation")
+
+    return deduped
+
+
 def apply_accents(slides):
     """Ensure all slides have accent colors from our palette."""
     extra_idx = 0
@@ -803,6 +895,7 @@ if __name__ == "__main__":
     if config.ANTHROPIC_API_KEY:
         try:
             slides = curate_with_ai(channel_summary, avatar_lookup, content)
+            slides = validate_and_fix_slides(slides)
             slides = apply_accents(slides)
             slides = inject_avatars(slides, avatar_lookup)
             slides = filter_excluded_people(slides)
