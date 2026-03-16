@@ -182,7 +182,7 @@ SLIDE TYPES (use exact "type" values):
 6. "milestone" — company milestones, big numbers
 7. "reading" — interesting articles/links shared ONLY from #to_read channel
 8. "officelife" — fun office moments, quotes, culture. DO NOT just quote messages — write a brief engaging summary or intro that explains WHY this is interesting, then include the key insight or quote
-9. "celebration" — weekly celebrations / rituals
+9. "celebration" — ONLY for real company rituals/events that actually happened (e.g., actual Friday drinks, actual team lunch). NEVER create generic "celebration" slides with made-up discussion questions or engagement prompts. Every slide must be grounded in REAL content from the data
 10. "event" — also use for Book Club announcements, corporate initiatives from #general (NOT "reading"!)
 
 REQUIRED FIELDS per type:
@@ -206,6 +206,7 @@ CRITICAL RULES:
 - TARGET: Aim for AT LEAST 25 slides. Be creative and thorough — split big topics into multiple slides, create separate slides for each interesting message, add more claps, more wins, more officelife moments
 - SKIP birthday slides entirely if no one has a birthday TODAY or YESTERDAY. Never show birthdays from last week or earlier
 - SKIP any slide type that has no fresh content — NEVER invent fake content
+- NEVER create slides with generic engagement questions, discussion prompts, or motivational filler. Every single slide must be based on REAL content from the data. If you can't point to a specific message or data source for a slide — don't create it
 - Write in English, concise and punchy — displayed on big screens
 - DO NOT just paste raw Slack messages as quotes. Instead, write engaging summaries and intros that explain the context and why it matters. Add editorial flair — you are a curator, not a copy machine
 - CAPTURE THE FULL MESSAGE, NOT JUST THE POSITIVE OPENING. This is critical:
