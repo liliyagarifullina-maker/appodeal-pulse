@@ -236,6 +236,11 @@ def fetch_all_users(client):
                     if username:
                         all_avatars[username] = avatar
 
+                    # Store job title if available
+                    job_title = profile.get("title", "").strip()
+                    if job_title:
+                        all_avatars[f"__title__{name}"] = job_title
+
                     # Store by user ID for resolving <@USERID> mentions
                     user_id = user.get("id", "")
                     if user_id:

@@ -172,7 +172,7 @@ SLIDE TYPES (use exact "type" values):
    - ONLY create birthday slides for people whose congratulation was POSTED TODAY or YESTERDAY (check the [POSTED date] prefix). Never show older birthdays
    - For the "date" field: just write "Happy Birthday!" — do NOT include a specific date (weekend birthdays get posted on Monday, so dates are unreliable)
    - NEVER invent names. Only use names that appear as @Name in the messages
-   - For "teamNote": ONLY use department/role info if it appears in the data (e.g., from #birthdays-notifications). If no role info is available, write a simple warm note like "Wishing you a wonderful day!" — do NOT invent or guess job titles, roles, or descriptions
+   - For "teamNote": FIRST check the EMPLOYEE JOB TITLES section for the person's real job title from their Slack profile. If found, use it (e.g., "General Manager of Gaming", "AI Automation Specialist"). If not in the job titles list, check #birthdays-notifications data. If STILL no role info available, write a simple warm note like "Wishing you a wonderful day!" — do NOT invent or guess job titles, roles, or descriptions
    - NEVER describe what a person does unless that information is explicitly in the data. No guessing
    - Check if the birthday person replied in #birthdays — if they wrote a thank-you, include it in "message"
 2. "win" — achievements, wins, metrics improvements
@@ -352,13 +352,29 @@ USER AVATARS (name → Slack profile picture URL):
 Use these URLs as the "avatar" field in slides that feature specific people.
 """
 
+    # Build job titles section from Slack profiles
+    titles_section = ""
+    if content and content.get("user_avatars"):
+        raw_avatars = content["user_avatars"]
+        titles = {k.replace("__title__", ""): v for k, v in raw_avatars.items()
+                  if k.startswith("__title__") and isinstance(v, str) and v}
+        if titles:
+            titles_lines = json.dumps(titles, ensure_ascii=False, indent=2)
+            titles_section = f"""
+
+EMPLOYEE JOB TITLES (from Slack profiles — use for birthday slides and team context):
+{titles_lines}
+
+When creating birthday slides, use the REAL job title from this list for "teamNote". These are official titles from Slack profiles.
+"""
+
     user_prompt = f"""Today is {today} ({day_name}).
 
 Here are the raw Slack messages from the last {config.LOOKBACK_HOURS} hours across our channels.
 PRIORITY: Focus on the freshest content first (last 24 hours). If there isn't enough for 15 slides, expand to 48 hours, then 72 hours. Always prefer newer content over older.
 
 {channel_summary}
-{avatar_section}"""
+{avatar_section}{titles_section}"""
 
     # Add Fireflies meeting insights (dynamic)
     fireflies_section = build_fireflies_section(content) if content else ""
@@ -425,7 +441,7 @@ def filter_excluded_people(slides):
     return filtered
 
 
-def validate_and_fix_slides(slides):
+def validate_and_fix_slides(slides, content=None):
     """Hard programmatic validators — AI prompt rules are unreliable.
 
     This function catches and fixes all known AI misbehaviors:
@@ -434,6 +450,26 @@ def validate_and_fix_slides(slides):
     3. Generic filler slides (engagement questions, discussion prompts) → remove
     4. Duplicate slides → remove
     """
+    # Build job titles lookup from Slack profiles
+    job_titles = {}
+    if content and content.get("user_avatars"):
+        for k, v in content["user_avatars"].items():
+            if k.startswith("__title__") and isinstance(v, str) and v:
+                job_titles[k.replace("__title__", "").lower()] = v
+
+    def _get_job_title(name):
+        """Get job title from Slack profile, case-insensitive."""
+        if not name:
+            return ""
+        name_lower = name.strip().lower()
+        if name_lower in job_titles:
+            return job_titles[name_lower]
+        # Try first+last name partial match
+        for key, title in job_titles.items():
+            if name_lower in key or key in name_lower:
+                return title
+        return ""
+
     fixed = []
     removed_count = 0
 
@@ -452,8 +488,13 @@ def validate_and_fix_slides(slides):
                 for individual_name in raw_names:
                     new_slide = slide.copy()
                     new_slide["name"] = individual_name
-                    # Reset invented descriptions
-                    new_slide["teamNote"] = "Wishing you a wonderful day! 🎉"
+                    # Use real job title if available, otherwise safe default
+                    title = _get_job_title(individual_name)
+                    if title:
+                        new_slide["teamNote"] = title
+                        print(f"  [Validator] Using real job title for {individual_name}: {title}")
+                    else:
+                        new_slide["teamNote"] = "Wishing you a wonderful day! 🎉"
                     new_slide["message"] = "Happy Birthday from the whole team!"
                     new_slide.pop("avatar", None)  # avatar was for first person only
                     fixed.append(new_slide)
@@ -467,8 +508,13 @@ def validate_and_fix_slides(slides):
                     "our resident", "the team's",
                 ]
                 if any(phrase in team_note.lower() for phrase in INVENTED_PHRASES):
-                    print(f"  [Validator] Removing invented teamNote for {name}")
-                    slide["teamNote"] = "Wishing you a wonderful day! 🎉"
+                    title = _get_job_title(name)
+                    if title:
+                        print(f"  [Validator] Replacing invented teamNote for {name} with real title: {title}")
+                        slide["teamNote"] = title
+                    else:
+                        print(f"  [Validator] Removing invented teamNote for {name}")
+                        slide["teamNote"] = "Wishing you a wonderful day! 🎉"
 
         # ── 2. Remove generic filler slides ──
         if stype == "celebration":
@@ -895,7 +941,7 @@ if __name__ == "__main__":
     if config.ANTHROPIC_API_KEY:
         try:
             slides = curate_with_ai(channel_summary, avatar_lookup, content)
-            slides = validate_and_fix_slides(slides)
+            slides = validate_and_fix_slides(slides, content)
             slides = apply_accents(slides)
             slides = inject_avatars(slides, avatar_lookup)
             slides = filter_excluded_people(slides)
