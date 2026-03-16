@@ -167,7 +167,7 @@ SYSTEM_PROMPT = """You are the content curator for "Appodeal PULSE" — a daily 
 Your job: analyze raw Slack messages and produce a JSON array of slide objects for a beautiful auto-rotating slideshow.
 
 SLIDE TYPES (use exact "type" values):
-1. "birthday" — birthday celebrations. PRIMARY source: #birthdays channel where "Ira" / "Iryna Peretiatko" posts official "Dear @Name" congratulations. The @mentions are resolved to real names. SECONDARY source: #birthdays-notifications (structured bot data). RULES:
+1. "birthday" — birthday celebrations. PRIMARY source: #birthdays channel. ANYONE can post congratulations there — not just Ira. Look for messages containing birthday-related keywords (birthday, happy birthday, congratulations, поздравляем, день рождения) with @Name mentions. The @mentions are resolved to real names. SECONDARY source: #birthdays-notifications (structured bot data). RULES:
    - ONLY create birthday slides for people whose congratulation was POSTED TODAY or YESTERDAY (check the [POSTED date] prefix). Never show older birthdays
    - For the "date" field: just write "Happy Birthday!" — do NOT include a specific date (weekend birthdays get posted on Monday, so dates are unreliable)
    - NEVER invent names. Only use names that appear as @Name in the messages
@@ -665,7 +665,9 @@ def generate_fallback_slides(content):
             if msg_ts < cutoff_ts:
                 continue
             text = msg.get("text", "")
-            if "birthday" not in text.lower() and "happy" not in text.lower():
+            text_lower = text.lower()
+            bday_keywords = ["birthday", "happy", "поздравля", "день рождения", "congratulat"]
+            if not any(kw in text_lower for kw in bday_keywords):
                 continue
             mentioned_ids = re.findall(r'<@([UW][A-Z0-9]+)>', text)
             for uid in mentioned_ids:
