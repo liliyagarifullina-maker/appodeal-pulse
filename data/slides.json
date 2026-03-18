@@ -1,12 +1,9 @@
 [
   {
     "type": "birthday",
-    "emoji": "🎉",
-    "accent": "#F59E0B",
-    "gradient": [
-      "#FCD34D",
-      "#F59E0B"
-    ],
+    "emoji": "🎂",
+    "accent": "#FF6B6B",
+    "gradient": "#FF8E8E",
     "title": "Happy Birthday!",
     "name": "Anna Kolyada (Hanna Kaliada)",
     "date": "Happy Birthday!",
@@ -16,76 +13,81 @@
   },
   {
     "type": "birthday",
-    "emoji": "🎂",
-    "accent": "#EC4899",
-    "gradient": [
-      "#F9A8D4",
-      "#EC4899"
-    ],
-    "title": "Happy Birthday!",
-    "name": "Mikhail Ladutko",
-    "date": "Happy Birthday!",
-    "message": "Thank you everyone for the warm wishes!",
-    "teamNote": "LiveOps / Tech Support | Bidmachine | Warsaw",
-    "avatar": "https://avatars.slack-edge.com/2023-02-24/4857329857380_b59406b09c88ecb3a398_192.jpg"
-  },
-  {
-    "type": "birthday",
-    "emoji": "🥳",
-    "accent": "#8B5CF6",
-    "gradient": [
-      "#C4B5FD",
-      "#8B5CF6"
-    ],
+    "emoji": "🎉",
+    "accent": "#4ECDC4",
+    "gradient": "#45B7B8",
     "title": "Happy Birthday!",
     "name": "Armaan Pandher",
     "date": "Happy Birthday!",
-    "message": "Celebrating another year of growth and innovation!",
+    "message": "Amazing year ahead filled with exciting challenges, big wins, and countless reasons to smile every day!",
     "teamNote": "AI & Automation Analyst | Parkland, FL",
     "avatar": "https://avatars.slack-edge.com/2026-03-02/10613063274806_8783a8035c689eadc847_192.jpg"
   },
   {
-    "type": "clap",
-    "emoji": "👏",
-    "accent": "#10B981",
-    "gradient": [
-      "#6EE7B7",
-      "#10B981"
-    ],
-    "title": "Team Recognition",
-    "count": 10,
-    "from": "Vladimir Samoylov",
-    "to": [
-      {
-        "name": "Danila Matveev",
-        "avatar": "https://avatars.slack-edge.com/2025-07-02/9133598262758_2b4ebef98c07733b0ae0_192.jpg"
-      },
-      {
-        "name": "Nikita Savransky",
-        "avatar": "https://avatars.slack-edge.com/2023-09-05/5848689530483_b4942fd60d96ae483de5_192.jpg"
-      },
-      {
-        "name": "Siddharth Sahani",
-        "avatar": "https://avatars.slack-edge.com/2025-01-22/8353336980480_c709618bfe97f18ba0e7_192.jpg"
-      }
-    ],
-    "reason": "Outstanding technical contributions to the OWL team",
-    "values": [
-      "Collaboration",
-      "Excellence"
-    ],
-    "avatar": "https://avatars.slack-edge.com/2024-11-05/7982352074242_9c494bc1c5b0ee6cc4d0_192.jpg",
-    "fromAvatar": "https://avatars.slack-edge.com/2024-11-05/7982352074242_9c494bc1c5b0ee6cc4d0_192.jpg"
+    "type": "birthday",
+    "emoji": "🚀",
+    "accent": "#9B59B6",
+    "gradient": "#8E44AD",
+    "title": "Happy Birthday!",
+    "name": "Mikhail Ladutko",
+    "date": "Happy Birthday!",
+    "message": "Wishing you an amazing year ahead filled with success and joy!",
+    "teamNote": "LiveOps / Tech Support | Bidmachine | Warsaw",
+    "avatar": "https://avatars.slack-edge.com/2023-02-24/4857329857380_b59406b09c88ecb3a398_192.jpg"
   },
   {
     "type": "clap",
-    "emoji": "🚀",
-    "accent": "#3B82F6",
-    "gradient": [
-      "#93C5FD",
-      "#3B82F6"
+    "emoji": "👏",
+    "accent": "#E74C3C",
+    "gradient": "#C0392B",
+    "title": "Outstanding Recognition!",
+    "count": 90,
+    "from": "Team Members",
+    "to": [
+      {
+        "name": "Alessandro",
+        "avatar": "https://avatars.slack-edge.com/2025-05-27/8949585055142_657f010a8966df2120e1_192.jpg"
+      }
     ],
-    "title": "Engineering Excellence",
+    "reason": "Exceptional training delivery with careful attention to detail and note-taking",
+    "values": [
+      "Excellence",
+      "Knowledge Sharing"
+    ],
+    "avatar": "https://avatars.slack-edge.com/2025-05-27/8949585055142_657f010a8966df2120e1_192.jpg"
+  },
+  {
+    "type": "clap",
+    "emoji": "🔥",
+    "accent": "#3498DB",
+    "gradient": "#2980B9",
+    "title": "Team Excellence!",
+    "count": 25,
+    "from": "Sasha Sakovich",
+    "to": [
+      {
+        "name": "Anton Nikifarau",
+        "avatar": "https://avatars.slack-edge.com/2020-09-10/1367290692977_555d4401aaec580c7ed9_192.jpg"
+      },
+      {
+        "name": "Nikolai Rozanov",
+        "avatar": "https://avatars.slack-edge.com/2025-09-17/9559344452272_e63e37dd94577bec995b_192.jpg"
+      }
+    ],
+    "reason": "Outstanding collaboration and technical expertise in app growth automation",
+    "values": [
+      "Teamwork",
+      "Innovation"
+    ],
+    "avatar": "https://avatars.slack-edge.com/2025-09-08/9478235498902_fa74aee9301ad16fa3e5_192.png",
+    "fromAvatar": "https://avatars.slack-edge.com/2025-09-08/9478235498902_fa74aee9301ad16fa3e5_192.png"
+  },
+  {
+    "type": "clap",
+    "emoji": "⭐",
+    "accent": "#9B59B6",
+    "gradient": "#8E44AD",
+    "title": "Technical Leadership!",
     "count": 20,
     "from": "Konstantin Elizarov",
     "to": [
@@ -94,221 +96,177 @@
         "avatar": "https://avatars.slack-edge.com/2021-12-13/2832996998738_da550891881a940d681d_192.jpg"
       }
     ],
-    "reason": "Exceptional problem-solving and code quality",
+    "reason": "Exceptional technical problem-solving and system optimization",
     "values": [
-      "Innovation",
-      "Technical Excellence"
+      "Excellence",
+      "Technical Mastery"
     ],
-    "avatar": "https://avatars.slack-edge.com/2026-01-21/10357407217297_9b7d7a6b25b1056530dd_192.jpg",
+    "avatar": "https://avatars.slack-edge.com/2021-12-13/2832996998738_da550891881a940d681d_192.jpg",
     "fromAvatar": "https://avatars.slack-edge.com/2026-01-21/10357407217297_9b7d7a6b25b1056530dd_192.jpg"
-  },
-  {
-    "type": "event",
-    "emoji": "🔄",
-    "accent": "#EF4444",
-    "gradient": [
-      "#FCA5A5",
-      "#EF4444"
-    ],
-    "title": "Performance Reviews Launch",
-    "eventName": "Q1 Performance Review Cycle",
-    "date": "Starting Today",
-    "description": "Streamlined review process with manager assessments, self-evaluations, and focus on performance and culture scores",
-    "organizer": "Lise Brandely",
-    "organizerAvatar": "https://avatars.slack-edge.com/2024-08-07/7539295782226_dc0bf108473f5da3fa97_192.jpg"
-  },
-  {
-    "type": "milestone",
-    "emoji": "📊",
-    "accent": "#059669",
-    "gradient": [
-      "#34D399",
-      "#059669"
-    ],
-    "title": "Automated Engineering Metrics",
-    "headline": "Scorecard Revolution Completed",
-    "description": "First version of engineering metrics dashboard delivered with full automation for MGP teams, eliminating manual reporting overhead",
-    "stat": "100%",
-    "statLabel": "automation achieved"
   },
   {
     "type": "win",
     "emoji": "🎯",
-    "accent": "#7C3AED",
-    "gradient": [
-      "#A78BFA",
-      "#7C3AED"
-    ],
-    "title": "Record Low Discrepancy",
-    "who": "Chardonnay Team",
-    "stat": "Minimal",
-    "statUnit": "spend variance",
-    "headline": "January Sets New Standard",
-    "description": "Achieved historically minimal spend discrepancies with automated LTV system launching in 12 weeks",
-    "takeaway": "Data accuracy improvements driving better forecasting"
+    "accent": "#27AE60",
+    "gradient": "#229954",
+    "title": "Supply Account Management Expansion",
+    "who": "BidMachine Exchange Team",
+    "stat": "30+",
+    "statUnit": "publisher accounts",
+    "headline": "Growing Account Portfolio Drives New Hiring",
+    "description": "Our supply-side account management team is expanding to handle the growing portfolio of enterprise publisher relationships, focusing on C-level conversations and technical monetization optimization.",
+    "takeaway": "Strong demand signals healthy business growth and market position"
   },
   {
     "type": "milestone",
-    "emoji": "🤖",
-    "accent": "#F59E0B",
-    "gradient": [
-      "#FCD34D",
-      "#F59E0B"
-    ],
-    "title": "TV Monkey Model Deployed",
-    "headline": "AI Forecasting Goes Live",
-    "description": "New forecast model successfully integrated with acquisition team, including bundle ID, network, and country data for precision testing",
-    "stat": "Live",
-    "statLabel": "in production"
+    "emoji": "🧠",
+    "accent": "#E67E22",
+    "gradient": "#D35400",
+    "title": "AI Workflow Revolution",
+    "headline": "Development Time Slashed by 95% with AI Integration",
+    "description": "Our development team achieved breakthrough efficiency by integrating AI agents into workflows. Complex features that previously took 1-1.5 weeks now complete in just 5 hours, with automated JIRA integration and GitHub PR creation.",
+    "stat": "5",
+    "statLabel": "hours vs 1.5 weeks"
+  },
+  {
+    "type": "win",
+    "emoji": "📊",
+    "accent": "#3498DB",
+    "gradient": "#2980B9",
+    "title": "BidMachine Market Dominance",
+    "who": "Exchange Team",
+    "stat": "3.9%",
+    "statUnit": "wallet share",
+    "headline": "Outperforming Major Competitors in Key Metrics",
+    "description": "BidMachine consistently maintains higher wallet share than DT Exchange and outperforms competitors like Liftoff and Fiber DT, demonstrating sustainable competitive advantage beyond one-time gains.",
+    "takeaway": "Strong market position validates our exchange strategy"
+  },
+  {
+    "type": "milestone",
+    "emoji": "🚀",
+    "accent": "#9B59B6",
+    "gradient": "#8E44AD",
+    "title": "Gaming Automation Testing",
+    "headline": "AI-Powered Game Testing Achieves 2-3 Second Response Times",
+    "description": "Our gaming automation infrastructure now processes LLM requests in 2-3 seconds using YOLO object detection across 50 Mac mini devices in London and California. Automated scout systems generate game specifications for enhanced testing efficiency.",
+    "stat": "50",
+    "statLabel": "Mac mini devices deployed"
+  },
+  {
+    "type": "event",
+    "emoji": "📚",
+    "accent": "#16A085",
+    "gradient": "#138D75",
+    "title": "OKR System Evolution",
+    "eventName": "4 Disciplines of Execution Book Club",
+    "date": "Ongoing Weekly Sessions",
+    "description": "Our Passionate Curiosity Reading Club is streamlining company focus by reducing initiatives from 80 to 4-5 next quarter. The goal: better alignment, fewer OKRs, and enhanced collective impact across all teams.",
+    "organizer": "146 participants strong"
+  },
+  {
+    "type": "win",
+    "emoji": "⚡",
+    "accent": "#E74C3C",
+    "gradient": "#C0392B",
+    "title": "Incident Response Optimization",
+    "who": "Data Engineering Team",
+    "stat": "3",
+    "statUnit": "hours target MTTA",
+    "headline": "Targeting Sub-6-Hour Incident Resolution",
+    "description": "New weekly on-call scheduling and clear incident vs. bug-fix distinctions aim to dramatically improve response times from current 50-hour acknowledgment and 119-hour resolution averages.",
+    "takeaway": "Operational excellence drives better system reliability"
+  },
+  {
+    "type": "milestone",
+    "emoji": "🎮",
+    "accent": "#F39C12",
+    "gradient": "#E67E22",
+    "title": "Campaign Optimization Breakthrough",
+    "headline": "Bundle Strategy Refinement Drives Better ROI",
+    "description": "Strategic removal of four underperforming Android and iOS bundles, coupled with CPI model transitions for better volume handling. Supply path optimizations address competitor restrictions while maintaining spend efficiency.",
+    "stat": "4",
+    "statLabel": "bundles optimized"
+  },
+  {
+    "type": "milestone",
+    "emoji": "🔒",
+    "accent": "#8E44AD",
+    "gradient": "#7D3C98",
+    "title": "SDK Innovation Pipeline",
+    "headline": "Enhanced Privacy Controls and Install Tracking",
+    "description": "Android inline install support launches in SDK 3.6.1 with privacy-compliant GDPR TCF 2.3 integration. Click data sharing with UpGrowth enables production-ready analytics by Q2 with differentiated install tracking.",
+    "stat": "3.6.1",
+    "statLabel": "SDK version"
+  },
+  {
+    "type": "officelife",
+    "emoji": "🧘‍♀️",
+    "accent": "#27AE60",
+    "gradient": "#229954",
+    "title": "Daily Wellness Ritual",
+    "headline": "Office Yoga Sessions Keep Our Team Centered",
+    "quote": "Every day at 13:10 CET, Anna Kolyada leads yoga sessions that bring mindfulness to our busy workday",
+    "author": "Team Wellness Initiative",
+    "reactions": "🧘‍♀️✨💚",
+    "channel": "#wellness"
+  },
+  {
+    "type": "milestone",
+    "emoji": "🎯",
+    "accent": "#3498DB",
+    "gradient": "#2980B9",
+    "title": "Book Club Momentum",
+    "headline": "140+ Participants Drive Knowledge Sharing Culture",
+    "description": "Our 'Passionate Curiosity' Book Club has become a cornerstone of our learning culture, with 140+ team members actively participating in strategic discussions around execution and goal achievement.",
+    "stat": "140+",
+    "statLabel": "active participants"
   },
   {
     "type": "win",
     "emoji": "💎",
-    "accent": "#EC4899",
-    "gradient": [
-      "#F9A8D4",
-      "#EC4899"
-    ],
-    "title": "Solitaire Version Success",
-    "who": "Product Team",
-    "stat": "10%",
-    "statUnit": "user rollout",
-    "headline": "Version 5.5.0 Stable Launch",
-    "description": "Successful deployment to users with version 5.6.0 targeting March 27 for enhanced retention features",
-    "takeaway": "Steady product iteration driving user experience improvements"
+    "accent": "#E67E22",
+    "gradient": "#D35400",
+    "title": "Gaming Portfolio Success",
+    "who": "Chardonnay Gaming Team",
+    "stat": "61%",
+    "statUnit": "retention rate",
+    "headline": "Infinite Minesweeper Exceeds Apple Benchmarks",
+    "description": "Our Infinite Minesweeper achieved 61% retention, significantly outperforming industry standards. Combined with Solitaire's +21.67% D7 retention boost and Crossword's 200%+ ROAS, gaming has turned profitable in 2025.",
+    "takeaway": "Strategic focus on casual gaming pays dividends"
   },
   {
     "type": "milestone",
-    "emoji": "🔬",
-    "accent": "#0891B2",
-    "gradient": [
-      "#67E8F9",
-      "#0891B2"
-    ],
-    "title": "Experimentation Platform Integration",
-    "headline": "Testing Infrastructure Enhanced",
-    "description": "Team successfully integrating experimentation platform with current systems while preparing for future Rust rewrite",
-    "stat": "Q2",
-    "statLabel": "full deployment"
+    "emoji": "🛡️",
+    "accent": "#E74C3C",
+    "gradient": "#C0392B",
+    "title": "Fraud Prevention Victory",
+    "headline": "Dynamic SDK Signatures Cut Fraud by 82%",
+    "description": "Our advanced fraud detection system with dynamic SDK signatures has dramatically reduced fraud rates from 22% to under 4%, protecting both our partners and revenue streams through intelligent detection algorithms.",
+    "stat": "4%",
+    "statLabel": "fraud rate (down from 22%)"
   },
   {
     "type": "win",
     "emoji": "💰",
-    "accent": "#059669",
-    "gradient": [
-      "#34D399",
-      "#059669"
-    ],
-    "title": "Jointhis Revenue Growth",
-    "who": "Gaming Division",
-    "stat": "€10k",
-    "statUnit": "daily ad spend",
-    "headline": "Scaling to Close Profit Gap",
-    "description": "Increased from €2k to €10k daily spend to address €25k profit gap, with Minesweeper achieving 256% ROAS",
-    "takeaway": "Strategic investment in high-performing campaigns paying off"
-  },
-  {
-    "type": "event",
-    "emoji": "🏠",
-    "accent": "#8B5CF6",
-    "gradient": [
-      "#C4B5FD",
-      "#8B5CF6"
-    ],
-    "title": "Global Relocation Enhancement",
-    "eventName": "PerchPeek Partnership Discussion",
-    "date": "Process Improvement Initiative",
-    "description": "Exploring end-to-end platform to streamline employee relocations and improve experience for global team members",
-    "organizer": "Administrative Team"
+    "accent": "#27AE60",
+    "gradient": "#229954",
+    "title": "Sales Excellence Week",
+    "who": "Sales Team",
+    "stat": "$390k",
+    "statUnit": "net revenue",
+    "headline": "8 Deals Closed in Single Week Performance",
+    "description": "Our sales team delivered exceptional results with 8 successful deal closures generating $390k in net revenue, demonstrating strong market demand and effective sales execution.",
+    "takeaway": "Consistent sales performance drives sustainable growth"
   },
   {
     "type": "milestone",
-    "emoji": "📈",
-    "accent": "#DC2626",
-    "gradient": [
-      "#FCA5A5",
-      "#DC2626"
-    ],
-    "title": "KPMG Audit Progress",
-    "headline": "Financial Controls Strengthening",
-    "description": "Trial balance finalization underway with lease calculations for Spain (€2.6M) and Poland (€1.2M), establishing biweekly audit check-ins",
-    "stat": "€3.8M",
-    "statLabel": "in lease liabilities"
-  },
-  {
-    "type": "win",
-    "emoji": "🎮",
-    "accent": "#F59E0B",
-    "gradient": [
-      "#FCD34D",
-      "#F59E0B"
-    ],
-    "title": "Screw Twist Enhancement",
-    "who": "Game Development Team",
-    "stat": "30%",
-    "statUnit": "ARPDAU boost",
-    "headline": "Version 1.3.5 Shows Impact",
-    "description": "New onboarding levels and increased interstitial frequency driving retention improvements and revenue growth",
-    "takeaway": "Product iterations directly impacting key metrics"
-  },
-  {
-    "type": "officelife",
-    "emoji": "☕",
-    "accent": "#6B7280",
-    "gradient": [
-      "#D1D5DB",
-      "#6B7280"
-    ],
-    "title": "Pavel's Family Time",
-    "headline": "Leadership Shows Heart",
-    "quote": "Taking time off for a family emergency — team rallying with support",
-    "author": "Company Culture",
-    "reactions": "48 hearts",
-    "channel": "#general"
-  },
-  {
-    "type": "milestone",
-    "emoji": "🎯",
-    "accent": "#059669",
-    "gradient": [
-      "#34D399",
-      "#059669"
-    ],
-    "title": "Strategic Metrics Alignment",
-    "headline": "Company-Wide KPI Standardization",
-    "description": "Leadership implementing unified scorecards across teams with automated CVLP tracking and performance indicators for better alignment",
-    "stat": "All Teams",
-    "statLabel": "standardized"
-  },
-  {
-    "type": "win",
-    "emoji": "🚀",
-    "accent": "#7C3AED",
-    "gradient": [
-      "#A78BFA",
-      "#7C3AED"
-    ],
-    "title": "Bundle Testing Strategy",
-    "who": "UA Team",
-    "stat": "Business Empire",
-    "statUnit": "focus campaign",
-    "headline": "Margin Testing Optimization",
-    "description": "Shifting tests to higher-performing segments for better advertiser ROAS while documenting learnings in Confluence",
-    "takeaway": "Data-driven campaign optimization improving results"
-  },
-  {
-    "type": "celebration",
-    "emoji": "🏆",
-    "accent": "#F59E0B",
-    "gradient": [
-      "#FCD34D",
-      "#F59E0B"
-    ],
-    "title": "Weekly Wins Celebration",
-    "headline": "Team Achievements This Week",
-    "prompt1": "Oscar betting pool victory by Anastasia",
-    "prompt2": "Tesla autonomous driving experience and Tokyo trip planning",
-    "coreValue": "celebrating small wins builds momentum",
-    "channel": "leadership"
+    "emoji": "🤖",
+    "accent": "#9B59B6",
+    "gradient": "#8E44AD",
+    "title": "AI Integration Vision",
+    "headline": "Every Employee to Manage 5-10 AI Agents Soon",
+    "description": "Within 3-6 months, every team member will manage 5-10 AI agents as we transform into an AI-first organization. Our OKR Auditor already checks 1,000+ individual OKRs daily, while Daria AI Bot saves $4k weekly analyzing app reviews.",
+    "stat": "1,000+",
+    "statLabel": "OKRs audited daily by AI"
   }
 ]
