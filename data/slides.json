@@ -1,331 +1,62 @@
 [
   {
-    "type": "birthday",
-    "emoji": "🎉",
-    "accent": "#E91E63",
-    "gradient": [
-      "#E91E63",
-      "#AD1457"
-    ],
-    "title": "Birthday Celebration!",
-    "name": "Darya Ashurkevich",
-    "date": "Happy Birthday!",
-    "message": "Thank you everyone for the wonderful birthday wishes! 💜",
-    "teamNote": "ASO TL | Chardonnay | Barcelona",
-    "avatar": "https://avatars.slack-edge.com/2025-03-20/8633029741858_c0e090729e8fde9622a8_192.png"
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "Hi team and happy Monday Welcome * - our new Senior Solution Architect He’s join...",
+    "quote": "Hi team and happy Monday Welcome * - our new Senior Solution Architect He’s joining our Exchange team A couple of words about himself: “Hi everyone! I’m Shayan, and I’m super excited to join the team! I’m from Barcelona, and I’ve spent the last few years at Criteo. I’m really looking forward to gett",
+    "author": "Yanina Lozben",
+    "reactions": "",
+    "channel": "#general"
   },
   {
-    "type": "birthday",
-    "emoji": "🎂",
-    "accent": "#9C27B0",
-    "gradient": [
-      "#9C27B0",
-      "#7B1FA2"
-    ],
-    "title": "Birthday Celebration!",
-    "name": "Pavel Savinskiy",
-    "date": "Happy Birthday!",
-    "message": "Celebrating another year with the team! Thank you for all the birthday love! 🎉",
-    "teamNote": "Head of Design and Creative Operations",
-    "avatar": "https://avatars.slack-edge.com/2025-07-18/9218603955989_1a09cbabd96969f879f2_192.jpg"
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "Hi team! * Welcome - our new AI &amp; Automation Analyst He’s joining our IT tea...",
+    "quote": "Hi team! * Welcome - our new AI &amp; Automation Analyst He’s joining our IT team. A couple of words about himself:* \"Hi everyone, I’m Roman, and I’m excited to join Appodeal as an AI &amp; Automation Analyst, working directly with Pavel in the Parkland office. My background is in software engineeri",
+    "author": "Daryna Rudavka",
+    "reactions": "",
+    "channel": "#general"
   },
   {
-    "type": "newjoin",
-    "emoji": "🚀",
-    "accent": "#FF6F00",
-    "gradient": [
-      "#FF6F00",
-      "#E65100"
-    ],
-    "title": "Welcome to the Team!",
-    "name": "Roman Loboda",
-    "role": "AI & Automation Analyst",
-    "team": "IT team",
-    "quote": "I'm excited to join Appodeal as an AI & Automation Analyst, working directly with Pavel in the Parkland office. My background is in software engineering and startups, focused on using AI and automation to reduce manual work and make operations more efficient.",
-    "avatar": "https://avatars.slack-edge.com/2026-03-19/10724294356311_749bc7082d98a9c47d4f_192.png"
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "We are moving to corporate AI tool accounts to better track usage and scale best...",
+    "quote": "We are moving to corporate AI tool accounts to better track usage and scale best practices. Existing personal subscriptions will remain active until they expire and will not be renewed. Personal payment cards for ChatGPT, Claude, and Cursor will be disabled. To access corporate accounts, log in via ",
+    "author": "Mariia Moskvina",
+    "reactions": "",
+    "channel": "#general"
   },
   {
-    "type": "newjoin",
-    "emoji": "🌟",
-    "accent": "#1976D2",
-    "gradient": [
-      "#1976D2",
-      "#1565C0"
-    ],
-    "title": "Welcome Aboard!",
-    "name": "Shayan Manouchehri",
-    "role": "Senior Solution Architect",
-    "team": "Exchange team",
-    "quote": "Hi everyone! I'm from Barcelona, and I've spent the last few years at Criteo. I'm really looking forward to getting started and to keep growing and learning from all of you. I'm a proud cat owner and love exploring the city!",
-    "avatar": "https://avatars.slack-edge.com/2026-03-23/10760101571572_97641ada5ee522251b7e_192.png"
-  },
-  {
-    "type": "win",
-    "emoji": "🎯",
-    "accent": "#388E3C",
-    "gradient": [
-      "#388E3C",
-      "#2E7D32"
-    ],
-    "title": "Internet Security Learning Success",
-    "who": "Dmytrii Mamatiusupov & Team",
-    "stat": "Part 2",
-    "statUnit": "coming next week",
-    "headline": "Lunch & Learn: Internet Security 101 Delivered with Excellence",
-    "description": "Our Internet Security 101 session was a standout success! Dmytrii transformed complex security topics into an engaging, story-driven presentation that made technical concepts accessible to everyone.",
-    "takeaway": "Proof that great teaching makes even the most technical subjects memorable and actionable for our entire team.",
-    "avatar": "https://avatars.slack-edge.com/2025-05-26/8975511539600_5be81b8cef378cdb2838_192.jpg"
-  },
-  {
-    "type": "event",
-    "emoji": "🤖",
-    "accent": "#FF5722",
-    "gradient": [
-      "#FF5722",
-      "#E64A19"
-    ],
-    "title": "Tech Evolution Announcement",
-    "eventName": "Corporate AI Tool Migration",
-    "date": "Rolling out now",
-    "description": "We're transitioning to corporate AI accounts for ChatGPT, Claude, and Cursor to better track usage and scale best practices. Access via Okta with configured usage limits matching individual subscriptions.",
-    "organizer": "Mariia Moskvina & IT Team",
-    "organizerAvatar": "https://avatars.slack-edge.com/2022-02-09/3078153405075_f48d88a195cd250097a4_192.jpg"
-  },
-  {
-    "type": "clap",
+    "type": "officelife",
     "emoji": "👏",
-    "accent": "#9C27B0",
-    "gradient": [
-      "#9C27B0",
-      "#7B1FA2"
-    ],
-    "title": "Team Recognition",
-    "count": 105,
-    "from": "Multiple Team Members",
-    "to": [
-      {
-        "name": "Sergio-Yersi Villegas",
-        "avatar": "https://avatars.slack-edge.com/2025-09-22/9545342653639_116682728e19d14bbed0_192.png"
-      }
-    ],
-    "reason": "Outstanding data science contributions and collaboration",
-    "values": [
-      "Excellence",
-      "Teamwork"
-    ],
-    "avatar": "https://avatars.slack-edge.com/2025-09-22/9545342653639_116682728e19d14bbed0_192.png"
-  },
-  {
-    "type": "clap",
-    "emoji": "🙌",
-    "accent": "#FF6F00",
-    "gradient": [
-      "#FF6F00",
-      "#E65100"
-    ],
-    "title": "Recognition Wave",
-    "count": 30,
-    "from": "Gleb Krahotkin",
-    "to": [
-      {
-        "name": "Sasha Sakovich",
-        "avatar": "https://avatars.slack-edge.com/2025-09-08/9478235498902_fa74aee9301ad16fa3e5_192.png"
-      }
-    ],
-    "reason": "Exceptional automation engineering work and system improvements",
-    "values": [
-      "Innovation",
-      "Technical Excellence"
-    ],
-    "avatar": "https://avatars.slack-edge.com/2025-09-08/9478235498902_fa74aee9301ad16fa3e5_192.png",
-    "fromAvatar": "https://avatars.slack-edge.com/2022-10-23/4275527051089_402b8b44f748e977a230_192.png"
-  },
-  {
-    "type": "clap",
-    "emoji": "⭐",
-    "accent": "#E91E63",
-    "gradient": [
-      "#E91E63",
-      "#AD1457"
-    ],
-    "title": "Team Appreciation",
-    "count": 70,
-    "from": "Team Leaders",
-    "to": [
-      {
-        "name": "Danila Matveev",
-        "avatar": "https://avatars.slack-edge.com/2025-07-02/9133598262758_2b4ebef98c07733b0ae0_192.jpg"
-      }
-    ],
-    "reason": "Senior software development excellence and mentorship",
-    "values": [
-      "Leadership",
-      "Growth"
-    ],
-    "avatar": "https://avatars.slack-edge.com/2025-07-02/9133598262758_2b4ebef98c07733b0ae0_192.jpg"
-  },
-  {
-    "type": "milestone",
-    "emoji": "🏗️",
-    "accent": "#3F51B5",
-    "gradient": [
-      "#3F51B5",
-      "#303F9F"
-    ],
-    "title": "SDK Evolution Milestone",
-    "headline": "BitMachine SDK Takes Center Stage",
-    "description": "Major architectural decision confirmed: full mediation capabilities are transitioning from legacy Apodil to BitMachine SDK. This consolidation will simplify integrations and end legacy support, focusing our engineering power on next-generation solutions.",
-    "stat": "100%",
-    "statLabel": "mediation migration planned"
-  },
-  {
-    "type": "win",
-    "emoji": "🤖",
-    "accent": "#4CAF50",
-    "gradient": [
-      "#4CAF50",
-      "#388E3C"
-    ],
-    "title": "AI Automation Breakthrough",
-    "who": "Supply Team & AI Development",
-    "stat": "$4k",
-    "statUnit": "weekly savings potential",
-    "headline": "AI Agent Ready for Production Testing",
-    "description": "Our AI bot successfully passed staging tests and can now read bidders, respond to queries, and automate routine dashboard tasks like domain updates and bundle blocking. This addresses the high volume of manual publisher requests.",
-    "takeaway": "From manual tasks to AI automation - we're building the future of operational efficiency."
-  },
-  {
-    "type": "milestone",
-    "emoji": "📊",
-    "accent": "#FF9800",
-    "gradient": [
-      "#FF9800",
-      "#F57C00"
-    ],
-    "title": "Revenue Strategy Alignment",
-    "headline": "Q2 2026 Financial Projections Refined",
-    "description": "Leadership aligned on revenue categorization between Autoplay and RevOps clients, incorporating Chardonnay's Tricky campaigns with 2% profit margins. Clear segmentation improves forecasting accuracy while accounting for negative margin learning phases.",
-    "stat": "$2k",
-    "statLabel": "daily experiment budget"
-  },
-  {
-    "type": "win",
-    "emoji": "🎮",
-    "accent": "#E91E63",
-    "gradient": [
-      "#E91E63",
-      "#AD1457"
-    ],
-    "title": "Gaming Success Story",
-    "who": "Gaming Division",
-    "stat": "61%",
-    "statUnit": "retention rate",
-    "headline": "Infinite Minesweeper Hits Apple Benchmark",
-    "description": "Our Infinite Minesweeper achieved 61% retention, placing it in Apple's ERA benchmark range of 151-160%. This success demonstrates our gaming division's ability to create engaging, high-retention experiences.",
-    "takeaway": "Gaming turned profitable in 2025 and continues delivering benchmark-beating results."
-  },
-  {
-    "type": "milestone",
-    "emoji": "🏢",
-    "accent": "#673AB7",
-    "gradient": [
-      "#673AB7",
-      "#512DA8"
-    ],
-    "title": "Vision 2030 Progress",
-    "headline": "Building Toward $50B Company Goal",
-    "description": "With $100M gross profit, $20M EBITDA, and 40% YoY growth projected, we're executing on our ambitious vision: 1,500 employees, 100 studios, and every team member managing 5-10 AI agents within 3-6 months.",
-    "stat": "40%",
-    "statLabel": "YoY growth projected"
-  },
-  {
-    "type": "win",
-    "emoji": "🛡️",
-    "accent": "#F44336",
-    "gradient": [
-      "#F44336",
-      "#D32F2F"
-    ],
-    "title": "Security Excellence",
-    "who": "Security & Engineering Teams",
-    "stat": "4%",
-    "statUnit": "fraud rate (down from 22%)",
-    "headline": "Fraud Prevention Success with Dynamic SDK",
-    "description": "Our dynamic SDK signatures implementation dramatically reduced fraud from 22% to under 4%. This technical achievement protects revenue while maintaining user experience quality.",
-    "takeaway": "Smart engineering solutions delivering measurable business impact and user protection."
+    "accent": "#5D2CAC",
+    "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
+    "title": "From #claps",
+    "headline": "Alexandr Babich Elina Tsylosani Sasha Sakovich received 16× from Sasha",
+    "quote": "Alexandr Babich Elina Tsylosani Sasha Sakovich received 16× from Sasha",
+    "author": "Clappy",
+    "reactions": "",
+    "channel": "#claps"
   },
   {
     "type": "officelife",
-    "emoji": "🧘",
-    "accent": "#009688",
-    "gradient": [
-      "#009688",
-      "#00796B"
-    ],
-    "title": "Wellness Culture",
-    "headline": "Daily Yoga Sessions Keep Team Centered",
-    "quote": "Join Anna Kolyada's daily yoga sessions at 13:10 CET - available both in office and online streaming",
-    "author": "Team Wellness Initiative",
-    "reactions": "🧘‍♀️",
-    "channel": "office culture"
-  },
-  {
-    "type": "milestone",
-    "emoji": "🎯",
-    "accent": "#795548",
-    "gradient": [
-      "#795548",
-      "#5D4037"
-    ],
-    "title": "Sales Performance Win",
-    "headline": "Strong Weekly Sales Momentum",
-    "description": "Our sales team closed 8 deals generating $390k net revenue in a single week, demonstrating strong market demand and effective sales execution across our product portfolio.",
-    "stat": "$390k",
-    "statLabel": "weekly net revenue"
-  },
-  {
-    "type": "event",
-    "emoji": "📚",
-    "accent": "#607D8B",
-    "gradient": [
-      "#607D8B",
-      "#455A64"
-    ],
-    "title": "Learning Community",
-    "eventName": "Book Club 'Passionate Curiosity'",
-    "date": "Ongoing",
-    "description": "Our company book club has grown to 140+ participants, fostering a culture of continuous learning and intellectual curiosity across all teams and locations.",
-    "organizer": "Learning & Development"
-  },
-  {
-    "type": "officelife",
-    "emoji": "💪",
-    "accent": "#FF5722",
-    "gradient": [
-      "#FF5722",
-      "#E64A19"
-    ],
-    "title": "Challenge Champions",
-    "headline": "AI Advent Challenge Heroes",
-    "quote": "20-day marathon completed by 6 dedicated heroes who tackled every challenge",
-    "author": "Development Team",
-    "reactions": "🏆",
-    "channel": "ai challenges"
-  },
-  {
-    "type": "win",
-    "emoji": "📈",
-    "accent": "#4CAF50",
-    "gradient": [
-      "#4CAF50",
-      "#388E3C"
-    ],
-    "title": "Product Performance",
-    "who": "Solitaire Team",
-    "stat": "+21.67%",
-    "statUnit": "D7 retention improvement",
-    "headline": "Solitaire v540 Delivers Major Retention Boost",
-    "description": "The latest Solitaire version achieved a significant 21.67% improvement in D7 retention, showcasing the impact of data-driven product iterations and user experience optimization.",
-    "takeaway": "Continuous improvement methodology paying off with measurable user engagement gains."
+    "emoji": "👏",
+    "accent": "#5D2CAC",
+    "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
+    "title": "From #claps",
+    "headline": "Sasha Sakovich received 20× from anna.kaliada",
+    "quote": "Sasha Sakovich received 20× from anna.kaliada",
+    "author": "Clappy",
+    "reactions": "",
+    "channel": "#claps"
   }
 ]
