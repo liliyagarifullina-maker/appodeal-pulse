@@ -5,11 +5,11 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "Samat Kurmanov",
-    "date": "March 27",
+    "name": "Alex Cherniaev",
+    "date": "March 30",
     "message": "Wishing you an amazing day filled with joy and celebration!",
     "teamNote": "With love, Your Appodeal Team 💜",
-    "avatar": "https://avatars.slack-edge.com/2025-07-01/9128124922517_c8c6c222fe55a0f3a929_192.jpg"
+    "avatar": "https://avatars.slack-edge.com/2024-10-31/7985759780624_64c3c867f4af4b976ee4_192.jpg"
   },
   {
     "type": "officelife",
@@ -17,9 +17,9 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "We are moving to corporate AI tool accounts to better track usage and scale best...",
-    "quote": "We are moving to corporate AI tool accounts to better track usage and scale best practices. Existing personal subscriptions will remain active until they expire and will not be renewed. Personal payment cards for ChatGPT, Claude, and Cursor will be disabled. To access corporate accounts, log in via ",
-    "author": "Mariia Moskvina",
+    "headline": "__ Adding to what said — and he said it well. I want to give some longer context...",
+    "quote": "__ Adding to what said — and he said it well. I want to give some longer context, because this quarter deserves it. For years we struggled to build the DSP. Not just with engineering problems — with something harder to fix: individual egos getting in the way of the right decisions, poor understandin",
+    "author": "Pavel Golubev",
     "reactions": "",
     "channel": "#general"
   },
@@ -29,9 +29,9 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "Hi everyone Friday, April 3rd (Good Friday) and Monday, April 6th (Easter Monday...",
-    "quote": "Hi everyone Friday, April 3rd (Good Friday) and Monday, April 6th (Easter Monday) are public holidays in the Barcelona office Please plan accordingly",
-    "author": "Emma Syniehubova",
+    "headline": "Hi everyone, We know there’s been some confusion around equity, especially due t...",
+    "quote": "Hi everyone, We know there’s been some confusion around equity, especially due to limited communication in the past. We want to improve transparency here. To help clear things up, we’re putting together a simple FAQ / explainer doc about equity at the company. Please take a few minutes to share any ",
+    "author": "Lidiia Galkina",
     "reactions": "",
     "channel": "#general"
   },
@@ -41,8 +41,8 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "https://appodeal.slack.com/archives/C090JTTDRMH/p1774538121215559",
-    "quote": "https://appodeal.slack.com/archives/C090JTTDRMH/p1774538121215559",
+    "headline": "I agree with you — this situation did not meet our standards. We made a mistake ...",
+    "quote": "I agree with you — this situation did not meet our standards. We made a mistake in how we handled this buyback. Changing the framework in the middle of the buyback and communicating it late is a failure on our side. We should have identified this earlier and communicated it clearly upfront. What act",
     "author": "Pavel Golubev",
     "reactions": "",
     "channel": "#general"
@@ -53,8 +53,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Yuliia Kunytska received 20× from Viktor Trykolenko",
-    "quote": "Yuliia Kunytska received 20× from Viktor Trykolenko",
+    "headline": "Ivan Litvinau received 5× from Dzmitry Baran",
+    "quote": "Ivan Litvinau received 5× from Dzmitry Baran",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -65,8 +65,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Vasyl Plesiuk Vladimir Samoylov Viktar Plesko received 10× from Viktor Trykolenk...",
-    "quote": "Vasyl Plesiuk Vladimir Samoylov Viktar Plesko received 10× from Viktor Trykolenko",
+    "headline": "Aleh Mentuz Anna Hrytsel Elizaveta Gayshun received 10× from Dzmitry Baran",
+    "quote": "Aleh Mentuz Anna Hrytsel Elizaveta Gayshun received 10× from Dzmitry Baran",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
