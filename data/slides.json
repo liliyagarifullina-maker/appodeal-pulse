@@ -5,10 +5,11 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "* Sergei Smirnov",
-    "date": "April 05",
+    "name": "Sergei Smirnov",
+    "date": "April 07",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* Exchange Engineering · * Poland"
+    "teamNote": "With love, Your Appodeal Team 💜",
+    "avatar": "https://avatars.slack-edge.com/2024-01-30/6564375282385_d77af4a182a283ca7468_192.jpg"
   },
   {
     "type": "officelife",
