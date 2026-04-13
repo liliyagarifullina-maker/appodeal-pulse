@@ -5,11 +5,21 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "Semen Sinchenko",
-    "date": "April 10",
+    "name": "* Eugene Marchukevich",
+    "date": "April 12",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "With love, Your Appodeal Team 💜",
-    "avatar": "https://avatars.slack-edge.com/2025-09-08/9473649214931_4780236f039327c26ddc_192.png"
+    "teamNote": "* Exchange Engineering · * Poland"
+  },
+  {
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "* Herman Krahotkin",
+    "date": "April 12",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "* Holding: IT · * Poland"
   },
   {
     "type": "officelife",
@@ -17,21 +27,9 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "Team, I’m happy to share that the merger of AppGrowth Inc. into BidMachine, Inc....",
-    "quote": "Team, I’m happy to share that the merger of AppGrowth Inc. into BidMachine, Inc. officially closed on April 6, filed and accepted by the State of Delaware. What happened: Until now, our mediation, exchange, and DSP capabilities lived across separate legal entities — Appodeal, BidMachine, and AppGrow",
-    "author": "Pavel Golubev",
-    "reactions": "",
-    "channel": "#general"
-  },
-  {
-    "type": "officelife",
-    "emoji": "📢",
-    "accent": "#00FFD1",
-    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
-    "title": "From #general",
-    "headline": "Hi and happy April everyone! As we move into a new month, let’s take a moment to...",
-    "quote": "Hi and happy April everyone! As we move into a new month, let’s take a moment to look back at March and recap the latest HR updates and highlights March Newcomers Let’s give a warm welcome to our March newcomers! – AI &amp; Automation Analyst – Senior Solution Architect - AI &amp; Automation Analyst",
-    "author": "Katarzyna Raniszewska",
+    "headline": "Hi ! Happy Easter, everyone! Wishing you all a joyful and relaxing Easter filled...",
+    "quote": "Hi ! Happy Easter, everyone! Wishing you all a joyful and relaxing Easter filled with good vibes, fresh energy, and maybe a little too much chocolate Whether you're celebrating with family, enjoying a long weekend, or just taking a well-deserved break — hope this time brings you some sunshine and re",
+    "author": "Olga Petriakova",
     "reactions": "",
     "channel": "#general"
   },
@@ -41,8 +39,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Gleb Krahotkin received 40× from Aleksei Gerasimov",
-    "quote": "Gleb Krahotkin received 40× from Aleksei Gerasimov",
+    "headline": "lidia.g Emma Diana Mytchyk Yuliia Lievoshko received 12× from Ira",
+    "quote": "lidia.g Emma Diana Mytchyk Yuliia Lievoshko received 12× from Ira",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -53,8 +51,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Vladimir Samoylov received 25× from Veronika Yastrebova",
-    "quote": "Vladimir Samoylov received 25× from Veronika Yastrebova",
+    "headline": "Maria Plendukova received 10× from Alexandr Zhitlukhin",
+    "quote": "Maria Plendukova received 10× from Alexandr Zhitlukhin",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
