@@ -5,10 +5,11 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "* Eugene Marchukevich",
-    "date": "April 12",
+    "name": "Herman Krahotkin",
+    "date": "April 14",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* Exchange Engineering · * Poland"
+    "teamNote": "With love, Your Appodeal Team 💜",
+    "avatar": "https://avatars.slack-edge.com/2024-01-10/6452047271570_7d34456fbd8d4f55b7f7_192.jpg"
   },
   {
     "type": "birthday",
@@ -16,10 +17,23 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "* Herman Krahotkin",
-    "date": "April 12",
+    "name": "Vladimir Samoylov",
+    "date": "April 14",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* Holding: IT · * Poland"
+    "teamNote": "With love, Your Appodeal Team 💜",
+    "avatar": "https://avatars.slack-edge.com/2024-11-05/7982352074242_9c494bc1c5b0ee6cc4d0_192.jpg"
+  },
+  {
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Eugene Marchukevich",
+    "date": "April 14",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "With love, Your Appodeal Team 💜",
+    "avatar": "https://avatars.slack-edge.com/2024-09-09/7700862976468_e79ce361e9d52a238a49_192.jpg"
   },
   {
     "type": "officelife",
@@ -27,8 +41,8 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "Hi ! Happy Easter, everyone! Wishing you all a joyful and relaxing Easter filled...",
-    "quote": "Hi ! Happy Easter, everyone! Wishing you all a joyful and relaxing Easter filled with good vibes, fresh energy, and maybe a little too much chocolate Whether you're celebrating with family, enjoying a long weekend, or just taking a well-deserved break — hope this time brings you some sunshine and re",
+    "headline": "Happy International Recruiters Day everyone Today I want to take a moment to cel...",
+    "quote": "Happy International Recruiters Day everyone Today I want to take a moment to celebrate not just the Recruitment team, but everyone at Appodeal. Because here, hiring has never been “someone else’s job” — it’s something we all contribute to. Every great product we’ve built, every challenge we’ve solve",
     "author": "Olga Petriakova",
     "reactions": "",
     "channel": "#general"
@@ -39,8 +53,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "lidia.g Emma Diana Mytchyk Yuliia Lievoshko received 12× from Ira",
-    "quote": "lidia.g Emma Diana Mytchyk Yuliia Lievoshko received 12× from Ira",
+    "headline": "Hierman Pelekh received 20× from Vladislav Nikolaev",
+    "quote": "Hierman Pelekh received 20× from Vladislav Nikolaev",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -51,8 +65,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Maria Plendukova received 10× from Alexandr Zhitlukhin",
-    "quote": "Maria Plendukova received 10× from Alexandr Zhitlukhin",
+    "headline": "Vladislav Nikolaev received 20× from Sasha Sakovich",
+    "quote": "Vladislav Nikolaev received 20× from Sasha Sakovich",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
