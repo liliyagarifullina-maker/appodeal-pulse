@@ -1,41 +1,5 @@
 [
   {
-    "type": "birthday",
-    "emoji": "🎂",
-    "accent": "#FFB72B",
-    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
-    "title": "Happy Birthday!",
-    "name": "Herman Krahotkin",
-    "date": "April 14",
-    "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "With love, Your Appodeal Team 💜",
-    "avatar": "https://avatars.slack-edge.com/2024-01-10/6452047271570_7d34456fbd8d4f55b7f7_192.jpg"
-  },
-  {
-    "type": "birthday",
-    "emoji": "🎂",
-    "accent": "#FFB72B",
-    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
-    "title": "Happy Birthday!",
-    "name": "Vladimir Samoylov",
-    "date": "April 14",
-    "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "With love, Your Appodeal Team 💜",
-    "avatar": "https://avatars.slack-edge.com/2024-11-05/7982352074242_9c494bc1c5b0ee6cc4d0_192.jpg"
-  },
-  {
-    "type": "birthday",
-    "emoji": "🎂",
-    "accent": "#FFB72B",
-    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
-    "title": "Happy Birthday!",
-    "name": "Eugene Marchukevich",
-    "date": "April 14",
-    "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "With love, Your Appodeal Team 💜",
-    "avatar": "https://avatars.slack-edge.com/2024-09-09/7700862976468_e79ce361e9d52a238a49_192.jpg"
-  },
-  {
     "type": "officelife",
     "emoji": "📢",
     "accent": "#00FFD1",
@@ -49,12 +13,36 @@
   },
   {
     "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "Thanks everyone for joining today’s Lunch &amp; Learn: AI for Engineers — Real W...",
+    "quote": "Thanks everyone for joining today’s Lunch &amp; Learn: AI for Engineers — Real Workflows &amp; Best Practices! Big thanks to our speakers for sharing their experience and practical insights , , , If you missed it or want to revisit: Recording: here Our speakers’ presentations are attached. Thank you",
+    "author": "Katarzyna Raniszewska",
+    "reactions": "",
+    "channel": "#general"
+  },
+  {
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "Lunch &amp; Learn today: AI for Engineers — Real Workflows &amp; Best Practices ...",
+    "quote": "Lunch &amp; Learn today: AI for Engineers — Real Workflows &amp; Best Practices Today’s session is a bit special — for the first time we’ll have 4 speakers sharing their experience: , , , Looks like it’s going to be a really interesting one Note: today we start at 15:00 CET (instead of 13:00 CET) Th",
+    "author": "Katarzyna Raniszewska",
+    "reactions": "",
+    "channel": "#general"
+  },
+  {
+    "type": "officelife",
     "emoji": "👏",
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Hierman Pelekh received 20× from Vladislav Nikolaev",
-    "quote": "Hierman Pelekh received 20× from Vladislav Nikolaev",
+    "headline": "a.cherniaev Maksym Fedorov Gleb Krahotkin Konstantin Ilchenko received 10× from ...",
+    "quote": "a.cherniaev Maksym Fedorov Gleb Krahotkin Konstantin Ilchenko received 10× from Siddharth Sahani",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -65,8 +53,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Vladislav Nikolaev received 20× from Sasha Sakovich",
-    "quote": "Vladislav Nikolaev received 20× from Sasha Sakovich",
+    "headline": "Cagatay Akcam received 20× from Tatiana Rokhlova",
+    "quote": "Cagatay Akcam received 20× from Tatiana Rokhlova",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
