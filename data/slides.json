@@ -1,5 +1,27 @@
 [
   {
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "* Ekaterina Saveleva",
+    "date": "April 15",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "* Mediation: Customer Success · * Italy"
+  },
+  {
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "* Dzmitry Baran",
+    "date": "April 15",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "* MGP: Quality Assurance Platform · * Belarus"
+  },
+  {
     "type": "officelife",
     "emoji": "📢",
     "accent": "#00FFD1",
@@ -41,8 +63,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "a.cherniaev Maksym Fedorov Gleb Krahotkin Konstantin Ilchenko received 10× from ...",
-    "quote": "a.cherniaev Maksym Fedorov Gleb Krahotkin Konstantin Ilchenko received 10× from Siddharth Sahani",
+    "headline": "Stepan Pletnev received 10× from Siddharth Sahani",
+    "quote": "Stepan Pletnev received 10× from Siddharth Sahani",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -53,8 +75,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Cagatay Akcam received 20× from Tatiana Rokhlova",
-    "quote": "Cagatay Akcam received 20× from Tatiana Rokhlova",
+    "headline": "Ira received 20× from Konstantin Ilchenko",
+    "quote": "Ira received 20× from Konstantin Ilchenko",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
