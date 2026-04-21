@@ -5,10 +5,11 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "* Alexandr Babich",
-    "date": "April 19",
+    "name": "Alexandr Babich",
+    "date": "April 21",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* Mediation: Engineering · * Poland"
+    "teamNote": "With love, Your Appodeal Team 💜",
+    "avatar": "https://avatars.slack-edge.com/2020-06-02/1171190579745_83ff679a8154314d6cfd_192.jpg"
   },
   {
     "type": "birthday",
@@ -16,10 +17,23 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "* Elvina Nasyrova",
-    "date": "April 19",
+    "name": "Elvina Nasyrova",
+    "date": "April 21",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* UA: Media Buying A&amp;F · * Armenia"
+    "teamNote": "With love, Your Appodeal Team 💜",
+    "avatar": "https://avatars.slack-edge.com/2021-10-12/2596157132548_2308be26479e07365fe7_192.png"
+  },
+  {
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Didara Pernebayeva",
+    "date": "April 21",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "With love, Your Appodeal Team 💜",
+    "avatar": "https://avatars.slack-edge.com/2025-09-21/9552329378085_b143121bc9cffb43a692_192.png"
   },
   {
     "type": "officelife",
@@ -39,9 +53,21 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "Hi everyone ! Remote folks — did you know Appodeal Pulse is available online? In...",
-    "quote": "Hi everyone ! Remote folks — did you know Appodeal Pulse is available online? In our offices, we run a live company news feed on the TVs — birthdays, team wins, shoutouts from <#C084KUM8W79>, interesting reads, and everything happening across Appodeal. You check it out any time: https://appodeal-pul",
-    "author": "Liliya Garifullina",
+    "headline": "Happy Monday, everyone! This past Saturday, our Parkland office took part in the...",
+    "quote": "Happy Monday, everyone! This past Saturday, our Parkland office took part in the Greatest American Cleanup event and spent the morning cleaning up Red Reef Park beach. It was a beautiful day by the ocean, and getting to do something meaningful together, with family in tow , made it even more special",
+    "author": "Oxana Drake",
+    "reactions": "",
+    "channel": "#general"
+  },
+  {
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "Hi team! Important! Please ignore new notification from ! They should have been ...",
+    "quote": "Hi team! Important! Please ignore new notification from ! They should have been disabled! Thank you",
+    "author": "Aleksei Gerasimov",
     "reactions": "",
     "channel": "#general"
   },
