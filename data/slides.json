@@ -5,68 +5,9 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "* Taisiia Kraiukhina",
-    "date": "April 30",
+    "name": "* Wojciech Rosa",
+    "date": "May 03",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* Holding: Marketing A&amp;F · * Poland"
-  },
-  {
-    "type": "birthday",
-    "emoji": "🎂",
-    "accent": "#FFB72B",
-    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
-    "title": "Happy Birthday!",
-    "name": "* Pavel Duniashev",
-    "date": "April 30",
-    "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* BidMachine Business · * Spain"
-  },
-  {
-    "type": "officelife",
-    "emoji": "📢",
-    "accent": "#00FFD1",
-    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
-    "title": "From #general",
-    "headline": "Hey team, happy Tuesday! Yesterday's party was amazing - tons of fun, everyone w...",
-    "quote": "Hey team, happy Tuesday! Yesterday's party was amazing - tons of fun, everyone was smiling, and the sailing was awesome! We had such a great time together. , thank you for organizing this. I hope you will enjoy some of the photos I took",
-    "author": "Alex Cherniaev",
-    "reactions": "",
-    "channel": "#general"
-  },
-  {
-    "type": "officelife",
-    "emoji": "📢",
-    "accent": "#00FFD1",
-    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
-    "title": "From #general",
-    "headline": "https://youtu.be/dlPCz8Jwypw?si=q4RdK8MjnK4YuuHz Applovin inspired me to start A...",
-    "quote": "https://youtu.be/dlPCz8Jwypw?si=q4RdK8MjnK4YuuHz Applovin inspired me to start Appodeal and their founder and CEO Adam has been my mentor for many years now. His business philosophy heavily affects how I think about our company. I encourage you to watch/listen it to get a better idea how we approach",
-    "author": "Pavel Golubev",
-    "reactions": "",
-    "channel": "#general"
-  },
-  {
-    "type": "officelife",
-    "emoji": "👏",
-    "accent": "#5D2CAC",
-    "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
-    "title": "From #claps",
-    "headline": "Cagatay Akcam received 20× from Siddharth Sahani",
-    "quote": "Cagatay Akcam received 20× from Siddharth Sahani",
-    "author": "Clappy",
-    "reactions": "",
-    "channel": "#claps"
-  },
-  {
-    "type": "officelife",
-    "emoji": "👏",
-    "accent": "#5D2CAC",
-    "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
-    "title": "From #claps",
-    "headline": "Taha received 30× from Siddharth Sahani",
-    "quote": "Taha received 30× from Siddharth Sahani",
-    "author": "Clappy",
-    "reactions": "",
-    "channel": "#claps"
+    "teamNote": "* MGP: Data Science · * Poland"
   }
 ]
