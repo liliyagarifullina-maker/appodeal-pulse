@@ -5,73 +5,10 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "* Miguel Pérez Pasalodos",
-    "date": "May 07",
+    "name": "* Mariia Moskvina",
+    "date": "May 11",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* MGP: Data Engineering · * Spain"
-  },
-  {
-    "type": "birthday",
-    "emoji": "🎂",
-    "accent": "#FFB72B",
-    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
-    "title": "Happy Birthday!",
-    "name": "* Siddharth Sahani",
-    "date": "May 07",
-    "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* UA: Engineering · * India"
-  },
-  {
-    "type": "officelife",
-    "emoji": "📢",
-    "accent": "#00FFD1",
-    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
-    "title": "From #general",
-    "headline": "Team — a quick transmission from the Google Temple in NYC. , , and I met with An...",
-    "quote": "Team — a quick transmission from the Google Temple in NYC. , , and I met with Andrew Hickey and his Jedi Council to advance our Direct Placement / P2P mission. We walked them through how enabling Direct Placement inside GAM360 unlocks Direct Pay — something T‑Mobile and The Weather Channel are alrea",
-    "author": "Mark Fruehan",
-    "reactions": "",
-    "channel": "#general"
-  },
-  {
-    "type": "officelife",
-    "emoji": "📢",
-    "accent": "#00FFD1",
-    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
-    "title": "From #general",
-    "headline": "Hi and happy May everyone! Longer days, warmer weather, and a bit more sunshine ...",
-    "quote": "Hi and happy May everyone! Longer days, warmer weather, and a bit more sunshine — feels like the perfect moment to recharge and enjoy the spring energy. Before we fully dive into May, let’s take a quick look back at April and recap the latest HR updates and highlights April Newcomers Let’s give a wa",
-    "author": "Katarzyna Raniszewska",
-    "reactions": "",
-    "channel": "#general"
-  },
-  {
-    "type": "officelife",
-    "emoji": "📢",
-    "accent": "#00FFD1",
-    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
-    "title": "From #general",
-    "headline": "Hey everyone! All Hands – May 14 Our next All Hands is happening on May 14, 16:0...",
-    "quote": "Hey everyone! All Hands – May 14 Our next All Hands is happening on May 14, 16:00–17:30 CET (calendar invite should already be there ). We want to make it as useful as possible for you — so we’ve launched a short survey where you can share questions or topics you’d like leadership to address: [click",
-    "author": "Katarzyna Raniszewska",
-    "reactions": "",
-    "channel": "#general"
-  },
-  {
-    "type": "reading",
-    "emoji": "📚",
-    "accent": "#5D2CAC",
-    "gradient": "linear-gradient(135deg, #5D2CAC 0%, #A885E0 100%)",
-    "title": "What We're Reading",
-    "articles": [
-      {
-        "title": "Automating Your Monetization Playbook with CloudX CLI  | CloudX",
-        "sharedBy": "Evgeny Garlukovich",
-        "desc": "The CLI is a new interface for working with CloudX, one that can be automated, adjusted, and configured to your very specific needs.",
-        "reactions": ""
-      }
-    ],
-    "channel": "#to_read"
+    "teamNote": "* Holding: CTO Office · * Georgia"
   },
   {
     "type": "officelife",
@@ -79,8 +16,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "manzuk received 25× from Maria Plendukova",
-    "quote": "manzuk received 25× from Maria Plendukova",
+    "headline": "Artem Orlov Juan Montero received 15× from Tatiana Rokhlova",
+    "quote": "Artem Orlov Juan Montero received 15× from Tatiana Rokhlova",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -91,8 +28,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "aleksandr.chigaleichik received 10× from Francesco",
-    "quote": "aleksandr.chigaleichik received 10× from Francesco",
+    "headline": "Aleksandr Drozdov received 20× from Tatiana Rokhlova",
+    "quote": "Aleksandr Drozdov received 20× from Tatiana Rokhlova",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
