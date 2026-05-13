@@ -11,15 +11,40 @@
     "teamNote": "* Office Management team · * Spain"
   },
   {
-    "type": "birthday",
-    "emoji": "🎂",
-    "accent": "#FFB72B",
-    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
-    "title": "Happy Birthday!",
-    "name": "* Mariia Moskvina",
-    "date": "May 11",
-    "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* Holding: CTO Office · * Georgia"
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "Final reminder for everyone in Barcelona (or nearby) — Barcelona Data Nights is ...",
+    "quote": "Final reminder for everyone in Barcelona (or nearby) — Barcelona Data Nights is happening this Thursday! Join us for an evening of practical AI &amp; engineering talks, networking, pizza, and rooftop conversations This time we’ll be speaking about: • AI coding tools and how they’re changing engineer",
+    "author": "Katarzyna Raniszewska",
+    "reactions": "",
+    "channel": "#general"
+  },
+  {
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "Hi all, I am sharing an updated PRD of the WIG, which now includes the retrospec...",
+    "quote": "Hi all, I am sharing an updated PRD of the WIG, which now includes the retrospective of the Q1 and updates relevant for Q2. Feel free to leave comments and use it a source of truth and query your hypothesis against it. This upcoming Friday during our dedicated <#C09CW97C9QR> at 10am ET we will explo",
+    "author": "Pavel Golubev",
+    "reactions": "",
+    "channel": "#general"
+  },
+  {
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "Friendly reminder Tomorrow’s All Hands is coming up (May 14, 16:00–17:30 CET) — ...",
+    "quote": "Friendly reminder Tomorrow’s All Hands is coming up (May 14, 16:00–17:30 CET) — and there’s still time to share any questions or topics you’d like leadership to address [click here] Anything on your mind is welcome — we’ll review the submissions and bring the key topics into the session See you tomo",
+    "author": "Katarzyna Raniszewska",
+    "reactions": "",
+    "channel": "#general"
   },
   {
     "type": "officelife",
@@ -27,8 +52,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Viktor Trykolenko received 25× from Ana Abuseridze",
-    "quote": "Viktor Trykolenko received 25× from Ana Abuseridze",
+    "headline": "Pavlo received 36× from Yevhenii",
+    "quote": "Pavlo received 36× from Yevhenii",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -39,8 +64,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Ana Abuseridze Viktar Plesko Adnana Hujdur received 15× from Viktor Trykolenko",
-    "quote": "Ana Abuseridze Viktar Plesko Adnana Hujdur received 15× from Viktor Trykolenko",
+    "headline": "Viktor Trykolenko received 25× from Ana Abuseridze",
+    "quote": "Viktor Trykolenko received 25× from Ana Abuseridze",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
