@@ -5,10 +5,32 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "* Cagatay Akcam",
-    "date": "May 15",
+    "name": "* Sergei Chibirev",
+    "date": "May 17",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* MGP: Data Analytics · * Turkey"
+    "teamNote": "* Exchange Engineering · * Spain"
+  },
+  {
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "* David Dyer",
+    "date": "May 17",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "* Holding: Finance · * United States"
+  },
+  {
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "* Gulya Latypova",
+    "date": "May 17",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "* Office Management team: A&amp;F · * United States"
   },
   {
     "type": "officelife",
@@ -16,33 +38,9 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "Hi team, Thank you all for joining our All Hands meeting today, and thanks for t...",
-    "quote": "Hi team, Thank you all for joining our All Hands meeting today, and thanks for the great questions and discussion. Here are the materials from the meeting: • Presentation: [link] • Fireflies recording: [link] Also, a reminder that our Engagement survey is available in Leapsome. Please take a few min",
-    "author": "Alexandr Zhitlukhin",
-    "reactions": "",
-    "channel": "#general"
-  },
-  {
-    "type": "officelife",
-    "emoji": "📢",
-    "accent": "#00FFD1",
-    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
-    "title": "From #general",
-    "headline": "On Monday, our Parkland team + gathered for a farewell evening at the current of...",
-    "quote": "On Monday, our Parkland team + gathered for a farewell evening at the current office house for a proper send-off Good food, good company, fascinating stories. For our teammates in Warsaw, Barcelona, and remotely - a little context: next week we're moving to a brand new office place A beautiful farmh",
-    "author": "Oxana Drake",
-    "reactions": "",
-    "channel": "#general"
-  },
-  {
-    "type": "officelife",
-    "emoji": "📢",
-    "accent": "#00FFD1",
-    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
-    "title": "From #general",
-    "headline": "Final reminder for everyone in Barcelona (or nearby) — Barcelona Data Nights is ...",
-    "quote": "Final reminder for everyone in Barcelona (or nearby) — Barcelona Data Nights is happening this Thursday! Join us for an evening of practical AI &amp; engineering talks, networking, pizza, and rooftop conversations This time we’ll be speaking about: • AI coding tools and how they’re changing engineer",
-    "author": "Katarzyna Raniszewska",
+    "headline": "Team - wanted to give you an update on Learnings Integration at Appodeal. Thanks...",
+    "quote": "Team - wanted to give you an update on Learnings Integration at Appodeal. Thanks to everyone who reviewed the Learning Integration doc — 58 comments shaped where V1 lands. 1. Many questions were answered via clarification in the comments. Threads stay searchable; no body changes needed. 2. Three imp",
+    "author": "Pavel Golubev",
     "reactions": "",
     "channel": "#general"
   },
@@ -54,8 +52,8 @@
     "title": "What We're Reading",
     "articles": [
       {
-        "title": "Bootstrapping a Business to $5 Billion in Free Cash Flow | AppLovin’s Adam Foroughi",
-        "sharedBy": "Alexandr Zhitlukhin",
+        "title": "Inside Anthropic's $100 Billion Al Compute Commitment | CFO Krishna Rao",
+        "sharedBy": "Siddharth Sahani",
         "desc": "",
         "reactions": ""
       }
@@ -68,8 +66,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Alexey Akulshin received 10× from Kasia",
-    "quote": "Alexey Akulshin received 10× from Kasia",
+    "headline": "Aleh Mentuz received 20× from Danila Matveev",
+    "quote": "Aleh Mentuz received 20× from Danila Matveev",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -80,8 +78,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Samat Maksym Fedorov Anton Balaev Emma received 10× from Kasia",
-    "quote": "Samat Maksym Fedorov Anton Balaev Emma received 10× from Kasia",
+    "headline": "Dima M. received 20× from Anna Timoshenko",
+    "quote": "Dima M. received 20× from Anna Timoshenko",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
