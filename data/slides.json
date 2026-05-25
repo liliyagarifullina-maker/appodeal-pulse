@@ -5,10 +5,10 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "* Anton Nikifarau",
-    "date": "May 22",
+    "name": "* Alex Kozhura",
+    "date": "May 25",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* UA: Engineering · * Belarus"
+    "teamNote": "* Gaming UA · * Spain"
   },
   {
     "type": "birthday",
@@ -16,21 +16,10 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "* Nastassia Daroshka",
-    "date": "May 22",
+    "name": "* Maksym Fedorov",
+    "date": "May 24",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* Gaming ASO · * Belarus"
-  },
-  {
-    "type": "birthday",
-    "emoji": "🎂",
-    "accent": "#FFB72B",
-    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
-    "title": "Happy Birthday!",
-    "name": "* Hanna Batura",
-    "date": "May 21",
-    "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* Exchange Engineering · * United States"
+    "teamNote": "* Exchange Engineering · * Bulgaria"
   },
   {
     "type": "officelife",
@@ -38,8 +27,8 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "So many posts today and reasons to celebrate I wanted to share that today is Int...",
-    "quote": "So many posts today and reasons to celebrate I wanted to share that today is International HR Day! Today we celebrate the people who make Appodeal a place worth showing up to every day — our HR team. At Appodeal, HR is made up of several pillars that together keep us running and growing: HR Admin & ",
+    "headline": "Hey all! Happy Friday We want to make sure everyone has the tools they need to d...",
+    "quote": "Hey all! Happy Friday We want to make sure everyone has the tools they need to do their best work — so here's a quick reminder about our Equipment Policy. Need to upgrade old equipment? If your laptop is 5+ years old (or mobile device 3+ years) and it's slowing you down, you can request an upgrade. ",
     "author": "Olga Petriakova",
     "reactions": "",
     "channel": "#general"
@@ -50,45 +39,11 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "Hey all, please welcome — our new Chief Operating Officer, joining us on 20 July...",
-    "quote": "Hey all, please welcome — our new Chief Operating Officer, joining us on 20 July! Kristapor joins us in Barcelona moving from London, where he co-founded TrustedIQ, an AI SaaS platform built around contract intelligence and commercial data. Before that, he spent 8 years at Cognism — one of the most ",
-    "author": "Olga Petriakova",
+    "headline": "Hi team Thursday, June 4th, is a public holiday in Poland (Corpus Christi / Boże...",
+    "quote": "Hi team Thursday, June 4th, is a public holiday in Poland (Corpus Christi / Boże Ciało), so it will be an official day off for the Polish office! Please keep this in mind when planning your work",
+    "author": "Iryna Peretiatko",
     "reactions": "",
     "channel": "#general"
-  },
-  {
-    "type": "officelife",
-    "emoji": "📢",
-    "accent": "#00FFD1",
-    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
-    "title": "From #general",
-    "headline": "Team, please welcome — our new Chief Financial Officer, joining us on 8 June! Ed...",
-    "quote": "Team, please welcome — our new Chief Financial Officer, joining us on 8 June! Ed joins us in Parkland, Florida . He's been an Operating Partner at Maximalist Ventures, serving as CFO/COO across a portfolio of AdTech, AI, and blockchain ventures. Before that, he spent 6+ years at InMobi building thei",
-    "author": "Olga Petriakova",
-    "reactions": "",
-    "channel": "#general"
-  },
-  {
-    "type": "reading",
-    "emoji": "📚",
-    "accent": "#5D2CAC",
-    "gradient": "linear-gradient(135deg, #5D2CAC 0%, #A885E0 100%)",
-    "title": "What We're Reading",
-    "articles": [
-      {
-        "title": "TEE 2.0: Multi-Platform Bid Arbitration | CloudX",
-        "sharedBy": "Evgeny Garlukovich",
-        "desc": "TEE 2.0 extends the enclave to handle third-party bids, so you can compare bids across mediation platforms securely.",
-        "reactions": ""
-      },
-      {
-        "title": "How Playrix Increased ROAS 14% With Unity Vector | Unity",
-        "sharedBy": "Dan Owens",
-        "desc": "Playrix’s Aleksandr Bajev shares how the top studio leverages Unity Ads powered by Unity Vector to grow their game Township for the long-term.",
-        "reactions": ""
-      }
-    ],
-    "channel": "#to_read"
   },
   {
     "type": "officelife",
@@ -96,8 +51,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Dima M. received 30× from Hanna Minko",
-    "quote": "Dima M. received 30× from Hanna Minko",
+    "headline": "Dima M. received 10× from Anna Timoshenko",
+    "quote": "Dima M. received 10× from Anna Timoshenko",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -108,8 +63,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Stepan Pletnev Nikita Savransky Khachatur Harutyunyan received 5× from Maksym Fe...",
-    "quote": "Stepan Pletnev Nikita Savransky Khachatur Harutyunyan received 5× from Maksym Fedorov",
+    "headline": "Artem Orlov Juan Montero Emil Sharafiev Cagatay Akcam received 12× from Francesc...",
+    "quote": "Artem Orlov Juan Montero Emil Sharafiev Cagatay Akcam received 12× from Francesco",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
