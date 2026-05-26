@@ -5,10 +5,10 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "* Alex Kozhura",
-    "date": "May 25",
+    "name": "* Valentyna Galkina",
+    "date": "May 26",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* Gaming UA · * Spain"
+    "teamNote": "* Holding: HR A&amp;F · * Ukraine"
   },
   {
     "type": "birthday",
@@ -16,22 +16,21 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "* Maksym Fedorov",
-    "date": "May 24",
+    "name": "* Aleksandr Drozdov",
+    "date": "May 26",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* Exchange Engineering · * Bulgaria"
+    "teamNote": "* MGP: Data Analytics · * Spain"
   },
   {
-    "type": "officelife",
-    "emoji": "📢",
-    "accent": "#00FFD1",
-    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
-    "title": "From #general",
-    "headline": "Hey all! Happy Friday We want to make sure everyone has the tools they need to d...",
-    "quote": "Hey all! Happy Friday We want to make sure everyone has the tools they need to do their best work — so here's a quick reminder about our Equipment Policy. Need to upgrade old equipment? If your laptop is 5+ years old (or mobile device 3+ years) and it's slowing you down, you can request an upgrade. ",
-    "author": "Olga Petriakova",
-    "reactions": "",
-    "channel": "#general"
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "* Alex Kozhura",
+    "date": "May 25",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "* Gaming UA · * Spain"
   },
   {
     "type": "officelife",
@@ -44,29 +43,5 @@
     "author": "Iryna Peretiatko",
     "reactions": "",
     "channel": "#general"
-  },
-  {
-    "type": "officelife",
-    "emoji": "👏",
-    "accent": "#5D2CAC",
-    "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
-    "title": "From #claps",
-    "headline": "Dima M. received 10× from Anna Timoshenko",
-    "quote": "Dima M. received 10× from Anna Timoshenko",
-    "author": "Clappy",
-    "reactions": "",
-    "channel": "#claps"
-  },
-  {
-    "type": "officelife",
-    "emoji": "👏",
-    "accent": "#5D2CAC",
-    "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
-    "title": "From #claps",
-    "headline": "Artem Orlov Juan Montero Emil Sharafiev Cagatay Akcam received 12× from Francesc...",
-    "quote": "Artem Orlov Juan Montero Emil Sharafiev Cagatay Akcam received 12× from Francesco",
-    "author": "Clappy",
-    "reactions": "",
-    "channel": "#claps"
   }
 ]
