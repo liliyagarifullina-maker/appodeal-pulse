@@ -5,6 +5,17 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
+    "name": "* Dan Owens",
+    "date": "May 27",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "* Holding: Sales · * United Kingdom"
+  },
+  {
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
     "name": "* Valentyna Galkina",
     "date": "May 26",
     "message": "Wishing you an amazing day filled with joy and celebration!",
@@ -22,17 +33,6 @@
     "teamNote": "* MGP: Data Analytics · * Spain"
   },
   {
-    "type": "birthday",
-    "emoji": "🎂",
-    "accent": "#FFB72B",
-    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
-    "title": "Happy Birthday!",
-    "name": "* Alex Kozhura",
-    "date": "May 25",
-    "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* Gaming UA · * Spain"
-  },
-  {
     "type": "officelife",
     "emoji": "📢",
     "accent": "#00FFD1",
@@ -43,5 +43,29 @@
     "author": "Iryna Peretiatko",
     "reactions": "",
     "channel": "#general"
+  },
+  {
+    "type": "officelife",
+    "emoji": "👏",
+    "accent": "#5D2CAC",
+    "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
+    "title": "From #claps",
+    "headline": "Cagatay Akcam received 50× from Juan Montero",
+    "quote": "Cagatay Akcam received 50× from Juan Montero",
+    "author": "Clappy",
+    "reactions": "",
+    "channel": "#claps"
+  },
+  {
+    "type": "officelife",
+    "emoji": "👏",
+    "accent": "#5D2CAC",
+    "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
+    "title": "From #claps",
+    "headline": "Veronika Yastrebova received 50× from Valentino Agazzi Mandozzi",
+    "quote": "Veronika Yastrebova received 50× from Valentino Agazzi Mandozzi",
+    "author": "Clappy",
+    "reactions": "",
+    "channel": "#claps"
   }
 ]
