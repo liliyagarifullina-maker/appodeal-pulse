@@ -5,11 +5,33 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "Dan Owens",
-    "date": "May 29",
+    "name": "* Nicolas Baquie",
+    "date": "May 31",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "With love, Your Appodeal Team 💜",
-    "avatar": "https://avatars.slack-edge.com/2026-04-15/10918780758485_bd907bf3e0caf305ec74_192.jpg"
+    "teamNote": "* MGP: Product A&amp;F · * United Kingdom"
+  },
+  {
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "* Natalia Melsitova",
+    "date": "May 31",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "* Gaming Monetization · * Poland"
+  },
+  {
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "Hey everyone ! Starting today, we're launching a short monthly pulse survey focu...",
+    "quote": "Hey everyone ! Starting today, we're launching a short monthly pulse survey focused on your development — and we'd love your honest input. Each month you'll receive one question via Leapsome (you'll get a nudge in Slack and/or email): The question will be: `\"In the past 30 days, did your 1:1 with yo",
+    "author": "Katarzyna Raniszewska",
+    "reactions": "",
+    "channel": "#general"
   },
   {
     "type": "officelife",
@@ -17,8 +39,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Krish Prabha received 50× from Murat Kacmaz",
-    "quote": "Krish Prabha received 50× from Murat Kacmaz",
+    "headline": "anton.nikifarau received 25× from Nikolai Rozanov",
+    "quote": "anton.nikifarau received 25× from Nikolai Rozanov",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -29,8 +51,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Ana Abuseridze Maksym Fedorov received 20× from Alexey Akulshin",
-    "quote": "Ana Abuseridze Maksym Fedorov received 20× from Alexey Akulshin",
+    "headline": "Vladislav Nikolaev received 25× from Nikolai Rozanov",
+    "quote": "Vladislav Nikolaev received 25× from Nikolai Rozanov",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
