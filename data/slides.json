@@ -22,26 +22,16 @@
     "teamNote": "* MGP: Data Science · * Spain"
   },
   {
-    "type": "birthday",
-    "emoji": "🎂",
-    "accent": "#FFB72B",
-    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
-    "title": "Happy Birthday!",
-    "name": "* Eduard Malkhasyan",
-    "date": "June 02",
-    "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* Mediation: Accelerator A&amp;F · * Armenia"
-  },
-  {
-    "type": "birthday",
-    "emoji": "🎂",
-    "accent": "#FFB72B",
-    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
-    "title": "Happy Birthday!",
-    "name": "* Anna Timoshenko",
-    "date": "June 02",
-    "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* MGP: Data Analytics · * Spain"
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "Hi and happy June everyone! With summer just around the corner and vacation seas...",
+    "quote": "Hi and happy June everyone! With summer just around the corner and vacation season starting to peek over the horizon, it’s the perfect time to celebrate recent wins and milestones. Before we fully dive into June, let’s take a quick look back at May and recap the latest HR updates and highlights May ",
+    "author": "Katarzyna Raniszewska",
+    "reactions": "",
+    "channel": "#general"
   },
   {
     "type": "officelife",
@@ -57,24 +47,12 @@
   },
   {
     "type": "officelife",
-    "emoji": "📢",
-    "accent": "#00FFD1",
-    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
-    "title": "From #general",
-    "headline": "Hey everyone ! Starting today, we're launching a short monthly pulse survey focu...",
-    "quote": "Hey everyone ! Starting today, we're launching a short monthly pulse survey focused on your development — and we'd love your honest input. Each month you'll receive one question via Leapsome (you'll get a nudge in Slack and/or email): The question will be: `\"In the past 30 days, did your 1:1 with yo",
-    "author": "Katarzyna Raniszewska",
-    "reactions": "",
-    "channel": "#general"
-  },
-  {
-    "type": "officelife",
     "emoji": "👏",
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Ana Abuseridze received 5× from Maksym Fedorov",
-    "quote": "Ana Abuseridze received 5× from Maksym Fedorov",
+    "headline": "Francesco received 20× from Agustin",
+    "quote": "Francesco received 20× from Agustin",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -85,8 +63,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Sergei Smirnov received 5× from Maksym Fedorov",
-    "quote": "Sergei Smirnov received 5× from Maksym Fedorov",
+    "headline": "Dima M. received 50× from Isahakyan",
+    "quote": "Dima M. received 50× from Isahakyan",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
