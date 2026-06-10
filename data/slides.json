@@ -5,11 +5,22 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "Eren Sakarya",
-    "date": "June 09",
+    "name": "* Jasmine Nunez",
+    "date": "June 10",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "With love, Your Appodeal Team 💜",
-    "avatar": "https://avatars.slack-edge.com/2024-10-14/7875184161458_1b44d1d97c865d29e73d_192.jpg"
+    "teamNote": "* Holding: Finance · * United States"
+  },
+  {
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "Hi ! Summer Activity Challenge is here! To celebrate the launch of the Summer Co...",
+    "quote": "Hi ! Summer Activity Challenge is here! To celebrate the launch of the Summer Connect Groups season, we're kicking off a Summer Activity Challenge in the Appodeal Sports Connect Group! Whether you enjoy walking, running, cycling, swimming, hiking, gym workouts, beach volleyball, yoga, team sports, o",
+    "author": "Katarzyna Raniszewska",
+    "reactions": "",
+    "channel": "#general"
   },
   {
     "type": "officelife",
@@ -17,8 +28,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Jura Guz received 20× from Dima M.",
-    "quote": "Jura Guz received 20× from Dima M.",
+    "headline": "Maksym Fedorov Alexey Akulshin received 5× from Iurii Kotov",
+    "quote": "Maksym Fedorov Alexey Akulshin received 5× from Iurii Kotov",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -29,8 +40,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Maria Plendukova received 20× from Anush Vardanyan",
-    "quote": "Maria Plendukova received 20× from Anush Vardanyan",
+    "headline": "Jura Guz received 20× from Dima M.",
+    "quote": "Jura Guz received 20× from Dima M.",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
