@@ -1,55 +1,50 @@
 [
   {
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "* Adnana Hujdur",
+    "date": "June 19",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "* BidMachine Business · * Bosnia and Herzegovina"
+  },
+  {
     "type": "officelife",
     "emoji": "📢",
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "Hi ! Thank you to everyone who joined yesterday's Lunch & Learn: AI Projects Sho...",
-    "quote": "Hi ! Thank you to everyone who joined yesterday's Lunch & Learn: AI Projects Showcase by the DA Team! A big thank you to our organizers, * and , for putting together a great session, and to our speakers , , , and * for sharing their projects, insights, and practical applications of AI. If you missed",
+    "headline": "Hi everyone! I'd love to invite you to Leadership Connect — a monthly interactiv...",
+    "quote": "Hi everyone! I'd love to invite you to Leadership Connect — a monthly interactive space for anyone interested in leadership, personal growth, and learning through real-life challenges and discussions. Whether you're currently leading a team, contributing as an individual contributor, or preparing fo",
+    "author": "Anastasia Kalugina",
+    "reactions": "",
+    "channel": "#general"
+  },
+  {
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "Hi We're looking for examples where the OKR Audit produced results that seem inc...",
+    "quote": "Hi We're looking for examples where the OKR Audit produced results that seem inconsistent or unexpected. If you've encountered such a recent case, please add it to this thread and include: • Links to the audit results you're comparing • What changed between the results (score, category, recommendati",
+    "author": "Mariia Moskvina",
+    "reactions": "",
+    "channel": "#general"
+  },
+  {
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "The Monthly Development Pulse is still open Current response rate: 28%. Which me...",
+    "quote": "The Monthly Development Pulse is still open Current response rate: 28%. Which means one thing: other 72% are probably planning to do it in a better moment...\" Here's the deal: One question About 10 seconds Completely anonymous No follow-up questions, no HR ambush, no consequences for any answer Just",
     "author": "Katarzyna Raniszewska",
     "reactions": "",
     "channel": "#general"
-  },
-  {
-    "type": "officelife",
-    "emoji": "📢",
-    "accent": "#00FFD1",
-    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
-    "title": "From #general",
-    "headline": "Hey everyone! We are starting to rolling out the first iteration of our A-player...",
-    "quote": "Hey everyone! We are starting to rolling out the first iteration of our A-players programme. As part of it, we're launching a short weekly check-in survey — one question, which will take you under a minute to complete. If you receive a DM from the soon — that's your invite. Please tell us what's blo",
-    "author": "Aleksei Gerasimov",
-    "reactions": "",
-    "channel": "#general"
-  },
-  {
-    "type": "officelife",
-    "emoji": "📢",
-    "accent": "#00FFD1",
-    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
-    "title": "From #general",
-    "headline": "Friendly reminder: Lunch &amp; Learn starts in 12 minutes! Today: AI Projects Sh...",
-    "quote": "Friendly reminder: Lunch &amp; Learn starts in 12 minutes! Today: AI Projects Showcase by the DA Team Join us to see practical AI solutions built by your colleagues and hear directly from the teams behind them. See you soon!",
-    "author": "Katarzyna Raniszewska",
-    "reactions": "",
-    "channel": "#general"
-  },
-  {
-    "type": "reading",
-    "emoji": "📚",
-    "accent": "#5D2CAC",
-    "gradient": "linear-gradient(135deg, #5D2CAC 0%, #A885E0 100%)",
-    "title": "What We're Reading",
-    "articles": [
-      {
-        "title": "Fox to acquire streaming company Roku for $22bn",
-        "sharedBy": "Viktor Trykolenko",
-        "desc": "Combined company will become third-largest in US television by share of viewing",
-        "reactions": ""
-      }
-    ],
-    "channel": "#to_read"
   },
   {
     "type": "officelife",
@@ -57,8 +52,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Miguel Perez received 20× from Dima M.",
-    "quote": "Miguel Perez received 20× from Dima M.",
+    "headline": "Yuri Ignatev received 10× from Dima M.",
+    "quote": "Yuri Ignatev received 10× from Dima M.",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -69,8 +64,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Alina Li received 25× from Konstantin Ilchenko",
-    "quote": "Alina Li received 25× from Konstantin Ilchenko",
+    "headline": "Miguel Perez received 20× from Dima M.",
+    "quote": "Miguel Perez received 20× from Dima M.",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
