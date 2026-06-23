@@ -5,23 +5,10 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "Maria Plendukova",
-    "date": "June 22",
+    "name": "* Irina Polishchuk",
+    "date": "June 23",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "With love, Your Appodeal Team 💜",
-    "avatar": "https://avatars.slack-edge.com/2025-06-09/9024600191330_9f138404da7499277e0f_192.png"
-  },
-  {
-    "type": "birthday",
-    "emoji": "🎂",
-    "accent": "#FFB72B",
-    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
-    "title": "Happy Birthday!",
-    "name": "Charlene Zheng",
-    "date": "June 22",
-    "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "With love, Your Appodeal Team 💜",
-    "avatar": "https://avatars.slack-edge.com/2026-01-05/10217023309463_3cc6a272e5f48770a300_192.png"
+    "teamNote": "* Gaming Creatives · * Ukraine"
   },
   {
     "type": "officelife",
@@ -29,9 +16,21 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "Hi ! Connect Groups Summer Season is in full swing! Looking for a way to connect...",
-    "quote": "Hi ! Connect Groups Summer Season is in full swing! Looking for a way to connect with colleagues, discover a new hobby, stay active, or simply have fun this summer? Our Connect Groups are open and waiting for you! Current active groups: Book Club – Lean Startup Mentality led by Book Club – Passionat",
-    "author": "Katarzyna Raniszewska",
+    "headline": "Hi everyone, Unfortunately, today was my last working day at the company. It has...",
+    "quote": "Hi everyone, Unfortunately, today was my last working day at the company. It has been quite a journey. Over the years, I had the chance to work with probably almost every department in the company. I was part of Appodeal, Chardone, and the Accelerator. I’m sorry I didn’t get a chance to work at BidM",
+    "author": "Kanstantsin Shuryhin",
+    "reactions": "",
+    "channel": "#general"
+  },
+  {
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "A warm farm Florida welcome to our executive team",
+    "quote": "A warm farm Florida welcome to our executive team",
+    "author": "Oxana Drake",
     "reactions": "",
     "channel": "#general"
   },
