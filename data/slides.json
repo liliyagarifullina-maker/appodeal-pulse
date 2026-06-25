@@ -1,16 +1,5 @@
 [
   {
-    "type": "birthday",
-    "emoji": "🎂",
-    "accent": "#FFB72B",
-    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
-    "title": "Happy Birthday!",
-    "name": "* Irina Polishchuk",
-    "date": "June 23",
-    "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* Gaming Creatives · * Ukraine"
-  },
-  {
     "type": "officelife",
     "emoji": "📢",
     "accent": "#00FFD1",
@@ -40,9 +29,9 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "Hi everyone Just a reminder that Wednesday, June 24th, is a public holiday in th...",
-    "quote": "Hi everyone Just a reminder that Wednesday, June 24th, is a public holiday in the Barcelona office due to Sant Joan (Midsummer Day). Please plan accordingly",
-    "author": "Emma Syniehubova",
+    "headline": "With all guns blazing ... we had an amazing time with our executive team at a sh...",
+    "quote": "With all guns blazing ... we had an amazing time with our executive team at a shooting range tonight",
+    "author": "Oxana Drake",
     "reactions": "",
     "channel": "#general"
   },
@@ -68,8 +57,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "George Tokarenko Dima M. ArtKip received 2× from Anna Timoshenko",
-    "quote": "George Tokarenko Dima M. ArtKip received 2× from Anna Timoshenko",
+    "headline": "Ildar Fatykhov received 20× from Samat",
+    "quote": "Ildar Fatykhov received 20× from Samat",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -80,8 +69,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Mikita Dzianisevich received 50× from Viktor Trykolenko",
-    "quote": "Mikita Dzianisevich received 50× from Viktor Trykolenko",
+    "headline": "George Tokarenko Dima M. ArtKip received 2× from Anna Timoshenko",
+    "quote": "George Tokarenko Dima M. ArtKip received 2× from Anna Timoshenko",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
