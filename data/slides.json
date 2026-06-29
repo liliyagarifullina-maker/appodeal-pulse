@@ -5,10 +5,21 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "* Mark Fruehan",
-    "date": "June 26",
+    "name": "* Stanislav Zakharov",
+    "date": "June 28",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* BidMachine Business · * United States"
+    "teamNote": "* Gaming Creatives · * Serbia"
+  },
+  {
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "* Rachel Lu Rachel Lu",
+    "date": "June 28",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "* Holding: Sales · * China"
   },
   {
     "type": "officelife",
@@ -16,51 +27,11 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "With all guns blazing ... we had an amazing time with our executive team at a sh...",
-    "quote": "With all guns blazing ... we had an amazing time with our executive team at a shooting range tonight",
-    "author": "Oxana Drake",
+    "headline": "A note on how we work — and a standard I want us to hold as we become an AI-nati...",
+    "quote": "A note on how we work — and a standard I want us to hold as we become an AI-native company. Our entire AI strategy rests on one shared, queryable intelligence layer: a single place where our people and our agents can ask “what do we know about X, and why did we decide it?” and get a grounded, cited ",
+    "author": "Pavel Golubev",
     "reactions": "",
     "channel": "#general"
-  },
-  {
-    "type": "officelife",
-    "emoji": "📢",
-    "accent": "#00FFD1",
-    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
-    "title": "From #general",
-    "headline": "Our first day of owning 19 hens and 2 roosters It's official: we've got an Appod...",
-    "quote": "Our first day of owning 19 hens and 2 roosters It's official: we've got an Appodeal chicken coop. Chickens scorecard includes a minimum of 16 eggs a day Cluck-cluck",
-    "author": "Oxana Drake",
-    "reactions": "",
-    "channel": "#general"
-  },
-  {
-    "type": "officelife",
-    "emoji": "📢",
-    "accent": "#00FFD1",
-    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
-    "title": "From #general",
-    "headline": "A personal ask from Kasia 41% of you have already responded to the Monthly Devel...",
-    "quote": "A personal ask from Kasia 41% of you have already responded to the Monthly Development Pulse — thank you, genuinely But I need to be honest: I need 70% to make this signal meaningful. Below that, the data doesn't tell me anything useful about what's actually happening with development conversations ",
-    "author": "Katarzyna Raniszewska",
-    "reactions": "",
-    "channel": "#general"
-  },
-  {
-    "type": "reading",
-    "emoji": "📚",
-    "accent": "#5D2CAC",
-    "gradient": "linear-gradient(135deg, #5D2CAC 0%, #A885E0 100%)",
-    "title": "What We're Reading",
-    "articles": [
-      {
-        "title": "AppLovin Ads is now open to all advertisers AppLovin | Blog",
-        "sharedBy": "Michele di Mauro",
-        "desc": "AppLovin Ads, formerly Axon, is now open to all advertisers. One company, one brand built to drive real performance for any business ready to grow.",
-        "reactions": ""
-      }
-    ],
-    "channel": "#to_read"
   },
   {
     "type": "officelife",
@@ -68,8 +39,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Emil Sharafiev Siddharth Sahani anton.nikifarau received 15× from Maksym Fedorov",
-    "quote": "Emil Sharafiev Siddharth Sahani anton.nikifarau received 15× from Maksym Fedorov",
+    "headline": "Iurii Kotov Dima M. received 10× from Isahakyan",
+    "quote": "Iurii Kotov Dima M. received 10× from Isahakyan",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -80,8 +51,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Ildar Fatykhov received 20× from Samat",
-    "quote": "Ildar Fatykhov received 20× from Samat",
+    "headline": "Iurii Kotov received 30× from Dima M.",
+    "quote": "Iurii Kotov received 30× from Dima M.",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
