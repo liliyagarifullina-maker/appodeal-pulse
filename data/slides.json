@@ -5,10 +5,11 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "* Stanislav Kochkin",
-    "date": "July 01",
+    "name": "Stas Kochkin",
+    "date": "July 03",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* Exchange Engineering · * Poland"
+    "teamNote": "With love, Your Appodeal Team 💜",
+    "avatar": "https://avatars.slack-edge.com/2018-08-21/420557434373_d872bb5c9131dc064929_192.jpg"
   },
   {
     "type": "officelife",
@@ -40,9 +41,9 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "Hi everyone! Today, everyone received a notification from Rippling asking you to...",
-    "quote": "Hi everyone! Today, everyone received a notification from Rippling asking you to register your work device. If you've already completed this step, there's nothing else you need to do. If not, please take a couple of minutes to register your laptop/device in Rippling. We're doing this so we have an u",
-    "author": "Yury Huz",
+    "headline": "A reminder that Friday, July 3rd is Independence Day — a federal holiday observe...",
+    "quote": "A reminder that Friday, July 3rd is Independence Day — a federal holiday observed by our US team. Please plan accordingly.",
+    "author": "Oxana Drake",
     "reactions": "",
     "channel": "#general"
   },
@@ -52,8 +53,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Mykhailo Kukharskyi received 50× from Dima",
-    "quote": "Mykhailo Kukharskyi received 50× from Dima",
+    "headline": "Viktor Trykolenko received 1× from Isahakyan",
+    "quote": "Viktor Trykolenko received 1× from Isahakyan",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -64,8 +65,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Kasia received 15× from Oleksandr Pelykh",
-    "quote": "Kasia received 15× from Oleksandr Pelykh",
+    "headline": "Dima M. Iurii Kotov Roman Rinchinov Miguel Perez Iaroslav Zhuravlev Tatiana Rokh...",
+    "quote": "Dima M. Iurii Kotov Roman Rinchinov Miguel Perez Iaroslav Zhuravlev Tatiana Rokhlova received 4× from Isahakyan",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
