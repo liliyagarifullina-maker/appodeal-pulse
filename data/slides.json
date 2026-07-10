@@ -5,10 +5,10 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "* Lise Brandely",
-    "date": "July 08",
+    "name": "* Berta Moreno",
+    "date": "July 10",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* Holding: HR · * Spain"
+    "teamNote": "* BidMachine Business · * Spain"
   },
   {
     "type": "officelife",
@@ -16,9 +16,9 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "Hi team and Happy Monday! Let's take a moment to welcome our new Director of Eng...",
-    "quote": "Hi team and Happy Monday! Let's take a moment to welcome our new Director of Engineering, UA DSP (MGP team) - *, who's joining us today! Joel is a software engineering leader with over 15 years of experience across b2b and b2c businesses, building high-functioning engineering teams that deliver on t",
-    "author": "Irina Koval",
+    "headline": "Hi team, Thank you all for joining our All Hands meeting today, and thanks for t...",
+    "quote": "Hi team, Thank you all for joining our All Hands meeting today, and thanks for the great questions and discussion. Here are the materials from the meeting: • Presentation: link Also, a reminder that our Engagement survey is available in Leapsome. Please take a few minutes to complete it - your feedb",
+    "author": "Alexandr Zhitlukhin",
     "reactions": "",
     "channel": "#general"
   },
@@ -28,9 +28,9 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "[HIGH] Hello <!subteam^S05ARPM4MC0> team, Google Play payments are currently on ...",
-    "quote": "[HIGH] Hello <!subteam^S05ARPM4MC0> team, Google Play payments are currently on hold for the Appodeal Inc. account. Google requires proof of the relationship between the account holder (, VP Finance) and Appodeal (Ads on mail). Could someone please provide an authorization or employment letter for D",
-    "author": "Eduard Malkhasyan",
+    "headline": "Performance Assessment Reminder Hi everyone! Just a quick reminder that our Perf...",
+    "quote": "Performance Assessment Reminder Hi everyone! Just a quick reminder that our Performance Assessment is currently in progress. At the moment, we're at: • 33% completion for Self Assessments • 24% completion for Manager Assessments Your participation is important - not only to support meaningful feedba",
+    "author": "Katarzyna Raniszewska",
     "reactions": "",
     "channel": "#general"
   },
@@ -40,8 +40,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Sasha Sakovich tanya moroz Armaan Pandher Roman Loboda received 12× from Gleb Kr...",
-    "quote": "Sasha Sakovich tanya moroz Armaan Pandher Roman Loboda received 12× from Gleb Krahotkin",
+    "headline": "Tanya Kuznetsova received 25× from Ira",
+    "quote": "Tanya Kuznetsova received 25× from Ira",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -52,8 +52,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "andrii.i received 20× from Konstantin Ilchenko",
-    "quote": "andrii.i received 20× from Konstantin Ilchenko",
+    "headline": "yurii.ivanovskyi received 25× from Ira",
+    "quote": "yurii.ivanovskyi received 25× from Ira",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
