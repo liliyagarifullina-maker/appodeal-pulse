@@ -5,10 +5,11 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "* Nikolay Rozanov",
-    "date": "July 20",
+    "name": "Gleb Krahotkin",
+    "date": "July 22",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* UA: Engineering · * Georgia"
+    "teamNote": "With love, Your Appodeal Team 💜",
+    "avatar": "https://avatars.slack-edge.com/2022-10-23/4275527051089_402b8b44f748e977a230_192.png"
   },
   {
     "type": "birthday",
@@ -16,21 +17,11 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "* Gleb Krahotkin",
-    "date": "July 20",
+    "name": "Andrea Aloisi",
+    "date": "July 22",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* Holding: IT · * Poland"
-  },
-  {
-    "type": "birthday",
-    "emoji": "🎂",
-    "accent": "#FFB72B",
-    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
-    "title": "Happy Birthday!",
-    "name": "* Andrea Aloisi",
-    "date": "July 20",
-    "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* MGP: Data Analytics · * Spain"
+    "teamNote": "With love, Your Appodeal Team 💜",
+    "avatar": "https://avatars.slack-edge.com/2024-12-02/8095769866039_f1a67941d259848e78d2_192.jpg"
   },
   {
     "type": "officelife",
@@ -62,8 +53,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Sasha Sakovich received 50× from Alex Kozhura",
-    "quote": "Sasha Sakovich received 50× from Alex Kozhura",
+    "headline": "Anastasia Sokolova Alexandr Babich Alex Kozhura Sasha Sakovich Alexander Ivanov ...",
+    "quote": "Anastasia Sokolova Alexandr Babich Alex Kozhura Sasha Sakovich Alexander Ivanov received 10× from Sasha",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -74,8 +65,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Ana Abuseridze received 25× from Viktar Plesko",
-    "quote": "Ana Abuseridze received 25× from Viktar Plesko",
+    "headline": "Pavlo received 20× from anna.kaliada",
+    "quote": "Pavlo received 20× from anna.kaliada",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
