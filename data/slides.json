@@ -1,5 +1,16 @@
 [
   {
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "* Jade Graves",
+    "date": "July 29",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "* Holding Sales · * United States"
+  },
+  {
     "type": "officelife",
     "emoji": "📢",
     "accent": "#00FFD1",
@@ -17,8 +28,20 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Artem Babenok received 20× from Aleksandr Drozdov",
-    "quote": "Artem Babenok received 20× from Aleksandr Drozdov",
+    "headline": "Irina Zelenskaya received 5× from Isahakyan",
+    "quote": "Irina Zelenskaya received 5× from Isahakyan",
+    "author": "Clappy",
+    "reactions": "",
+    "channel": "#claps"
+  },
+  {
+    "type": "officelife",
+    "emoji": "👏",
+    "accent": "#5D2CAC",
+    "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
+    "title": "From #claps",
+    "headline": "Mykhailo Kukharskyi received 25× from Alex Maljkovic",
+    "quote": "Mykhailo Kukharskyi received 25× from Alex Maljkovic",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
