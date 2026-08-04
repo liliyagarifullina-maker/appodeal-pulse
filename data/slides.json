@@ -5,10 +5,10 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "* Iurii Melsitov",
-    "date": "August 02",
+    "name": "* Gleb Eliseev",
+    "date": "August 04",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* Gaming Monetization · * Poland"
+    "teamNote": "* UA: Engineering · * Armenia"
   },
   {
     "type": "officelife",
@@ -16,9 +16,21 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "Hi team, Some time ago we made the decision to become an AI native company and t...",
-    "quote": "Hi team, Some time ago we made the decision to become an AI native company and that journey continues. One way we track our progress is the Culture Health Rate, which you can find on Appodeal Life. This number reflects how we think the company should operate, and it evolves with us. Our COO - Krista",
-    "author": "Peter Van Kersen",
+    "headline": "Hi team and Happy Monday! Let's take a moment to welcome our new Head of Global ...",
+    "quote": "Hi team and Happy Monday! Let's take a moment to welcome our new Head of Global Account Management, Supply - , who's joining us today! Camille is a supply and mobile monetization leader with 12+ years of experience in AdTech, spanning app &amp; gaming monetization, programmatic advertising, publishe",
+    "author": "Irina Koval",
+    "reactions": "",
+    "channel": "#general"
+  },
+  {
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "All - A quick shout-out to the APAC team ( ) for planning and executing an outst...",
+    "quote": "All - A quick shout-out to the APAC team ( ) for planning and executing an outstanding ChinaJoy 2026 and the design team for the new design ( ). The attention to detail was exceptional, creating a superior experience for our customers and ensuring everything ran seamlessly for the visiting team ( , ",
+    "author": "Paul Childs",
     "reactions": "",
     "channel": "#general"
   },
@@ -28,8 +40,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Iurii Kotov Dima M. received 13× from Anna Timoshenko",
-    "quote": "Iurii Kotov Dima M. received 13× from Anna Timoshenko",
+    "headline": "Anastasia Radek received 25× from Ryan Christopher",
+    "quote": "Anastasia Radek received 25× from Ryan Christopher",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -40,8 +52,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Dima M. Artur Abizgeldin Herman Ignatovich received 8× from Anna Timoshenko",
-    "quote": "Dima M. Artur Abizgeldin Herman Ignatovich received 8× from Anna Timoshenko",
+    "headline": "Iurii Kotov Dima M. received 13× from Anna Timoshenko",
+    "quote": "Iurii Kotov Dima M. received 13× from Anna Timoshenko",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
