@@ -5,21 +5,10 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "* Srikanth Reddy Peru",
-    "date": "August 09",
+    "name": "* Artem Pchelintsev",
+    "date": "August 10",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* Gaming Product · * Spain"
-  },
-  {
-    "type": "birthday",
-    "emoji": "🎂",
-    "accent": "#FFB72B",
-    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
-    "title": "Happy Birthday!",
-    "name": "* Roman Shakhanov",
-    "date": "August 09",
-    "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* Gaming Monetization · * Poland"
+    "teamNote": "* MGP: Product · * Spain"
   },
   {
     "type": "officelife",
@@ -27,21 +16,9 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "Hi and happy August everyone! We hope you're enjoying the summer, whether you're...",
-    "quote": "Hi and happy August everyone! We hope you're enjoying the summer, whether you're relaxing on vacation or making the most of the sunny days. Before we dive into everything August has to offer, let's take a quick look back at July and catch up on the latest HR news and highlights July Newcomers Let’s ",
-    "author": "Katarzyna Raniszewska",
-    "reactions": "",
-    "channel": "#general"
-  },
-  {
-    "type": "officelife",
-    "emoji": "📢",
-    "accent": "#00FFD1",
-    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
-    "title": "From #general",
-    "headline": "Meeting Discipline: the new formula, and why Hey team Why We spend a huge share ...",
-    "quote": "Meeting Discipline: the new formula, and why Hey team Why We spend a huge share of our time in meetings, with almost no visibility into whether that time is well spent. This formula is intentionally simple: it's meant to baseline where we are right now, and make sure the basics of meeting etiquette ",
-    "author": "Kristapor Raffi Giragosian",
+    "headline": "Small milestone worth celebrating: BidMachine just hit 2K followers on LinkedIn ...",
+    "quote": "Small milestone worth celebrating: BidMachine just hit 2K followers on LinkedIn We’re up 18% over the last 30 days, all organic. If you’re not following us yet, come join us and feel free to invite your network too. Next stop: 200K",
+    "author": "Anastasia Radek",
     "reactions": "",
     "channel": "#general"
   },
@@ -53,6 +30,12 @@
     "title": "What We're Reading",
     "articles": [
       {
+        "title": "The Future is for Everyone",
+        "sharedBy": "Kristapor Raffi Giragosian",
+        "desc": "Read Mark Zuckerberg’s piece on our values for building superintelligence for everyone.",
+        "reactions": ""
+      },
+      {
         "title": "Nielsen Is Acquiring DoubleVerify For $2.15 Billion | AdExchanger",
         "sharedBy": "Viktor Trykolenko",
         "desc": "Nielsen has entered into a definitive agreement to acquire DoubleVerify in an all cash transaction valued at approximately $2.15 billion.",
@@ -60,29 +43,5 @@
       }
     ],
     "channel": "#to_read"
-  },
-  {
-    "type": "officelife",
-    "emoji": "👏",
-    "accent": "#5D2CAC",
-    "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
-    "title": "From #claps",
-    "headline": "Felipe Bereilh Vera Nikalaikina received 10× from ArtKip",
-    "quote": "Felipe Bereilh Vera Nikalaikina received 10× from ArtKip",
-    "author": "Clappy",
-    "reactions": "",
-    "channel": "#claps"
-  },
-  {
-    "type": "officelife",
-    "emoji": "👏",
-    "accent": "#5D2CAC",
-    "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
-    "title": "From #claps",
-    "headline": "Stepan Pletnev received 15× from Danila Matveev",
-    "quote": "Stepan Pletnev received 15× from Danila Matveev",
-    "author": "Clappy",
-    "reactions": "",
-    "channel": "#claps"
   }
 ]
