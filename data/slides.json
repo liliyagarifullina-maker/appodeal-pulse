@@ -5,10 +5,35 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "* Artem Pchelintsev",
-    "date": "August 10",
+    "name": "Artem Pchelintsev",
+    "date": "August 12",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* MGP: Product · * Spain"
+    "teamNote": "With love, Your Appodeal Team 💜",
+    "avatar": "https://avatars.slack-edge.com/2025-01-20/8322538035764_8f5363441c10bcf549ad_192.png"
+  },
+  {
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Srikanth Reddy",
+    "date": "August 12",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "With love, Your Appodeal Team 💜",
+    "avatar": "https://avatars.slack-edge.com/2025-08-28/9426783755618_d53e011a0b5ecb3561c4_192.png"
+  },
+  {
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "Roman Shakhanov",
+    "date": "August 12",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "With love, Your Appodeal Team 💜",
+    "avatar": "https://avatars.slack-edge.com/2021-11-22/2766374110513_06d21eb55b34d8a3ad89_192.jpg"
   },
   {
     "type": "officelife",
@@ -19,6 +44,18 @@
     "headline": "Small milestone worth celebrating: BidMachine just hit 2K followers on LinkedIn ...",
     "quote": "Small milestone worth celebrating: BidMachine just hit 2K followers on LinkedIn We’re up 18% over the last 30 days, all organic. If you’re not following us yet, come join us and feel free to invite your network too. Next stop: 200K",
     "author": "Anastasia Radek",
+    "reactions": "",
+    "channel": "#general"
+  },
+  {
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "Hi ! The results of our Q2 Engagement &amp; Strategy Alignment survey are ready!...",
+    "quote": "Hi ! The results of our Q2 Engagement &amp; Strategy Alignment survey are ready! A big thank you to everyone who took the time to share your feedback Your input helps us understand not only where we’re doing well, but also where we should focus next. In the presentation, you’ll find: What we’ve done",
+    "author": "Katarzyna Raniszewska",
     "reactions": "",
     "channel": "#general"
   },
@@ -34,14 +71,32 @@
         "sharedBy": "Kristapor Raffi Giragosian",
         "desc": "Read Mark Zuckerberg’s piece on our values for building superintelligence for everyone.",
         "reactions": ""
-      },
-      {
-        "title": "Nielsen Is Acquiring DoubleVerify For $2.15 Billion | AdExchanger",
-        "sharedBy": "Viktor Trykolenko",
-        "desc": "Nielsen has entered into a definitive agreement to acquire DoubleVerify in an all cash transaction valued at approximately $2.15 billion.",
-        "reactions": ""
       }
     ],
     "channel": "#to_read"
+  },
+  {
+    "type": "officelife",
+    "emoji": "👏",
+    "accent": "#5D2CAC",
+    "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
+    "title": "From #claps",
+    "headline": "Anna Timoshenko received 20× from Iurii Kotov",
+    "quote": "Anna Timoshenko received 20× from Iurii Kotov",
+    "author": "Clappy",
+    "reactions": "",
+    "channel": "#claps"
+  },
+  {
+    "type": "officelife",
+    "emoji": "👏",
+    "accent": "#5D2CAC",
+    "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
+    "title": "From #claps",
+    "headline": "Olga Petriakova Daryna Rudavka Diliara Kurtmimetova Irina Koval Yanina Lozben re...",
+    "quote": "Olga Petriakova Daryna Rudavka Diliara Kurtmimetova Irina Koval Yanina Lozben received 10× from Peter Van Kersen",
+    "author": "Clappy",
+    "reactions": "",
+    "channel": "#claps"
   }
 ]
