@@ -5,35 +5,10 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "Artem Pchelintsev",
+    "name": "* Dario Hernandez Gómez",
     "date": "August 12",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "With love, Your Appodeal Team 💜",
-    "avatar": "https://avatars.slack-edge.com/2025-01-20/8322538035764_8f5363441c10bcf549ad_192.png"
-  },
-  {
-    "type": "birthday",
-    "emoji": "🎂",
-    "accent": "#FFB72B",
-    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
-    "title": "Happy Birthday!",
-    "name": "Srikanth Reddy",
-    "date": "August 12",
-    "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "With love, Your Appodeal Team 💜",
-    "avatar": "https://avatars.slack-edge.com/2025-08-28/9426783755618_d53e011a0b5ecb3561c4_192.png"
-  },
-  {
-    "type": "birthday",
-    "emoji": "🎂",
-    "accent": "#FFB72B",
-    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
-    "title": "Happy Birthday!",
-    "name": "Roman Shakhanov",
-    "date": "August 12",
-    "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "With love, Your Appodeal Team 💜",
-    "avatar": "https://avatars.slack-edge.com/2021-11-22/2766374110513_06d21eb55b34d8a3ad89_192.jpg"
+    "teamNote": "* Gaming Data &amp; Automation · * Spain"
   },
   {
     "type": "officelife",
@@ -60,6 +35,18 @@
     "channel": "#general"
   },
   {
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "Hi! A quick update to the Q2 Engagement &amp; Strategy Alignment survey results ...",
+    "quote": "Hi! A quick update to the Q2 Engagement &amp; Strategy Alignment survey results Following the request for more transparent insights, we've updated the presentation shared yesterday to include more detail behind the results and give a clearer view of the feedback we received Updated Q2 Engagement &am",
+    "author": "Katarzyna Raniszewska",
+    "reactions": "",
+    "channel": "#general"
+  },
+  {
     "type": "reading",
     "emoji": "📚",
     "accent": "#5D2CAC",
@@ -81,8 +68,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Anna Timoshenko received 20× from Iurii Kotov",
-    "quote": "Anna Timoshenko received 20× from Iurii Kotov",
+    "headline": "Alexey Akulshin received 30× from Viktor Trykolenko",
+    "quote": "Alexey Akulshin received 30× from Viktor Trykolenko",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -93,8 +80,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Olga Petriakova Daryna Rudavka Diliara Kurtmimetova Irina Koval Yanina Lozben re...",
-    "quote": "Olga Petriakova Daryna Rudavka Diliara Kurtmimetova Irina Koval Yanina Lozben received 10× from Peter Van Kersen",
+    "headline": "andrii.i received 25× from Kirill Khramkov",
+    "quote": "andrii.i received 25× from Kirill Khramkov",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
