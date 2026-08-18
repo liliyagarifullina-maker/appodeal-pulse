@@ -5,33 +5,10 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "* Diliara Kurtmimetova",
-    "date": "August 16",
+    "name": "* Iurii Kotov",
+    "date": "August 17",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* Holding: HR · * Ukraine"
-  },
-  {
-    "type": "birthday",
-    "emoji": "🎂",
-    "accent": "#FFB72B",
-    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
-    "title": "Happy Birthday!",
-    "name": "* Juan Sabater",
-    "date": "August 16",
-    "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* Gaming Engineering · * Spain"
-  },
-  {
-    "type": "officelife",
-    "emoji": "📢",
-    "accent": "#00FFD1",
-    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
-    "title": "From #general",
-    "headline": "Team, a small housekeeping note. Over the past weeks I kept running into differe...",
-    "quote": "Team, a small housekeeping note. Over the past weeks I kept running into different versions of our Core Values and Leadership Principles. Older copies living in different spaces, each slightly out of date. I've cleaned this up. The two pages below are now the single source of truth, updated to the l",
-    "author": "Peter Van Kersen",
-    "reactions": "",
-    "channel": "#general"
+    "teamNote": "* MGP: Data Engineering · * Spain"
   },
   {
     "type": "officelife",
@@ -39,8 +16,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "anton.nikifarau received 25× from Nikolai Rozanov",
-    "quote": "anton.nikifarau received 25× from Nikolai Rozanov",
+    "headline": "Vasyl Plesiuk received 20× from Roman Rinchinov",
+    "quote": "Vasyl Plesiuk received 20× from Roman Rinchinov",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -51,8 +28,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Joel Schweitzer received 25× from Nikolai Rozanov",
-    "quote": "Joel Schweitzer received 25× from Nikolai Rozanov",
+    "headline": "anton.nikifarau received 25× from Nikolai Rozanov",
+    "quote": "anton.nikifarau received 25× from Nikolai Rozanov",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
