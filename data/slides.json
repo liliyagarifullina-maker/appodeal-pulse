@@ -5,10 +5,46 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "* Iurii Kotov",
-    "date": "August 17",
+    "name": "* Michelle Walter",
+    "date": "August 18",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* MGP: Data Engineering · * Spain"
+    "teamNote": "* Holding: Finance · * United States"
+  },
+  {
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "Hi all, big one for Bidmachine: we just published 's take on why an SDK-first se...",
+    "quote": "Hi all, big one for Bidmachine: we just published 's take on why an SDK-first setup and ML are central to ad tech. This market POV is worth reading and sharing!",
+    "author": "Anastasia Radek",
+    "reactions": "",
+    "channel": "#general"
+  },
+  {
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "Transition to Individual Subscriptions",
+    "quote": "Transition to Individual Subscriptions",
+    "author": "Mariia Moskvina",
+    "reactions": "",
+    "channel": "#general"
+  },
+  {
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "https://appodeal.slack.com/archives/C0BBWHBLBNY/p1787062293934359",
+    "quote": "https://appodeal.slack.com/archives/C0BBWHBLBNY/p1787062293934359",
+    "author": "Gleb Krahotkin",
+    "reactions": "",
+    "channel": "#general"
   },
   {
     "type": "officelife",
@@ -16,8 +52,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Vasyl Plesiuk received 20× from Roman Rinchinov",
-    "quote": "Vasyl Plesiuk received 20× from Roman Rinchinov",
+    "headline": "Eren Sakarya received 20× from Zhexuan Qiu",
+    "quote": "Eren Sakarya received 20× from Zhexuan Qiu",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -28,8 +64,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "anton.nikifarau received 25× from Nikolai Rozanov",
-    "quote": "anton.nikifarau received 25× from Nikolai Rozanov",
+    "headline": "alexander.ignatov received 25× from Konstantin Elizarov",
+    "quote": "alexander.ignatov received 25× from Konstantin Elizarov",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
