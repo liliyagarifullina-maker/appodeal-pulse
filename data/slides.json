@@ -5,10 +5,11 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "* Liliya Garifullina",
-    "date": "August 19",
+    "name": "Liliya Garifullina",
+    "date": "August 21",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* Executive Team · * United States"
+    "teamNote": "With love, Your Appodeal Team 💜",
+    "avatar": "https://avatars.slack-edge.com/2024-08-21/7609260323715_cfa000a90924fc6bc9e6_192.jpg"
   },
   {
     "type": "officelife",
@@ -52,8 +53,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Eren Sakarya received 20× from Zhexuan Qiu",
-    "quote": "Eren Sakarya received 20× from Zhexuan Qiu",
+    "headline": "Maria Plendukova received 20× from Viktor Trykolenko",
+    "quote": "Maria Plendukova received 20× from Viktor Trykolenko",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -64,8 +65,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "alexander.ignatov received 25× from Konstantin Elizarov",
-    "quote": "alexander.ignatov received 25× from Konstantin Elizarov",
+    "headline": "Samat received 20× from Zhexuan Qiu",
+    "quote": "Samat received 20× from Zhexuan Qiu",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
