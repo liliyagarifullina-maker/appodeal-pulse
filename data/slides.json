@@ -5,45 +5,10 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "* Mo Murphy",
-    "date": "August 25",
+    "name": "* Iurii Ignatev",
+    "date": "August 27",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* Holding: Marketing A&amp;F · * United Kingdom"
-  },
-  {
-    "type": "birthday",
-    "emoji": "🎂",
-    "accent": "#FFB72B",
-    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
-    "title": "Happy Birthday!",
-    "name": "* Alberto Nutricati",
-    "date": "August 25",
-    "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* BidMachine C-Level · * Spain"
-  },
-  {
-    "type": "officelife",
-    "emoji": "📢",
-    "accent": "#00FFD1",
-    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
-    "title": "From #general",
-    "headline": "Dear team , As many of you are aware, we’re upgrading to Slack’s Enterprise Grid...",
-    "quote": "Dear team , As many of you are aware, we’re upgrading to Slack’s Enterprise Grid. This will bring us enhanced collaboration, stronger governance controls, multi workspaces, etc. Our migration is scheduled for the weekend of on Saturday, August 29, at 2:00 AM UTC, with an estimated 4 hours of Slack d",
-    "author": "Yurii Ivanovskyi",
-    "reactions": "",
-    "channel": "#general"
-  },
-  {
-    "type": "officelife",
-    "emoji": "📢",
-    "accent": "#00FFD1",
-    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
-    "title": "From #general",
-    "headline": "What kind of company are we trying to be? Let's answer it out loud. Starting Sep...",
-    "quote": "What kind of company are we trying to be? Let's answer it out loud. Starting September 4, we're launching People Standards Environment — 16 weekly sessions where we'll explore how some of the world's most distinctive tech companies built the environments they operate in, and what we can learn from t",
-    "author": "Mykhailo Kukharskyi",
-    "reactions": "",
-    "channel": "#general"
+    "teamNote": "* Exchange Engineering · * Thailand"
   },
   {
     "type": "officelife",
@@ -54,6 +19,30 @@
     "headline": "Heads up on a change to how Culture Health Rate is calculated. It went live yest...",
     "quote": "Heads up on a change to how Culture Health Rate is calculated. It went live yesterday, so you'll see it next time you log into Appodeal Life. What changed Inside CHR, the OKR Health Rate portion now also looks at whether your active KRs sit on a scorecard. If a KR is active in an OKR and is not list",
     "author": "Peter Van Kersen",
+    "reactions": "",
+    "channel": "#general"
+  },
+  {
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "SDK 3.8 is live, and as the team puts it, every publisher should update to this ...",
+    "quote": "SDK 3.8 is live, and as the team puts it, every publisher should update to this version It gives an edge going into the Q4 peak season: user-friendly ad formats, improved deep linking to bring in more eCommerce demand and expanded telemetry to help catch issues before they hit revenue. Let’s get it ",
+    "author": "Anastasia Radek",
+    "reactions": "",
+    "channel": "#general"
+  },
+  {
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "don't miss the session with Jessica Neal, ex Chief Talent Officer at Netflix. De...",
+    "quote": "don't miss the session with Jessica Neal, ex Chief Talent Officer at Netflix. Details in the message below. Drop your questions for Jessica in the thread of the original post",
+    "author": "Mykhailo Kukharskyi",
     "reactions": "",
     "channel": "#general"
   },
