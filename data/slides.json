@@ -5,10 +5,21 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "* Iurii Ignatev",
-    "date": "August 27",
+    "name": "* Artur Kipel",
+    "date": "August 31",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* Exchange Engineering · * Thailand"
+    "teamNote": "* MGP: Data Science · * Spain"
+  },
+  {
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "* Iaroslav Zhuravlev",
+    "date": "August 31",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "* MGP: Data Engineering · * Spain"
   },
   {
     "type": "officelife",
@@ -16,9 +27,9 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "I read the thread. On the rollout, the feedback is fair. On the substance, the d...",
-    "quote": "I read the thread. On the rollout, the feedback is fair. On the substance, the direction is as old as our culture code: T-shaped, hands-on, build product — not service. The operating rules were signed by every executive in January and posted here on Jan 19 — one owner per outcome, scorecards, daily ",
-    "author": "Pavel Golubev",
+    "headline": "Dear team , We’ve successfully completed our upgrade to Slack Enterprise Grid , ...",
+    "quote": "Dear team , We’ve successfully completed our upgrade to Slack Enterprise Grid , and our workspace is now live in the new environment. You can now start logging in! Some workflows may require rebuilding or reconfiguration, and certain apps may need to be reauthenticated after the migration. Attached ",
+    "author": "Yurii Ivanovskyi",
     "reactions": "",
     "channel": "#general"
   },
@@ -40,9 +51,9 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "don't miss the session with Jessica Neal, ex Chief Talent Officer at Netflix. De...",
-    "quote": "don't miss the session with Jessica Neal, ex Chief Talent Officer at Netflix. Details in the message below. Drop your questions for Jessica in the thread of the original post",
-    "author": "Mykhailo Kukharskyi",
+    "headline": "@here Reminder share buyback closes on Monday. Please get your request in if you...",
+    "quote": "@here Reminder share buyback closes on Monday. Please get your request in if you want to participate.",
+    "author": "David Dyer",
     "reactions": "",
     "channel": "#general"
   },
@@ -52,8 +63,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Dzmitry Baran received 10× from Mikita Dzianisevich",
-    "quote": "Dzmitry Baran received 10× from Mikita Dzianisevich",
+    "headline": "Herman Ignatovich received 10× from Alina Li",
+    "quote": "Herman Ignatovich received 10× from Alina Li",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -64,8 +75,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Maksym Hrach Ivan Doroshenko Sergei Smirnov Kirill Kazimirchik received 10× from...",
-    "quote": "Maksym Hrach Ivan Doroshenko Sergei Smirnov Kirill Kazimirchik received 10× from Mikita Dzianisevich",
+    "headline": "Samat received 20× from Alina Li",
+    "quote": "Samat received 20× from Alina Li",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
