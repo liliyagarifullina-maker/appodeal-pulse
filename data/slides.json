@@ -5,10 +5,11 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "* Ivan Doroshenko",
-    "date": "September 09",
+    "name": "Ivan Doroshenko",
+    "date": "September 11",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* Exchange Engineering · * Netherlands"
+    "teamNote": "With love, Your Appodeal Team 💜",
+    "avatar": "https://avatars.slack-edge.com/2024-10-30/7959352401347_381d8fe46d89399a2900_192.jpg"
   },
   {
     "type": "officelife",
@@ -16,9 +17,9 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "Hi everyone Friday, September 11th is a public holiday in the Barcelona office. ...",
-    "quote": "Hi everyone Friday, September 11th is a public holiday in the Barcelona office. Please plan accordingly",
-    "author": "Emma Syniehubova",
+    "headline": "Happy International Programmers’ Day! Today we’re celebrating the people who mak...",
+    "quote": "Happy International Programmers’ Day! Today we’re celebrating the people who make technology happen — one commit, experiment, fix, and occasionally mysterious bug at a time. A huge shout-out to all the brilliant programmers across Appodeal! Thank you for building and improving our products, tackling",
+    "author": "Olga Petriakova",
     "reactions": "",
     "channel": "#general"
   },
@@ -58,12 +59,6 @@
         "sharedBy": "Dan Owens",
         "desc": "The Mobile Ad Monetization Newsletter #65 Mobile marketing gossip over the last year has been gravitating toward Unity’s Vector rollout, AppLovin’s e-",
         "reactions": ""
-      },
-      {
-        "title": "Ad Monetization Newsletter: Surprising Ad Monetization Tests Results",
-        "sharedBy": "Alexey Cherniaev",
-        "desc": "In this month’s newsletter, we compiled a few examples of ad monetization tests on mediation and networks.",
-        "reactions": ""
       }
     ],
     "channel": "#to_read"
@@ -74,8 +69,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Alberto received 1× from Sergey Orlov",
-    "quote": "Alberto received 1× from Sergey Orlov",
+    "headline": "Vladislav Nikolaev received 25× from Mikita Dzianisevich",
+    "quote": "Vladislav Nikolaev received 25× from Mikita Dzianisevich",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -86,8 +81,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Sasha Sakovich Sasha Alexander Ivanov Dario Hernandez Nikita Mishustin Roman de ...",
-    "quote": "Sasha Sakovich Sasha Alexander Ivanov Dario Hernandez Nikita Mishustin Roman de las Heras received 4× from Sergey Orlov",
+    "headline": "Ivan Litvinau received 25× from Mikita Dzianisevich",
+    "quote": "Ivan Litvinau received 25× from Mikita Dzianisevich",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
