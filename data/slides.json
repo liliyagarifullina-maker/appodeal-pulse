@@ -5,11 +5,22 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "Ivan Doroshenko",
-    "date": "September 11",
+    "name": "* Michael Lotfy",
+    "date": "September 13",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "With love, Your Appodeal Team 💜",
-    "avatar": "https://avatars.slack-edge.com/2024-10-30/7959352401347_381d8fe46d89399a2900_192.jpg"
+    "teamNote": "* UA: RevOps · * United States"
+  },
+  {
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "Hey everyone The Warsaw office is celebrating Programmer's Day today and we want...",
+    "quote": "Hey everyone The Warsaw office is celebrating Programmer's Day today and we wanted to share it with all of you as well! We kicked off the morning with a custom cake (spoiler: there's almost none left, hehe ) But the real highlight is the Duck Challenge : 100 micro ducks were hidden all around the of",
+    "author": "Iryna Peretiatko",
+    "reactions": "",
+    "channel": "#general"
   },
   {
     "type": "officelife",
@@ -29,39 +40,11 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "Hi Team, quick reminder that our policies and how-to pages live in the Administr...",
-    "quote": "Hi Team, quick reminder that our policies and how-to pages live in the Administrative Operations space in Confluence. Before you ping the admin team - try asking Claude. It can answer a lot of what we’d normally get asked directly. We’ll keep improving the space so Claude can answer most of what you",
-    "author": "Lidiia Galkina",
+    "headline": "BidMachine earned four G2 badges for Fall 2026 G2, the world’s largest data sour...",
+    "quote": "BidMachine earned four G2 badges for Fall 2026 G2, the world’s largest data source for B2B software, named us a Leader in Ad Networks and in App Monetization Platforms for Mid-Market, plus a High Performer in SSP and App Monetization Platforms overall. It’s a well-deserved achievement, made even mor",
+    "author": "Anastasia Radek",
     "reactions": "",
     "channel": "#general"
-  },
-  {
-    "type": "officelife",
-    "emoji": "📢",
-    "accent": "#00FFD1",
-    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
-    "title": "From #general",
-    "headline": "People Standards Environment — Session 2, Tomorrow, Thursday, Sep 10 | 16:00–17:...",
-    "quote": "People Standards Environment — Session 2, Tomorrow, Thursday, Sep 10 | 16:00–17:00 CET (Barcelona) Change of plan: Erin Meyer can’t make it this week, so we swapped sessions. Tomorrow’s topic is Talent Density: First Who, Then What (originally scheduled for Oct 8). The Culture Map will move to Oct 8",
-    "author": "Mykhailo Kukharskyi",
-    "reactions": "",
-    "channel": "#general"
-  },
-  {
-    "type": "reading",
-    "emoji": "📚",
-    "accent": "#5D2CAC",
-    "gradient": "linear-gradient(135deg, #5D2CAC 0%, #A885E0 100%)",
-    "title": "What We're Reading",
-    "articles": [
-      {
-        "title": "Pangle Went From 1 Reseller To 43. Here's What That Tells You.",
-        "sharedBy": "Dan Owens",
-        "desc": "The Mobile Ad Monetization Newsletter #65 Mobile marketing gossip over the last year has been gravitating toward Unity’s Vector rollout, AppLovin’s e-",
-        "reactions": ""
-      }
-    ],
-    "channel": "#to_read"
   },
   {
     "type": "officelife",
@@ -69,8 +52,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Vladislav Nikolaev received 25× from Mikita Dzianisevich",
-    "quote": "Vladislav Nikolaev received 25× from Mikita Dzianisevich",
+    "headline": "Roman Rinchinov Iurii Kotov received 20× from Anna Timoshenko",
+    "quote": "Roman Rinchinov Iurii Kotov received 20× from Anna Timoshenko",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -81,8 +64,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Ivan Litvinau received 25× from Mikita Dzianisevich",
-    "quote": "Ivan Litvinau received 25× from Mikita Dzianisevich",
+    "headline": "Ira received 50× from Kasia",
+    "quote": "Ira received 50× from Kasia",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
