@@ -1,17 +1,5 @@
 [
   {
-    "type": "birthday",
-    "emoji": "🎂",
-    "accent": "#FFB72B",
-    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
-    "title": "Happy Birthday!",
-    "name": "Michael Lotfy",
-    "date": "September 15",
-    "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "With love, Your Appodeal Team 💜",
-    "avatar": "https://avatars.slack-edge.com/2025-07-04/9152832499860_d68d0c9db1bb7a2bdcff_192.jpg"
-  },
-  {
     "type": "officelife",
     "emoji": "📢",
     "accent": "#00FFD1",
@@ -41,11 +29,23 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "PSE — Session 2: First Who, Then What Our second PSE session took place on Septe...",
-    "quote": "PSE — Session 2: First Who, Then What Our second PSE session took place on September 10, featuring a Q&amp;A with Jessica Neal, former Chief Talent Officer at Netflix. The session focused on talent density, accountability, feedback, and building a high-performance culture. A few key takeaways: • The",
-    "author": "Mykhailo Kukharskyi",
+    "headline": "Hey Everyone, Looking for 6 people for an experiment I think most of us have som...",
+    "quote": "Hey Everyone, Looking for 6 people for an experiment I think most of us have something we genuinely want to change or achieve and already know that wanting it isn’t enough. The hard part is turning that intention into something we actually do consistently enough for it to become part of how we opera",
+    "author": "Roman Loboda",
     "reactions": "",
     "channel": "#general"
+  },
+  {
+    "type": "officelife",
+    "emoji": "👏",
+    "accent": "#5D2CAC",
+    "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
+    "title": "From #claps",
+    "headline": "Felipe Bereilh received 20× from Veronika Yastrebova",
+    "quote": "Felipe Bereilh received 20× from Veronika Yastrebova",
+    "author": "Clappy",
+    "reactions": "",
+    "channel": "#claps"
   },
   {
     "type": "officelife",
