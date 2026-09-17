@@ -46,17 +46,5 @@
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
-  },
-  {
-    "type": "officelife",
-    "emoji": "👏",
-    "accent": "#5D2CAC",
-    "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
-    "title": "From #claps",
-    "headline": "Roman Rinchinov Iurii Kotov received 20× from Anna Timoshenko",
-    "quote": "Roman Rinchinov Iurii Kotov received 20× from Anna Timoshenko",
-    "author": "Clappy",
-    "reactions": "",
-    "channel": "#claps"
   }
 ]
