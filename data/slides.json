@@ -1,5 +1,16 @@
 [
   {
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "* Martin Lau",
+    "date": "September 21",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "* Holding: Finance · * United States"
+  },
+  {
     "type": "officelife",
     "emoji": "📢",
     "accent": "#00FFD1",
@@ -17,9 +28,9 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "Hi everyone Thursday, September 24th is a public holiday in the Barcelona office...",
-    "quote": "Hi everyone Thursday, September 24th is a public holiday in the Barcelona office. Please plan accordingly",
-    "author": "Emma Syniehubova",
+    "headline": "Hey team Today at 16:00 CET we have PSE Session 3: The least powerful CEO (Super...",
+    "quote": "Hey team Today at 16:00 CET we have PSE Session 3: The least powerful CEO (Supercell, part 1). Prep is ~35 min: • Why Supercell's founder wants to be the world's least powerful CEO • Ilkka Paananen's Slush 2018 talk (YouTube) What we'll discuss: could a \"least powerful CEO\" model work here, and what",
+    "author": "Mykhailo Kukharskyi",
     "reactions": "",
     "channel": "#general"
   },
@@ -29,9 +40,9 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "Hi all, I received a lot of feedback about compliance we have in our org and how...",
-    "quote": "Hi all, I received a lot of feedback about compliance we have in our org and how it affects our ability to think outside the box. Here’s my binding commitment: I will do my best to convince the C-Suite to drop the OKR Health Rate, Culture Health Rate, Meeting Discipline and Daily Shipment requiremen",
-    "author": "Pavel Golubev",
+    "headline": "New Claude skill: score your main scorecard built a skill that reviews a main sc...",
+    "quote": "New Claude skill: score your main scorecard built a skill that reviews a main scorecard board against the company standard. What it does: give it your board link or name. It scores the board out of 7 gates, explains each failed gate in plain words, and suggests a rebuilt board. How to get it: instal",
+    "author": "Mariia Moskvina",
     "reactions": "",
     "channel": "#general"
   },
@@ -41,8 +52,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Artem Pchelintsev received 15× from Agustin",
-    "quote": "Artem Pchelintsev received 15× from Agustin",
+    "headline": "Irina Zelenskaya received 50× from Nikolai",
+    "quote": "Irina Zelenskaya received 50× from Nikolai",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -53,8 +64,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Rosa tanya moroz evgeny.garlukovich received 10× from Paul Childs",
-    "quote": "Rosa tanya moroz evgeny.garlukovich received 10× from Paul Childs",
+    "headline": "Irina Zelenskaya lidia.g Tanya Kuznetsova received 16× from Yuliia Lievoshko",
+    "quote": "Irina Zelenskaya lidia.g Tanya Kuznetsova received 16× from Yuliia Lievoshko",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
