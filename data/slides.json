@@ -11,15 +11,16 @@
     "teamNote": "* Holding: Sales · * Canada"
   },
   {
-    "type": "birthday",
-    "emoji": "🎂",
-    "accent": "#FFB72B",
-    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
-    "title": "Happy Birthday!",
-    "name": "* Andreu Margarit",
-    "date": "September 22",
-    "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* Gaming Engineering · * Spain"
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "Goodbye !!! Goodbye team!!! After everything we've been through together, writin...",
+    "quote": "Goodbye !!! Goodbye team!!! After everything we've been through together, writing this message is not easy but I want to make sure I leave with the words that truly reflect what this experience has meant to me. First and foremost, thank you . Thank you for trusting me to lead you. That trust was nev",
+    "author": "Francesco Cerigioni",
+    "reactions": "",
+    "channel": "#general"
   },
   {
     "type": "officelife",
@@ -47,24 +48,12 @@
   },
   {
     "type": "officelife",
-    "emoji": "📢",
-    "accent": "#00FFD1",
-    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
-    "title": "From #general",
-    "headline": "Our agentic pilot hit a new milestone: Amazon is now testing our seller agent on...",
-    "quote": "Our agentic pilot hit a new milestone: Amazon is now testing our seller agent on live mobile in-app inventory. We've published the news inviting more demand partners, agency trading desks and independent developers to join. Huge thanks to for all the effort behind this announcement If you know a buy",
-    "author": "Anastasia Radek",
-    "reactions": "",
-    "channel": "#general"
-  },
-  {
-    "type": "officelife",
     "emoji": "👏",
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Anastasia Zhizhchenko received 30× from Zhexuan Qiu",
-    "quote": "Anastasia Zhizhchenko received 30× from Zhexuan Qiu",
+    "headline": "Anna Hrytsel received 10× from Ivan Litvinau",
+    "quote": "Anna Hrytsel received 10× from Ivan Litvinau",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -75,8 +64,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Agustin Seb Andrey Chuprov ArtKip Sergio-Yersi Villegas Antonio Clavelli Maxim S...",
-    "quote": "Agustin Seb Andrey Chuprov ArtKip Sergio-Yersi Villegas Antonio Clavelli Maxim Sinyaev Edgar Felipe Bereilh Dario Hernandez Wojo Roman de las Heras Kseniia Maiorova received 3× from Francesco",
+    "headline": "Aleh Mentuz received 10× from Ivan Litvinau",
+    "quote": "Aleh Mentuz received 10× from Ivan Litvinau",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
