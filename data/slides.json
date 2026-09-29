@@ -11,51 +11,6 @@
     "teamNote": "* MGP: Product · * Spain"
   },
   {
-    "type": "birthday",
-    "emoji": "🎂",
-    "accent": "#FFB72B",
-    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
-    "title": "Happy Birthday!",
-    "name": "* Diana Mytchyk",
-    "date": "September 27",
-    "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* Holding: Administrative team · * Ukraine"
-  },
-  {
-    "type": "birthday",
-    "emoji": "🎂",
-    "accent": "#FFB72B",
-    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
-    "title": "Happy Birthday!",
-    "name": "* Dima Chubin",
-    "date": "September 27",
-    "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* MGP: Data Analytics · * Ukraine"
-  },
-  {
-    "type": "birthday",
-    "emoji": "🎂",
-    "accent": "#FFB72B",
-    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
-    "title": "Happy Birthday!",
-    "name": "* Issa Isahakyan",
-    "date": "September 27",
-    "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* MGP: Product · * Spain"
-  },
-  {
-    "type": "officelife",
-    "emoji": "📢",
-    "accent": "#00FFD1",
-    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
-    "title": "From #general",
-    "headline": "Two days of DMEXCO are over. 's demand team ran packed meetings from morning to ...",
-    "quote": "Two days of DMEXCO are over. 's demand team ran packed meetings from morning to closing, gave interviews and kept the stand buzzing until the last minute. The moments to remember are here: 1, 2, 3. Go and enjoy them, and leave a like while you're there. A special shout-out to and the <!subteam^SFA3Y",
-    "author": "Anastasia Radek",
-    "reactions": "",
-    "channel": "#general"
-  },
-  {
     "type": "officelife",
     "emoji": "📢",
     "accent": "#00FFD1",
@@ -73,9 +28,9 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "25/09 PSE Session 4: Supercell II — Teams That Kill Their Own Work recap Thanks ...",
-    "quote": "25/09 PSE Session 4: Supercell II — Teams That Kill Their Own Work recap Thanks everyone for joining today. We moved from Supercell's philosophy of team autonomy to a more practical question: what should we actually steal and change in the way we operate? Three themes stood out across the rooms: • C",
-    "author": "Anastasia Kalugina",
+    "headline": "Hey team! Know anyone in iGaming who’s at SBC in Lisbon and looking for new user...",
+    "quote": "Hey team! Know anyone in iGaming who’s at SBC in Lisbon and looking for new users? The BidMachine team is there for the next three days, so let’s put them in touch! Thanks",
+    "author": "Anastasia Radek",
     "reactions": "",
     "channel": "#general"
   },
@@ -101,8 +56,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Jura Guz received 50× from Anna Timoshenko",
-    "quote": "Jura Guz received 50× from Anna Timoshenko",
+    "headline": "Vladislav Nikolaev received 10× from Ivan Litvinau",
+    "quote": "Vladislav Nikolaev received 10× from Ivan Litvinau",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -113,8 +68,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Nikita Mishustin received 30× from Herman Ignatovich",
-    "quote": "Nikita Mishustin received 30× from Herman Ignatovich",
+    "headline": "Dzmitry Baran received 25× from Ivan Litvinau",
+    "quote": "Dzmitry Baran received 25× from Ivan Litvinau",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
