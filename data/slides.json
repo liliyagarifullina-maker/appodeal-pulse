@@ -5,6 +5,17 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
+    "name": "* Dmytrii Mamatiusupov",
+    "date": "October 01",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "* MGP: Data Engineering · * Spain"
+  },
+  {
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
     "name": "* Danila Matveev",
     "date": "September 30",
     "message": "Wishing you an amazing day filled with joy and celebration!",
@@ -27,9 +38,21 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "Team, Same questions all week — what counts as work, do platform teams exist, wh...",
-    "quote": "Team, Same questions all week — what counts as work, do platform teams exist, who sets up AI tooling, what's my metric. One answer for everyone. 1. One metric. Gross Profit per Employee (or recurring cost savings). AppLovin, Moloco, Liftoff are above $1M per person. We are not. Every commitment on e",
-    "author": "Pavel Golubev",
+    "headline": "Hi and <!subteam^S0ANN52P0GH> and DRIs. A few updates and personal thoughts re. ...",
+    "quote": "Hi and <!subteam^S0ANN52P0GH> and DRIs. A few updates and personal thoughts re. the current restructuring. Please dedicate a few minutes to read below and take action, where needed: • GP-E is not meant to be compared between squads. Each squad is working on solving a completely different problems. M",
+    "author": "Alberto Nutricati",
+    "reactions": "",
+    "channel": "#general"
+  },
+  {
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "Hi , Today we've launched our new Monthly pulse survey. We realized that we need...",
+    "quote": "Hi , Today we've launched our new Monthly pulse survey. We realized that we need much more timely feedback than we were getting from the quarterly surveys, and this monthly cadence will allow us to pick up on pressing issues quickly. We've simplified it to 7 questions and it shouldn't take more than",
+    "author": "Peter Van Kersen",
     "reactions": "",
     "channel": "#general"
   },
@@ -53,9 +76,9 @@
     "title": "What We're Reading",
     "articles": [
       {
-        "title": "What it’s like to work at an AI-native company",
-        "sharedBy": "Evgeny Garlukovich",
-        "desc": "Field notes from a millennial raised in pre-AI tech",
+        "title": "What IKEA and the Drug Cartels Know that Mobile Publishers Don't",
+        "sharedBy": "Viktor Trykolenko",
+        "desc": "The Mobile Ad Monetization Newsletter #68 Something wild is happening in mobile ad monetization. It’s one of the few billion-dollar industries where a",
         "reactions": ""
       }
     ],
