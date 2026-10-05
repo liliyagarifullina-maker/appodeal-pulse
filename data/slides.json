@@ -5,43 +5,10 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "* Viacheslav Skrynnyk",
-    "date": "October 02",
+    "name": "* Vlada Kryzhanivska",
+    "date": "October 04",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* MGP: Quality Assurance Platform · * Ukraine"
-  },
-  {
-    "type": "birthday",
-    "emoji": "🎂",
-    "accent": "#FFB72B",
-    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
-    "title": "Happy Birthday!",
-    "name": "* Lance Blick",
-    "date": "October 02",
-    "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* BidMachine Business · * United States"
-  },
-  {
-    "type": "birthday",
-    "emoji": "🎂",
-    "accent": "#FFB72B",
-    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
-    "title": "Happy Birthday!",
-    "name": "* Kintuk Yadav",
-    "date": "October 02",
-    "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* Holding: Finance · * United States"
-  },
-  {
-    "type": "birthday",
-    "emoji": "🎂",
-    "accent": "#FFB72B",
-    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
-    "title": "Happy Birthday!",
-    "name": "* Dmytrii Mamatiusupov",
-    "date": "October 01",
-    "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* MGP: Data Engineering · * Spain"
+    "teamNote": "* BidMachine Business: A&amp;F · * Poland"
   },
   {
     "type": "officelife",
@@ -49,9 +16,9 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "Hi , Today we've launched our new Monthly pulse survey. We realized that we need...",
-    "quote": "Hi , Today we've launched our new Monthly pulse survey. We realized that we need much more timely feedback than we were getting from the quarterly surveys, and this monthly cadence will allow us to pick up on pressing issues quickly. We've simplified it to 7 questions and it shouldn't take more than",
-    "author": "Peter Van Kersen",
+    "headline": "Today is my last working day at Appodeal, and I couldn't leave without saying th...",
+    "quote": "Today is my last working day at Appodeal, and I couldn't leave without saying thank you. These two years have meant a lot to me, and that's because of the people I got to work with, I hope I don't forget anyone, and if I do, please forgive me, it's the heart, not the memory. thank you for the suppor",
+    "author": "Issa Isahakyan",
     "reactions": "",
     "channel": "#general"
   },
@@ -61,9 +28,9 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "Hi and <!subteam^S0ANN52P0GH> and DRIs. A few updates and personal thoughts re. ...",
-    "quote": "Hi and <!subteam^S0ANN52P0GH> and DRIs. A few updates and personal thoughts re. the current restructuring. Please dedicate a few minutes to read below and take action, where needed: • GP-E is not meant to be compared between squads. Each squad is working on solving a completely different problems. M",
-    "author": "Alberto Nutricati",
+    "headline": "Q3 Performance Review is live! Thank you everyone who joined today’s session! We...",
+    "quote": "Q3 Performance Review is live! Thank you everyone who joined today’s session! We walked through what’s changing in the Q3 Performance Review, how the 360 feedback &amp; Keeper Test will work, how to choose your reviewers, and what useful, evidence-based feedback should look like. We also introduced ",
+    "author": "Katarzyna Raniszewska",
     "reactions": "",
     "channel": "#general"
   },
@@ -73,9 +40,9 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "The Meeting Discipline Score formula changes today. The company score drops from...",
-    "quote": "The Meeting Discipline Score formula changes today. The company score drops from 0.75 to 0.54. That is the old formula giving away free points, not anyone's meetings getting worse. Your score, your insights and the company view are here: daily-metrics-production.up.railway.app/meeting-discipline The",
-    "author": "Kristapor Raffi Giragosian",
+    "headline": "Team, to clarify — you can use for your own automation or whatever tasks, no nee...",
+    "quote": "Team, to clarify — you can use for your own automation or whatever tasks, no need to confirm with me. viktor.com",
+    "author": "Pavel Golubev",
     "reactions": "",
     "channel": "#general"
   },
@@ -87,15 +54,9 @@
     "title": "What We're Reading",
     "articles": [
       {
-        "title": ":fire: AppLovin is suing Unity over AD DATA :bangbang:  Yeah... DATA Wars ¯&amp;#92;(ツ)/¯   The Allegation? :point_down::skin-tone-2:  Unity’s Ad Quality SDK collected: :art: Creatives :iphone: User + device data :moneybag: Revenue + engagement :zap: Auction… | Gamigion",
-        "sharedBy": "Camille Labat",
-        "desc": "AppLovin is suing Unity over AD DATA Yeah... DATA Wars ¯\\(ツ)/¯ The Allegation? Unity’s Ad Quality SDK collected: Creatives User + device data Revenue ",
-        "reactions": ""
-      },
-      {
-        "title": "What IKEA and the Drug Cartels Know that Mobile Publishers Don't",
+        "title": "Apple’s Latest Operating System Blocks The Trade Desk From Serving Ads On Safari | AdExchanger",
         "sharedBy": "Viktor Trykolenko",
-        "desc": "The Mobile Ad Monetization Newsletter #68 Something wild is happening in mobile ad monetization. It’s one of the few billion-dollar industries where a",
+        "desc": "The Trade Desk is unable to serve ads to the Safari browser for Apple device owners that have downloaded iOS 27, which is the latest Apple operating s",
         "reactions": ""
       }
     ],
@@ -107,8 +68,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Ivan Litvinau received 50× from alexander.ignatov",
-    "quote": "Ivan Litvinau received 50× from alexander.ignatov",
+    "headline": "Nikita Mishustin received 20× from Dima M.",
+    "quote": "Nikita Mishustin received 20× from Dima M.",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -119,8 +80,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Alexey Akulshin received 20× from Danila Matveev",
-    "quote": "Alexey Akulshin received 20× from Danila Matveev",
+    "headline": "anna.kaliada Emma lidia.g received 15× from Yevhenii",
+    "quote": "anna.kaliada Emma lidia.g received 15× from Yevhenii",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
