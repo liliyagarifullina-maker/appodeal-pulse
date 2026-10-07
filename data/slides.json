@@ -1,41 +1,5 @@
 [
   {
-    "type": "birthday",
-    "emoji": "🎂",
-    "accent": "#FFB72B",
-    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
-    "title": "Happy Birthday!",
-    "name": "Vlada Kryzhanivska",
-    "date": "October 06",
-    "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "With love, Your Appodeal Team 💜",
-    "avatar": "https://avatars.slack-edge.com/2025-04-16/8784857597984_009b9032f7f46be310af_192.png"
-  },
-  {
-    "type": "birthday",
-    "emoji": "🎂",
-    "accent": "#FFB72B",
-    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
-    "title": "Happy Birthday!",
-    "name": "Anastasia Radek",
-    "date": "October 06",
-    "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "With love, Your Appodeal Team 💜",
-    "avatar": "https://avatars.slack-edge.com/2025-04-30/8843069961313_2bce9797dd8b9e6c5160_192.jpg"
-  },
-  {
-    "type": "birthday",
-    "emoji": "🎂",
-    "accent": "#FFB72B",
-    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
-    "title": "Happy Birthday!",
-    "name": "Juan Bautista",
-    "date": "October 06",
-    "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "With love, Your Appodeal Team 💜",
-    "avatar": "https://avatars.slack-edge.com/2026-01-12/10270901099475_bc11d734b62aad14f6e9_192.png"
-  },
-  {
     "type": "officelife",
     "emoji": "📢",
     "accent": "#00FFD1",
@@ -65,9 +29,9 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "Hi , In case you'd missed it, we've opened the quarterly review process in leaps...",
-    "quote": "Hi , In case you'd missed it, we've opened the quarterly review process in leapsome. Please try to complete your reviews this week. Thanks!",
-    "author": "Peter Van Kersen",
+    "headline": "Hi team, We just pushed out an update to help all 121 meeting in the company. Af...",
+    "quote": "Hi team, We just pushed out an update to help all 121 meeting in the company. After each meeting, the Fireflies transcript is analyzed, and Fellow action points are autopopulated in the Fellow meeting link. This way, you do not lose track of action items. After the meeting, you will receive a slack ",
+    "author": "Konstantin Manzuk",
     "reactions": "",
     "channel": "#general"
   },
@@ -93,8 +57,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Nikita Mishustin received 20× from Dima M.",
-    "quote": "Nikita Mishustin received 20× from Dima M.",
+    "headline": "Ivan Litvinau, Dzmitry Paplauski, Aleksey Alekhine and Andrei Pugachev received ...",
+    "quote": "Ivan Litvinau, Dzmitry Paplauski, Aleksey Alekhine and Andrei Pugachev received 10× from Alex Cherniaev",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -105,8 +69,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "anna.kaliada Emma lidia.g received 15× from Yevhenii",
-    "quote": "anna.kaliada Emma lidia.g received 15× from Yevhenii",
+    "headline": "Maksym Hrach, Veronika Yastrebova, Alexey Akulshin and Viktar Plesko received 10...",
+    "quote": "Maksym Hrach, Veronika Yastrebova, Alexey Akulshin and Viktar Plesko received 10× from Iaroslav Zhuravlev",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
