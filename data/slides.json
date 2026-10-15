@@ -16,9 +16,9 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "Reminder: Q3 Performance Review – Let's Reach 100%! Hi everyone! We're approachi...",
-    "quote": "Reminder: Q3 Performance Review – Let's Reach 100%! Hi everyone! We're approaching the Q3 Performance Review deadline – October 14, and we'd really appreciate your help in completing all outstanding assessments as soon as possible. Current completion rates: • Self Assessments: 54% • Manager Assessme",
-    "author": "Katarzyna Raniszewska",
+    "headline": "Team, one major outcome of today’s session: we’re rescoping all Supply-side init...",
+    "quote": "Team, one major outcome of today’s session: we’re rescoping all Supply-side initiatives into three squads: • Protecting Mediation Gross Profit • Gaming: direct • Non-gaming: direct This is a significant transformation, and we want it led from inside. Each squad needs a DRI, and we’d much rather give",
+    "author": "Alberto Nutricati",
     "reactions": "",
     "channel": "#general"
   },
@@ -31,6 +31,18 @@
     "headline": "Hi everyone *! This the final reminder: Q3 Performance Review &amp; Monthly Empl...",
     "quote": "Hi everyone *! This the final reminder: Q3 Performance Review &amp; Monthly Employee Pulse Today, October 14, is the final deadline for completing all Q3 Performance Review assessments in Leapsome, including your self-assessment, peer assessments, and assessments for your direct reports (where appli",
     "author": "Katarzyna Raniszewska",
+    "reactions": "",
+    "channel": "#general"
+  },
+  {
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "We've just launched the first issue of our demand-side LinkedIn newsletter, Next...",
+    "quote": "We've just launched the first issue of our demand-side LinkedIn newsletter, Next in mobile buying. It's a new platform for your updates and ideas to get featured. Have something for November? Come talk to the Marketing team!",
+    "author": "Anastasia Radek",
     "reactions": "",
     "channel": "#general"
   },
@@ -56,8 +68,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Artur Abizgeldin received 50× from Zhexuan Qiu",
-    "quote": "Artur Abizgeldin received 50× from Zhexuan Qiu",
+    "headline": "Ryan Christopher and Radu Stoia received 25× from Evgeny Garlukovich",
+    "quote": "Ryan Christopher and Radu Stoia received 25× from Evgeny Garlukovich",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -68,8 +80,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Roman Rinchinov received 50× from Anna Timoshenko",
-    "quote": "Roman Rinchinov received 50× from Anna Timoshenko",
+    "headline": "Andrey Chuprov received 25× from Semen Sinchenko",
+    "quote": "Andrey Chuprov received 25× from Semen Sinchenko",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
