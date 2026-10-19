@@ -5,11 +5,21 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "Sergey Baranov",
-    "date": "October 16",
+    "name": "* Anton Maiorov-Valkov",
+    "date": "October 19",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "With love, Your Appodeal Team 💜",
-    "avatar": "https://avatars.slack-edge.com/2026-01-12/10289859935137_a775b24ebf78e538a78c_192.png"
+    "teamNote": "* Holding: Board &amp; Advisors · * Russian Federation"
+  },
+  {
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "* George Tokarenko",
+    "date": "October 18",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "* MGP: Business Development · * Spain"
   },
   {
     "type": "officelife",
@@ -17,9 +27,9 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "Our new explainer on how to read app-ads.txt is live! Please give the LinkedIn p...",
-    "quote": "Our new explainer on how to read app-ads.txt is live! Please give the LinkedIn post a like, comment or repost to help us reach more potential partners. Working with a publisher who'd find it useful? Feel free to share the blog post link directly. Shout out to the brilliant for his help on this one. ",
-    "author": "Ryan Christopher",
+    "headline": "Today is my last working day at Appodeal What an exciting journey it has been. L...",
+    "quote": "Today is my last working day at Appodeal What an exciting journey it has been. Looking back at myself 5 years ago, I realize how big a place this company holds in my heart and how much I’ve learned here, both professionally and personally. Big thanks to the BEST team for being there in the good and ",
+    "author": "Yakov Kozarez",
     "reactions": "",
     "channel": "#general"
   },
@@ -29,45 +39,11 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "Team, one major outcome of today’s session: we’re rescoping all Supply-side init...",
-    "quote": "Team, one major outcome of today’s session: we’re rescoping all Supply-side initiatives into three squads: • Protecting Mediation Gross Profit • Gaming: direct • Non-gaming: direct This is a significant transformation, and we want it led from inside. Each squad needs a DRI, and we’d much rather give",
-    "author": "Alberto Nutricati",
-    "reactions": "",
-    "channel": "#general"
-  },
-  {
-    "type": "officelife",
-    "emoji": "📢",
-    "accent": "#00FFD1",
-    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
-    "title": "From #general",
-    "headline": "Hi everyone *! This the final reminder: Q3 Performance Review &amp; Monthly Empl...",
-    "quote": "Hi everyone *! This the final reminder: Q3 Performance Review &amp; Monthly Employee Pulse Today, October 14, is the final deadline for completing all Q3 Performance Review assessments in Leapsome, including your self-assessment, peer assessments, and assessments for your direct reports (where appli",
+    "headline": "Q3 Performance Review — Calibration Meetings Hi everyone ! Starting today, we'll...",
+    "quote": "Q3 Performance Review — Calibration Meetings Hi everyone ! Starting today, we'll be holding our Q3 Performance Review calibration meetings throughout this week. I'm still waiting for confirmation of the meeting times from a few calibration groups, but all calibration meetings are expected to take pl",
     "author": "Katarzyna Raniszewska",
     "reactions": "",
     "channel": "#general"
-  },
-  {
-    "type": "reading",
-    "emoji": "📚",
-    "accent": "#5D2CAC",
-    "gradient": "linear-gradient(135deg, #5D2CAC 0%, #A885E0 100%)",
-    "title": "What We're Reading",
-    "articles": [
-      {
-        "title": "To Block or Not to Block",
-        "sharedBy": "Viktor Trykolenko",
-        "desc": "The Mobile Ad Monetization Newsletter #70 That is the question. If you monetize with mobile ads, you get paid when users click ads and convert.",
-        "reactions": ""
-      },
-      {
-        "title": "AdSurge is the new ad network built by Miniclip with help from Tencent AI and Easybrain data",
-        "sharedBy": "Camille Labat",
-        "desc": "The platform offers both user acquisition and ad monetisation and draws on data and expertise from Miniclip, Easybrain and Tencent.",
-        "reactions": ""
-      }
-    ],
-    "channel": "#to_read"
   },
   {
     "type": "officelife",
@@ -75,8 +51,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Andrei Shurykin received 50× from Siarhei Meliashchuk",
-    "quote": "Andrei Shurykin received 50× from Siarhei Meliashchuk",
+    "headline": "Dmytrii Mamatiusupov and Iurii Kotov received 15× from Viktor Trykolenko",
+    "quote": "Dmytrii Mamatiusupov and Iurii Kotov received 15× from Viktor Trykolenko",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -87,8 +63,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Anton Nikifarau, Samat Kurmanov, Guillermo Baurier, Dmitrii Rodionov and Mykhail...",
-    "quote": "Anton Nikifarau, Samat Kurmanov, Guillermo Baurier, Dmitrii Rodionov and Mykhailo Kukharskyi received 10× from Vladislav Averianov",
+    "headline": "Michael Lotfy received 10× from Peter Van Kersen",
+    "quote": "Michael Lotfy received 10× from Peter Van Kersen",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
