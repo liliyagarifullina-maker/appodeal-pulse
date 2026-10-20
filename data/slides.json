@@ -11,29 +11,6 @@
     "teamNote": "* Holding: Board &amp; Advisors · * Russian Federation"
   },
   {
-    "type": "birthday",
-    "emoji": "🎂",
-    "accent": "#FFB72B",
-    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
-    "title": "Happy Birthday!",
-    "name": "* George Tokarenko",
-    "date": "October 18",
-    "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* MGP: Business Development · * Spain"
-  },
-  {
-    "type": "officelife",
-    "emoji": "📢",
-    "accent": "#00FFD1",
-    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
-    "title": "From #general",
-    "headline": "Today is my last working day at Appodeal What an exciting journey it has been. L...",
-    "quote": "Today is my last working day at Appodeal What an exciting journey it has been. Looking back at myself 5 years ago, I realize how big a place this company holds in my heart and how much I’ve learned here, both professionally and personally. Big thanks to the BEST team for being there in the good and ",
-    "author": "Yakov Kozarez",
-    "reactions": "",
-    "channel": "#general"
-  },
-  {
     "type": "officelife",
     "emoji": "📢",
     "accent": "#00FFD1",
@@ -51,8 +28,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Dmytrii Mamatiusupov and Iurii Kotov received 15× from Viktor Trykolenko",
-    "quote": "Dmytrii Mamatiusupov and Iurii Kotov received 15× from Viktor Trykolenko",
+    "headline": "Ilya Borisov received 50× from Radu Stoia",
+    "quote": "Ilya Borisov received 50× from Radu Stoia",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -63,8 +40,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Michael Lotfy received 10× from Peter Van Kersen",
-    "quote": "Michael Lotfy received 10× from Peter Van Kersen",
+    "headline": "Dmytrii Mamatiusupov and Iurii Kotov received 15× from Viktor Trykolenko",
+    "quote": "Dmytrii Mamatiusupov and Iurii Kotov received 15× from Viktor Trykolenko",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
