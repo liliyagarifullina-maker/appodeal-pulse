@@ -5,10 +5,22 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "* Anton Maiorov-Valkov",
-    "date": "October 19",
+    "name": "* Artur Abizgeldin",
+    "date": "October 21",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* Holding: Board &amp; Advisors · * Russian Federation"
+    "teamNote": "* MGP: Data Squad · * Spain"
+  },
+  {
+    "type": "officelife",
+    "emoji": "📢",
+    "accent": "#00FFD1",
+    "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
+    "title": "From #general",
+    "headline": "New case study: FOMO Games x DIRECT Placements Our latest case study is live! FO...",
+    "quote": "New case study: FOMO Games x DIRECT Placements Our latest case study is live! FOMO Games expanded its partnership with BidMachine through DIRECT Placements and saw: • 94% higher banner eCPMs with DIRECT Placements vs. open-market demand • 41% of its BidMachine revenue coming through DIRECT Placement",
+    "author": "Ryan Christopher",
+    "reactions": "",
+    "channel": "#general"
   },
   {
     "type": "officelife",
@@ -23,13 +35,29 @@
     "channel": "#general"
   },
   {
+    "type": "reading",
+    "emoji": "📚",
+    "accent": "#5D2CAC",
+    "gradient": "linear-gradient(135deg, #5D2CAC 0%, #A885E0 100%)",
+    "title": "What We're Reading",
+    "articles": [
+      {
+        "title": "Standardize Multi Mediation Setups with Orchestrator | CloudX",
+        "sharedBy": "Denis Glavatskikh",
+        "desc": "Run CloudX alongside other mediation platforms and decide, ad unit by ad unit, how they work together, from the dashboard and without an app update.",
+        "reactions": ""
+      }
+    ],
+    "channel": "#to_read"
+  },
+  {
     "type": "officelife",
     "emoji": "👏",
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Ilya Borisov received 50× from Radu Stoia",
-    "quote": "Ilya Borisov received 50× from Radu Stoia",
+    "headline": "Evgenia Gorbacheva received 25× from Andrei Pugachev",
+    "quote": "Evgenia Gorbacheva received 25× from Andrei Pugachev",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -40,8 +68,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Dmytrii Mamatiusupov and Iurii Kotov received 15× from Viktor Trykolenko",
-    "quote": "Dmytrii Mamatiusupov and Iurii Kotov received 15× from Viktor Trykolenko",
+    "headline": "Radu Stoia received 50× from Ilya Borisov",
+    "quote": "Radu Stoia received 50× from Ilya Borisov",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
