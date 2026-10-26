@@ -1,13 +1,24 @@
 [
   {
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "* Vladislav Averianov",
+    "date": "October 25",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "* SQUAD 1 (CTV) · * Spain"
+  },
+  {
     "type": "officelife",
     "emoji": "📢",
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "As part of our risk mitigation efforts, we plan to rotate all tokens across our ...",
-    "quote": "As part of our risk mitigation efforts, we plan to rotate all tokens across our systems. Please be prepared for potential service disruptions during this process. We’ll also use this opportunity to strengthen our security posture by reviewing access rights and permissions and creating a comprehensiv",
-    "author": "Alexandr Zhitlukhin",
+    "headline": "yesterday my LinkedIn profile got hacked. If I’ve sent you some strange message ...",
+    "quote": "yesterday my LinkedIn profile got hacked. If I’ve sent you some strange message or request, that was not me. Still working on getting full control of it.",
+    "author": "Alberto Nutricati",
     "reactions": "",
     "channel": "#general"
   },
@@ -17,8 +28,8 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "Hi team! Appodeal Life is temporarily down. Here's why and what's next. What hap...",
-    "quote": "Hi team! Appodeal Life is temporarily down. Here's why and what's next. What happened Our hosting provider, Railway, has been experiencing an ongoing outage for over 24 hours since Oct 21, and then disclosed a security breach: an attacker accessed customer environment variables and, for some, got th",
+    "headline": "Update on Railway outage: The migration is still in progress and may take longer...",
+    "quote": "Update on Railway outage: The migration is still in progress and may take longer than expected. Appodeal Life is expected to be back online next week. Thank you for your patience and understanding!",
     "author": "Dmitrii Bartasinskii",
     "reactions": "",
     "channel": "#general"
@@ -29,9 +40,9 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "Hi team! Anastasia Kalugina is heading to New York, Nov. 2-4, to meet game studi...",
-    "quote": "Hi team! Anastasia Kalugina is heading to New York, Nov. 2-4, to meet game studios about the Appodeal Accelerator, and we just shared it on our LinkedIn page: lnkd.in/p/ebWbnWuq A quick like, comment or reshare goes a long way in helping it reach more studios. And if you know a hybrid-casual or midc",
-    "author": "Ryan Christopher",
+    "headline": "The second post in our app-ads.txt series is live. This one is about the two lin...",
+    "quote": "The second post in our app-ads.txt series is live. This one is about the two lines that end up in the file by copy and paste, MANAGERDOMAIN and INVENTORYPARTNERDOMAIN, and how they can keep demand from reaching an app. Give it a like here and send it on to the publishers you work with. Thank you for",
+    "author": "Anastasia Radek",
     "reactions": "",
     "channel": "#general"
   },
@@ -43,9 +54,9 @@
     "title": "What We're Reading",
     "articles": [
       {
-        "title": "Standardize Multi Mediation Setups with Orchestrator | CloudX",
-        "sharedBy": "Denis Glavatskikh",
-        "desc": "Run CloudX alongside other mediation platforms and decide, ad unit by ad unit, how they work together, from the dashboard and without an app update.",
+        "title": "How Block Blast harvests its players for ad money",
+        "sharedBy": "Alexander Petrov",
+        "desc": "Rules downloaded from their server decide your pieces, your score and your ads. One waits for an expensive ad, then asks for a hand you can’t place.",
         "reactions": ""
       }
     ],
@@ -57,8 +68,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Ryan Christopher received 20× from Viktor Trykolenko",
-    "quote": "Ryan Christopher received 20× from Viktor Trykolenko",
+    "headline": "Roman Rinchinov received 25× from Anna Timoshenko",
+    "quote": "Roman Rinchinov received 25× from Anna Timoshenko",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -69,8 +80,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Yurii Ivanovskyi, Hierman Pelekh, Dmitrii Bartasinskii and Andrew Bulik received...",
-    "quote": "Yurii Ivanovskyi, Hierman Pelekh, Dmitrii Bartasinskii and Andrew Bulik received 8× from Gleb Krahotkin",
+    "headline": "Alexander Petrov, Mitali Devasir, Konstantin Ilchenko and Guillermo Baurier rece...",
+    "quote": "Alexander Petrov, Mitali Devasir, Konstantin Ilchenko and Guillermo Baurier received 10× from Samat Kurmanov",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
