@@ -5,10 +5,21 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "* Vladislav Averianov",
-    "date": "October 25",
+    "name": "* Aleh Mentuz",
+    "date": "October 27",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* SQUAD 1 (CTV) · * Spain"
+    "teamNote": "* Rendering - 8 · * Poland"
+  },
+  {
+    "type": "birthday",
+    "emoji": "🎂",
+    "accent": "#FFB72B",
+    "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
+    "title": "Happy Birthday!",
+    "name": "* Alexey Akulshin",
+    "date": "October 27",
+    "message": "Wishing you an amazing day filled with joy and celebration!",
+    "teamNote": "* Brand DSP Spend - 6 · * Spain"
   },
   {
     "type": "officelife",
@@ -16,9 +27,9 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "yesterday my LinkedIn profile got hacked. If I’ve sent you some strange message ...",
-    "quote": "yesterday my LinkedIn profile got hacked. If I’ve sent you some strange message or request, that was not me. Still working on getting full control of it.",
-    "author": "Alberto Nutricati",
+    "headline": "Hi The QBR is over! Our commitments are locked in and even though Appodeal Life ...",
+    "quote": "Hi The QBR is over! Our commitments are locked in and even though Appodeal Life is down, real life goes on. We're excited to enter the first true quarter in our new structure: Goal aligned Squads with a DRI and a dedicated team of ICs. We're also incredibly grateful for the DRIs who have stepped up ",
+    "author": "Peter Van Kersen",
     "reactions": "",
     "channel": "#general"
   },
@@ -28,9 +39,9 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "Update on Railway outage: The migration is still in progress and may take longer...",
-    "quote": "Update on Railway outage: The migration is still in progress and may take longer than expected. Appodeal Life is expected to be back online next week. Thank you for your patience and understanding!",
-    "author": "Dmitrii Bartasinskii",
+    "headline": "we are aiming to have Appodeal Life fully operational around mid-week. If there ...",
+    "quote": "we are aiming to have Appodeal Life fully operational around mid-week. If there is any critical work blocked please message me directly. Thank you all for your patience",
+    "author": "Kristapor Raffi Giragosian",
     "reactions": "",
     "channel": "#general"
   },
@@ -40,9 +51,9 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "The second post in our app-ads.txt series is live. This one is about the two lin...",
-    "quote": "The second post in our app-ads.txt series is live. This one is about the two lines that end up in the file by copy and paste, MANAGERDOMAIN and INVENTORYPARTNERDOMAIN, and how they can keep demand from reaching an app. Give it a like here and send it on to the publishers you work with. Thank you for",
-    "author": "Anastasia Radek",
+    "headline": "Q3 Performance Review — Final Update Hi everyone ! The final calibration meeting...",
+    "quote": "Q3 Performance Review — Final Update Hi everyone ! The final calibration meetings will take place this week, and we're planning to release the Q3 Performance Review results by the end of the week. The release is slightly later than originally planned, as some calibration meetings were rescheduled to",
+    "author": "Katarzyna Raniszewska",
     "reactions": "",
     "channel": "#general"
   },
@@ -54,9 +65,9 @@
     "title": "What We're Reading",
     "articles": [
       {
-        "title": "How Block Blast harvests its players for ad money",
+        "title": "Competition, Intensity &amp; Building a $115 Billion Global Bank | Nik Storonsky, Revolut",
         "sharedBy": "Alexander Petrov",
-        "desc": "Rules downloaded from their server decide your pieces, your score and your ads. One waits for an expensive ad, then asks for a hand you can’t place.",
+        "desc": "",
         "reactions": ""
       }
     ],
@@ -70,18 +81,6 @@
     "title": "From #claps",
     "headline": "Roman Rinchinov received 25× from Anna Timoshenko",
     "quote": "Roman Rinchinov received 25× from Anna Timoshenko",
-    "author": "Clappy",
-    "reactions": "",
-    "channel": "#claps"
-  },
-  {
-    "type": "officelife",
-    "emoji": "👏",
-    "accent": "#5D2CAC",
-    "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
-    "title": "From #claps",
-    "headline": "Alexander Petrov, Mitali Devasir, Konstantin Ilchenko and Guillermo Baurier rece...",
-    "quote": "Alexander Petrov, Mitali Devasir, Konstantin Ilchenko and Guillermo Baurier received 10× from Samat Kurmanov",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
