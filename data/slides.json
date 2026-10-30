@@ -16,9 +16,9 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "Hi The QBR is over! Our commitments are locked in and even though Appodeal Life ...",
-    "quote": "Hi The QBR is over! Our commitments are locked in and even though Appodeal Life is down, real life goes on. We're excited to enter the first true quarter in our new structure: Goal aligned Squads with a DRI and a dedicated team of ICs. We're also incredibly grateful for the DRIs who have stepped up ",
-    "author": "Peter Van Kersen",
+    "headline": "Appodeal Life is back up and running The platform is live again at its new home:...",
+    "quote": "Appodeal Life is back up and running The platform is live again at its new home: pulse.appodeal.com If you run into anything that used to work and now doesn't, please drop a note in <#C0AKSTZBY7P> and we'll take a look. Thanks for your patience!",
+    "author": "Dmitrii Bartasinskii",
     "reactions": "",
     "channel": "#general"
   },
@@ -40,27 +40,11 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "BidMachine will be at Business of Apps on Nov. 12, with , and on the ground. The...",
-    "quote": "BidMachine will be at Business of Apps on Nov. 12, with , and on the ground. The 1:1 booking form is open, the post is live, and your likes and shares help it travel! If you know publishers going to Berlin or based there, send it their way",
+    "headline": "Two posts on Linkedin today: · We're heading to New York for AdExchanger’s Top W...",
+    "quote": "Two posts on Linkedin today: · We're heading to New York for AdExchanger’s Top Women in Media &amp; Ad Tech Awards gala. Let's make the most of it and help our team connect with partners and potential clients while they're there. · Business of Apps has named us one of the leading UA platforms out th",
     "author": "Anastasia Radek",
     "reactions": "",
     "channel": "#general"
-  },
-  {
-    "type": "reading",
-    "emoji": "📚",
-    "accent": "#5D2CAC",
-    "gradient": "linear-gradient(135deg, #5D2CAC 0%, #A885E0 100%)",
-    "title": "What We're Reading",
-    "articles": [
-      {
-        "title": "Competition, Intensity &amp; Building a $115 Billion Global Bank | Nik Storonsky, Revolut",
-        "sharedBy": "Alexander Petrov",
-        "desc": "",
-        "reactions": ""
-      }
-    ],
-    "channel": "#to_read"
   },
   {
     "type": "officelife",
@@ -68,8 +52,20 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Dzmitry Paplauski received 1× from Andrei Pugachev",
-    "quote": "Dzmitry Paplauski received 1× from Andrei Pugachev",
+    "headline": "Alina Li received 15× from Anna Timoshenko",
+    "quote": "Alina Li received 15× from Anna Timoshenko",
+    "author": "Clappy",
+    "reactions": "",
+    "channel": "#claps"
+  },
+  {
+    "type": "officelife",
+    "emoji": "👏",
+    "accent": "#5D2CAC",
+    "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
+    "title": "From #claps",
+    "headline": "Gleb Krahotkin received 50× from Anton Nikifarau",
+    "quote": "Gleb Krahotkin received 50× from Anton Nikifarau",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
