@@ -5,10 +5,10 @@
     "accent": "#FFB72B",
     "gradient": "linear-gradient(135deg, #FFB72B 0%, #FFCC66 100%)",
     "title": "Happy Birthday!",
-    "name": "* Joel Chang",
-    "date": "November 04",
+    "name": "* Timofey Levanov",
+    "date": "November 06",
     "message": "Wishing you an amazing day filled with joy and celebration!",
-    "teamNote": "* Holding: Sales · * United States"
+    "teamNote": "* Holding: Finance · * Kyrgyzstan"
   },
   {
     "type": "officelife",
@@ -28,9 +28,9 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "Hi all Next Wednesday, November 11 (National Independence Day), is a public holi...",
-    "quote": "Hi all Next Wednesday, November 11 (National Independence Day), is a public holiday in Poland office so, please, plan your work accordingly! Thank you",
-    "author": "Iryna Peretiatko",
+    "headline": "reminder about company vacation/holiday policy. We have unlimited vacation/holid...",
+    "quote": "reminder about company vacation/holiday policy. We have unlimited vacation/holiday policy. This means you can have as many days off as you want. Moreover, you should have more days off than average. A lot of people are confused and might be making the following FALSE statements: • You have to confir",
+    "author": "Pavel Golubev",
     "reactions": "",
     "channel": "#general"
   },
@@ -40,8 +40,8 @@
     "accent": "#00FFD1",
     "gradient": "linear-gradient(135deg, #00FFD1 0%, #99FFEC 100%)",
     "title": "From #general",
-    "headline": "BCN Data Nights, our in-person tech meetup, is back. On Dec. 2, we're bringing B...",
-    "quote": "BCN Data Nights, our in-person tech meetup, is back. On Dec. 2, we're bringing Barcelona's AI &amp; data community together to talk about AI agents deployed in products used by millions. This time, we're hosting a panel discussion. Our first two speakers are confirmed: Vashist Avadhanula, Sr. Princi",
+    "headline": "BidMachine won an industry award in China: Beluga Global named us its 2026 Globa...",
+    "quote": "BidMachine won an industry award in China: Beluga Global named us its 2026 Global Rising Star of the Year for helping local publishers expand into new markets. Huge congrats to the APAC team, this one is yours",
     "author": "Anastasia Radek",
     "reactions": "",
     "channel": "#general"
@@ -52,8 +52,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Herman Krahotkin, Alexandr Babich and Dmytrii Mamatiusupov received 10× from Ser...",
-    "quote": "Herman Krahotkin, Alexandr Babich and Dmytrii Mamatiusupov received 10× from Sergey Orlov",
+    "headline": "Herman Ignatovich received 1× from Zhexuan Qiu",
+    "quote": "Herman Ignatovich received 1× from Zhexuan Qiu",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
@@ -64,8 +64,8 @@
     "accent": "#5D2CAC",
     "gradient": "linear-gradient(135deg, #5D2CAC 0%, #8B5DD5 100%)",
     "title": "From #claps",
-    "headline": "Ivan Litvinau received 10× from Eduard Malkhasyan",
-    "quote": "Ivan Litvinau received 10× from Eduard Malkhasyan",
+    "headline": "Herman Krahotkin, Alexandr Babich and Dmytrii Mamatiusupov received 10× from Ser...",
+    "quote": "Herman Krahotkin, Alexandr Babich and Dmytrii Mamatiusupov received 10× from Sergey Orlov",
     "author": "Clappy",
     "reactions": "",
     "channel": "#claps"
